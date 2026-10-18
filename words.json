@@ -1,0 +1,282 @@
+[
+  {
+    "word": "ABUNDANT",
+    "level": "lower",
+    "choices": [
+      "scarce",
+      "abandoned",
+      "noisy",
+      "plentiful"
+    ],
+    "answer": "plentiful",
+    "definition": "existing in large amounts; more than enough",
+    "example": "The garden had an abundant harvest of tomatoes this summer.",
+    "addedDate": "2026-10-18"
+  },
+  {
+    "word": "TIMID",
+    "level": "lower",
+    "choices": [
+      "bold",
+      "tiny",
+      "shy",
+      "angry"
+    ],
+    "answer": "shy",
+    "definition": "lacking courage or confidence; easily frightened",
+    "example": "The timid kitten hid under the bed when guests arrived.",
+    "addedDate": "2026-10-18"
+  },
+  {
+    "word": "RELUCTANT",
+    "level": "lower",
+    "choices": [
+      "unwilling",
+      "eager",
+      "reliable",
+      "tired"
+    ],
+    "answer": "unwilling",
+    "definition": "not wanting to do something; hesitant",
+    "example": "Sam was reluctant to jump into the cold pool.",
+    "addedDate": "2026-10-18"
+  },
+  {
+    "word": "FRAGILE",
+    "level": "lower",
+    "choices": [
+      "sturdy",
+      "fragrant",
+      "heavy",
+      "delicate"
+    ],
+    "answer": "delicate",
+    "definition": "easily broken or damaged",
+    "example": "Wrap the fragile vase carefully so it doesn't crack.",
+    "addedDate": "2026-10-18"
+  },
+  {
+    "word": "VACANT",
+    "level": "lower",
+    "choices": [
+      "crowded",
+      "empty",
+      "vague",
+      "clean"
+    ],
+    "answer": "empty",
+    "definition": "not occupied or filled",
+    "example": "The vacant lot next to school was full of weeds.",
+    "addedDate": "2026-10-18"
+  },
+  {
+    "word": "CONCEAL",
+    "level": "lower",
+    "choices": [
+      "reveal",
+      "cancel",
+      "hide",
+      "freeze"
+    ],
+    "answer": "hide",
+    "definition": "to keep out of sight or keep secret",
+    "example": "She tried to conceal the surprise gift behind her back.",
+    "addedDate": "2026-10-18"
+  },
+  {
+    "word": "DREARY",
+    "level": "lower",
+    "choices": [
+      "gloomy",
+      "dreamy",
+      "cheerful",
+      "thirsty"
+    ],
+    "answer": "gloomy",
+    "definition": "dull, dark, and depressing",
+    "example": "The dreary, rainy day kept everyone indoors.",
+    "addedDate": "2026-10-18"
+  },
+  {
+    "word": "FEEBLE",
+    "level": "lower",
+    "choices": [
+      "weak",
+      "foolish",
+      "strong",
+      "noble"
+    ],
+    "answer": "weak",
+    "definition": "lacking physical strength or force",
+    "example": "The feeble old dog could barely climb the stairs.",
+    "addedDate": "2026-10-18"
+  },
+  {
+    "word": "HASTY",
+    "level": "lower",
+    "choices": [
+      "careful",
+      "rushed",
+      "hateful",
+      "lazy"
+    ],
+    "answer": "rushed",
+    "definition": "done too quickly, without enough thought",
+    "example": "His hasty answer had a careless mistake in it.",
+    "addedDate": "2026-10-18"
+  },
+  {
+    "word": "COURTEOUS",
+    "level": "lower",
+    "choices": [
+      "rude",
+      "brave",
+      "curious",
+      "polite"
+    ],
+    "answer": "polite",
+    "definition": "showing good manners and respect",
+    "example": "The courteous student held the door open for everyone.",
+    "addedDate": "2026-10-18"
+  },
+  {
+    "word": "VAST",
+    "level": "lower",
+    "choices": [
+      "fast",
+      "narrow",
+      "huge",
+      "dull"
+    ],
+    "answer": "huge",
+    "definition": "extremely large in size or amount",
+    "example": "The explorers crossed a vast desert that stretched for miles.",
+    "addedDate": "2026-10-18"
+  },
+  {
+    "word": "PERIL",
+    "level": "lower",
+    "choices": [
+      "danger",
+      "pearl",
+      "safety",
+      "journey"
+    ],
+    "answer": "danger",
+    "definition": "serious risk of harm",
+    "example": "The sailors were in great peril during the storm.",
+    "addedDate": "2026-10-18"
+  },
+  {
+    "word": "ANCIENT",
+    "level": "lower",
+    "choices": [
+      "modern",
+      "old",
+      "anxious",
+      "famous"
+    ],
+    "answer": "old",
+    "definition": "belonging to the very distant past; very old",
+    "example": "We saw ancient Egyptian tools at the museum.",
+    "addedDate": "2026-10-18"
+  },
+  {
+    "word": "DECLINE",
+    "level": "lower",
+    "choices": [
+      "climb",
+      "refuse",
+      "decide",
+      "accept"
+    ],
+    "answer": "refuse",
+    "definition": "(verb) to politely say no to",
+    "example": "Maya had to decline the party invitation because of her recital.",
+    "addedDate": "2026-10-18"
+  },
+  {
+    "word": "CANDID",
+    "level": "lower",
+    "choices": [
+      "sweet",
+      "secretive",
+      "honest",
+      "careful"
+    ],
+    "answer": "honest",
+    "definition": "truthful and direct; frank",
+    "example": "Coach gave a candid opinion about how our team could improve.",
+    "addedDate": "2026-10-18"
+  },
+  {
+    "word": "METICULOUS",
+    "level": "middle",
+    "choices": [
+      "sloppy",
+      "miraculous",
+      "quick",
+      "thorough"
+    ],
+    "answer": "thorough",
+    "definition": "extremely careful about every small detail",
+    "example": "The meticulous artist spent hours painting each tiny feather.",
+    "addedDate": "2026-10-18"
+  },
+  {
+    "word": "BENEVOLENT",
+    "level": "middle",
+    "choices": [
+      "violent",
+      "kind",
+      "cruel",
+      "wealthy"
+    ],
+    "answer": "kind",
+    "definition": "well-meaning and generous; wanting to help others",
+    "example": "The benevolent neighbor shoveled snow for everyone on the street.",
+    "addedDate": "2026-10-18"
+  },
+  {
+    "word": "ELUSIVE",
+    "level": "middle",
+    "choices": [
+      "hard to catch",
+      "obvious",
+      "imaginary",
+      "exclusive"
+    ],
+    "answer": "hard to catch",
+    "definition": "difficult to find, catch, or pin down",
+    "example": "The elusive fox always slipped away before we could take its picture.",
+    "addedDate": "2026-10-18"
+  },
+  {
+    "word": "DILIGENT",
+    "level": "middle",
+    "choices": [
+      "lazy",
+      "delicate",
+      "hardworking",
+      "intelligent"
+    ],
+    "answer": "hardworking",
+    "definition": "showing steady, careful effort",
+    "example": "Because she was diligent about practicing, her piano skills improved quickly.",
+    "addedDate": "2026-10-18"
+  },
+  {
+    "word": "AMIABLE",
+    "level": "middle",
+    "choices": [
+      "able",
+      "hostile",
+      "aimless",
+      "friendly"
+    ],
+    "answer": "friendly",
+    "definition": "pleasant, good-natured, and easy to like",
+    "example": "The amiable new student made friends on his very first day.",
+    "addedDate": "2026-10-18"
+  }
+]
