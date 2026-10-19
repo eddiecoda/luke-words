@@ -19,8 +19,8 @@ for (const w of words) {
 console.log('words.json OK:', words.length, 'words,', words.filter(w => w.level === 'middle').length, 'reach');
 
 // Today's batch picks the newest date
-const extra = words.concat([{ word: 'ZEST', level: 'lower', choices: ['a','b','c','d'], answer: 'a', definition: 'x', example: 'y', addedDate: '2026-10-19' }]);
-assert.strictEqual(SRS.todaysWords(extra, '2026-10-25').length, 1);
+const extra = words.concat([{ word: 'ZEST', level: 'lower', choices: ['a','b','c','d'], answer: 'a', definition: 'x', example: 'y', addedDate: '2099-01-01' }]);
+assert.strictEqual(SRS.todaysWords(extra, '2099-06-01').length, 1);
 assert.strictEqual(SRS.todaysWords(extra, '2026-10-18').length, 20);
 assert.strictEqual(SRS.todaysWords(words, '2026-10-18').length, 20);
 

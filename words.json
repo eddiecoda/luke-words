@@ -278,5 +278,285 @@
     "definition": "pleasant, good-natured, and easy to like",
     "example": "The amiable new student made friends on his very first day.",
     "addedDate": "2026-10-18"
+  },
+  {
+    "word": "BRISK",
+    "level": "lower",
+    "choices": [
+      "slow",
+      "quick",
+      "brittle",
+      "bright"
+    ],
+    "answer": "quick",
+    "definition": "quick, lively, and energetic",
+    "example": "We took a brisk walk to warm up before the game.",
+    "addedDate": "2026-10-19"
+  },
+  {
+    "word": "CAUTIOUS",
+    "level": "lower",
+    "choices": [
+      "careful",
+      "reckless",
+      "curious",
+      "cheerful"
+    ],
+    "answer": "careful",
+    "definition": "careful to avoid danger or mistakes",
+    "example": "The cautious driver slowed down on the icy road.",
+    "addedDate": "2026-10-19"
+  },
+  {
+    "word": "DRENCHED",
+    "level": "lower",
+    "choices": [
+      "dried",
+      "drained",
+      "soaked",
+      "frightened"
+    ],
+    "answer": "soaked",
+    "definition": "completely wet",
+    "example": "We were drenched after getting caught in the thunderstorm.",
+    "addedDate": "2026-10-19"
+  },
+  {
+    "word": "FLIMSY",
+    "level": "lower",
+    "choices": [
+      "sturdy",
+      "flashy",
+      "heavy",
+      "frail"
+    ],
+    "answer": "frail",
+    "definition": "thin and weak; easily broken",
+    "example": "The flimsy umbrella flipped inside out in the wind.",
+    "addedDate": "2026-10-19"
+  },
+  {
+    "word": "GRASP",
+    "level": "lower",
+    "choices": [
+      "gasp",
+      "grip",
+      "release",
+      "glance"
+    ],
+    "answer": "grip",
+    "definition": "(verb) to hold tightly; also, to understand",
+    "example": "Grasp the rope with both hands before you climb.",
+    "addedDate": "2026-10-19"
+  },
+  {
+    "word": "HAZARD",
+    "level": "lower",
+    "choices": [
+      "risk",
+      "shelter",
+      "haze",
+      "reward"
+    ],
+    "answer": "risk",
+    "definition": "something that could cause harm; a danger",
+    "example": "The broken step was a hazard for anyone walking by.",
+    "addedDate": "2026-10-19"
+  },
+  {
+    "word": "IMMENSE",
+    "level": "lower",
+    "choices": [
+      "tiny",
+      "intense",
+      "enormous",
+      "immediate"
+    ],
+    "answer": "enormous",
+    "definition": "extremely large",
+    "example": "An immense whale swam right beside our boat.",
+    "addedDate": "2026-10-19"
+  },
+  {
+    "word": "MOIST",
+    "level": "lower",
+    "choices": [
+      "dry",
+      "mild",
+      "moldy",
+      "damp"
+    ],
+    "answer": "damp",
+    "definition": "slightly wet",
+    "example": "Keep the soil moist so the seeds can sprout.",
+    "addedDate": "2026-10-19"
+  },
+  {
+    "word": "NOVEL",
+    "level": "lower",
+    "choices": [
+      "new",
+      "old",
+      "long",
+      "famous"
+    ],
+    "answer": "new",
+    "definition": "(adjective) new and different from anything before",
+    "example": "Mia had a novel idea for her science fair project.",
+    "addedDate": "2026-10-19"
+  },
+  {
+    "word": "PONDER",
+    "level": "lower",
+    "choices": [
+      "wander",
+      "consider",
+      "ignore",
+      "pound"
+    ],
+    "answer": "consider",
+    "definition": "to think about something carefully",
+    "example": "Luke paused to ponder the tricky math problem.",
+    "addedDate": "2026-10-19"
+  },
+  {
+    "word": "RAVENOUS",
+    "level": "lower",
+    "choices": [
+      "angry",
+      "dark",
+      "full",
+      "starving"
+    ],
+    "answer": "starving",
+    "definition": "extremely hungry",
+    "example": "After practice the team was ravenous and ate three pizzas.",
+    "addedDate": "2026-10-19"
+  },
+  {
+    "word": "SCARCE",
+    "level": "lower",
+    "choices": [
+      "frightened",
+      "plentiful",
+      "rare",
+      "scary"
+    ],
+    "answer": "rare",
+    "definition": "in short supply; hard to find",
+    "example": "Water was scarce during the long, dry summer.",
+    "addedDate": "2026-10-19"
+  },
+  {
+    "word": "SLENDER",
+    "level": "lower",
+    "choices": [
+      "thin",
+      "tall",
+      "gentle",
+      "heavy"
+    ],
+    "answer": "thin",
+    "definition": "gracefully thin",
+    "example": "The slender branch bent under the weight of the bird.",
+    "addedDate": "2026-10-19"
+  },
+  {
+    "word": "VIVID",
+    "level": "lower",
+    "choices": [
+      "dull",
+      "quiet",
+      "vicious",
+      "bright"
+    ],
+    "answer": "bright",
+    "definition": "bright and strong in color; clear and lively",
+    "example": "She painted the sunset in vivid oranges and reds.",
+    "addedDate": "2026-10-19"
+  },
+  {
+    "word": "WEARY",
+    "level": "lower",
+    "choices": [
+      "wary",
+      "tired",
+      "worried",
+      "energetic"
+    ],
+    "answer": "tired",
+    "definition": "very tired, especially after hard work",
+    "example": "The weary hikers rested at the top of the hill.",
+    "addedDate": "2026-10-19"
+  },
+  {
+    "word": "AMBIGUOUS",
+    "level": "middle",
+    "choices": [
+      "unclear",
+      "ambitious",
+      "obvious",
+      "enormous"
+    ],
+    "answer": "unclear",
+    "definition": "having more than one possible meaning; not clear",
+    "example": "The directions were so ambiguous that half the class got lost.",
+    "addedDate": "2026-10-19"
+  },
+  {
+    "word": "TENACIOUS",
+    "level": "middle",
+    "choices": [
+      "tense",
+      "gentle",
+      "careless",
+      "persistent"
+    ],
+    "answer": "persistent",
+    "definition": "refusing to give up; holding on firmly",
+    "example": "The tenacious goalie blocked shot after shot.",
+    "addedDate": "2026-10-19"
+  },
+  {
+    "word": "FRIVOLOUS",
+    "level": "middle",
+    "choices": [
+      "serious",
+      "silly",
+      "frightened",
+      "generous"
+    ],
+    "answer": "silly",
+    "definition": "not serious; of little importance",
+    "example": "He spent his allowance on frivolous toys he never played with.",
+    "addedDate": "2026-10-19"
+  },
+  {
+    "word": "PRUDENT",
+    "level": "middle",
+    "choices": [
+      "proud",
+      "foolish",
+      "wise",
+      "rude"
+    ],
+    "answer": "wise",
+    "definition": "showing good judgment; sensible and careful",
+    "example": "It was prudent to bring a raincoat when the sky looked dark.",
+    "addedDate": "2026-10-19"
+  },
+  {
+    "word": "INDIFFERENT",
+    "level": "middle",
+    "choices": [
+      "eager",
+      "different",
+      "angry",
+      "uncaring"
+    ],
+    "answer": "uncaring",
+    "definition": "not interested or concerned either way",
+    "example": "The cat seemed indifferent to the new toy we bought it.",
+    "addedDate": "2026-10-19"
   }
 ]
