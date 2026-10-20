@@ -558,5 +558,285 @@
     "definition": "not interested or concerned either way",
     "example": "The cat seemed indifferent to the new toy we bought it.",
     "addedDate": "2026-10-19"
+  },
+  {
+    "word": "GLEAM",
+    "level": "lower",
+    "choices": [
+      "shine",
+      "gloom",
+      "clean",
+      "scream"
+    ],
+    "answer": "shine",
+    "definition": "(verb) to shine softly; (noun) a small flash of light",
+    "example": "The trophy began to gleam after Luke polished it.",
+    "addedDate": "2026-10-20"
+  },
+  {
+    "word": "ROAM",
+    "level": "lower",
+    "choices": [
+      "rest",
+      "wander",
+      "roar",
+      "rush"
+    ],
+    "answer": "wander",
+    "definition": "to travel or walk around with no fixed plan",
+    "example": "Wild horses roam freely across the island.",
+    "addedDate": "2026-10-20"
+  },
+  {
+    "word": "SOAR",
+    "level": "lower",
+    "choices": [
+      "sink",
+      "sore",
+      "sour",
+      "rise"
+    ],
+    "answer": "rise",
+    "definition": "to fly or rise high into the air",
+    "example": "The eagle seemed to soar above the mountains without flapping its wings.",
+    "addedDate": "2026-10-20"
+  },
+  {
+    "word": "CLUMSY",
+    "level": "lower",
+    "choices": [
+      "awkward",
+      "graceful",
+      "crumbly",
+      "cheerful"
+    ],
+    "answer": "awkward",
+    "definition": "moving in an awkward, careless way",
+    "example": "The clumsy puppy tripped over its own paws.",
+    "addedDate": "2026-10-20"
+  },
+  {
+    "word": "PROHIBIT",
+    "level": "lower",
+    "choices": [
+      "allow",
+      "protect",
+      "forbid",
+      "provide"
+    ],
+    "answer": "forbid",
+    "definition": "to officially forbid or ban",
+    "example": "The pool rules prohibit running on the deck.",
+    "addedDate": "2026-10-20"
+  },
+  {
+    "word": "DEPART",
+    "level": "lower",
+    "choices": [
+      "arrive",
+      "leave",
+      "divide",
+      "report"
+    ],
+    "answer": "leave",
+    "definition": "to leave, especially to start a trip",
+    "example": "The train will depart at exactly 8:15.",
+    "addedDate": "2026-10-20"
+  },
+  {
+    "word": "FRIGID",
+    "level": "lower",
+    "choices": [
+      "fiery",
+      "frightened",
+      "friendly",
+      "freezing"
+    ],
+    "answer": "freezing",
+    "definition": "extremely cold",
+    "example": "The frigid wind made our faces sting.",
+    "addedDate": "2026-10-20"
+  },
+  {
+    "word": "GLOOMY",
+    "level": "lower",
+    "choices": [
+      "sad",
+      "cheerful",
+      "glossy",
+      "loud"
+    ],
+    "answer": "sad",
+    "definition": "dark or dim; also, feeling sad and without hope",
+    "example": "The gloomy weather matched his mood after the loss.",
+    "addedDate": "2026-10-20"
+  },
+  {
+    "word": "NIMBLE",
+    "level": "lower",
+    "choices": [
+      "clumsy",
+      "agile",
+      "nervous",
+      "numb"
+    ],
+    "answer": "agile",
+    "definition": "quick and light in movement",
+    "example": "The nimble goat leaped from rock to rock.",
+    "addedDate": "2026-10-20"
+  },
+  {
+    "word": "SINCERE",
+    "level": "lower",
+    "choices": [
+      "sneaky",
+      "simple",
+      "honest",
+      "severe"
+    ],
+    "answer": "honest",
+    "definition": "truly meaning what you say; honest",
+    "example": "Maya gave a sincere apology to her friend.",
+    "addedDate": "2026-10-20"
+  },
+  {
+    "word": "STURDY",
+    "level": "lower",
+    "choices": [
+      "weak",
+      "sticky",
+      "sleepy",
+      "strong"
+    ],
+    "answer": "strong",
+    "definition": "strongly built; not easily broken",
+    "example": "We built the treehouse with sturdy boards.",
+    "addedDate": "2026-10-20"
+  },
+  {
+    "word": "ABSURD",
+    "level": "lower",
+    "choices": [
+      "ridiculous",
+      "sensible",
+      "absent",
+      "sad"
+    ],
+    "answer": "ridiculous",
+    "definition": "silly and unreasonable; ridiculous",
+    "example": "Wearing a winter coat to the beach in July seemed absurd.",
+    "addedDate": "2026-10-20"
+  },
+  {
+    "word": "ANXIOUS",
+    "level": "lower",
+    "choices": [
+      "calm",
+      "worried",
+      "angry",
+      "curious"
+    ],
+    "answer": "worried",
+    "definition": "worried or nervous about what might happen",
+    "example": "Luke felt anxious before his first big test.",
+    "addedDate": "2026-10-20"
+  },
+  {
+    "word": "OBSTACLE",
+    "level": "lower",
+    "choices": [
+      "reward",
+      "shortcut",
+      "barrier",
+      "opinion"
+    ],
+    "answer": "barrier",
+    "definition": "something that blocks the way or makes progress hard",
+    "example": "A fallen tree was an obstacle on the bike trail.",
+    "addedDate": "2026-10-20"
+  },
+  {
+    "word": "COMMENCE",
+    "level": "lower",
+    "choices": [
+      "end",
+      "comment",
+      "combine",
+      "begin"
+    ],
+    "answer": "begin",
+    "definition": "to begin or start",
+    "example": "The ceremony will commence as soon as everyone is seated.",
+    "addedDate": "2026-10-20"
+  },
+  {
+    "word": "INQUISITIVE",
+    "level": "middle",
+    "choices": [
+      "curious",
+      "requested",
+      "silent",
+      "acquired"
+    ],
+    "answer": "curious",
+    "definition": "eager to learn; asking lots of questions",
+    "example": "The inquisitive student asked how volcanoes form.",
+    "addedDate": "2026-10-20"
+  },
+  {
+    "word": "OBSTINATE",
+    "level": "middle",
+    "choices": [
+      "obvious",
+      "stubborn",
+      "flexible",
+      "obedient"
+    ],
+    "answer": "stubborn",
+    "definition": "stubbornly refusing to change your mind",
+    "example": "The obstinate mule would not move an inch.",
+    "addedDate": "2026-10-20"
+  },
+  {
+    "word": "JUBILANT",
+    "level": "middle",
+    "choices": [
+      "jealous",
+      "miserable",
+      "joyful",
+      "juvenile"
+    ],
+    "answer": "joyful",
+    "definition": "extremely happy, especially after a success",
+    "example": "The jubilant fans cheered when the team won the title.",
+    "addedDate": "2026-10-20"
+  },
+  {
+    "word": "ARDUOUS",
+    "level": "middle",
+    "choices": [
+      "easy",
+      "eager",
+      "ancient",
+      "difficult"
+    ],
+    "answer": "difficult",
+    "definition": "needing a lot of hard work and effort",
+    "example": "Climbing the steep trail was an arduous task.",
+    "addedDate": "2026-10-20"
+  },
+  {
+    "word": "DEARTH",
+    "level": "middle",
+    "choices": [
+      "shortage",
+      "death",
+      "plenty",
+      "darkness"
+    ],
+    "answer": "shortage",
+    "definition": "a lack or shortage of something",
+    "example": "There was a dearth of snacks by the end of the party.",
+    "addedDate": "2026-10-20"
   }
 ]
