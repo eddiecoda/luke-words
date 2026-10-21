@@ -838,5 +838,285 @@
     "definition": "a lack or shortage of something",
     "example": "There was a dearth of snacks by the end of the party.",
     "addedDate": "2026-10-20"
+  },
+  {
+    "word": "ABANDON",
+    "level": "lower",
+    "choices": [
+      "adopt",
+      "desert",
+      "admire",
+      "attend"
+    ],
+    "answer": "desert",
+    "definition": "to leave behind and not come back for",
+    "example": "The sailors had to abandon the sinking ship.",
+    "addedDate": "2026-10-21"
+  },
+  {
+    "word": "HUMID",
+    "level": "lower",
+    "choices": [
+      "dry",
+      "humble",
+      "damp",
+      "windy"
+    ],
+    "answer": "damp",
+    "definition": "having a lot of moisture in the air",
+    "example": "The air felt humid and sticky before the storm.",
+    "addedDate": "2026-10-21"
+  },
+  {
+    "word": "PLEAD",
+    "level": "lower",
+    "choices": [
+      "plan",
+      "refuse",
+      "beg",
+      "please"
+    ],
+    "answer": "beg",
+    "definition": "to ask for something in a desperate way",
+    "example": "The puppy seemed to plead for a treat.",
+    "addedDate": "2026-10-21"
+  },
+  {
+    "word": "TRIUMPH",
+    "level": "lower",
+    "choices": [
+      "defeat",
+      "victory",
+      "effort",
+      "trumpet"
+    ],
+    "answer": "victory",
+    "definition": "a great win or success",
+    "example": "The team celebrated its triumph over the champions.",
+    "addedDate": "2026-10-21"
+  },
+  {
+    "word": "AUDACIOUS",
+    "level": "middle",
+    "choices": [
+      "bold",
+      "clever",
+      "noisy",
+      "timid"
+    ],
+    "answer": "bold",
+    "definition": "daring and willing to take risks",
+    "example": "The climber made an audacious attempt to reach the summit.",
+    "addedDate": "2026-10-21"
+  },
+  {
+    "word": "WRATH",
+    "level": "lower",
+    "choices": [
+      "wreath",
+      "fear",
+      "anger",
+      "joy"
+    ],
+    "answer": "anger",
+    "definition": "strong, fierce anger",
+    "example": "The villagers feared the giant's wrath.",
+    "addedDate": "2026-10-21"
+  },
+  {
+    "word": "ELEGANT",
+    "level": "lower",
+    "choices": [
+      "awkward",
+      "enormous",
+      "elderly",
+      "graceful"
+    ],
+    "answer": "graceful",
+    "definition": "stylish and graceful",
+    "example": "She wore an elegant gown to the wedding.",
+    "addedDate": "2026-10-21"
+  },
+  {
+    "word": "FLOURISH",
+    "level": "lower",
+    "choices": [
+      "polish",
+      "flutter",
+      "wither",
+      "thrive"
+    ],
+    "answer": "thrive",
+    "definition": "to grow strong and healthy",
+    "example": "Tomato plants flourish in the summer sun.",
+    "addedDate": "2026-10-21"
+  },
+  {
+    "word": "SERENE",
+    "level": "middle",
+    "choices": [
+      "severe",
+      "calm",
+      "sincere",
+      "stormy"
+    ],
+    "answer": "calm",
+    "definition": "peaceful and untroubled",
+    "example": "The lake was serene at sunrise.",
+    "addedDate": "2026-10-21"
+  },
+  {
+    "word": "VERACITY",
+    "level": "middle",
+    "choices": [
+      "courage",
+      "speed",
+      "dishonesty",
+      "truthfulness"
+    ],
+    "answer": "truthfulness",
+    "definition": "the quality of being true or honest",
+    "example": "The detective doubted the veracity of the witness's story.",
+    "addedDate": "2026-10-21"
+  },
+  {
+    "word": "YEARN",
+    "level": "lower",
+    "choices": [
+      "refuse",
+      "learn",
+      "crave",
+      "yell"
+    ],
+    "answer": "crave",
+    "definition": "to want something very much",
+    "example": "On the long trip, Luke began to yearn for home.",
+    "addedDate": "2026-10-21"
+  },
+  {
+    "word": "DIMINUTIVE",
+    "level": "middle",
+    "choices": [
+      "reduced",
+      "gloomy",
+      "enormous",
+      "tiny"
+    ],
+    "answer": "tiny",
+    "definition": "extremely small",
+    "example": "The diminutive puppy fit in a teacup.",
+    "addedDate": "2026-10-21"
+  },
+  {
+    "word": "MISHAP",
+    "level": "lower",
+    "choices": [
+      "celebration",
+      "shortcut",
+      "mystery",
+      "accident"
+    ],
+    "answer": "accident",
+    "definition": "an unlucky accident, usually a small one",
+    "example": "Except for one mishap with the paint, the project went well.",
+    "addedDate": "2026-10-21"
+  },
+  {
+    "word": "PERPLEXED",
+    "level": "middle",
+    "choices": [
+      "puzzled",
+      "perfect",
+      "annoyed",
+      "certain"
+    ],
+    "answer": "puzzled",
+    "definition": "confused and unsure",
+    "example": "Luke was perplexed by the tricky riddle.",
+    "addedDate": "2026-10-21"
+  },
+  {
+    "word": "SHREWD",
+    "level": "lower",
+    "choices": [
+      "rude",
+      "foolish",
+      "shy",
+      "clever"
+    ],
+    "answer": "clever",
+    "definition": "smart and good at judging situations",
+    "example": "The shrewd shopper waited for the big sale.",
+    "addedDate": "2026-10-21"
+  },
+  {
+    "word": "CRAFTY",
+    "level": "lower",
+    "choices": [
+      "sly",
+      "careless",
+      "artistic",
+      "honest"
+    ],
+    "answer": "sly",
+    "definition": "clever at tricking others",
+    "example": "The crafty fox found a way into the henhouse.",
+    "addedDate": "2026-10-21"
+  },
+  {
+    "word": "BLUNT",
+    "level": "lower",
+    "choices": [
+      "dull",
+      "gentle",
+      "bright",
+      "broken"
+    ],
+    "answer": "dull",
+    "definition": "not sharp; having a dull edge or point",
+    "example": "The knife was too blunt to slice the tomato.",
+    "addedDate": "2026-10-21"
+  },
+  {
+    "word": "LOATHE",
+    "level": "lower",
+    "choices": [
+      "linger",
+      "lend",
+      "hate",
+      "adore"
+    ],
+    "answer": "hate",
+    "definition": "to dislike very strongly",
+    "example": "My brother loathes cleaning his room.",
+    "addedDate": "2026-10-21"
+  },
+  {
+    "word": "DISMAY",
+    "level": "lower",
+    "choices": [
+      "delight",
+      "display",
+      "distress",
+      "distance"
+    ],
+    "answer": "distress",
+    "definition": "a feeling of alarm or disappointment",
+    "example": "To Luke's dismay, the game was rained out.",
+    "addedDate": "2026-10-21"
+  },
+  {
+    "word": "GENUINE",
+    "level": "lower",
+    "choices": [
+      "kind",
+      "fake",
+      "gentle",
+      "real"
+    ],
+    "answer": "real",
+    "definition": "truly what it seems to be; not fake",
+    "example": "The museum confirmed the coin was genuine gold.",
+    "addedDate": "2026-10-21"
   }
 ]
