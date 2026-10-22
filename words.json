@@ -1118,5 +1118,285 @@
     "definition": "truly what it seems to be; not fake",
     "example": "The museum confirmed the coin was genuine gold.",
     "addedDate": "2026-10-21"
+  },
+  {
+    "word": "GENTLE",
+    "level": "lower",
+    "choices": [
+      "quick",
+      "mild",
+      "harsh",
+      "loud"
+    ],
+    "answer": "mild",
+    "definition": "mild; soft or kind, not rough",
+    "example": "She gave the puppy a gentle pat on the head.",
+    "addedDate": "2026-10-22"
+  },
+  {
+    "word": "RAPID",
+    "level": "lower",
+    "choices": [
+      "fast",
+      "careful",
+      "rough",
+      "late"
+    ],
+    "answer": "fast",
+    "definition": "very quick",
+    "example": "The rapid river carried the leaf away in seconds.",
+    "addedDate": "2026-10-22"
+  },
+  {
+    "word": "FURIOUS",
+    "level": "lower",
+    "choices": [
+      "curious",
+      "calm",
+      "tired",
+      "angry"
+    ],
+    "answer": "angry",
+    "definition": "extremely angry",
+    "example": "Dad was furious when the window got broken.",
+    "addedDate": "2026-10-22"
+  },
+  {
+    "word": "DAMP",
+    "level": "lower",
+    "choices": [
+      "dark",
+      "dusty",
+      "wet",
+      "cold"
+    ],
+    "answer": "wet",
+    "definition": "slightly wet",
+    "example": "Hang up your damp towel so it can dry.",
+    "addedDate": "2026-10-22"
+  },
+  {
+    "word": "FEAT",
+    "level": "lower",
+    "choices": [
+      "party",
+      "accomplishment",
+      "foot",
+      "failure"
+    ],
+    "answer": "accomplishment",
+    "definition": "an impressive achievement",
+    "example": "Climbing the mountain in one day was quite a feat.",
+    "addedDate": "2026-10-22"
+  },
+  {
+    "word": "COMPANION",
+    "level": "lower",
+    "choices": [
+      "friend",
+      "rival",
+      "stranger",
+      "leader"
+    ],
+    "answer": "friend",
+    "definition": "a friend or partner who spends time with you",
+    "example": "His dog was his loyal companion on every hike.",
+    "addedDate": "2026-10-22"
+  },
+  {
+    "word": "ASSIST",
+    "level": "lower",
+    "choices": [
+      "insist",
+      "prevent",
+      "watch",
+      "help"
+    ],
+    "answer": "help",
+    "definition": "to help",
+    "example": "Can you assist me with carrying these boxes?",
+    "addedDate": "2026-10-22"
+  },
+  {
+    "word": "BOAST",
+    "level": "lower",
+    "choices": [
+      "complain",
+      "whisper",
+      "brag",
+      "float"
+    ],
+    "answer": "brag",
+    "definition": "to talk with too much pride about yourself",
+    "example": "He likes to boast about his high scores.",
+    "addedDate": "2026-10-22"
+  },
+  {
+    "word": "CONSUME",
+    "level": "lower",
+    "choices": [
+      "share",
+      "eat",
+      "create",
+      "gather"
+    ],
+    "answer": "eat",
+    "definition": "to eat, drink, or use up",
+    "example": "The campers consumed all the snacks by noon.",
+    "addedDate": "2026-10-22"
+  },
+  {
+    "word": "DISTANT",
+    "level": "lower",
+    "choices": [
+      "far",
+      "close",
+      "different",
+      "quiet"
+    ],
+    "answer": "far",
+    "definition": "far away",
+    "example": "We could hear distant thunder over the hills.",
+    "addedDate": "2026-10-22"
+  },
+  {
+    "word": "DESCEND",
+    "level": "lower",
+    "choices": [
+      "climb",
+      "decide",
+      "wander",
+      "drop"
+    ],
+    "answer": "drop",
+    "definition": "to go or move down",
+    "example": "The plane began to descend toward the airport.",
+    "addedDate": "2026-10-22"
+  },
+  {
+    "word": "HUMOROUS",
+    "level": "lower",
+    "choices": [
+      "serious",
+      "hungry",
+      "funny",
+      "enormous"
+    ],
+    "answer": "funny",
+    "definition": "funny; causing laughter",
+    "example": "The book was so humorous that I laughed out loud.",
+    "addedDate": "2026-10-22"
+  },
+  {
+    "word": "MEND",
+    "level": "lower",
+    "choices": [
+      "mix",
+      "repair",
+      "break",
+      "bend"
+    ],
+    "answer": "repair",
+    "definition": "to fix something broken or torn",
+    "example": "Grandma will mend the hole in my jacket.",
+    "addedDate": "2026-10-22"
+  },
+  {
+    "word": "ODOR",
+    "level": "lower",
+    "choices": [
+      "smell",
+      "color",
+      "sound",
+      "taste"
+    ],
+    "answer": "smell",
+    "definition": "a smell, often a strong one",
+    "example": "A strange odor came from the old fridge.",
+    "addedDate": "2026-10-22"
+  },
+  {
+    "word": "VICTOR",
+    "level": "lower",
+    "choices": [
+      "enemy",
+      "guest",
+      "judge",
+      "winner"
+    ],
+    "answer": "winner",
+    "definition": "the winner of a contest or battle",
+    "example": "The victor of the spelling bee got a trophy.",
+    "addedDate": "2026-10-22"
+  },
+  {
+    "word": "ADMONISH",
+    "level": "middle",
+    "choices": [
+      "admire",
+      "ignore",
+      "scold",
+      "praise"
+    ],
+    "answer": "scold",
+    "definition": "to warn or scold gently but firmly",
+    "example": "The coach admonished the team for being late.",
+    "addedDate": "2026-10-22"
+  },
+  {
+    "word": "CUMBERSOME",
+    "level": "middle",
+    "choices": [
+      "quick",
+      "bulky",
+      "tiny",
+      "cheerful"
+    ],
+    "answer": "bulky",
+    "definition": "large or heavy and hard to carry or use",
+    "example": "The cumbersome suitcase barely fit in the trunk.",
+    "addedDate": "2026-10-22"
+  },
+  {
+    "word": "INDOLENT",
+    "level": "middle",
+    "choices": [
+      "lazy",
+      "rude",
+      "busy",
+      "sorrowful"
+    ],
+    "answer": "lazy",
+    "definition": "lazy; avoiding work",
+    "example": "The indolent cat slept on the couch all afternoon.",
+    "addedDate": "2026-10-22"
+  },
+  {
+    "word": "MUNDANE",
+    "level": "middle",
+    "choices": [
+      "thrilling",
+      "dirty",
+      "angry",
+      "ordinary"
+    ],
+    "answer": "ordinary",
+    "definition": "ordinary and dull; everyday",
+    "example": "Folding laundry is a mundane chore.",
+    "addedDate": "2026-10-22"
+  },
+  {
+    "word": "ALLEVIATE",
+    "level": "middle",
+    "choices": [
+      "elevate",
+      "allow",
+      "ease",
+      "worsen"
+    ],
+    "answer": "ease",
+    "definition": "to make pain or a problem less severe",
+    "example": "Ice helped alleviate the swelling in her ankle.",
+    "addedDate": "2026-10-22"
   }
 ]
