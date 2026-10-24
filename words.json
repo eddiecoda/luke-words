@@ -1398,5 +1398,285 @@
     "definition": "to make pain or a problem less severe",
     "example": "Ice helped alleviate the swelling in her ankle.",
     "addedDate": "2026-10-22"
+  },
+  {
+    "word": "FRAGRANT",
+    "level": "lower",
+    "choices": [
+      "colorful",
+      "sweet-smelling",
+      "fragile",
+      "rotten"
+    ],
+    "answer": "sweet-smelling",
+    "definition": "having a pleasant smell",
+    "example": "The fragrant roses filled the room with a sweet scent.",
+    "addedDate": "2026-10-24"
+  },
+  {
+    "word": "TIDY",
+    "level": "lower",
+    "choices": [
+      "messy",
+      "neat",
+      "tiny",
+      "tired"
+    ],
+    "answer": "neat",
+    "definition": "neat and in order",
+    "example": "Luke kept his desk tidy so he could find his pencils.",
+    "addedDate": "2026-10-24"
+  },
+  {
+    "word": "GIGANTIC",
+    "level": "lower",
+    "choices": [
+      "huge",
+      "gentle",
+      "tiny",
+      "magic"
+    ],
+    "answer": "huge",
+    "definition": "extremely large",
+    "example": "A gigantic wave crashed onto the beach.",
+    "addedDate": "2026-10-24"
+  },
+  {
+    "word": "VANISH",
+    "level": "lower",
+    "choices": [
+      "appear",
+      "polish",
+      "disappear",
+      "travel"
+    ],
+    "answer": "disappear",
+    "definition": "to disappear suddenly",
+    "example": "The magician made the coin vanish from his hand.",
+    "addedDate": "2026-10-24"
+  },
+  {
+    "word": "SHIVER",
+    "level": "lower",
+    "choices": [
+      "shine",
+      "sweat",
+      "shout",
+      "tremble"
+    ],
+    "answer": "tremble",
+    "definition": "to shake slightly, often from cold or fear",
+    "example": "We began to shiver as the snow started to fall.",
+    "addedDate": "2026-10-24"
+  },
+  {
+    "word": "CHERISH",
+    "level": "lower",
+    "choices": [
+      "treasure",
+      "cheer",
+      "neglect",
+      "share"
+    ],
+    "answer": "treasure",
+    "definition": "to love and care for something dearly",
+    "example": "She will always cherish the letters from her grandfather.",
+    "addedDate": "2026-10-24"
+  },
+  {
+    "word": "SWIFT",
+    "level": "lower",
+    "choices": [
+      "slow",
+      "quick",
+      "quiet",
+      "sweet"
+    ],
+    "answer": "quick",
+    "definition": "moving very fast",
+    "example": "The swift fox darted across the field.",
+    "addedDate": "2026-10-24"
+  },
+  {
+    "word": "FEROCIOUS",
+    "level": "lower",
+    "choices": [
+      "friendly",
+      "fearful",
+      "fierce",
+      "frosty"
+    ],
+    "answer": "fierce",
+    "definition": "fierce and violent",
+    "example": "The ferocious lion roared at the hyenas.",
+    "addedDate": "2026-10-24"
+  },
+  {
+    "word": "DREAD",
+    "level": "lower",
+    "choices": [
+      "fear",
+      "hope",
+      "dream",
+      "anger"
+    ],
+    "answer": "fear",
+    "definition": "to fear something that is going to happen",
+    "example": "I dread going to the dentist.",
+    "addedDate": "2026-10-24"
+  },
+  {
+    "word": "GRUMBLE",
+    "level": "lower",
+    "choices": [
+      "crumble",
+      "laugh",
+      "agree",
+      "complain"
+    ],
+    "answer": "complain",
+    "definition": "to complain in a low, unhappy voice",
+    "example": "The players grumble whenever practice runs late.",
+    "addedDate": "2026-10-24"
+  },
+  {
+    "word": "LOYAL",
+    "level": "lower",
+    "choices": [
+      "royal",
+      "faithful",
+      "lazy",
+      "sneaky"
+    ],
+    "answer": "faithful",
+    "definition": "faithful and true to someone or something",
+    "example": "A loyal friend sticks with you through hard times.",
+    "addedDate": "2026-10-24"
+  },
+  {
+    "word": "MERRY",
+    "level": "lower",
+    "choices": [
+      "gloomy",
+      "busy",
+      "cheerful",
+      "plain"
+    ],
+    "answer": "cheerful",
+    "definition": "happy and cheerful",
+    "example": "The merry crowd sang songs all night.",
+    "addedDate": "2026-10-24"
+  },
+  {
+    "word": "ERUPT",
+    "level": "lower",
+    "choices": [
+      "burst",
+      "freeze",
+      "erase",
+      "settle"
+    ],
+    "answer": "burst",
+    "definition": "to burst out suddenly",
+    "example": "The volcano could erupt at any moment.",
+    "addedDate": "2026-10-24"
+  },
+  {
+    "word": "PRECISE",
+    "level": "lower",
+    "choices": [
+      "pretty",
+      "rough",
+      "expensive",
+      "exact"
+    ],
+    "answer": "exact",
+    "definition": "exact and accurate",
+    "example": "The recipe needs a precise amount of baking soda.",
+    "addedDate": "2026-10-24"
+  },
+  {
+    "word": "DONATE",
+    "level": "lower",
+    "choices": [
+      "borrow",
+      "give",
+      "sell",
+      "decorate"
+    ],
+    "answer": "give",
+    "definition": "to give something to help others",
+    "example": "Our class will donate canned food to the shelter.",
+    "addedDate": "2026-10-24"
+  },
+  {
+    "word": "ADVERSITY",
+    "level": "middle",
+    "choices": [
+      "advantage",
+      "comfort",
+      "hardship",
+      "advertisement"
+    ],
+    "answer": "hardship",
+    "definition": "hard times; difficulty or misfortune",
+    "example": "The team showed courage in the face of adversity.",
+    "addedDate": "2026-10-24"
+  },
+  {
+    "word": "PLACATE",
+    "level": "middle",
+    "choices": [
+      "calm",
+      "anger",
+      "decorate",
+      "replace"
+    ],
+    "answer": "calm",
+    "definition": "to calm someone down by making them less angry",
+    "example": "He offered an apology to placate his upset sister.",
+    "addedDate": "2026-10-24"
+  },
+  {
+    "word": "DISPARAGE",
+    "level": "middle",
+    "choices": [
+      "praise",
+      "belittle",
+      "separate",
+      "discourage"
+    ],
+    "answer": "belittle",
+    "definition": "to speak about someone or something as unimportant or bad",
+    "example": "It is unkind to disparage other people's work.",
+    "addedDate": "2026-10-24"
+  },
+  {
+    "word": "VORACIOUS",
+    "level": "middle",
+    "choices": [
+      "truthful",
+      "talkative",
+      "generous",
+      "greedy"
+    ],
+    "answer": "greedy",
+    "definition": "wanting a great amount; very eager or hungry",
+    "example": "He is a voracious reader who finishes a book every day.",
+    "addedDate": "2026-10-24"
+  },
+  {
+    "word": "EXASPERATE",
+    "level": "middle",
+    "choices": [
+      "exaggerate",
+      "annoy",
+      "please",
+      "escape"
+    ],
+    "answer": "annoy",
+    "definition": "to annoy or frustrate greatly",
+    "example": "The constant beeping began to exasperate the whole family.",
+    "addedDate": "2026-10-24"
   }
 ]
