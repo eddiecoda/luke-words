@@ -1,7 +1,9 @@
 /* Daily words log: sends one cumulative record per kid per ET day to FormSubmit (emails codafamily@mail.grokbot.com).
    No secrets here: the endpoint is FormSubmit's public alias for that inbox.
    source=auto  -> sent when Today's set is opened, when it's finished / all cards answered, and when the page is hidden (only if something changed).
-   source=button -> the "I did my words today" button. Works in the browser (window.WordLog) and in Node (module.exports). */
+   source=button -> the "I did my words today" button.
+   source=quiz -> the weekly sentence quiz (subject "WORDS LOG <Kid> <YYYY-MM-DD> quiz"). Separate from the daily record.
+   Works in the browser (window.WordLog) and in Node (module.exports). */
 (function (root) {
   var ENDPOINT = 'https://formsubmit.co/ajax/a032bbfd0d3415b6a461ca7de57bdeda';
 
@@ -77,7 +79,32 @@
       },
       flush: function () { return send('auto').catch(function () {}); },
       button: function () { return send('button'); },
-      buttonDone: function () { return load().buttonDone; }
+      buttonDone: function () { return load().buttonDone; },
+      etTime: function () { return etTime(now()); },
+      // Weekly sentence quiz. Does not touch the daily auto/button record.
+      // info: { date_et, time_et, week, score, correct, total, missed, missed_count }
+      quiz: function (info) {
+        info = info || {};
+        var date = info.date_et || etDate(now());
+        var rec = {
+          _subject: 'WORDS LOG ' + opts.kid + ' ' + date + ' quiz',
+          _template: 'table', _captcha: 'false',
+          kid: opts.kid, date_et: date, time_et: info.time_et || etTime(now()), source: 'quiz',
+          week: info.week || '', score: String(info.score == null ? '' : info.score),
+          correct: String(info.correct == null ? '' : info.correct),
+          total: String(info.total == null ? '' : info.total),
+          missed: info.missed || 'none',
+          missed_count: String(info.missed_count == null ? '' : info.missed_count)
+        };
+        if (!doFetch) return Promise.reject(new Error('no fetch'));
+        return doFetch(ENDPOINT, { method: 'POST', keepalive: true, headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+          body: JSON.stringify(rec) })
+          .then(function (r) { return r.json(); })
+          .then(function (j) {
+            if (String(j.success) !== 'true') throw new Error(j.message || 'send failed');
+            return rec;
+          });
+      }
     };
   }
 
