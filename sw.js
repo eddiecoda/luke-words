@@ -2,9 +2,9 @@
    Only same-origin GET requests inside this app's folder are handled. Everything else (formsubmit.co, any cross-origin
    request, POSTs) is never intercepted or cached, so the daily words log goes straight to the network as before.
    index.html / words.json (and other HTML) are network-first so new words always come through; other app files are cache-first. */
-var VERSION = '2026-10-25-pwa1';
+var VERSION = '2026-10-29-sentence1';
 var CACHE = 'luke-words-' + VERSION;
-var SHELL = ['./', 'index.html', 'style.css', 'app.js', 'srs.js', 'wordlog.js', 'words.json', 'manifest.json',
+var SHELL = ['./', 'index.html', 'style.css', 'app.js', 'srs.js', 'wordlog.js', 'sentencequiz.js', 'words.json', 'manifest.json',
   'icon.svg', 'icon-192.png', 'icon-512.png', 'icon-maskable-512.png', 'apple-touch-icon.png'];
 
 self.addEventListener('install', function (e) {
@@ -41,6 +41,12 @@ self.addEventListener('fetch', function (e) {
   }
   if (path === 'words.json') {
     e.respondWith(networkFirst(req, 'words.json'));        // app.js adds ?v=Date.now(); cached copy is the offline fallback
+    return;
+  }
+  // JS and CSS are network-first so a published update is not stuck on the previous cache.
+  // The cache key drops ?v=, so the precached shell still works offline.
+  if (/\.(js|css)$/.test(path)) {
+    e.respondWith(networkFirst(req, path));
     return;
   }
   e.respondWith(caches.match(req).then(function (hit) {
