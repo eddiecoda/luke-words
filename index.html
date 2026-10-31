@@ -7,11 +7,11 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
 <title>Luke's ISEE Synonyms</title>
-<link rel="manifest" href="manifest.json?v=2026-10-31-sets1">
+<link rel="manifest" href="manifest.json?v=2026-10-31-quiz3x">
 <link rel="icon" href="icon.svg" type="image/svg+xml">
 <link rel="icon" href="icon-192.png" type="image/png" sizes="192x192">
 <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-<link rel="stylesheet" href="style.css?v=2026-10-31-sets1">
+<link rel="stylesheet" href="style.css?v=2026-10-31-quiz3x">
 </head>
 <body>
 <header>
@@ -31,9 +31,9 @@
     <div id="sentenceCard" class="card sentence-card">
       <div class="sentence-head">
         <span id="sentenceBadge" class="badge-ready">Ready</span>
-        <span class="sentence-title">Weekly Sentence Quiz</span>
+        <span class="sentence-title">Sentence Quiz · Mon, Wed, Fri</span>
       </div>
-      <p id="sentencePrompt" class="muted">Fill in the blanks with the words that gave you trouble this week.</p>
+      <p id="sentencePrompt" class="muted">Fill in the blanks with the words that gave you trouble lately.</p>
       <button class="big btn-sentence" id="btnSentence" disabled>Start quiz</button>
     </div>
     <button class="big btn-primary" id="btnToday">📅 Current set <span id="todayCount" class="pill"></span></button>
@@ -104,7 +104,7 @@
     <button class="big btn-danger" id="btnReset">🗑️ Reset my progress</button>
   </section>
 
-  <!-- Weekly sentence quiz -->
+  <!-- Sentence quiz (Mon, Wed, Fri) -->
   <section id="sentence" class="screen hidden">
     <div class="topbar">
       <button class="link" id="quitSentence">← Home</button>
@@ -112,11 +112,11 @@
     </div>
     <div class="bar"><div id="sqBar"></div></div>
     <div id="sqEmpty" class="card hidden">
-      <p>No words from this week yet. Practice your current set, then come back. This quiz stays open until you finish it.</p>
+      <p>No words to quiz yet. Practice your current set, then come back. This quiz stays open until you finish it.</p>
       <button class="big btn-ghost" id="sqEmptyHome">🏠 Home</button>
     </div>
     <div class="card qcard" id="sqCard">
-      <p class="mode">Weekly sentence quiz</p>
+      <p class="mode">Sentence quiz</p>
       <p class="prompt" id="sqHint">Pick the word that fits, or type it.</p>
       <p id="sqFallback" class="muted small hidden">This word has no sentence yet, so the clue is its meaning.</p>
       <p id="sqSentence" class="sq-sentence"></p>
@@ -152,13 +152,13 @@
   </section>
 </main>
 
-<script src="srs.js?v=2026-10-31-sets1"></script>
-<script src="wordlog.js?v=2026-10-31-sets1"></script>
-<script src="sentencequiz.js?v=2026-10-31-sets1"></script>
-<script src="app.js?v=2026-10-31-sets1"></script>
+<script src="srs.js?v=2026-10-31-quiz3x"></script>
+<script src="wordlog.js?v=2026-10-31-quiz3x"></script>
+<script src="sentencequiz.js?v=2026-10-31-quiz3x"></script>
+<script src="app.js?v=2026-10-31-quiz3x"></script>
 <script>
 if ('serviceWorker' in navigator) {
-  window.addEventListener('load', function () { navigator.serviceWorker.register('sw.js?v=2026-10-31-sets1', { scope: './' }).catch(function () {}); });
+  window.addEventListener('load', function () { navigator.serviceWorker.register('sw.js?v=2026-10-31-quiz3x', { scope: './' }).catch(function () {}); });
 }
 </script>
 </body>

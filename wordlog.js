@@ -2,7 +2,7 @@
    No secrets here: the endpoint is FormSubmit's public alias for that inbox.
    source=auto  -> sent when the current set is opened, when it's finished / all cards answered, and when the page is hidden (only if something changed).
    source=button -> the "I did my words today" button.
-   source=quiz -> the weekly sentence quiz (subject "WORDS LOG <Kid> <YYYY-MM-DD> quiz"). Separate from the daily record.
+   source=quiz -> the sentence quiz (Mon, Wed, Fri) (subject "WORDS LOG <Kid> <YYYY-MM-DD> quiz"). Separate from the daily record.
    Works in the browser (window.WordLog) and in Node (module.exports). */
 (function (root) {
   var ENDPOINT = 'https://formsubmit.co/ajax/a032bbfd0d3415b6a461ca7de57bdeda';
@@ -81,7 +81,7 @@
       button: function () { return send('button'); },
       buttonDone: function () { return load().buttonDone; },
       etTime: function () { return etTime(now()); },
-      // Weekly sentence quiz. Does not touch the daily auto/button record.
+      // Sentence quiz (Mon, Wed, Fri). Does not touch the daily auto/button record.
       // info: { date_et, time_et, week, score, correct, total, missed, missed_count }
       quiz: function (info) {
         info = info || {};

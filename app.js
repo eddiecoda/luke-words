@@ -74,19 +74,29 @@
     updateSentenceCard();
   }
 
+  // Current set, then the previous set: tops up a short sentence quiz.
+  function recentWords() {
+    var r = SRS.resolveCurrent(words, sets, progress, K); SRS.saveSets(localStorage, sets);
+    if (!r.set) return [];
+    var i = r.sets.indexOf(r.set);
+    return r.set.cards.concat(i > 0 ? r.sets[i - 1].cards : []);
+  }
+  function buildSentenceQuiz() {
+    return SQ.buildQuiz(visible(), SQ.loadAttempts(localStorage), new Date(), progress, null, recentWords());
+  }
   function updateSentenceCard() {
     var ready = SQ.isAvailable(SQ.loadState(localStorage), new Date());
-    var day = SQ.dayName();
-    var built = words.length ? SQ.buildQuiz(visible(), SQ.loadAttempts(localStorage), new Date(), progress) : null;
+    var day = SQ.nextQuizDay(new Date()).name;
+    var built = words.length ? buildSentenceQuiz() : null;
     $('sentenceBadge').textContent = ready ? 'Ready' : 'Done';
     $('sentenceBadge').className = ready ? 'badge-ready' : 'badge-done';
     $('btnSentence').disabled = !ready;
     $('btnSentence').textContent = ready
       ? (built && built.items.length ? 'Start quiz · ' + built.items.length + ' words' : 'Start quiz')
-      : 'Finished this week';
+      : 'Finished';
     $('sentencePrompt').textContent = ready
-      ? 'Fill in the blanks with the words that gave you trouble this week. The toughest ones come first, and it stays open until you finish it.'
-      : 'You finished this week\'s quiz. The next one opens ' + day + '.';
+      ? 'Fill in the blanks with the words that gave you trouble lately. The toughest ones come first, and it stays open until you finish it.'
+      : 'You finished this quiz. The next one opens ' + day + '.';
   }
 
   function start(mode) {
@@ -259,8 +269,8 @@
   }
   function startSentence() {
     if (!SQ.isAvailable(SQ.loadState(localStorage), new Date())) return;
-    var built = SQ.buildQuiz(visible(), SQ.loadAttempts(localStorage), new Date(), progress);
-    sq = { items: built.items, index: 0, correct: 0, missed: [], weekId: built.weekId, bank: SRS.shuffle(built.items.map(function (w) { return w.word; })), answered: false, done: false };
+    var built = buildSentenceQuiz();
+    sq = { items: built.items, index: 0, correct: 0, missed: [], quizId: built.quizId, bank: SRS.shuffle(built.items.map(function (w) { return w.word; })), answered: false, done: false };
     show('sentence');
     if (!sq.items.length) {
       $('sqEmpty').classList.remove('hidden');
@@ -335,11 +345,15 @@
     sq.done = true;
     var total = sq.items.length, r = sq.correct, pct = total ? r / total : 0;
     var payload = {
-      date_et: wlog.etDate(), time_et: wlog.etTime(), week: sq.weekId,
+      date_et: wlog.etDate(), time_et: wlog.etTime(), week: sq.quizId,
       score: r + '/' + total, correct: r, total: total,
       missed: sq.missed.join(', ') || 'none', missed_count: sq.missed.length
     };
-    SQ.markCompleted(localStorage, sq.weekId, payload);
+    SQ.markCompleted(localStorage, sq.quizId, payload);
+    // Coda Stars: fire-and-forget; errors are swallowed inside postQuizEvent and never block the UI.
+    try {
+      SQ.postQuizEvent(typeof fetch !== 'undefined' ? fetch : null, SQ.quizEvent(KID, sq.quizId, r, total, payload.date_et)).catch(function () {});
+    } catch (e) {}
     $('sqDoneScore').textContent = r + ' / ' + total;
     $('sqDoneEmoji').textContent = pct >= 0.9 ? '🏆' : pct >= 0.7 ? '🎉' : pct >= 0.5 ? '👍' : '💪';
     $('sqDoneTitle').textContent = pct >= 0.9 ? 'Superstar!' : pct >= 0.7 ? 'Nice work!' : pct >= 0.5 ? 'Good effort!' : 'Keep practicing!';

@@ -1,10 +1,13 @@
-/* Weekly "use it in a sentence" quiz.
+/* "Use it in a sentence" quiz, three times a week (Mon, Wed, Fri).
    Works in the browser (window.SentenceQuiz) and in Node (module.exports).
 
-   QUIZ DAY
-   The quiz opens on QUIZ_DAY and stays open until Luke finishes it.
+   QUIZ DAYS
+   A quiz opens on each day in QUIZ_DAYS and stays open until Luke finishes it.
    0 = Sunday, 1 = Monday, 2 = Tuesday, 3 = Wednesday, 4 = Thursday, 5 = Friday, 6 = Saturday.
-   Change QUIZ_DAY to move the weekly quiz. Weeks are dated in America/New_York, same as the words log.
+   QUIZ_DAYS = [1, 3, 5] means Monday, Wednesday and Friday. Days are dated in America/New_York,
+   same as the words log. The quiz id (quiz_id) is the date of the quiz day it belongs to.
+   If an older quiz is still unfinished when the next quiz day arrives, the newer one replaces it
+   (only the quiz for the most recent quiz day is ever open).
 
    SENTENCE FIELD (on each object in words.json)
    "sentence": "The garden grew an _____ crop of tomatoes, far more than the family could eat."
@@ -16,7 +19,9 @@
    - If sentence is missing or has no _____ blank, the quiz falls back to the definition:
      Which word means "…"? _____
 
-   WHAT COUNTS AS A TOUGH WORD THIS WEEK
+   WHAT COUNTS AS A TOUGH WORD (QUIZ WINDOW)
+   The window runs from the previous quiz day through today (e.g. Wednesday's quiz looks back to Monday,
+   Monday's looks back to the Friday before).
    Each flashcard answer is stored in localStorage under ATTEMPT_KEY:
    { word, ok, ms, attempt, ts, kind: "card" }.
    attempt is 1 the first time a card is shown in a session, and 2 when a miss comes back.
@@ -24,7 +29,8 @@
    another try (attempt >= 2), or took at least SLOW_MS milliseconds.
    Words are ranked worst first (misses, then extra tries, then slow answers).
    The quiz is 10 to 15 items. Tough words fill it first; if there are fewer than 10,
-   other words from that week (practiced, then newly added) top it up.
+   it tops up with other words practiced in the window, then recent words (the current set,
+   then the previous set, least-known first), then words added in the window.
    Progress saved before this tracking existed still counts: a word whose last result
    was wrong, and whose lastSeen falls in the window, is treated as one miss.
 
@@ -33,7 +39,7 @@
    does not move the flashcard box.
 */
 (function (root) {
-  var QUIZ_DAY = 0;
+  var QUIZ_DAYS = [1, 3, 5]; // Monday, Wednesday, Friday
   var MIN_ITEMS = 10;
   var MAX_ITEMS = 15;
   var SLOW_MS = 20000;
@@ -64,16 +70,67 @@
     return dt.getUTCFullYear() + '-' + String(dt.getUTCMonth() + 1).padStart(2, '0') + '-' + String(dt.getUTCDate()).padStart(2, '0');
   }
 
-  function dayName(quizDay) {
-    var d = quizDay == null ? QUIZ_DAY : quizDay;
+  function weekdayOf(ymd) {
+    var p = ymd.split('-');
+    return new Date(Date.UTC(+p[0], +p[1] - 1, +p[2])).getUTCDay();
+  }
+
+  // Accepts an array of weekdays, a single weekday, or nothing (QUIZ_DAYS).
+  function daysOf(days) {
+    var list = days == null ? QUIZ_DAYS : (Array.isArray(days) ? days : [days]);
+    list = list.filter(function (d) { return d >= 0 && d <= 6; });
+    return list.length ? list : QUIZ_DAYS;
+  }
+
+  function dayName(day) {
+    var d = day == null ? daysOf()[0] : day;
     return DAY_NAMES[d] || DAY_NAMES[0];
   }
 
-  function weekIdFor(date, quizDay) {
-    var day = quizDay == null ? QUIZ_DAY : quizDay;
+  // The quiz id: the date (ET) of the most recent quiz day on or before `date`.
+  function quizIdFor(date, days) {
+    var list = daysOf(days);
     var p = etParts(date || new Date());
-    var back = (p.wd - day + 7) % 7;
-    return addDays(p.ymd, -back);
+    for (var back = 0; back < 7; back++) {
+      if (list.indexOf((p.wd - back + 7) % 7) >= 0) return addDays(p.ymd, -back);
+    }
+    return p.ymd;
+  }
+  var weekIdFor = quizIdFor; // old name
+
+  // The quiz day before quizId (start of its tough-word window).
+  function prevQuizId(quizId, days) {
+    var list = daysOf(days), wd = weekdayOf(quizId);
+    for (var back = 1; back <= 7; back++) {
+      if (list.indexOf((wd - back + 7) % 7) >= 0) return addDays(quizId, -back);
+    }
+    return addDays(quizId, -7);
+  }
+
+  // The next quiz day strictly after `date` (ET): { ymd, name }.
+  function nextQuizDay(date, days) {
+    var list = daysOf(days);
+    var p = etParts(date || new Date());
+    for (var fwd = 1; fwd <= 7; fwd++) {
+      var wd = (p.wd + fwd) % 7;
+      if (list.indexOf(wd) >= 0) return { ymd: addDays(p.ymd, fwd), name: DAY_NAMES[wd] };
+    }
+    return { ymd: addDays(p.ymd, 7), name: DAY_NAMES[p.wd] };
+  }
+
+  // Coda Stars hook for a finished quiz. Fire-and-forget: every error is swallowed and it never blocks the UI.
+  // text/plain keeps it a "simple" cross-origin request (no CORS preflight); the body is JSON.
+  var STARS_URL = 'https://coda-kids-app.vercel.app/api/vocab/event';
+  function quizEvent(kid, quizId, correct, total, dateEt) {
+    return { kid: kid, event: 'quiz_completed', quiz_id: quizId, correct: correct | 0, total: total | 0, date_et: dateEt || etYmd(Date.now()) };
+  }
+  function postQuizEvent(fetchFn, payload) {
+    try {
+      if (!fetchFn) return Promise.resolve(false);
+      return Promise.resolve(fetchFn(STARS_URL, { method: 'POST', mode: 'cors', keepalive: true, credentials: 'omit',
+        headers: { 'Content-Type': 'text/plain;charset=UTF-8' }, body: JSON.stringify(payload) }))
+        .then(function (r) { return !!(r && r.ok); }, function () { return false; });
+    } catch (e) { return Promise.resolve(false); }
   }
 
   function loadJson(storage, key, fallback) {
@@ -112,14 +169,14 @@
 
   function loadState(storage) {
     var s = loadJson(storage, STATE_KEY, null);
-    if (!s || typeof s !== 'object') return { completedWeekId: '', pending: null };
-    return { completedWeekId: s.completedWeekId || '', pending: s.pending || null };
+    if (!s || typeof s !== 'object') return { completedQuizId: '', pending: null };
+    return { completedQuizId: s.completedQuizId || s.completedWeekId || '', pending: s.pending || null };
   }
   function saveState(storage, state) { saveJson(storage, STATE_KEY, state); }
 
-  function markCompleted(storage, weekId, pending) {
+  function markCompleted(storage, quizId, pending) {
     var s = loadState(storage);
-    s.completedWeekId = weekId;
+    s.completedQuizId = quizId;
     s.pending = pending || null;
     saveState(storage, s);
     return s;
@@ -137,9 +194,12 @@
     try { storage.removeItem(STATE_KEY); } catch (e) {}
   }
 
-  function isAvailable(state, date, quizDay) {
-    var id = weekIdFor(date || new Date(), quizDay);
-    return !state || state.completedWeekId !== id;
+  // Open unless the quiz for the most recent quiz day is already finished.
+  // An unfinished older quiz is simply replaced by the newer quiz id.
+  function isAvailable(state, date, days) {
+    var id = quizIdFor(date || new Date(), days);
+    var done = state && (state.completedQuizId || state.completedWeekId);
+    return !state || done !== id;
   }
 
   function normalizeAnswer(s) {
@@ -178,10 +238,11 @@
   function scoreOf(a) { return a.misses * 10 + a.extra * 5 + a.slow * 3; }
   function isTough(a) { return a.misses > 0 || a.extra > 0 || a.slow > 0; }
 
-  function buildQuiz(words, attempts, now, progress, quizDay) {
+  // recent: optional list of word objects (current set, then previous set) used to top up a short quiz.
+  function buildQuiz(words, attempts, now, progress, days, recent) {
     now = now || new Date();
-    var weekId = weekIdFor(now, quizDay);
-    var start = addDays(weekId, -7);
+    var quizId = quizIdFor(now, days);
+    var start = prevQuizId(quizId, days);
     var end = etYmd(now);
     var byWord = {};
     (attempts || []).forEach(function (ev) {
@@ -230,11 +291,22 @@
       return !byWord[w.word] && w.addedDate >= start && w.addedDate <= end;
     }).sort(function (a, b) { return b.addedDate.localeCompare(a.addedDate) || a.word.localeCompare(b.word); });
 
+    // Recent words, least-known first (lower flashcard box), keeping current-set-before-previous-set order on ties.
+    function boxOf(w) { var s = progress && progress[w.word]; return s && s.box != null ? s.box : -1; }
+    var recentList = (recent || []).filter(function (w) { return w && known[w.word]; })
+      .map(function (w, i) { return { w: known[w.word], i: i }; })
+      .sort(function (a, b) { return boxOf(a.w) - boxOf(b.w) || a.i - b.i; })
+      .map(function (x) { return x.w; });
+
     var picked = tough.slice(0, MAX_ITEMS).map(function (k) { return known[k]; });
+    var have = {};
+    picked.forEach(function (w) { have[w.word] = 1; });
+    function add(w) { if (w && !have[w.word]) { have[w.word] = 1; picked.push(w); } }
     var i;
-    for (i = 0; picked.length < MIN_ITEMS && i < fillers.length; i++) picked.push(known[fillers[i]]);
-    for (i = 0; picked.length < MIN_ITEMS && i < added.length; i++) picked.push(added[i]);
-    return { weekId: weekId, windowStart: start, windowEnd: end, items: picked, toughCount: Math.min(tough.length, MAX_ITEMS) };
+    for (i = 0; picked.length < MIN_ITEMS && i < fillers.length; i++) add(known[fillers[i]]);
+    for (i = 0; picked.length < MIN_ITEMS && i < recentList.length; i++) add(recentList[i]);
+    for (i = 0; picked.length < MIN_ITEMS && i < added.length; i++) add(added[i]);
+    return { quizId: quizId, weekId: quizId, windowStart: start, windowEnd: end, items: picked, toughCount: Math.min(tough.length, MAX_ITEMS) };
   }
 
   // A missed sentence-quiz word is fed back through the flashcard recorder (SRS.record).
@@ -245,9 +317,10 @@
   }
 
   var api = {
-    QUIZ_DAY: QUIZ_DAY, MIN_ITEMS: MIN_ITEMS, MAX_ITEMS: MAX_ITEMS, SLOW_MS: SLOW_MS, BLANK: BLANK,
+    QUIZ_DAYS: QUIZ_DAYS, MIN_ITEMS: MIN_ITEMS, MAX_ITEMS: MAX_ITEMS, SLOW_MS: SLOW_MS, BLANK: BLANK,
     ATTEMPT_KEY: ATTEMPT_KEY, STATE_KEY: STATE_KEY, DAY_NAMES: DAY_NAMES,
-    dayName: dayName, weekIdFor: weekIdFor, addDays: addDays, etYmd: etYmd,
+    dayName: dayName, weekIdFor: weekIdFor, quizIdFor: quizIdFor, prevQuizId: prevQuizId, nextQuizDay: nextQuizDay,
+    STARS_URL: STARS_URL, quizEvent: quizEvent, postQuizEvent: postQuizEvent, addDays: addDays, etYmd: etYmd,
     logAttempt: logAttempt, loadAttempts: loadAttempts, loadState: loadState,
     markCompleted: markCompleted, clearPending: clearPending, pending: pending, reset: reset,
     isAvailable: isAvailable, normalizeAnswer: normalizeAnswer, answersMatch: answersMatch,
