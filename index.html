@@ -7,11 +7,11 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
 <title>Luke's ISEE Synonyms</title>
-<link rel="manifest" href="manifest.json?v=2026-10-29-sentence1">
+<link rel="manifest" href="manifest.json?v=2026-10-31-sets1">
 <link rel="icon" href="icon.svg" type="image/svg+xml">
 <link rel="icon" href="icon-192.png" type="image/png" sizes="192x192">
 <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-<link rel="stylesheet" href="style.css?v=2026-10-29-sentence1">
+<link rel="stylesheet" href="style.css?v=2026-10-31-sets1">
 </head>
 <body>
 <header>
@@ -19,6 +19,7 @@
   <p class="sub">ISEE Synonyms</p>
 </header>
 
+<div id="toast" class="toast hidden" role="status" aria-live="polite"></div>
 <main id="app">
   <!-- Home -->
   <section id="home" class="screen">
@@ -26,6 +27,7 @@
       <p class="hello">Hey Luke! 👋</p>
       <p id="homeSummary" class="muted">Loading words…</p>
     </div>
+    <p id="setNotice" class="setnotice hidden"></p>
     <div id="sentenceCard" class="card sentence-card">
       <div class="sentence-head">
         <span id="sentenceBadge" class="badge-ready">Ready</span>
@@ -34,7 +36,7 @@
       <p id="sentencePrompt" class="muted">Fill in the blanks with the words that gave you trouble this week.</p>
       <button class="big btn-sentence" id="btnSentence" disabled>Start quiz</button>
     </div>
-    <button class="big btn-primary" id="btnToday">📅 Today's 20 <span id="todayCount" class="pill"></span></button>
+    <button class="big btn-primary" id="btnToday">📅 Current set <span id="todayCount" class="pill"></span></button>
     <button class="big btn-warn" id="btnReview">🔁 Review missed words <span id="reviewCount" class="pill"></span></button>
     <button class="big btn-alt" id="btnAll">🎲 Mix of all words <span id="allCount" class="pill"></span></button>
     <button class="big btn-ghost" id="btnStats">📊 My stats</button>
@@ -72,6 +74,7 @@
       <p class="emoji" id="doneEmoji">🎉</p>
       <h2 id="doneTitle">Nice work!</h2>
       <p id="doneScore" class="score"></p>
+      <p id="doneSet" class="setnotice hidden"></p>
       <p id="doneMsg" class="muted"></p>
       <div id="doneMissed"></div>
     </div>
@@ -109,7 +112,7 @@
     </div>
     <div class="bar"><div id="sqBar"></div></div>
     <div id="sqEmpty" class="card hidden">
-      <p>No words from this week yet. Practice Today's 20, then come back. This quiz stays open until you finish it.</p>
+      <p>No words from this week yet. Practice your current set, then come back. This quiz stays open until you finish it.</p>
       <button class="big btn-ghost" id="sqEmptyHome">🏠 Home</button>
     </div>
     <div class="card qcard" id="sqCard">
@@ -149,13 +152,13 @@
   </section>
 </main>
 
-<script src="srs.js?v=2026-10-29-sentence1"></script>
-<script src="wordlog.js?v=2026-10-29-sentence1"></script>
-<script src="sentencequiz.js?v=2026-10-29-sentence1"></script>
-<script src="app.js?v=2026-10-29-sentence1"></script>
+<script src="srs.js?v=2026-10-31-sets1"></script>
+<script src="wordlog.js?v=2026-10-31-sets1"></script>
+<script src="sentencequiz.js?v=2026-10-31-sets1"></script>
+<script src="app.js?v=2026-10-31-sets1"></script>
 <script>
 if ('serviceWorker' in navigator) {
-  window.addEventListener('load', function () { navigator.serviceWorker.register('sw.js?v=2026-10-29-sentence1', { scope: './' }).catch(function () {}); });
+  window.addEventListener('load', function () { navigator.serviceWorker.register('sw.js?v=2026-10-31-sets1', { scope: './' }).catch(function () {}); });
 }
 </script>
 </body>

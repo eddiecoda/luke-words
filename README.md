@@ -5,16 +5,26 @@ Progress is stored in the browser's localStorage under `luke-isee-progress-v1`, 
 
 - Test: `node test.js`
 - Local preview: `python3 -m http.server 8765` then open http://127.0.0.1:8765/
-- Add a day's words: `python3 add_words.py new_words.json` (validates, skips duplicates, sets addedDate=today)
+- Add a set: `python3 add_words.py new_words.json` (validates, skips duplicates, sets addedDate=today, set=next L-0NN, order=next)
 - Publish: `./deploy.sh` (tests, then pushes to github.com/eddiecoda/luke-words; GitHub Pages serves https://eddiecoda.github.io/luke-words/)
 
-The newest addedDate batch is "Today's 20". A miss sends a word to box 0, so it's due again right away and also comes back 3 cards later in the same session.
+Word sets: every card has `set` (string id) and `order` (number). The original daily batches use their addedDate as the set id; the bank of
+upcoming sets is L-001, L-002, ... "Current set" (stored in localStorage `luke-isee-sets-v1`) starts at the newest dated batch and moves to the
+next unfinished set in order as soon as every card in it has been answered right at least once (any mode, retries count). The app then shows
+"Set done! New words unlocked". Later bank sets stay hidden from Mix/Review/Stats until reached. When the bank runs out it stays on the last set and
+shows "New words coming soon"; add more sets with add_words.py (each run = the next L-0NN set) and it moves on automatically.
+
+Coda Stars hook: on `opened` (first time a set is opened that ET day) and `completed`, the app POSTs JSON (sent as text/plain to avoid a CORS
+preflight) to https://coda-kids-app.vercel.app/api/vocab/event: {kid: 'luke', event, set, next_set, answered, right, date_et}. Fire-and-forget:
+errors are swallowed and never block the UI.
+
+A miss sends a word to box 0, so it's due again right away and also comes back 3 cards later in the same session.
 Each right answer moves it up a box: due again in 1, 2, 4, 8, then 16 days. Right 3 times in a row counts as mastered.
 
 Daily words log (wordlog.js): each device sends one cumulative record per day (ET) to FormSubmit, which emails codafamily@mail.grokbot.com
-with subject `WORDS LOG <Kid> <YYYY-MM-DD> auto|button`. Auto records go out when Today's set is opened, when every card in it has a first
+with subject `WORDS LOG <Kid> <YYYY-MM-DD> auto|button`. Auto records go out when the current set is opened, when every card in it has a first
 answer today / a session finishes, and when the page is hidden, only if the numbers changed. The "I did my words today" button sends source=button.
-Fields: kid, date_et, time_et, source, set (newest addedDate), set_size, opened_set, answered, right (first try of the day), completed_all, button_tapped_today.
+Fields: kid, date_et, time_et, source, set (id of the set worked today, e.g. 2026-10-24 or L-001), set_size, opened_set, answered, right (first try of the day), completed_all, button_tapped_today.
 
 Weekly sentence quiz (sentencequiz.js): opens on `QUIZ_DAY` (0 = Sunday; change that one constant) and stays on the home screen with a Ready badge until Luke finishes it. It is 10–15 fill-in-the-blank sentences, worst words first. A word from that week counts as tough if he missed it, needed another try in the same session, or took at least `SLOW_MS` (20 seconds). If there are fewer than 10 tough words, the rest are other words he saw that week, then words added that week. He taps a word from the quiz's word bank or types it (case and extra spaces don't matter). A miss is sent through the normal flashcard recorder, so the word goes to box 0 and comes back in Review. When he finishes, FormSubmit sends subject `WORDS LOG <Kid> <YYYY-MM-DD> quiz` with fields kid, date_et, time_et, source (`quiz`), week (the quiz day's date), score (`8/12`), correct, total, missed (comma-separated words, or `none`), missed_count. That send does not change the daily auto/button log.
 

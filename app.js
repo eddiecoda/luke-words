@@ -3,9 +3,37 @@
   var words = [], progress = SRS.load(localStorage), session = null, sessionMode = '', answered = false, cardStarted = 0;
   var sq = null, quizSending = false;
   var SQ = SentenceQuiz;
+  var sets = SRS.loadSets(localStorage), setJustDone = null;
   var LETTERS = ['A', 'B', 'C', 'D'];
-  var wlog = WordLog.create({ kid: 'Luke', storage: localStorage, keyFn: function (w) { return w.word; },
-    setFn: function () { return SRS.todaysWords(words, todayStr()); } });
+  var KID = 'luke';
+  var K = function (w) { return w.word; };
+  var wlog = WordLog.create({ kid: 'Luke', storage: localStorage, keyFn: K,
+    setFn: function () { var c = SRS.daySet(words, sets, progress, K, WordLog.etDate()); SRS.saveSets(localStorage, sets); return c; } });
+
+  // Current set (stored in localStorage): moves to the next set once every card in it has been answered right once.
+  function cur() {
+    var res = SRS.completeIfDone(words, sets, progress, K);
+    if (res) starsEvent('completed', res.from, res.to, res);
+    var r = SRS.resolveCurrent(words, sets, progress, K); SRS.saveSets(localStorage, sets); return r;
+  }
+  function visible() { return SRS.unlockedWords(words, sets, progress, K); }
+  function starsEvent(event, setIdv, nextId, p) {
+    SRS.postStarsEvent(typeof fetch !== 'undefined' ? fetch : null, { kid: KID, event: event, set: setIdv, next_set: nextId || null,
+      answered: p.answered, right: p.right, date_et: WordLog.etDate() }).catch(function () {});
+  }
+  function openedSet(r) {
+    var id = r.set.id, d = WordLog.etDate();
+    if (sets.opened[id] === d) return;
+    sets.opened[id] = d; SRS.saveSets(localStorage, sets);
+    var nx = SRS.nextSet(r.sets, id, sets, progress, K);
+    starsEvent('opened', id, nx && nx.id, SRS.setProgress(r.set, sets, progress, K));
+  }
+  function toast(msg) {
+    var t = $('toast'); if (!t) return;
+    t.textContent = msg; t.classList.remove('hidden');
+    clearTimeout(toast.h); toast.h = setTimeout(function () { t.classList.add('hidden'); }, 3500);
+  }
+  function setDoneMsg(res) { return res.exhausted ? '🎉 Set done! New words coming soon.' : '🎉 Set done! New words unlocked.'; }
 
   function todayStr() {
     var d = new Date();
@@ -27,24 +55,29 @@
   function starName(w) { return (w.level === 'middle' ? '<span class="star">★</span> ' : '') + esc(w.word); }
 
   function refreshHome() {
-    var t = SRS.todaysWords(words, todayStr()), r = SRS.reviewWords(words, progress), st = SRS.stats(words, progress);
-    $('todayCount').textContent = t.length;
+    var c = cur(), vis = visible(), t = c.set ? c.set.cards : [], r = SRS.reviewWords(vis, progress), st = SRS.stats(vis, progress);
+    var sp = c.set ? SRS.setProgress(c.set, sets, progress, K) : { right: 0, total: 0 };
+    $('todayCount').textContent = sp.right + '/' + t.length;
     $('reviewCount').textContent = r.length;
-    $('allCount').textContent = words.length;
+    $('allCount').textContent = vis.length;
     $('btnReview').disabled = r.length === 0;
-    var newest = t.length ? t[0].addedDate : '';
     $('homeSummary').innerHTML = words.length
-      ? 'You have <b>' + words.length + '</b> words. <b>' + st.mastered + '</b> mastered so far' +
-        (st.answered ? ', <b>' + Math.round(st.accuracy * 100) + '%</b> accuracy.' : '. Start with Today\'s 20!') +
-        (newest ? '<br><span class="small">Newest words added ' + esc(newest) + '</span>' : '')
+      ? 'You have <b>' + vis.length + '</b> words. <b>' + st.mastered + '</b> mastered so far' +
+        (st.answered ? ', <b>' + Math.round(st.accuracy * 100) + '%</b> accuracy.' : '. Start with your current set!') +
+        (c.set ? '<br><span class="small">Current set ' + esc(c.set.id) + ': ' + sp.right + ' of ' + t.length + ' right so far. Get every word right once to unlock new words.</span>' : '')
       : 'No words found.';
+    var n = $('setNotice'), msg = '';
+    if (sets.notice === 'unlocked') msg = '🎉 Set done! New words unlocked.';
+    else if (c.exhausted) msg = '🎉 You finished every set! New words coming soon.';
+    if (sets.notice) { sets.notice = ''; SRS.saveSets(localStorage, sets); }
+    n.textContent = msg; n.classList.toggle('hidden', !msg);
     updateSentenceCard();
   }
 
   function updateSentenceCard() {
     var ready = SQ.isAvailable(SQ.loadState(localStorage), new Date());
     var day = SQ.dayName();
-    var built = words.length ? SQ.buildQuiz(words, SQ.loadAttempts(localStorage), new Date(), progress) : null;
+    var built = words.length ? SQ.buildQuiz(visible(), SQ.loadAttempts(localStorage), new Date(), progress) : null;
     $('sentenceBadge').textContent = ready ? 'Ready' : 'Done';
     $('sentenceBadge').className = ready ? 'badge-ready' : 'badge-done';
     $('btnSentence').disabled = !ready;
@@ -58,20 +91,21 @@
 
   function start(mode) {
     var list;
-    if (mode === 'today') list = SRS.shuffle(SRS.todaysWords(words, todayStr()));
-    else if (mode === 'review') list = SRS.reviewWords(words, progress).slice(0, 20);
+    var c = cur(), vis = visible();
+    if (mode === 'today') list = SRS.shuffle(c.set ? c.set.cards : []);
+    else if (mode === 'review') list = SRS.reviewWords(vis, progress).slice(0, 20);
     else {
       // Mix: words not mastered first (weighted toward low boxes), then a few mastered ones.
-      var notM = words.filter(function (w) { return !SRS.isMastered(progress[w.word]); });
-      var m = words.filter(function (w) { return SRS.isMastered(progress[w.word]); });
+      var notM = vis.filter(function (w) { return !SRS.isMastered(progress[w.word]); });
+      var m = vis.filter(function (w) { return SRS.isMastered(progress[w.word]); });
       list = SRS.shuffle(notM).concat(SRS.shuffle(m).slice(0, 3)).slice(0, 20);
       list = SRS.shuffle(list);
     }
     if (!list.length) return;
-    if (mode === 'today') wlog.openedSet();
-    sessionMode = mode;
+    if (mode === 'today') { wlog.openedSet(); openedSet(c); }
+    sessionMode = mode; setJustDone = null;
     session = new SRS.Session(list);
-    $('modeLabel').textContent = { today: "📅 Today's 20", review: '🔁 Review', all: '🎲 Mix' }[mode];
+    $('modeLabel').textContent = { today: '📅 Current set ' + (c.set ? c.set.id : ''), review: '🔁 Review', all: '🎲 Mix' }[mode];
     show('quiz');
     renderCard();
   }
@@ -106,7 +140,10 @@
     var first = !(w.word in session.firstTry);
     SQ.logAttempt(localStorage, { word: w.word, ok: ok, ms: Date.now() - cardStarted, attempt: first ? 1 : 2, ts: Date.now(), kind: 'card' });
     // Only the first attempt in a session counts toward his stats.
-    if (first) { SRS.record(progress, w.word, ok); SRS.save(localStorage, progress); wlog.answered(w.word, ok); }
+    if (first) { SRS.record(progress, w.word, ok); SRS.save(localStorage, progress); }
+    var res = SRS.markSetAnswer(words, sets, progress, K, w, ok); SRS.saveSets(localStorage, sets);
+    if (first) wlog.answered(w.word, ok);
+    if (res) { setJustDone = res; toast(setDoneMsg(res)); starsEvent('completed', res.from, res.to, res); }
     session.answer(ok);
     Array.prototype.forEach.call($('choices').children, function (b) {
       b.disabled = true;
@@ -139,13 +176,16 @@
     $('doneMissed').innerHTML = missed.length ? '<ul class="missedlist">' + missed.map(function (k) {
       var w = words.find(function (x) { return x.word === k; });
       return '<li><b>' + starName(w) + '</b> = ' + esc(w.answer) + '</li>'; }).join('') + '</ul>' : '';
-    $('btnDoneReview').classList.toggle('hidden', SRS.reviewWords(words, progress).length === 0);
+    $('btnDoneReview').classList.toggle('hidden', SRS.reviewWords(visible(), progress).length === 0);
+    $('doneSet').textContent = setJustDone ? setDoneMsg(setJustDone) : '';
+    $('doneSet').classList.toggle('hidden', !setJustDone);
+    if (setJustDone) { sets.notice = ''; SRS.saveSets(localStorage, sets); }
     show('done');
     wlog.flush();
   }
 
   function renderStats() {
-    var st = SRS.stats(words, progress);
+    var vis = visible(), st = SRS.stats(vis, progress);
     $('stAcc').textContent = st.answered ? Math.round(st.accuracy * 100) + '%' : '–';
     $('stMastered').textContent = st.mastered + '/' + st.total;
     $('stPracticed').textContent = st.practiced;
@@ -154,7 +194,7 @@
       var w = words.find(function (x) { return x.word === t.word; });
       return '<li><b>' + starName(w) + '</b> (' + esc(w.answer) + ') — right ' + t.correct + ' of ' + t.seen + '</li>'; }).join('');
     $('toughEmpty').classList.toggle('hidden', st.tough.length > 0);
-    $('wordTable').innerHTML = words.slice().sort(function (a, b) { return b.addedDate.localeCompare(a.addedDate) || a.word.localeCompare(b.word); })
+    $('wordTable').innerHTML = vis.slice().sort(function (a, b) { return b.addedDate.localeCompare(a.addedDate) || a.word.localeCompare(b.word); })
       .map(function (w) {
         var s = progress[w.word];
         return '<tr><td>' + starName(w) + (SRS.isMastered(s) ? ' ✅' : '') + '</td><td>' + (s ? s.correct + '/' + s.seen : '—') +
@@ -219,7 +259,7 @@
   }
   function startSentence() {
     if (!SQ.isAvailable(SQ.loadState(localStorage), new Date())) return;
-    var built = SQ.buildQuiz(words, SQ.loadAttempts(localStorage), new Date(), progress);
+    var built = SQ.buildQuiz(visible(), SQ.loadAttempts(localStorage), new Date(), progress);
     sq = { items: built.items, index: 0, correct: 0, missed: [], weekId: built.weekId, bank: SRS.shuffle(built.items.map(function (w) { return w.word; })), answered: false, done: false };
     show('sentence');
     if (!sq.items.length) {
