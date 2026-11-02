@@ -5438,5 +5438,345 @@
     "addedDate": "2026-10-31",
     "set": "L-010",
     "order": 16
+  },
+  {
+    "word": "CAPTURE",
+    "level": "lower",
+    "choices": [
+      "release",
+      "seize",
+      "capsize",
+      "chase"
+    ],
+    "answer": "seize",
+    "definition": "to catch and take control of",
+    "example": "The cat tried to capture the mouse in the barn.",
+    "sentence": "The zookeepers used a large net to _____ the escaped parrot.",
+    "addedDate": "2026-11-02",
+    "set": "L-011",
+    "order": 17
+  },
+  {
+    "word": "HAZY",
+    "level": "lower",
+    "choices": [
+      "bright",
+      "unclear",
+      "lazy",
+      "heavy"
+    ],
+    "answer": "unclear",
+    "definition": "not clear; misty or blurry",
+    "example": "The mountains looked hazy through the morning fog.",
+    "sentence": "Smoke from the fire made the sky look _____ and dim all afternoon.",
+    "addedDate": "2026-11-02",
+    "set": "L-011",
+    "order": 17
+  },
+  {
+    "word": "VIGOROUS",
+    "level": "lower",
+    "choices": [
+      "weak",
+      "energetic",
+      "vicious",
+      "valuable"
+    ],
+    "answer": "energetic",
+    "definition": "full of strength and energy",
+    "example": "After a vigorous workout, Sam needed a long drink of water.",
+    "sentence": "The coach led a _____ practice that left everyone sweaty and out of breath.",
+    "addedDate": "2026-11-02",
+    "set": "L-011",
+    "order": 17
+  },
+  {
+    "word": "CONSENT",
+    "level": "lower",
+    "choices": [
+      "refusal",
+      "agreement",
+      "content",
+      "request"
+    ],
+    "answer": "agreement",
+    "definition": "permission or agreement to do something",
+    "example": "The school needs a parent's consent before any field trip.",
+    "sentence": "Students must bring back a form with a parent's written _____ before the trip.",
+    "addedDate": "2026-11-02",
+    "set": "L-011",
+    "order": 17
+  },
+  {
+    "word": "MODEST",
+    "level": "lower",
+    "choices": [
+      "boastful",
+      "humble",
+      "model",
+      "honest"
+    ],
+    "answer": "humble",
+    "definition": "not bragging about yourself or your success",
+    "example": "Even after scoring three goals, Maya stayed modest and praised her team.",
+    "sentence": "He won the science fair but stayed _____ and never bragged about it.",
+    "addedDate": "2026-11-02",
+    "set": "L-011",
+    "order": 17
+  },
+  {
+    "word": "RESTORE",
+    "level": "lower",
+    "choices": [
+      "rest",
+      "destroy",
+      "repair",
+      "store"
+    ],
+    "answer": "repair",
+    "definition": "to bring back to an earlier, good condition",
+    "example": "Workers will restore the old church so it looks new again.",
+    "sentence": "The museum hired experts to _____ the damaged painting to its original beauty.",
+    "addedDate": "2026-11-02",
+    "set": "L-011",
+    "order": 17
+  },
+  {
+    "word": "ACCURATE",
+    "level": "lower",
+    "choices": [
+      "careless",
+      "correct",
+      "accidental",
+      "curious"
+    ],
+    "answer": "correct",
+    "definition": "exactly right; free of mistakes",
+    "example": "Check your math so your answer is accurate.",
+    "sentence": "A good scale gives an _____ weight, down to the last ounce.",
+    "addedDate": "2026-11-02",
+    "set": "L-011",
+    "order": 17
+  },
+  {
+    "word": "BARRIER",
+    "level": "lower",
+    "choices": [
+      "bridge",
+      "barrel",
+      "hurdle",
+      "path"
+    ],
+    "answer": "hurdle",
+    "definition": "something that blocks the way",
+    "example": "The fallen tree formed a barrier across the road.",
+    "sentence": "Police set up a _____ of cones and fences to keep cars off the street.",
+    "addedDate": "2026-11-02",
+    "set": "L-011",
+    "order": 17
+  },
+  {
+    "word": "FATIGUE",
+    "level": "lower",
+    "choices": [
+      "energy",
+      "tiredness",
+      "fatness",
+      "anger"
+    ],
+    "answer": "tiredness",
+    "definition": "a feeling of being very tired",
+    "example": "After the long hike, fatigue set in and we all wanted to nap.",
+    "sentence": "After running the marathon, she felt such _____ that she slept for twelve hours.",
+    "addedDate": "2026-11-02",
+    "set": "L-011",
+    "order": 17
+  },
+  {
+    "word": "COMPREHEND",
+    "level": "lower",
+    "choices": [
+      "complete",
+      "understand",
+      "compare",
+      "ignore"
+    ],
+    "answer": "understand",
+    "definition": "to grasp the meaning of something",
+    "example": "It took me two readings to comprehend the poem.",
+    "sentence": "The directions were so confusing that no one could _____ what to do.",
+    "addedDate": "2026-11-02",
+    "set": "L-011",
+    "order": 17
+  },
+  {
+    "word": "VIBRANT",
+    "level": "lower",
+    "choices": [
+      "dull",
+      "lively",
+      "violent",
+      "valuable"
+    ],
+    "answer": "lively",
+    "definition": "full of energy, life, or bright color",
+    "example": "The market was vibrant with music, colors, and crowds.",
+    "sentence": "The mural's _____ reds and yellows made the gray wall come alive.",
+    "addedDate": "2026-11-02",
+    "set": "L-011",
+    "order": 17
+  },
+  {
+    "word": "ANCESTOR",
+    "level": "lower",
+    "choices": [
+      "descendant",
+      "forefather",
+      "enemy",
+      "neighbor"
+    ],
+    "answer": "forefather",
+    "definition": "a family member who lived long before you",
+    "example": "My ancestor sailed from Italy more than a hundred years ago.",
+    "sentence": "Grandma showed us a photo of an _____ who lived on a farm in Ireland in the 1800s.",
+    "addedDate": "2026-11-02",
+    "set": "L-011",
+    "order": 17
+  },
+  {
+    "word": "ROUTINE",
+    "level": "lower",
+    "choices": [
+      "surprise",
+      "habit",
+      "route",
+      "rumor"
+    ],
+    "answer": "habit",
+    "definition": "a usual, regular way of doing things",
+    "example": "Brushing my teeth is part of my bedtime routine.",
+    "sentence": "Every morning he follows the same _____: shower, breakfast, then the bus.",
+    "addedDate": "2026-11-02",
+    "set": "L-011",
+    "order": 17
+  },
+  {
+    "word": "DEPRIVE",
+    "level": "lower",
+    "choices": [
+      "give",
+      "deny",
+      "derive",
+      "deserve"
+    ],
+    "answer": "deny",
+    "definition": "to keep something needed or wanted away from someone",
+    "example": "Staying up late will deprive you of sleep.",
+    "sentence": "Taking away recess would _____ the kids of their only chance to run around.",
+    "addedDate": "2026-11-02",
+    "set": "L-011",
+    "order": 17
+  },
+  {
+    "word": "FORTUNATE",
+    "level": "lower",
+    "choices": [
+      "unlucky",
+      "lucky",
+      "fortified",
+      "cautious"
+    ],
+    "answer": "lucky",
+    "definition": "having good luck",
+    "example": "We were fortunate that the rain stopped before the game.",
+    "sentence": "No one was hurt in the crash, so the driver was very _____.",
+    "addedDate": "2026-11-02",
+    "set": "L-011",
+    "order": 17
+  },
+  {
+    "word": "BENEFACTOR",
+    "level": "middle",
+    "choices": [
+      "enemy",
+      "patron",
+      "beneficiary",
+      "factory"
+    ],
+    "answer": "patron",
+    "definition": "a person who gives money or help to a person or cause",
+    "example": "A generous benefactor paid for the new library wing.",
+    "sentence": "Thanks to a wealthy _____, the town's hospital got a brand-new wing.",
+    "addedDate": "2026-11-02",
+    "set": "L-011",
+    "order": 17
+  },
+  {
+    "word": "INSOLENT",
+    "level": "middle",
+    "choices": [
+      "polite",
+      "rude",
+      "insoluble",
+      "lazy"
+    ],
+    "answer": "rude",
+    "definition": "boldly disrespectful",
+    "example": "The insolent student rolled his eyes and talked back to the teacher.",
+    "sentence": "The _____ boy smirked and talked back when the principal asked him to sit down.",
+    "addedDate": "2026-11-02",
+    "set": "L-011",
+    "order": 17
+  },
+  {
+    "word": "EXEMPLARY",
+    "level": "middle",
+    "choices": [
+      "ordinary",
+      "admirable",
+      "extra",
+      "exempt"
+    ],
+    "answer": "admirable",
+    "definition": "so good that it serves as an example for others",
+    "example": "Her exemplary behavior earned her the citizenship award.",
+    "sentence": "Because of his _____ attendance and effort, Leo was chosen as Student of the Month.",
+    "addedDate": "2026-11-02",
+    "set": "L-011",
+    "order": 17
+  },
+  {
+    "word": "CONTRITE",
+    "level": "middle",
+    "choices": [
+      "proud",
+      "sorry",
+      "contrary",
+      "content"
+    ],
+    "answer": "sorry",
+    "definition": "feeling deeply sorry for doing wrong",
+    "example": "The contrite boy apologized for breaking the window.",
+    "sentence": "Feeling truly _____, she apologized to her friend for spreading the rumor.",
+    "addedDate": "2026-11-02",
+    "set": "L-011",
+    "order": 17
+  },
+  {
+    "word": "RANCOR",
+    "level": "middle",
+    "choices": [
+      "kindness",
+      "bitterness",
+      "rank",
+      "noise"
+    ],
+    "answer": "bitterness",
+    "definition": "deep, long-lasting anger or resentment",
+    "example": "Even years after the argument, he felt rancor toward his old friend.",
+    "sentence": "Years after losing the election, he still felt deep _____ toward the winner.",
+    "addedDate": "2026-11-02",
+    "set": "L-011",
+    "order": 17
   }
 ]
