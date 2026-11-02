@@ -5460,10 +5460,10 @@
     "word": "HAZY",
     "level": "lower",
     "choices": [
-      "bright",
       "unclear",
       "lazy",
-      "heavy"
+      "heavy",
+      "bright"
     ],
     "answer": "unclear",
     "definition": "not clear; misty or blurry",
@@ -5477,10 +5477,10 @@
     "word": "VIGOROUS",
     "level": "lower",
     "choices": [
-      "weak",
-      "energetic",
       "vicious",
-      "valuable"
+      "weak",
+      "valuable",
+      "energetic"
     ],
     "answer": "energetic",
     "definition": "full of strength and energy",
@@ -5494,10 +5494,10 @@
     "word": "CONSENT",
     "level": "lower",
     "choices": [
-      "refusal",
-      "agreement",
       "content",
-      "request"
+      "request",
+      "refusal",
+      "agreement"
     ],
     "answer": "agreement",
     "definition": "permission or agreement to do something",
@@ -5511,9 +5511,9 @@
     "word": "MODEST",
     "level": "lower",
     "choices": [
-      "boastful",
-      "humble",
       "model",
+      "humble",
+      "boastful",
       "honest"
     ],
     "answer": "humble",
@@ -5528,10 +5528,10 @@
     "word": "RESTORE",
     "level": "lower",
     "choices": [
-      "rest",
-      "destroy",
       "repair",
-      "store"
+      "store",
+      "destroy",
+      "rest"
     ],
     "answer": "repair",
     "definition": "to bring back to an earlier, good condition",
@@ -5545,10 +5545,10 @@
     "word": "ACCURATE",
     "level": "lower",
     "choices": [
-      "careless",
+      "curious",
       "correct",
-      "accidental",
-      "curious"
+      "careless",
+      "accidental"
     ],
     "answer": "correct",
     "definition": "exactly right; free of mistakes",
@@ -5562,10 +5562,10 @@
     "word": "BARRIER",
     "level": "lower",
     "choices": [
+      "path",
       "bridge",
       "barrel",
-      "hurdle",
-      "path"
+      "hurdle"
     ],
     "answer": "hurdle",
     "definition": "something that blocks the way",
@@ -5579,9 +5579,9 @@
     "word": "FATIGUE",
     "level": "lower",
     "choices": [
-      "energy",
       "tiredness",
       "fatness",
+      "energy",
       "anger"
     ],
     "answer": "tiredness",
@@ -5596,9 +5596,9 @@
     "word": "COMPREHEND",
     "level": "lower",
     "choices": [
+      "compare",
       "complete",
       "understand",
-      "compare",
       "ignore"
     ],
     "answer": "understand",
@@ -5614,9 +5614,9 @@
     "level": "lower",
     "choices": [
       "dull",
-      "lively",
+      "valuable",
       "violent",
-      "valuable"
+      "lively"
     ],
     "answer": "lively",
     "definition": "full of energy, life, or bright color",
@@ -5630,10 +5630,10 @@
     "word": "ANCESTOR",
     "level": "lower",
     "choices": [
-      "descendant",
-      "forefather",
+      "neighbor",
       "enemy",
-      "neighbor"
+      "forefather",
+      "descendant"
     ],
     "answer": "forefather",
     "definition": "a family member who lived long before you",
@@ -5647,9 +5647,9 @@
     "word": "ROUTINE",
     "level": "lower",
     "choices": [
-      "surprise",
-      "habit",
       "route",
+      "habit",
+      "surprise",
       "rumor"
     ],
     "answer": "habit",
@@ -5664,8 +5664,8 @@
     "word": "DEPRIVE",
     "level": "lower",
     "choices": [
-      "give",
       "deny",
+      "give",
       "derive",
       "deserve"
     ],
@@ -5681,10 +5681,10 @@
     "word": "FORTUNATE",
     "level": "lower",
     "choices": [
+      "cautious",
       "unlucky",
       "lucky",
-      "fortified",
-      "cautious"
+      "fortified"
     ],
     "answer": "lucky",
     "definition": "having good luck",
@@ -5698,10 +5698,10 @@
     "word": "BENEFACTOR",
     "level": "middle",
     "choices": [
+      "factory",
       "enemy",
-      "patron",
       "beneficiary",
-      "factory"
+      "patron"
     ],
     "answer": "patron",
     "definition": "a person who gives money or help to a person or cause",
@@ -5715,10 +5715,10 @@
     "word": "INSOLENT",
     "level": "middle",
     "choices": [
-      "polite",
+      "lazy",
       "rude",
-      "insoluble",
-      "lazy"
+      "polite",
+      "insoluble"
     ],
     "answer": "rude",
     "definition": "boldly disrespectful",
@@ -5732,8 +5732,8 @@
     "word": "EXEMPLARY",
     "level": "middle",
     "choices": [
-      "ordinary",
       "admirable",
+      "ordinary",
       "extra",
       "exempt"
     ],
@@ -5750,9 +5750,9 @@
     "level": "middle",
     "choices": [
       "proud",
+      "content",
       "sorry",
-      "contrary",
-      "content"
+      "contrary"
     ],
     "answer": "sorry",
     "definition": "feeling deeply sorry for doing wrong",
@@ -5766,10 +5766,10 @@
     "word": "RANCOR",
     "level": "middle",
     "choices": [
-      "kindness",
-      "bitterness",
+      "noise",
       "rank",
-      "noise"
+      "bitterness",
+      "kindness"
     ],
     "answer": "bitterness",
     "definition": "deep, long-lasting anger or resentment",
