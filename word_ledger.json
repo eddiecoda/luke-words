@@ -1,0 +1,3602 @@
+{
+  "ABUNDANT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "TIMID": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "RELUCTANT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "FRAGILE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "VACANT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "CONCEAL": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "DREARY": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "FEEBLE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "HASTY": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "COURTEOUS": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "VAST": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "PERIL": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ANCIENT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "DECLINE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "CANDID": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "METICULOUS": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "BENEVOLENT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ELUSIVE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "DILIGENT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "AMIABLE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "BRISK": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "CAUTIOUS": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "DRENCHED": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "FLIMSY": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "GRASP": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "HAZARD": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "IMMENSE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "MOIST": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "NOVEL": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "PONDER": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "RAVENOUS": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "SCARCE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "SLENDER": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "VIVID": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "WEARY": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "AMBIGUOUS": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "TENACIOUS": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "FRIVOLOUS": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "PRUDENT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "INDIFFERENT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "GLEAM": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ROAM": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "SOAR": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "CLUMSY": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "PROHIBIT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "DEPART": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "FRIGID": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "GLOOMY": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "NIMBLE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "SINCERE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "STURDY": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ABSURD": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ANXIOUS": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "OBSTACLE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "COMMENCE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "INQUISITIVE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "OBSTINATE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "JUBILANT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ARDUOUS": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "DEARTH": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ABANDON": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "HUMID": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "PLEAD": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "TRIUMPH": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "AUDACIOUS": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "WRATH": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ELEGANT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "FLOURISH": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "SERENE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "VERACITY": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "YEARN": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "DIMINUTIVE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "MISHAP": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "PERPLEXED": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "SHREWD": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "CRAFTY": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "BLUNT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "LOATHE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "DISMAY": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "GENUINE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "GENTLE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "RAPID": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "FURIOUS": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "DAMP": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "FEAT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "COMPANION": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ASSIST": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "BOAST": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "CONSUME": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "DISTANT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "DESCEND": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "HUMOROUS": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "MEND": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ODOR": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "VICTOR": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ADMONISH": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "CUMBERSOME": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "INDOLENT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "MUNDANE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ALLEVIATE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "FRAGRANT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "TIDY": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "GIGANTIC": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "VANISH": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "SHIVER": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "CHERISH": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "SWIFT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "FEROCIOUS": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "DREAD": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "GRUMBLE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "LOYAL": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "MERRY": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ERUPT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "PRECISE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "DONATE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ADVERSITY": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "PLACATE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "DISPARAGE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "VORACIOUS": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "EXASPERATE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "MELANCHOLY": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "STUBBORN": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "DAUNTLESS": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "WICKED": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "EERIE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "VALIANT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "CRAVE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ALERT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ORDEAL": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "LANGUID": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ENDURE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "CHAGRIN": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "GLEE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "FRET": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "OBEDIENT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "URGENT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "SOOTHE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "PALTRY": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "MOURN": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "FRANTIC": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "RECALL": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "FRAIL": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "SPARSE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "BURDEN": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "NEGLECT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "STERN": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "LUMINOUS": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "CURTAIL": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "APPREHENSIVE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "REVEAL": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "DELUGE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "NUMEROUS": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "DEFIANT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "THRIFTY": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "FLAW": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "KNACK": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "MENIAL": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "GLUM": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "VENTURE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "SHABBY": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "RADIANT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ABOLISH": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "BLEMISH": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "PROMPT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "FOE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "IMPECCABLE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "TRUDGE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "CORROBORATE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "EXPEL": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "GROGGY": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "JEER": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "LURK": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "RUGGED": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "TOIL": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "TREMBLE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ESSENTIAL": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "STINGY": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "SULLEN": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "DISHEVELED": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "DEPLORABLE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "CAPTIVATE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "DEVIOUS": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "COURAGEOUS": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "BARREN": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "CRYPTIC": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "RIDICULE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "DURABLE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "DISCARD": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "SCORCH": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "LIBERATE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "AGILE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "SURPLUS": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "STEALTHY": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "GLISTEN": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "WITHER": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "EMINENT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "FAMISHED": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ADEPT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "OPPORTUNE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "VEX": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "BOUNTIFUL": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "COMMOTION": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ELEVATE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "CONVOLUTED": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "BEWILDER": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "HEED": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "PURSUE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "TATTERED": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "SCOLD": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "TEMPESTUOUS": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "QUANDARY": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "HAPHAZARD": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "BICKER": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "PRECIOUS": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "WRETCHED": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "BRILLIANT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "LAVISH": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "INFERIOR": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "IMMACULATE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "DENSE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "SUPERB": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "BASHFUL": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "SPLENDID": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "LOFTY": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "PRIMITIVE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "RAGGED": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "PROSPER": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "SINISTER": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ALOOF": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "SHUN": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "MERIT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ASSEMBLE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "EXHAUSTED": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "COLOSSAL": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "STARTLE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ENTHRALL": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "SQUANDER": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "DETECT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "COMPLACENT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ENCOURAGE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "DECEIVE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "INGENIOUS": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "REMEDY": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ADJACENT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "SOLEMN": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "SECLUDED": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "EVIDENT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "UNRULY": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "CLARIFY": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "DWELL": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "DUBIOUS": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "DROWSY": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "WISTFUL": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ANGUISH": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "DEVOUR": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ASTUTE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "DEFT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "FORBID": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "IGNITE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "DAZZLE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "SMUG": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "DESOLATE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "FORTUITOUS": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "DRAB": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "EXQUISITE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "SLUGGISH": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "INTENSE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "LINGER": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "KEEN": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "GLOAT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "DETRIMENTAL": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "BRAWNY": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "RESOLUTE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "BRUSQUE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "MIMIC": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "IDLE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "QUARREL": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "SPACIOUS": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "CRUDE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "GRATEFUL": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "OBTAIN": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "BLEAK": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "MENACE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "SHATTER": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "PENSIVE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ROBUST": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "REMORSE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "DISCORD": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "IRATE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "INTREPID": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "SUBMERGE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "MEEK": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "OBSTRUCT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "MAGNIFY": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "HURL": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "PUNCTUAL": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "SUMMIT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "DESPISE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "REJOICE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "DAINTY": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "TAUNT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "COAX": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "UNKEMPT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "CREDIBLE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "SCOWL": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "QUAINT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "BOISTEROUS": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "FORMIDABLE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "PERSUADE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "LEGIBLE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "DEMOLISH": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "STAGNANT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "MAJESTIC": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "MINGLE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "EDIBLE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "CEASE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "EMERGE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "GALLANT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "MURKY": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "OBSERVE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "CAPTURE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "HAZY": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "VIGOROUS": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "CONSENT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "MODEST": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "RESTORE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ACCURATE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "BARRIER": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "FATIGUE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "COMPREHEND": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "VIBRANT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ANCESTOR": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ROUTINE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "DEPRIVE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "FORTUNATE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "BENEFACTOR": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "INSOLENT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "EXEMPLARY": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "CONTRITE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "RANCOR": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ABNORMAL": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ABDICATE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ABHOR": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ABODE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ABOMINABLE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ABROAD": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ABRIDGE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ACCEPTABLE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ABSTRACT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ACCESS": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ABYSS": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ACCOMMODATE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ACCLAIM": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ACCOMPANY": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ACCORD": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ACCUMULATE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ADAGE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ACQUAINT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ADAMANT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ADAPT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ADVERSE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ADJOINING": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "AGGRAVATE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ADMIRE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "AIL": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ADMISSION": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "AKIN": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ADVANCE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ALLEGE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ADVANTAGE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ALTRUISTIC": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "AFAR": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "AMBIVALENT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "AFFECTION": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ANIMATED": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "AGONY": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ANIMOSITY": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "AGRICULTURE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "APT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "AID": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ARTICULATE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ALIBI": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ASSERT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ALLEGIANCE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ASSESS": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ALLITERATION": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "AUDIBLE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ALOFT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "AUTHENTIC": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ALTERNATIVE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "BANAL": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ALTITUDE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "BELITTLE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "AMBITION": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "BELLIGERENT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "AMNESIA": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "BENIGN": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "AMPLE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "BIASED": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ANALYSIS": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "BLISS": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ANECDOTE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "BRASH": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ANNOUNCE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "BURLY": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ANONYMOUS": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "CANDOR": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ANTAGONIST": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "CHARISMATIC": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ANTIC": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "CITE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ANTICIPATE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "CLICHE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ANXIETY": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "COALESCE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "APATHY": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "COHERENT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "APPAREL": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "COLLEAGUE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "APPEAL": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "COMPATIBLE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "APPOINT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "CONCEDE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "APPROVAL": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "CONDONE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ARCHITECTURE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "CONFOUND": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ARID": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "CONGEAL": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "AROMA": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "CONGENIAL": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ARROGANCE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "CONSENSUS": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ARTIFICIAL": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "CONTEMPTUOUS": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ASSOCIATE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "CONTRADICT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ASSORTED": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "CONVENTIONAL": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ASSUME": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "COUNSEL": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ASTOUND": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "CREVICE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ATTAIN": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "CYNICAL": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "AUDITION": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "DAUNTING": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "AUTHORITY": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "DEBUNK": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "AVERT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "DECOMPOSE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "AVOIDANCE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "DECREE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "AWE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "DEFICIENT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "AWKWARD": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "DEJECTED": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "BANQUET": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "DELUSION": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "BARTER": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "DESPAIR": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "DETERIORATE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "BEACON": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "DEXTERITY": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "BELIEF": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "DILUTE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "BENEFICIAL": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "DINGY": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "BLUNDER": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "DISDAIN": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "BONUS": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "DISTORT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "BOUNDARY": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "DOCILE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "BOYCOTT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "DORMANT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "BRAVERY": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ECSTASY": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "BRAWL": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "EGOTIST": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "BRIEF": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "EGRESS": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "BULGE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ELABORATE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "BUNGLE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ELATION": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "CAMARADERIE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ELONGATE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "CAMPAIGN": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ELOQUENT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "CAPACITY": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "EMBELLISH": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "CHARTER": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "EMBROIDER": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "CHRONOLOGICAL": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "EMPATHY": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "CIRCULATE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "EMPHATIC": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "CIRCUMSTANCE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "EMULATE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "CITIZENSHIP": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ENDEAVOR": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "CIVIC": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ENGAGING": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "CLARITY": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "EPIC": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "CLASP": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "EPILOGUE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "CLIMAX": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "EPOCH": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "COINCIDE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "EQUIVALENT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "COINCIDENCE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ERADICATE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "COLLABORATE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "EXALT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "COLLISION": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "EXCAVATE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "COLONIAL": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "EXCERPT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "COMBINATION": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "EXILE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "COMMEND": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "EXPLOIT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "COMMENTARY": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "EXTOL": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "COMPACT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "EXTRANEOUS": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "COMPARABLE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "EXTROVERT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "COMPASSIONATE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "EXUBERANCE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "COMPEL": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "EXUBERANT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "COMPENSATE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "FACET": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "COMPOSE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "FALTER": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "COMPOSURE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "FICKLE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "CONCISE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "FIDELITY": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "CONCLUDE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "FLUCTUATE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "CONDEMN": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "FRINGE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "CONFESSION": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "FRUGAL": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "CONFIDENT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "FUNDAMENTAL": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "CONFLICT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "FUSION": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "CONSEQUENCE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "GAUNT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "CONSERVE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "GLUTTON": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "CONSIDERATION": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "GRIM": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "CONSTANT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "GRIMACE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "CONSTITUTION": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "HACKNEYED": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "CONSTRUCTIVE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "HEADSTRONG": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "CONTAGIOUS": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "HOVEL": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "CONTAMINATE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "HYPOCRITE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "CONTEXT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "HYSTERICAL": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "CONTINENTAL": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ILLUMINATE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "CONTINUOUS": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "IMPASSE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "CONTROVERSY": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "IMPEDIMENT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "CONVENIENT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "IMPLORE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "CONVINCE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "IMPLY": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "COOPERATE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "INCOMPETENT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "INDIGNANT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "COPE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "INDUSTRIAL": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "CORDIAL": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "INFURIATE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "CORPORATE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "INGENUITY": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "CORRODE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "INITIATE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "COUNCIL": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "INQUIRY": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "COWARD": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "INSCRIBE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "CRISIS": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "INSIPID": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "CULTIVATE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "INTANGIBLE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "CULTURE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "INTEGRITY": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "CUMULATIVE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "INTROVERT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "CUSTODY": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "IRONIC": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "DEBT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ITINERANT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "DECAY": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "JUBILATION": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "DECEIT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "KINETIC": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "DECENT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "LAMENT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "DECLARE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "LIVID": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "DEFEAT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "LUSH": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "DEFEND": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "MALICIOUS": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "DELAY": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "MAR": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "DELIBERATE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "MEMOIR": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "DELICATE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "METAPHOR": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "DELUDE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "METHODICAL": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "DEPLETE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "MIRTH": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "DETAIN": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "MONOLOGUE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "DETRIMENT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "MONOTONOUS": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "DISCREET": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "MOSAIC": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "DOCUMENT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "NARRATIVE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ENGROSS": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "NOTORIOUS": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ENVELOP": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "NOVICE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ERA": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "OBJECTIVE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "EVACUATE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "OBSCURE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "EXAGGERATE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "OMNISCIENT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "EXCEL": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "OPTIMIST": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "EXHILARATION": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ORATION": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "EXPEDITION": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ORNATE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "EXTERMINATE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "PACT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "EXTINCT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "PARALLEL": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "EXTRAORDINARY": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "PARAMOUNT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "EXULT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "PARCH": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "FATALITY": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "PARODY": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "FERRY": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "PASSIVE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "FEUD": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "PEDESTRIAN": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "FLAMMABLE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "PENITENT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "FLATTER": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "PESSIMIST": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "FRANK": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "PIOUS": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "FUSE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "PLAUSIBLE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "GENRE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "PLUMAGE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "GRACIOUS": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "PLUNDER": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ILLEGIBLE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "PRAGMATIC": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "IMPROVISE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "PREMISE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "INANIMATE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "PRESUME": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "INCENTIVE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "PROCURE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "INEPT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "PROFANE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "INFEST": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "PROFOUND": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "INFLATE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "PROLIFIC": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "INHABIT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "PROLOGUE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "INNATE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "PROSPEROUS": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "INSIST": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "PROTAGONIST": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "INTEGRATE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "PUNGENT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "RAMBLE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "INTERCEPT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "RANCID": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "INTERPRET": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "RATIFY": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "INTRIGUE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "RECEDE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "INVALUABLE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "RECUPERATE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "JEOPARDY": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "REDUNDANT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "JEST": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "REFRAIN": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "KIN": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "RELINQUISH": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "LOOM": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "REMINISCENCE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "MANIPULATE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "RENDEZVOUS": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "MERGE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "REPRIMAND": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "MOCK": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "REPUGNANT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "OBLIVIOUS": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "RESERVED": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "OBSOLETE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "RESILIENT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "OMEN": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "REVERE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ORNAMENT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "RIFT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "OUTMODED": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "RIGOR": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "PARDON": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "RUSE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "PASTURE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "SAGA": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "PECULIAR": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "SAGE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "PENINSULA": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "SARCASTIC": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "PERISH": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "SCORN": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "PERSECUTE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "SEDATE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "PETRIFY": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "SENTIMENTAL": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "PLACID": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "SKEPTICAL": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "PLUMMET": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "SLANDER": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "POSTURE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "SNUB": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "POVERTY": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "SOLILOQUY": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "PREDICAMENT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "SOMBER": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "PRELIMINARY": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "SPORADIC": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "PROMINENT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "SQUALID": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "PUNCTUATE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "STEADFAST": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "QUENCH": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "STRENUOUS": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "QUIVER": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "SUBDUED": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "RECREATION": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "SUBJECTIVE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "REMOTE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "SUBMISSIVE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "SANCTUARY": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "SUCCINCT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "SCOUR": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "SUPERFICIAL": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "SEAR": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "SUPERFLUOUS": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "SEGREGATE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "SURPASS": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "SEVER": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "SUSTAIN": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "SHEATHE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "SYNOPSIS": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "SHED": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "TACT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "SKEPTIC": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "TEDIOUS": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "SKIRMISH": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "TEMPERAMENT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "SLITHER": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "TEPID": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "SOLAR": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "TRANSLUCENT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "SPECIES": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "TREK": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "SPLENDOR": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "VENERATE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "SQUALOR": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "VERSATILE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "STAMPEDE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "VIGOR": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "STIFLE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "VIVACIOUS": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "SUPPLEMENT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "VOLATILE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "UNIFORM": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "VULGAR": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "VACATE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "WANE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "VANQUISH": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "WHIMSICAL": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "VELOCITY": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "WILY": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "VERDICT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "WINCE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "VIOLATE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "WITHSTAND": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "WITHDRAW": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "WRITHE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "PREFIX: A- / AN- / ANTI-": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "PREFIX: CIRCUM": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "PREFIX: CO- / COM- / CON-": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "PREFIX: CONTRA": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "PREFIX: DIA": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "PREFIX: DYS": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "PREFIX: E- / EX-": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "PREFIX: IL- / IM- / IN-": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "PREFIX: INTER": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "PREFIX: INTRA": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "PREFIX: MONO": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "PREFIX: NON": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "PREFIX: PAN": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "PREFIX: PERI": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "PREFIX: POLY": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "PREFIX: POST": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "PREFIX: PRE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "PREFIX: PRO": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "PREFIX: RE-": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "PREFIX: SUB": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "PREFIX: SUPER- / SUR-": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "PREFIX: SYN- / SYM-": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "PREFIX: TRANS": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "PREFIX: UN": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ROOT: AG / ACT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ROOT: AMBI": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ROOT: AMBUL": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ROOT: AMI / AMO": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ROOT: ANIM": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ROOT: ANTHRO": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ROOT: AUD": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ROOT: AUTO": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ROOT: BELLI": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ROOT: BEN": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ROOT: BIBLIO": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ROOT: BIO": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ROOT: CARN": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ROOT: CHRON": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ROOT: CIS / CISE": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ROOT: CIVI": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ROOT: CORP": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ROOT: CRED": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ROOT: DE- / DIS-": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ROOT: DEM": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ROOT: DIC / DICT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ROOT: DOMIN": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ROOT: EM- / EN-": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ROOT: EQU": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ROOT: ERR": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ROOT: FORT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ROOT: GRAPH / GRAM": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ROOT: LAUD": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ROOT: LOC / LOQ": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ROOT: LUC": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ROOT: MAG / MAGNA": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ROOT: MAL": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ROOT: MIS": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ROOT: MORI / MORT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ROOT: MORPH": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ROOT: NAT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ROOT: NOM": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ROOT: NOV": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ROOT: OMNI": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ROOT: PAC": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ROOT: PATH": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ROOT: PHIL": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ROOT: PORT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ROOT: POTEN": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ROOT: PSYCH": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ROOT: REG / RECT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ROOT: SACR / SECR": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ROOT: SCRIBE / SCRIPT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ROOT: SOMN": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ROOT: TANG / TACT": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ROOT: TERR": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ROOT: URB": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ROOT: VAC": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ROOT: VER": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ROOT: VERB": {
+    "streak": 0,
+    "status": "untested"
+  },
+  "ROOT: VIT / VIV": {
+    "streak": 0,
+    "status": "untested"
+  }
+}
