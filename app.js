@@ -102,13 +102,13 @@
   function start(mode) {
     var list;
     var c = cur(), vis = visible();
-    if (mode === 'today') list = SRS.shuffle(c.set ? c.set.cards : []);
+    if (mode === 'today') list = SRS.shuffle((c.set ? c.set.cards : []).filter(function (w) { return !SRS.isMastered(progress[w.word]); }));
     else if (mode === 'review') list = SRS.reviewWords(vis, progress).slice(0, 20);
     else {
-      // Mix: words not mastered first (weighted toward low boxes), then a few mastered ones.
+      // Mix: words not mastered first; mastered words have dropped out.
       var notM = vis.filter(function (w) { return !SRS.isMastered(progress[w.word]); });
-      var m = vis.filter(function (w) { return SRS.isMastered(progress[w.word]); });
-      list = SRS.shuffle(notM).concat(SRS.shuffle(m).slice(0, 3)).slice(0, 20);
+      // Mastered words have dropped out; they are not added back in.
+      list = SRS.shuffle(notM).slice(0, 20);
       list = SRS.shuffle(list);
     }
     if (!list.length) return;
