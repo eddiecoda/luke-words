@@ -1,0 +1,6 @@
+{
+ "note": "Muse-supplied sentence sets, served in this order. Each set is served once; a finished set is locked forever on the device. To publish: add the file here and append an entry.",
+ "sets": [
+  { "id": "APP-SENT-2026-11-23", "file": "app_sentence_set_2026-11-23.json" }
+ ]
+}

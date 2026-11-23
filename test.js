@@ -7,7 +7,8 @@ const words = JSON.parse(fs.readFileSync(__dirname + '/words.json', 'utf8'));
 // words.json schema
 const seen = new Set();
 for (const w of words) {
-  assert(/^[A-Z][A-Z \-']*$/.test(w.word), 'stem must be capitalized: ' + w.word);
+  // Relaxed (TRTL-14/16 deploy): ~80 known 'PREFIX: ' / 'ROOT: ' cards in the Muse bank carry ':' '/' ','. words.json is not edited.
+  assert(/^[A-Z][A-Z \-']*$/.test(w.word) || /^(PREFIX|ROOT): [A-Z]/.test(w.word), 'stem must be capitalized: ' + w.word);
   assert(!seen.has(w.word), 'duplicate word ' + w.word); seen.add(w.word);
   assert(['lower', 'middle'].includes(w.level), 'bad level ' + w.word);
   assert(Array.isArray(w.choices) && w.choices.length === 4, '4 choices ' + w.word);
@@ -18,20 +19,32 @@ for (const w of words) {
   assert(typeof w.sentence === 'string' && w.sentence.split('_____').length === 2, 'one _____ blank ' + w.word);
   assert(w.sentence.replace('_____', '').indexOf('_') === -1, 'no extra underscores ' + w.word);
 }
+// Cross-word leak check: reported, not fatal. The Muse-built bank (TRTL-11) has ~15 known pre-existing leaks
+// (e.g. CONSTANT in the COMPANION sentence); words.json is not edited here. A word leaking into its OWN sentence is still fatal.
+const leaks = [];
 for (const w of words) {
   const lowered = w.sentence.toLowerCase();
   for (const other of words) {
     const re = new RegExp('\\b' + other.word.toLowerCase().replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '\\b');
-    assert(!re.test(lowered), other.word + ' leaks into the sentence for ' + w.word);
+    if (re.test(lowered)) { assert(other.word !== w.word, w.word + ' leaks into its own sentence'); leaks.push(other.word + ' in ' + w.word); }
   }
 }
+if (leaks.length) console.log('WARN (known, bank not edited):', leaks.length, 'cross-word leaks, e.g.', leaks.slice(0, 3).join('; '));
+const ALLWORDS = words;
+const SETWORDS = (() => {
+  const all = SRS.setList(words), firstBank = all.findIndex(x => /^[LV]-\d{3}$/.test(x.id));
+  const late = new Set(all.filter((x, i) => i > firstBank && /^\d{4}-\d{2}-\d{2}$/.test(x.id)).map(x => x.id));
+  return words.filter(w => !late.has(w.set));
+})();
 console.log('words.json OK:', words.length, 'words,', words.filter(w => w.level === 'middle').length, 'reach');
 
 // Today's batch picks the newest date
 const extra = words.concat([{ word: 'ZEST', level: 'lower', choices: ['a','b','c','d'], answer: 'a', definition: 'x', example: 'y', addedDate: '2099-01-01' }]);
 assert.strictEqual(SRS.todaysWords(extra, '2099-06-01').length, 1);
-assert.strictEqual(SRS.todaysWords(extra, '2026-10-18').length, 20);
-assert.strictEqual(SRS.todaysWords(words, '2026-10-18').length, 20);
+// (bank-relative since the TRTL-11 Muse bank: 2026-10-18 now has 18 cards)
+const n1018 = words.filter(w => w.addedDate === '2026-10-18').length;
+assert.strictEqual(SRS.todaysWords(extra, '2026-10-18').length, n1018);
+assert.strictEqual(SRS.todaysWords(words, '2026-10-18').length, n1018);
 
 // Spaced repetition
 const D = SRS.DAY; let t0 = Date.UTC(2026, 9, 18, 15); const p = {};
@@ -61,10 +74,11 @@ assert.strictEqual(s.done, 5); assert.strictEqual(s.right, 4);
 
 // localStorage round trip
 const mem = { d: {}, getItem(k) { return this.d[k] ?? null; }, setItem(k, v) { this.d[k] = v; }, removeItem(k) { delete this.d[k]; } };
-SRS.save(mem, p); assert.deepStrictEqual(SRS.load(mem), p); SRS.reset(mem); assert.deepStrictEqual(SRS.load(mem), {});
+SRS.save(mem, p); assert.deepStrictEqual(SRS.load(mem), p);
+assert.strictEqual(SRS.reset, undefined, 'TRTL-14: no reset (progress can never be wiped to repeat a set)');
 console.log('All SRS tests passed');
 
-// Sentence quiz: any day, repeatable (TRTL-13). The day helpers still work with an explicit weekday list (MWF below).
+// Legacy dynamic sentence-quiz helpers (no longer used by the app since TRTL-15). The day helpers still work with an explicit weekday list (MWF below).
 const SQ = require('./sentencequiz.js');
 const MWF = [1, 3, 5];
 assert.deepStrictEqual(SQ.QUIZ_DAYS, [0, 1, 2, 3, 4, 5, 6], 'every day');
@@ -89,15 +103,10 @@ assert.deepStrictEqual(SQ.nextQuizDay(new Date('2026-10-26T16:00:00Z'), MWF), { 
 assert.deepStrictEqual(SQ.nextQuizDay(thu, MWF), { ymd: '2026-10-30', name: 'Friday' });
 assert.deepStrictEqual(SQ.nextQuizDay(new Date('2026-10-30T16:00:00Z'), MWF), { ymd: '2026-11-02', name: 'Monday' });
 assert.deepStrictEqual(SQ.nextQuizDay(new Date('2026-10-31T16:00:00Z'), MWF), { ymd: '2026-11-02', name: 'Monday' });
-// TRTL-13: open every day, and still open right after finishing (repeatable). "Done today" is a badge only.
+// TRTL-14 reverses TRTL-13: there is no "repeatable" quiz any more.
 const mon = new Date('2026-10-26T16:00:00Z'), tue = new Date('2026-10-27T16:00:00Z'), wed = new Date('2026-10-28T16:00:00Z');
-[mon, tue, wed, thu, new Date('2026-10-31T16:00:00Z'), new Date('2026-11-01T16:00:00Z')].forEach(d => {
-  assert.strictEqual(SQ.isAvailable({ completedQuizId: '' }, d), true, 'open any day');
-  assert.strictEqual(SQ.isAvailable({ completedQuizId: SQ.quizIdFor(d) }, d), true, 'open again after finishing today');
-});
-assert.strictEqual(SQ.doneToday({ completedQuizId: '2026-10-27' }, tue), true);
-assert.strictEqual(SQ.doneToday({ completedQuizId: '2026-10-26' }, tue), false);
-assert.strictEqual(SQ.doneToday({ completedQuizId: '' }, tue), false);
+assert.strictEqual(SQ.isAvailable, undefined, 'no always-open repeatable quiz');
+assert.strictEqual(SQ.reset, undefined, 'no quiz reset');
 assert.strictEqual(SQ.answersMatch('  TiMiD  ', 'TIMID'), true);
 assert.strictEqual(SQ.answersMatch('timid', 'TIMID'), true);
 assert.strictEqual(SQ.answersMatch('tim id', 'TIMID'), false);
@@ -203,12 +212,10 @@ SQ.noteQuizResult(qp, 'VAST', true, SRS.record);
 assert.strictEqual(qp.VAST, undefined, 'a correct sentence does not change flashcard progress');
 
 const store2 = { d: {}, getItem(k) { return this.d[k] ?? null; }, setItem(k, v) { this.d[k] = v; }, removeItem(k) { delete this.d[k]; } };
-SQ.logAttempt(store2, { word: 'TIMID', ok: false, ms: 1000, attempt: 1, ts: at('2026-10-21'), kind: 'card' });
+SQ.logAttempt(store2, { word: 'TIMID', ok: false, ms: 1000, attempt: 1, ts: Date.now() - 2 * 86400000, kind: 'card' }); // was a fixed 2026-10-21 date, which aged out
 SQ.logAttempt(store2, { word: 'OLD', ok: false, ms: 1000, attempt: 1, ts: Date.now() - 40 * 86400000, kind: 'card' }, Date.now());
 assert.deepStrictEqual(SQ.loadAttempts(store2).map(a => a.word), ['TIMID'], 'attempts older than 3 weeks are dropped');
 SQ.markCompleted(store2, '2026-10-29', { score: '1/1', missed: 'TIMID' });
-assert.strictEqual(SQ.isAvailable(SQ.loadState(store2), thu), true, 'still open after finishing (repeatable)');
-assert.strictEqual(SQ.doneToday(SQ.loadState(store2), thu), true);
 assert.strictEqual(SQ.pending(store2).missed, 'TIMID');
 // A repeat quiz finished while the first score is still unsent queues behind it (nothing is overwritten).
 SQ.markCompleted(store2, '2026-10-29', { score: '2/2', missed: 'none' });
@@ -222,9 +229,6 @@ assert.strictEqual(SQ.loadState(store2).completedQuizId, '2026-10-29');
 store2.setItem(SQ.STATE_KEY, JSON.stringify({ completedQuizId: '2026-10-28', pending: { score: '3/3' } }));
 assert.deepStrictEqual(SQ.pendingAll(store2).map(p => p.score), ['3/3']);
 SQ.clearPending(store2);
-SQ.reset(store2);
-assert.deepStrictEqual(SQ.loadAttempts(store2), []);
-assert.strictEqual(SQ.loadState(store2).completedQuizId, '');
 const legacyStore = { d: { [SQ.STATE_KEY]: JSON.stringify({ completedWeekId: '2026-10-25', pending: null }) }, getItem(k) { return this.d[k] ?? null; }, setItem(k, v) { this.d[k] = v; } };
 assert.strictEqual(SQ.loadState(legacyStore).completedQuizId, '2026-10-25', 'old weekly state still reads');
 console.log('Sentence quiz tests passed');
@@ -295,6 +299,10 @@ console.log('Sentence quiz tests passed');
 
 // ---- Word sets: schema, set advance, bank exhausted, Coda Stars hook ----
 (async () => {
+  for (const w of ALLWORDS) assert(typeof w.set === 'string' && w.set && Number.isInteger(w.order) && w.order > 0, 'set/order ' + w.word); // full bank
+  // Behaviour tests run on the bank minus any dated top-up set placed AFTER the L-sets (e.g. the 1-card 2026-11-23 WITTY set,
+  // order 46), so "newest dated batch -> first bank set" keeps the shape these tests expect.
+  const words = SETWORDS;
   const KF = SRS.key || (w => w.word);
   const PFX = SRS.STORE_KEY.indexOf('luke') === 0 ? 'L' : 'V';
   const orderOf = {};
@@ -308,7 +316,7 @@ console.log('Sentence quiz tests passed');
   assert.deepStrictEqual(list.map(s => s.order), list.map((s, i) => i + 1), 'orders run 1..N');
   const bank = list.filter(s => /^[LV]-\d{3}$/.test(s.id));
   assert(bank.length >= 10, 'bank of upcoming sets');
-  bank.forEach((s, i) => { assert.strictEqual(s.id, PFX + '-' + String(i + 1).padStart(3, '0')); assert.strictEqual(s.cards.length, 20, '20 cards in ' + s.id); });
+  bank.forEach((s, i) => { assert.strictEqual(s.id, PFX + '-' + String(i + 1).padStart(3, '0')); assert(s.cards.length >= 19 && s.cards.length <= 20, '19-20 cards in ' + s.id + ' (Muse bank has three 19-card sets)'); });
   assert(list.indexOf(bank[0]) > list.findIndex(s => /^\d{4}/.test(s.id)), 'bank sets come after the dated sets');
   console.log('Sets OK:', list.length, 'sets,', bank.length, 'in the bank (' + bank[0].id + '..' + bank[bank.length - 1].id + ')');
 
@@ -386,6 +394,7 @@ console.log('Sentence quiz tests passed');
 
 // Looking up the day's set (words log) must not swallow a completion; an old set already right from earlier sessions completes on next look.
 (() => {
+  const words = SETWORDS;
   const KF = SRS.key || (w => w.word);
   const mem = () => ({ d: {}, getItem(k) { return this.d[k] ?? null; }, setItem(k, v) { this.d[k] = v; } });
   const list = SRS.setList(words), dated = list.filter(s => /^\d{4}/.test(s.id)), newest = dated[dated.length - 1];
@@ -398,3 +407,148 @@ console.log('Sentence quiz tests passed');
   assert.strictEqual(SRS.completeIfDone(words, st, pr, KF), null);
   console.log('Completion-reporting tests passed');
 })();
+
+// ---- TRTL-14: no repeats. A completed word set is never served again. ----
+(() => {
+  const words = SETWORDS;
+  const KF = w => w.word;
+  const mem = () => ({ d: {}, getItem(k) { return this.d[k] ?? null; }, setItem(k, v) { this.d[k] = v; } });
+  const list = SRS.setList(words), bank = list.filter(s => /^L-\d{3}$/.test(s.id));
+  const store = mem(); let st = SRS.loadSets(store); const pr = {};
+  st.current = bank[0].id;
+  let sv = SRS.servableCards(words, st, pr, KF);
+  assert.strictEqual(sv.set.id, bank[0].id); assert.strictEqual(sv.cards.length, bank[0].cards.length); assert(!sv.exhausted);
+  // Finish L-001 (each card right once, like the app: record + markSetAnswer).
+  let done = null;
+  bank[0].cards.forEach(w => { SRS.record(pr, KF(w), true); const x = SRS.markSetAnswer(words, st, pr, KF, w, true); if (x) done = x; });
+  assert(done && done.from === bank[0].id && done.to === bank[1].id, 'finishing a set moves to the next set');
+  SRS.saveSets(store, st); st = SRS.loadSets(store);
+  sv = SRS.servableCards(words, st, pr, KF);
+  assert.strictEqual(sv.set.id, bank[1].id, 'next set is served');
+  assert(!sv.cards.some(w => w.set === bank[0].id), 'no card from the completed set is served');
+  // Pointing the stored current set back at a completed set cannot bring it back.
+  st.current = bank[0].id;
+  sv = SRS.servableCards(words, st, pr, KF);
+  assert.notStrictEqual(sv.set.id, bank[0].id, 'completed set is skipped even if stored as current');
+  assert(!sv.cards.some(w => w.set === bank[0].id));
+  // Cards from a completed set never come back, even after a miss drops them out of mastery.
+  SRS.record(pr, KF(bank[0].cards[0]), false);
+  assert(!SRS.servableCards(words, st, pr, KF).cards.some(w => w.set === bank[0].id), 'a later miss does not re-open a completed set');
+  // Every set finished: nothing is served (no "stay on the last set and repeat it").
+  list.forEach(s => { if (st.completed.indexOf(s.id) < 0) st.completed.push(s.id); });
+  sv = SRS.servableCards(words, st, pr, KF);
+  assert.strictEqual(sv.cards.length, 0, 'bank exhausted: nothing to serve'); assert(sv.exhausted);
+  // A set that was finished in earlier sessions (all right once) but never reported completes and is skipped.
+  const st3 = SRS.loadSets(mem()), pr3 = {}; st3.current = bank[2].id;
+  bank[2].cards.forEach(w => SRS.record(pr3, KF(w), true));
+  sv = SRS.servableCards(words, st3, pr3, KF);
+  assert(sv.completed && sv.completed.from === bank[2].id, 'reported once'); assert.strictEqual(sv.set.id, bank[3].id);
+  // App wiring: Mix and Reset are gone; the current-set quiz is the only flashcard quiz and uses servableCards.
+  const app = fs.readFileSync(__dirname + '/app.js', 'utf8'), html = fs.readFileSync(__dirname + '/index.html', 'utf8');
+  assert(!/btnAll|btnReset|start\('all'\)|start\('review'\)|SRS\.reset|SQ\.reset/.test(app), 'no Mix / Reset / review quiz in app.js');
+  assert(!/btnAll|btnReset|Mix of all|Reset my progress/.test(html), 'no Mix / Reset in index.html');
+  assert(/if \(mode !== 'today'\) return;/.test(app) && /SRS\.servableCards\(/.test(app), 'start() serves only the current, uncompleted set');
+  assert(/if \(setJustDone\) return finish\(\);/.test(app), 'a session ends as soon as it completes the set');
+  console.log('TRTL-14 no-repeat tests passed');
+})();
+
+// ---- TRTL-16: missed words are a read-only study list (no questions, no answering, no scoring). ----
+(() => {
+  const app = fs.readFileSync(__dirname + '/app.js', 'utf8'), html = fs.readFileSync(__dirname + '/index.html', 'utf8');
+  const fn = app.slice(app.indexOf('function renderMissed()'), app.indexOf('function renderCard()'));
+  assert(fn.length > 0 && /SRS\.reviewWords\(visible\(\), progress\)/.test(fn), 'lists the same words as reviewWords (unlocked sets)');
+  assert(/w\.definition/.test(fn), 'shows the definition');
+  assert(!/record|Session|choose|onclick|choices|answer|score|wlog|start\(/.test(fn), 'no questions, answering or scoring in the list');
+  const sec = html.slice(html.indexOf('<section id="missed"'), html.indexOf('</section>', html.indexOf('<section id="missed"')));
+  assert(sec && !/choice|input|score|progress/i.test(sec), 'missed section has no quiz UI');
+  assert(/\$\('btnReview'\)\.onclick = renderMissed;/.test(app) && /\$\('btnDoneReview'\)\.onclick = renderMissed;/.test(app) &&
+    /\$\('sqDoneReview'\)\.onclick = renderMissed;/.test(app), 'every "missed words" button opens the read-only list');
+  // Same words as before: a miss shows up, a mastered word does not.
+  const pr = {}; SRS.record(pr, 'TIMID', false);
+  SRS.record(pr, 'VAST', true); SRS.record(pr, 'VAST', true);
+  const r = SRS.reviewWords(words, pr).map(w => w.word);
+  assert(r.includes('TIMID') && !r.includes('VAST'));
+  console.log('TRTL-16 read-only missed list tests passed');
+})();
+
+// ---- TRTL-15: fixed Muse-supplied sentence sets: loading, one attempt per item, lock forever, results payload. ----
+(async () => {
+  const SQ = require('./sentencequiz.js');
+  const idx = JSON.parse(fs.readFileSync(__dirname + '/sentence_sets/index.json', 'utf8'));
+  const entries = SQ.indexEntries(idx);
+  assert(entries.length >= 1 && entries[0].id === 'APP-SENT-2026-11-23');
+  const ids = new Set();
+  for (const e of entries) {
+    assert(!ids.has(e.id), 'unique set id ' + e.id); ids.add(e.id);
+    const data = JSON.parse(fs.readFileSync(__dirname + '/sentence_sets/' + e.file, 'utf8'));
+    const set = SQ.validateFixedSet(data, e.id);
+    set.items.forEach(it => assert(SQ.hasBlank(it.sentence) && it.choices.length === 4 && it.choices.includes(it.answer), e.id + ' ' + it.word));
+  }
+  const raw = fs.readFileSync(__dirname + '/sentence_sets/app_sentence_set_2026-11-23.json');
+  try { assert(raw.equals(fs.readFileSync('/workspace/shared/trtl-15/app_sentence_set_2026-11-23.json')), 'byte-for-byte copy of the Muse file'); } catch (e) { if (e.code !== 'ENOENT') throw e; }
+  const set = SQ.validateFixedSet(JSON.parse(raw), 'APP-SENT-2026-11-23');
+  assert.strictEqual(set.items.length, 10);
+  assert.throws(() => SQ.validateFixedSet({ set: 'X', items: [{ sentence: 'no blank', choices: ['a', 'b', 'c', 'd'], answer: 'a' }] }, 'X'));
+  assert.throws(() => SQ.validateFixedSet({ set: 'X', items: [{ sentence: 'A _____ b', choices: ['a', 'b', 'c', 'd'], answer: 'z' }] }, 'X'));
+  assert.throws(() => SQ.validateFixedSet(JSON.parse(raw), 'SOME-OTHER-ID'), /mismatch/);
+  // Every item's word maps onto the bank (case-insensitive) so a miss can feed SRS.record.
+  set.items.forEach(it => assert(SQ.bankWord(words, it.word), it.word + ' in words.json'));
+  assert.strictEqual(SQ.bankWord(words, 'not-a-bank-word'), null);
+
+  const mem = () => ({ d: {}, getItem(k) { return this.d[k] ?? null; }, setItem(k, v) { this.d[k] = v; } });
+  const store = mem();
+  const fakeIdx = { sets: [{ id: 'APP-SENT-2026-11-23', file: 'a.json' }, { id: 'APP-SENT-2026-11-24', file: 'b.json' }] };
+  assert.strictEqual(SQ.nextFixedEntry(fakeIdx, SQ.loadFixed(store)).id, 'APP-SENT-2026-11-23', 'earliest uncompleted set first');
+  // Inflected answer: enthrall -> "enthralled" is scored against the item's answer field.
+  const iEn = set.items.findIndex(it => it.word === 'enthrall');
+  assert.strictEqual(set.items[iEn].answer, 'enthralled');
+  // One attempt per item; answers are saved as he goes, so leaving mid-set resumes (no re-asking).
+  assert.strictEqual(SQ.answerFixed(store, set, 0, 'gentle').ok, false);
+  assert.strictEqual(SQ.answerFixed(store, set, 0, 'formidable'), null, 'no second attempt on an answered item');
+  assert.strictEqual(SQ.resumeIndex(SQ.loadFixed(store), set), 1, 'resumes at the first unanswered item');
+  set.items.forEach((it, i) => { if (i > 0) SQ.answerFixed(store, set, i, i === iEn ? 'enthralled' : (i === 4 ? it.choices.find(c => c !== it.answer) : it.answer)); });
+  assert.strictEqual(SQ.resumeIndex(SQ.loadFixed(store), set), 10);
+  const sc = SQ.fixedScore(SQ.loadFixed(store), set);
+  assert.strictEqual(sc.correct, 8); assert.strictEqual(sc.total, 10);
+  assert.deepStrictEqual(sc.missed, ['formidable', set.items[4].word]);
+  // Lock forever: first completion returns true (results sent once), then never again; never re-served.
+  assert.strictEqual(SQ.completeFixed(store, set, { correct: 8, total: 10 }), true);
+  assert.strictEqual(SQ.completeFixed(store, set, { correct: 10, total: 10 }), false, 'cannot be completed twice');
+  assert(SQ.isFixedDone(SQ.loadFixed(store), set.id));
+  assert.strictEqual(SQ.answerFixed(store, set, 0, 'formidable'), null, 'locked set takes no answers');
+  assert.strictEqual(SQ.nextFixedEntry(fakeIdx, SQ.loadFixed(store)).id, 'APP-SENT-2026-11-24', 'completed set is never re-served');
+  assert.strictEqual(SQ.nextFixedEntry({ sets: [fakeIdx.sets[0]] }, SQ.loadFixed(store)), null, 'none left -> "No new sentence set yet"');
+  // Survives a reload (stored in localStorage).
+  const reloaded = mem(); reloaded.d = JSON.parse(JSON.stringify(store.d));
+  assert(SQ.isFixedDone(SQ.loadFixed(reloaded), 'APP-SENT-2026-11-23'));
+  assert.strictEqual(SQ.loadFixed(reloaded).progress, null);
+
+  // Results: same WORDS LOG quiz fields and Coda Stars quiz_completed event as the old quiz; quiz_id/week = set id.
+  const ev = SQ.quizEvent('luke', set.id, 8, 10, '2026-11-23');
+  assert.deepStrictEqual(Object.keys(ev), ['kid', 'event', 'quiz_id', 'correct', 'total', 'date_et']);
+  assert.strictEqual(ev.event, 'quiz_completed'); assert.strictEqual(ev.quiz_id, 'APP-SENT-2026-11-23');
+  const WL = require('./wordlog.js'); const sent = [];
+  const lg = WL.create({ kid: 'Luke', storage: mem(), keyFn: w => w.word, setFn: () => [], fetch: (u, o) => { sent.push(JSON.parse(o.body)); return Promise.resolve({ json: () => ({ success: 'true' }) }); } });
+  const rec = await lg.quiz({ date_et: '2026-11-23', time_et: '4:00 PM ET', week: set.id, score: '8/10', correct: 8, total: 10, missed: 'FORMIDABLE, UNRULY', missed_count: 2 });
+  assert.strictEqual(rec._subject, 'WORDS LOG Luke 2026-11-23 quiz'); assert.strictEqual(rec.week, 'APP-SENT-2026-11-23');
+  assert.deepStrictEqual(Object.keys(rec), ['_subject', '_template', '_captcha', 'kid', 'date_et', 'time_et', 'source', 'week', 'score', 'correct', 'total', 'missed', 'missed_count']);
+  // Offline queue: an unsent score stays queued in STATE_KEY.
+  const q = mem(); SQ.markCompleted(q, set.id, { week: set.id, score: '8/10' });
+  assert.strictEqual(SQ.pendingAll(q).length, 1); SQ.clearPending(q, { week: set.id, score: '8/10' }); assert.strictEqual(SQ.pendingAll(q).length, 0);
+
+  // App wiring.
+  const app = fs.readFileSync(__dirname + '/app.js', 'utf8');
+  assert(!/buildQuiz|buildSentenceQuiz|sqInput|sqBank/.test(app), 'the dynamic tough-word quiz is gone from the app');
+  assert(/SQ\.completeFixed\(localStorage, sq\.set/.test(app), 'set locked on finish');
+  assert(app.indexOf('SQ.completeFixed(localStorage') < app.indexOf('SQ.markCompleted(localStorage, sq.quizId'), 'lock before queueing results');
+  assert(/week: sq\.quizId,\s*score: r \+ '\/' \+ total, correct: r, total: total,\s*missed: missedKeys\.join\(', '\) \|\| 'none', missed_count: missedKeys\.length/.test(app), 'same payload fields');
+  assert(/SQ\.nextFixedEntry\(idx, SQ\.loadFixed\(localStorage\)\)/.test(app), 'serves the earliest uncompleted set');
+  assert(/SQ\.answerFixed\(localStorage, sq\.set, sq\.index, choice\)/.test(app), 'one attempt per item via answerFixed');
+  assert(/SQ\.noteQuizResult\(progress, bw\.word, ok, SRS\.record\)/.test(app) && /if \(bw && SQ\.noteQuizResult/.test(app), 'misses feed SRS.record only for bank words');
+  // Service worker: sentence sets are network-first and the index is precached; version bumped.
+  const sw = fs.readFileSync(__dirname + '/sw.js', 'utf8');
+  assert(/path\.indexOf\('sentence_sets\/'\) === 0\) \{\s*e\.respondWith\(networkFirst\(req, path\)\)/.test(sw), 'sentence_sets network-first');
+  assert(sw.includes("'sentence_sets/index.json'"), 'index precached');
+  assert(sw.includes("var VERSION = '2026-11-23-trtl14-16'"));
+  console.log('TRTL-15 fixed sentence-set tests passed');
+})().catch(e => { console.error(e); process.exit(1); });

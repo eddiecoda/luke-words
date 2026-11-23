@@ -7,11 +7,11 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
 <title>Luke's ISEE Synonyms</title>
-<link rel="manifest" href="manifest.json?v=2026-11-23-trtl13">
+<link rel="manifest" href="manifest.json?v=2026-11-23-trtl14-16">
 <link rel="icon" href="icon.svg" type="image/svg+xml">
 <link rel="icon" href="icon-192.png" type="image/png" sizes="192x192">
 <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-<link rel="stylesheet" href="style.css?v=2026-11-23-trtl13">
+<link rel="stylesheet" href="style.css?v=2026-11-23-trtl14-16">
 </head>
 <body>
 <header>
@@ -31,14 +31,13 @@
     <div id="sentenceCard" class="card sentence-card">
       <div class="sentence-head">
         <span id="sentenceBadge" class="badge-ready">Ready</span>
-        <span class="sentence-title">Sentence Quiz · any day</span>
+        <span class="sentence-title">Sentence Set</span>
       </div>
-      <p id="sentencePrompt" class="muted">Fill in the blanks with the words that gave you trouble lately.</p>
-      <button class="big btn-sentence" id="btnSentence" disabled>Start quiz</button>
+      <p id="sentencePrompt" class="muted">Loading your sentence set…</p>
+      <button class="big btn-sentence" id="btnSentence" disabled>Start</button>
     </div>
     <button class="big btn-primary" id="btnToday">📅 Current set <span id="todayCount" class="pill"></span></button>
-    <button class="big btn-warn" id="btnReview">🔁 Review missed words <span id="reviewCount" class="pill"></span></button>
-    <button class="big btn-alt" id="btnAll">🎲 Mix of all words <span id="allCount" class="pill"></span></button>
+    <button class="big btn-warn" id="btnReview">📖 My missed words <span id="reviewCount" class="pill"></span></button>
     <button class="big btn-ghost" id="btnStats">📊 My stats</button>
     <button class="big btn-done" id="btnDidWords">✅ I did my words today</button>
     <p id="didWordsMsg" class="didmsg hidden"></p>
@@ -78,7 +77,7 @@
       <p id="doneMsg" class="muted"></p>
       <div id="doneMissed"></div>
     </div>
-    <button class="big btn-warn" id="btnDoneReview">🔁 Review missed words</button>
+    <button class="big btn-warn" id="btnDoneReview">📖 See missed words</button>
     <button class="big btn-ghost" id="btnDoneHome">🏠 Home</button>
   </section>
 
@@ -101,10 +100,21 @@
       <table class="words"><thead><tr><th>Word</th><th>Right</th><th>Last seen</th></tr></thead><tbody id="wordTable"></tbody></table>
       <p class="muted small">✅ = mastered (right 2 times in a row). Mastered words drop out of practice.</p>
     </div>
-    <button class="big btn-danger" id="btnReset">🗑️ Reset my progress</button>
   </section>
 
-  <!-- Sentence quiz (any day, repeatable) -->
+  <!-- Missed words: read-only study list (TRTL-16). No questions, no answering, no scoring. -->
+  <section id="missed" class="screen hidden">
+    <div class="topbar"><button class="link" id="quitMissed">← Home</button></div>
+    <div class="card">
+      <h3>📖 Words to study</h3>
+      <p class="muted small">Read each word and what it means. You'll see them again in new sets.</p>
+      <ul id="missedWordList" class="studylist"></ul>
+      <p id="missedEmpty" class="muted hidden">No missed words right now. Nice!</p>
+    </div>
+    <button class="big btn-ghost" id="missedHome">🏠 Home</button>
+  </section>
+
+  <!-- Sentence set (Muse-supplied, one time only: TRTL-14/15) -->
   <section id="sentence" class="screen hidden">
     <div class="topbar">
       <button class="link" id="quitSentence">← Home</button>
@@ -112,28 +122,20 @@
     </div>
     <div class="bar"><div id="sqBar"></div></div>
     <div id="sqEmpty" class="card hidden">
-      <p>No words to quiz yet. Practice your current set, then come back. This quiz stays open until you finish it.</p>
+      <p>No new sentence set yet. A new one is coming soon!</p>
       <button class="big btn-ghost" id="sqEmptyHome">🏠 Home</button>
     </div>
     <div class="card qcard" id="sqCard">
-      <p class="mode">Sentence quiz</p>
-      <p class="prompt" id="sqHint">Pick the word that fits, or type it.</p>
-      <p id="sqFallback" class="muted small hidden">This word has no sentence yet, so the clue is its meaning.</p>
+      <p class="mode" id="sqMode">Sentence set</p>
+      <p class="prompt">Pick the word that best fits the blank.</p>
       <p id="sqSentence" class="sq-sentence"></p>
-      <form id="sqForm" autocomplete="off">
-        <div class="sq-answer">
-          <input id="sqInput" type="text" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" placeholder="Type the word" aria-label="Type the word that fills the blank">
-          <button type="submit" id="sqSubmit">Check</button>
-        </div>
-      </form>
+      <div id="sqChoices" class="choices"></div>
       <div id="sqFeedback" class="feedback hidden" aria-live="polite">
         <p id="sqVerdict" class="verdict"></p>
         <p id="sqFilled"></p>
-        <p><b>Meaning:</b> <span id="sqMeaning"></span></p>
+        <p id="sqMeaningRow"><b>Meaning:</b> <span id="sqMeaning"></span></p>
         <button type="button" class="big btn-primary" id="sqNext">Next →</button>
       </div>
-      <p class="bank-label">Word bank</p>
-      <div id="sqBank" class="bank"></div>
     </div>
   </section>
 
@@ -147,18 +149,18 @@
       <div id="sqDoneMissed"></div>
       <p id="sqLogMsg" class="didmsg"></p>
     </div>
-    <button class="big btn-warn hidden" id="sqDoneReview">🔁 Review missed words</button>
+    <button class="big btn-warn hidden" id="sqDoneReview">📖 See missed words</button>
     <button class="big btn-ghost" id="sqDoneHome">🏠 Home</button>
   </section>
 </main>
 
-<script src="srs.js?v=2026-11-23-trtl13"></script>
-<script src="wordlog.js?v=2026-11-23-trtl13"></script>
-<script src="sentencequiz.js?v=2026-11-23-trtl13"></script>
-<script src="app.js?v=2026-11-23-trtl13"></script>
+<script src="srs.js?v=2026-11-23-trtl14-16"></script>
+<script src="wordlog.js?v=2026-11-23-trtl14-16"></script>
+<script src="sentencequiz.js?v=2026-11-23-trtl14-16"></script>
+<script src="app.js?v=2026-11-23-trtl14-16"></script>
 <script>
 if ('serviceWorker' in navigator) {
-  window.addEventListener('load', function () { navigator.serviceWorker.register('sw.js?v=2026-11-23-trtl13', { scope: './' }).catch(function () {}); });
+  window.addEventListener('load', function () { navigator.serviceWorker.register('sw.js?v=2026-11-23-trtl14-16', { scope: './' }).catch(function () {}); });
 }
 </script>
 </body>

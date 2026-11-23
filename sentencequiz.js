@@ -1,41 +1,21 @@
-/* "Use it in a sentence" quiz: available any day, as many times as Luke likes (TRTL-13).
-   Works in the browser (window.SentenceQuiz) and in Node (module.exports).
+/* Sentence quiz. Works in the browser (window.SentenceQuiz) and in Node (module.exports).
 
-   AVAILABILITY
-   There is no day gating and no "done for today" lockout: isAvailable() is always true, and after
-   finishing a quiz he can start another one right away (it is rebuilt from his latest results).
-   QUIZ_DAYS lists every weekday, so the quiz id (quiz_id) is simply today's date in America/New_York,
-   same as the words log. Repeat quizzes on the same day carry the same quiz_id (the log's time_et tells them apart).
-   The older helpers (quizIdFor / prevQuizId / nextQuizDay) still accept an explicit list of weekdays.
+   TRTL-14/15 (Nov 23 2026): FIXED, MUSE-SUPPLIED SENTENCE SETS. NO REPEATS.
+   - Sets live in sentence_sets/ and are listed, in order, in sentence_sets/index.json:
+       { "sets": [ { "id": "APP-SENT-2026-11-23", "file": "app_sentence_set_2026-11-23.json" } ] }
+     To publish a new set: add the file and append an index entry. Nothing else changes.
+   - Set file: { "set": "<id>", "items": [ { "word", "sentence" (one _____ blank), "choices" [4], "answer" } ] }.
+     "answer" is one of the choices and may be an inflected form (enthrall -> "enthralled"); scoring uses "answer".
+   - The app serves the earliest set in the index that is not completed on this device. One attempt per item;
+     answers are saved as he goes (FIXED_KEY), so leaving mid-set resumes where he left off (no re-asking).
+   - A finished set is locked forever in localStorage (FIXED_KEY) and never served again. When none remain,
+     the app shows "No new sentence set yet".
+   - On finishing, the WORDS LOG quiz email (wordlog.js quiz(), same fields as before; week = set id) and the
+     Coda Stars quiz_completed event (quiz_id = set id) are sent; unsent emails stay queued in STATE_KEY.
+   - A miss is fed to SRS.record(word, false) when item.word is in words.json (matched case-insensitively).
 
-   SENTENCE FIELD (on each object in words.json)
-   "sentence": "The garden grew an _____ crop of tomatoes, far more than the family could eat."
-   - The blank is exactly five underscores: _____
-   - It stands in for the vocabulary word (word), in that word's part of speech.
-   - Write one natural, kid-appropriate sentence. The context should point at the meaning.
-   - Do not also write the vocabulary word (or any other word from words.json) in the sentence.
-   - Capitalization and extra spaces are ignored when Luke types the answer.
-   - If sentence is missing or has no _____ blank, the quiz falls back to the definition:
-     Which word means "…"? _____
-
-   WHAT COUNTS AS A TOUGH WORD (QUIZ WINDOW)
-   The window is a rolling WINDOW_DAYS (3) days back from today through today, ET
-   (e.g. Thursday's quiz looks back to Monday, Monday's to the Friday before).
-   Each flashcard answer is stored in localStorage under ATTEMPT_KEY:
-   { word, ok, ms, attempt, ts, kind: "card" }.
-   attempt is 1 the first time a card is shown in a session, and 2 when a miss comes back.
-   A word is tough if, inside the quiz window, it was missed at least once, came back for
-   another try (attempt >= 2), or took at least SLOW_MS milliseconds.
-   Words are ranked worst first (misses, then extra tries, then slow answers).
-   The quiz is 10 to 15 items. Tough words fill it first; if there are fewer than 10,
-   it tops up with other words practiced in the window, then recent words (the current set,
-   then the previous set, least-known first), then words added in the window.
-   Progress saved before this tracking existed still counts: a word whose last result
-   was wrong, and whose lastSeen falls in the window, is treated as one miss.
-
-   A miss on the sentence quiz is recorded with the normal SRS.record(..., false)
-   so the word drops to box 0 and shows up in Review. A correct sentence answer
-   does not move the flashcard box.
+   The older dynamic "tough words" builder (buildQuiz and helpers below) is no longer used by the app (TRTL-15
+   replaced it); it is kept only so its unit tests still run. TRTL-13's repeatable quiz is reversed by TRTL-14.
 */
 (function (root) {
   var QUIZ_DAYS = [0, 1, 2, 3, 4, 5, 6]; // every day (TRTL-13: no Mon/Wed/Fri gating)
@@ -199,17 +179,77 @@
   function pending(storage) { return loadState(storage).pending; }
   function pendingAll(storage) { return loadState(storage).queue; }
 
-  function reset(storage) {
-    try { storage.removeItem(ATTEMPT_KEY); } catch (e) {}
-    try { storage.removeItem(STATE_KEY); } catch (e) {}
+  // ---- TRTL-15: fixed sentence sets ----
+  var FIXED_KEY = 'luke-sentence-sets-v1';
+  var SETS_DIR = 'sentence_sets/';
+  function loadFixed(storage) {
+    var s = loadJson(storage, FIXED_KEY, null);
+    if (!s || typeof s !== 'object') s = {};
+    return { completed: (s.completed && typeof s.completed === 'object') ? s.completed : {},
+      progress: (s.progress && typeof s.progress === 'object' && s.progress.id) ? s.progress : null };
   }
-
-  // TRTL-13: always open, any day, repeatable (finishing a quiz no longer locks it).
-  function isAvailable() { return true; }
-  // True once a quiz has been finished today (ET); used only for the "done today" badge.
-  function doneToday(state, date) {
-    var id = state && (state.completedQuizId || state.completedWeekId);
-    return !!id && id === quizIdFor(date || new Date());
+  function saveFixed(storage, f) { saveJson(storage, FIXED_KEY, f); }
+  function isFixedDone(f, id) { return !!(f && f.completed && f.completed[id]); }
+  // index: parsed sentence_sets/index.json. Returns the earliest entry not completed, or null.
+  function indexEntries(index) {
+    var list = index && Array.isArray(index.sets) ? index.sets : (Array.isArray(index) ? index : []);
+    return list.filter(function (e) { return e && typeof e.id === 'string' && e.id && typeof e.file === 'string' && e.file; });
+  }
+  function nextFixedEntry(index, f) {
+    var list = indexEntries(index);
+    for (var i = 0; i < list.length; i++) if (!isFixedDone(f, list[i].id)) return list[i];
+    return null;
+  }
+  function validItem(it) {
+    return !!it && typeof it.sentence === 'string' && hasBlank(it.sentence) && Array.isArray(it.choices) && it.choices.length === 4 &&
+      typeof it.answer === 'string' && it.choices.indexOf(it.answer) >= 0;
+  }
+  // Checks a loaded set file against its index entry. Returns the set or throws.
+  function validateFixedSet(data, id) {
+    if (!data || !Array.isArray(data.items) || !data.items.length) throw new Error('sentence set has no items');
+    if (id && data.set && data.set !== id) throw new Error('sentence set id mismatch: ' + data.set + ' vs ' + id);
+    data.items.forEach(function (it, i) { if (!validItem(it)) throw new Error('bad sentence item ' + (i + 1)); });
+    return { id: id || data.set, items: data.items };
+  }
+  // One attempt per item. Returns { ok, progress } or null if the item was already answered / the set is done.
+  function answerFixed(storage, set, index, choice) {
+    var f = loadFixed(storage);
+    if (isFixedDone(f, set.id)) return null;
+    var p = f.progress && f.progress.id === set.id ? f.progress : { id: set.id, answers: [] };
+    if (index < 0 || index >= set.items.length || p.answers[index] != null) return null;
+    var ok = choice === set.items[index].answer;
+    p.answers[index] = { choice: String(choice), ok: ok };
+    f.progress = p; saveFixed(storage, f);
+    return { ok: ok, progress: p };
+  }
+  // Where to resume: the first unanswered item (items.length when all are answered).
+  function resumeIndex(f, set) {
+    var p = f && f.progress && f.progress.id === set.id ? f.progress : null;
+    if (!p) return 0;
+    for (var i = 0; i < set.items.length; i++) if (p.answers[i] == null) return i;
+    return set.items.length;
+  }
+  function fixedScore(f, set) {
+    var p = f && f.progress && f.progress.id === set.id ? f.progress : { answers: [] };
+    var correct = 0, missed = [];
+    set.items.forEach(function (it, i) { var a = p.answers[i]; if (a && a.ok) correct++; else missed.push(it.word || it.answer); });
+    return { correct: correct, total: set.items.length, missed: missed };
+  }
+  // Lock the set forever. Returns false if it was already locked (so results are only sent once).
+  function completeFixed(storage, set, result) {
+    var f = loadFixed(storage);
+    if (isFixedDone(f, set.id)) return false;
+    f.completed[set.id] = result || { at: Date.now() };
+    if (f.progress && f.progress.id === set.id) f.progress = null;
+    saveFixed(storage, f);
+    return true;
+  }
+  // Map a set item's word onto the words.json card (case-insensitive); null if it is not in the bank.
+  function bankWord(words, w) {
+    if (!w) return null;
+    var k = String(w).trim().toUpperCase();
+    for (var i = 0; i < (words || []).length; i++) if (String(words[i].word).toUpperCase() === k) return words[i];
+    return null;
   }
 
   function normalizeAnswer(s) {
@@ -332,8 +372,11 @@
     dayName: dayName, weekIdFor: weekIdFor, quizIdFor: quizIdFor, prevQuizId: prevQuizId, nextQuizDay: nextQuizDay,
     STARS_URL: STARS_URL, quizEvent: quizEvent, postQuizEvent: postQuizEvent, addDays: addDays, etYmd: etYmd,
     logAttempt: logAttempt, loadAttempts: loadAttempts, loadState: loadState,
-    markCompleted: markCompleted, clearPending: clearPending, pending: pending, pendingAll: pendingAll, reset: reset,
-    isAvailable: isAvailable, doneToday: doneToday, normalizeAnswer: normalizeAnswer, answersMatch: answersMatch,
+    markCompleted: markCompleted, clearPending: clearPending, pending: pending, pendingAll: pendingAll,
+    normalizeAnswer: normalizeAnswer, answersMatch: answersMatch,
+    FIXED_KEY: FIXED_KEY, SETS_DIR: SETS_DIR, loadFixed: loadFixed, isFixedDone: isFixedDone, indexEntries: indexEntries,
+    nextFixedEntry: nextFixedEntry, validateFixedSet: validateFixedSet, answerFixed: answerFixed, resumeIndex: resumeIndex,
+    fixedScore: fixedScore, completeFixed: completeFixed, bankWord: bankWord,
     hasBlank: hasBlank, clueFor: clueFor, fillBlank: fillBlank, buildQuiz: buildQuiz,
     noteQuizResult: noteQuizResult, scoreOf: scoreOf
   };

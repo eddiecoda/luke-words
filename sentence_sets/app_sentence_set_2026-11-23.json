@@ -1,0 +1,17 @@
+{
+ "set": "APP-SENT-2026-11-23",
+ "format": "TI VR sentence completion (one blank, 4 single-word choices, context-clue logic)",
+ "source": "TRTL pool \u2014 retest pool first (incl. today's sentence-quiz misses: formidable, legible, enthrall)",
+ "items": [
+  {"word": "formidable", "sentence": "Even the bravest knights hesitated before facing the _____ dragon, whose size and strength had defeated every army that came before.", "choices": ["formidable", "gentle", "ordinary", "tiny"], "answer": "formidable"},
+  {"word": "legible", "sentence": "Because his handwriting was so _____, the teacher could read every word of his essay without guessing.", "choices": ["legible", "messy", "hurried", "faded"], "answer": "legible"},
+  {"word": "enthrall", "sentence": "The magician's tricks _____ the children, who sat silent and wide-eyed until the very last trick was done.", "choices": ["enthralled", "bored", "confused", "released"], "answer": "enthralled"},
+  {"word": "groggy", "sentence": "After waking suddenly from a deep nap, Maya felt _____ and could barely keep her eyes open.", "choices": ["groggy", "alert", "hungry", "cheerful"], "answer": "groggy"},
+  {"word": "unruly", "sentence": "The _____ puppies knocked over their water bowl, raced around the kitchen, and refused to sit or stay.", "choices": ["unruly", "obedient", "sleepy", "timid"], "answer": "unruly"},
+  {"word": "obstruct", "sentence": "A fallen tree will _____ the trail, so hikers cannot get past until it is cleared away.", "choices": ["obstruct", "widen", "mark", "cross"], "answer": "obstruct"},
+  {"word": "crude", "sentence": "Their first treehouse was _____, built from uneven boards and bent nails, but the friends loved it anyway.", "choices": ["crude", "sturdy", "elegant", "spacious"], "answer": "crude"},
+  {"word": "bleak", "sentence": "With no trees, no grass, and a gray sky that never seemed to change, the empty field looked _____.", "choices": ["bleak", "cheerful", "crowded", "colorful"], "answer": "bleak"},
+  {"word": "pensive", "sentence": "Quiet and _____ before the big decision, the king sat alone, thinking carefully about what he should do.", "choices": ["pensive", "careless", "furious", "boastful"], "answer": "pensive"},
+  {"word": "aloof", "sentence": "He stayed _____ from the group, rarely speaking and never joining their games, even when they invited him.", "choices": ["aloof", "friendly", "curious", "eager"], "answer": "aloof"}
+ ]
+}

@@ -1,10 +1,11 @@
 /* Service worker: makes the app installable and usable offline.
    Only same-origin GET requests inside this app's folder are handled. Everything else (formsubmit.co, any cross-origin
    request, POSTs) is never intercepted or cached, so the daily words log goes straight to the network as before.
-   index.html / words.json (and other HTML) are network-first so new words always come through; other app files are cache-first. */
-var VERSION = '2026-11-23-trtl13';
+   index.html / words.json / sentence_sets/* (and JS/CSS) are network-first so new words and new Muse sentence sets always come through;
+   the cached copy is only the offline fallback. Icons are cache-first. */
+var VERSION = '2026-11-23-trtl14-16';
 var CACHE = 'luke-words-' + VERSION;
-var SHELL = ['./', 'index.html', 'style.css', 'app.js', 'srs.js', 'wordlog.js', 'sentencequiz.js', 'words.json', 'manifest.json',
+var SHELL = ['./', 'index.html', 'style.css', 'app.js', 'srs.js', 'wordlog.js', 'sentencequiz.js', 'words.json', 'sentence_sets/index.json', 'manifest.json',
   'icon.svg', 'icon-192.png', 'icon-512.png', 'icon-maskable-512.png', 'apple-touch-icon.png'];
 
 self.addEventListener('install', function (e) {
@@ -37,6 +38,10 @@ self.addEventListener('fetch', function (e) {
   var path = url.pathname.slice(scope.pathname.length);
   if (req.mode === 'navigate' || path === '' || path === 'index.html') {
     e.respondWith(networkFirst(req, 'index.html'));
+    return;
+  }
+  if (path.indexOf('sentence_sets/') === 0) {
+    e.respondWith(networkFirst(req, path));                // TRTL-15: Muse sentence sets; app.js adds ?v=Date.now()
     return;
   }
   if (path === 'words.json') {

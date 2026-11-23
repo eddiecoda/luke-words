@@ -100,7 +100,6 @@
     try { return JSON.parse(storage.getItem(STORE_KEY)) || {}; } catch (e) { return {}; }
   }
   function save(storage, progress) { storage.setItem(STORE_KEY, JSON.stringify(progress)); }
-  function reset(storage) { storage.removeItem(STORE_KEY); }
 
   // ---- Word sets: the "current set" advances to the next set as soon as every card in it has been answered right once. ----
   // Each card has set (string id) and order (number). Older cards use their addedDate as the set id.
@@ -186,7 +185,16 @@
     st.notice = nx ? 'unlocked' : 'soon';
     return out;
   }
-  // Cards the kid can see in Mix / Review / Stats: sets up to and including the current one (later bank sets stay locked).
+  // TRTL-14 (no repeats): the cards the current-set quiz may serve. A completed set is never served again:
+  // if the current set is already completed (e.g. every bank set is finished), nothing is served until Muse adds a new set.
+  function isSetCompleted(st, id) { return st.completed.indexOf(id) >= 0; }
+  function servableCards(words, st, progress, keyFn) {
+    var res = completeIfDone(words, st, progress, keyFn);
+    var r = resolveCurrent(words, st, progress, keyFn);
+    if (!r.set || isSetCompleted(st, r.set.id)) return { set: r.set, cards: [], completed: res, exhausted: true };
+    return { set: r.set, cards: r.set.cards.filter(function (w) { return !isMastered(progress[keyFn(w)]); }), completed: res, exhausted: false };
+  }
+  // Cards the kid can see in the read-only missed list / Stats: sets up to and including the current one (later bank sets stay locked).
   function unlockedWords(words, st, progress, keyFn) {
     var r = resolveCurrent(words, st, progress, keyFn);
     if (!r.set) return words;
@@ -215,9 +223,10 @@
 
   var api = { DAY: DAY, INTERVALS: INTERVALS, MASTERY_STREAK: MASTERY_STREAK, STORE_KEY: STORE_KEY,
     record: record, getStat: getStat, isMastered: isMastered, todaysWords: todaysWords, reviewWords: reviewWords,
-    stats: stats, shuffle: shuffle, Session: Session, load: load, save: save, reset: reset, accuracy: accuracy,
+    stats: stats, shuffle: shuffle, Session: Session, load: load, save: save, accuracy: accuracy,
     SET_KEY: SET_KEY, setId: setId, setList: setList, loadSets: loadSets, saveSets: saveSets, setProgress: setProgress, isSetDone: isSetDone,
     nextSet: nextSet, resolveCurrent: resolveCurrent, markSetAnswer: markSetAnswer, completeIfDone: completeIfDone, unlockedWords: unlockedWords, daySet: daySet,
+    isSetCompleted: isSetCompleted, servableCards: servableCards,
     STARS_URL: STARS_URL, postStarsEvent: postStarsEvent };
   if (typeof module !== 'undefined' && module.exports) module.exports = api; else root.SRS = api;
 })(this);

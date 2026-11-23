@@ -84,3 +84,7 @@ table.words{width:100%;border-collapse:collapse;font-size:.92rem}
 .fit.ok{color:var(--ok)}
 .fit.bad{color:var(--bad)}
 #sqNext,#sqDoneHome,#sqDoneReview,#sqEmptyHome{justify-content:center}
+.studylist{list-style:none;padding:0;margin:10px 0 0;text-align:left}
+.studylist li{padding:10px 0;border-bottom:1px solid #eef2ff;line-height:1.4}
+.studylist li:last-child{border-bottom:0}
+.studylist b{display:block;font-size:1.05rem}
