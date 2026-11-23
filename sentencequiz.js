@@ -1,13 +1,12 @@
-/* "Use it in a sentence" quiz, three times a week (Mon, Wed, Fri).
+/* "Use it in a sentence" quiz: available any day, as many times as Luke likes (TRTL-13).
    Works in the browser (window.SentenceQuiz) and in Node (module.exports).
 
-   QUIZ DAYS
-   A quiz opens on each day in QUIZ_DAYS and stays open until Luke finishes it.
-   0 = Sunday, 1 = Monday, 2 = Tuesday, 3 = Wednesday, 4 = Thursday, 5 = Friday, 6 = Saturday.
-   QUIZ_DAYS = [1, 3, 5] means Monday, Wednesday and Friday. Days are dated in America/New_York,
-   same as the words log. The quiz id (quiz_id) is the date of the quiz day it belongs to.
-   If an older quiz is still unfinished when the next quiz day arrives, the newer one replaces it
-   (only the quiz for the most recent quiz day is ever open).
+   AVAILABILITY
+   There is no day gating and no "done for today" lockout: isAvailable() is always true, and after
+   finishing a quiz he can start another one right away (it is rebuilt from his latest results).
+   QUIZ_DAYS lists every weekday, so the quiz id (quiz_id) is simply today's date in America/New_York,
+   same as the words log. Repeat quizzes on the same day carry the same quiz_id (the log's time_et tells them apart).
+   The older helpers (quizIdFor / prevQuizId / nextQuizDay) still accept an explicit list of weekdays.
 
    SENTENCE FIELD (on each object in words.json)
    "sentence": "The garden grew an _____ crop of tomatoes, far more than the family could eat."
@@ -20,8 +19,8 @@
      Which word means "…"? _____
 
    WHAT COUNTS AS A TOUGH WORD (QUIZ WINDOW)
-   The window runs from the previous quiz day through today (e.g. Wednesday's quiz looks back to Monday,
-   Monday's looks back to the Friday before).
+   The window is a rolling WINDOW_DAYS (3) days back from today through today, ET
+   (e.g. Thursday's quiz looks back to Monday, Monday's to the Friday before).
    Each flashcard answer is stored in localStorage under ATTEMPT_KEY:
    { word, ok, ms, attempt, ts, kind: "card" }.
    attempt is 1 the first time a card is shown in a session, and 2 when a miss comes back.
@@ -39,7 +38,8 @@
    does not move the flashcard box.
 */
 (function (root) {
-  var QUIZ_DAYS = [1, 3, 5]; // Monday, Wednesday, Friday
+  var QUIZ_DAYS = [0, 1, 2, 3, 4, 5, 6]; // every day (TRTL-13: no Mon/Wed/Fri gating)
+  var WINDOW_DAYS = 3; // tough-word window: today and the 3 days before it (ET)
   var MIN_ITEMS = 10;
   var MAX_ITEMS = 15;
   var SLOW_MS = 20000;
@@ -167,39 +167,49 @@
     return all;
   }
 
+  // pending: the oldest quiz score not yet emailed; queue: every unsent score, oldest first
+  // (quizzes can repeat, so a second finish while offline must not overwrite the first).
   function loadState(storage) {
     var s = loadJson(storage, STATE_KEY, null);
-    if (!s || typeof s !== 'object') return { completedQuizId: '', pending: null };
-    return { completedQuizId: s.completedQuizId || s.completedWeekId || '', pending: s.pending || null };
+    if (!s || typeof s !== 'object') return { completedQuizId: '', pending: null, queue: [] };
+    var q = Array.isArray(s.queue) ? s.queue.filter(Boolean) : (s.pending ? [s.pending] : []);
+    return { completedQuizId: s.completedQuizId || s.completedWeekId || '', pending: q[0] || null, queue: q };
   }
-  function saveState(storage, state) { saveJson(storage, STATE_KEY, state); }
+  function saveState(storage, state) {
+    saveJson(storage, STATE_KEY, { completedQuizId: state.completedQuizId, pending: state.queue[0] || null, queue: state.queue });
+  }
 
   function markCompleted(storage, quizId, pending) {
     var s = loadState(storage);
     s.completedQuizId = quizId;
-    s.pending = pending || null;
+    if (pending) s.queue.push(pending);
     saveState(storage, s);
-    return s;
+    return loadState(storage);
   }
-  function clearPending(storage) {
+  // Drop one sent score (the given one, else the oldest).
+  function clearPending(storage, sent) {
     var s = loadState(storage);
-    s.pending = null;
+    var key = sent ? JSON.stringify(sent) : null;
+    var i = key ? s.queue.findIndex(function (p) { return JSON.stringify(p) === key; }) : 0;
+    if (i < 0 && !key) i = 0;
+    if (i >= 0) s.queue.splice(i, 1);
     saveState(storage, s);
-    return s;
+    return loadState(storage);
   }
   function pending(storage) { return loadState(storage).pending; }
+  function pendingAll(storage) { return loadState(storage).queue; }
 
   function reset(storage) {
     try { storage.removeItem(ATTEMPT_KEY); } catch (e) {}
     try { storage.removeItem(STATE_KEY); } catch (e) {}
   }
 
-  // Open unless the quiz for the most recent quiz day is already finished.
-  // An unfinished older quiz is simply replaced by the newer quiz id.
-  function isAvailable(state, date, days) {
-    var id = quizIdFor(date || new Date(), days);
-    var done = state && (state.completedQuizId || state.completedWeekId);
-    return !state || done !== id;
+  // TRTL-13: always open, any day, repeatable (finishing a quiz no longer locks it).
+  function isAvailable() { return true; }
+  // True once a quiz has been finished today (ET); used only for the "done today" badge.
+  function doneToday(state, date) {
+    var id = state && (state.completedQuizId || state.completedWeekId);
+    return !!id && id === quizIdFor(date || new Date());
   }
 
   function normalizeAnswer(s) {
@@ -242,7 +252,7 @@
   function buildQuiz(words, attempts, now, progress, days, recent) {
     now = now || new Date();
     var quizId = quizIdFor(now, days);
-    var start = prevQuizId(quizId, days);
+    var start = days == null ? addDays(quizId, -WINDOW_DAYS) : prevQuizId(quizId, days);
     var end = etYmd(now);
     var byWord = {};
     (attempts || []).forEach(function (ev) {
@@ -317,13 +327,13 @@
   }
 
   var api = {
-    QUIZ_DAYS: QUIZ_DAYS, MIN_ITEMS: MIN_ITEMS, MAX_ITEMS: MAX_ITEMS, SLOW_MS: SLOW_MS, BLANK: BLANK,
+    QUIZ_DAYS: QUIZ_DAYS, WINDOW_DAYS: WINDOW_DAYS, MIN_ITEMS: MIN_ITEMS, MAX_ITEMS: MAX_ITEMS, SLOW_MS: SLOW_MS, BLANK: BLANK,
     ATTEMPT_KEY: ATTEMPT_KEY, STATE_KEY: STATE_KEY, DAY_NAMES: DAY_NAMES,
     dayName: dayName, weekIdFor: weekIdFor, quizIdFor: quizIdFor, prevQuizId: prevQuizId, nextQuizDay: nextQuizDay,
     STARS_URL: STARS_URL, quizEvent: quizEvent, postQuizEvent: postQuizEvent, addDays: addDays, etYmd: etYmd,
     logAttempt: logAttempt, loadAttempts: loadAttempts, loadState: loadState,
-    markCompleted: markCompleted, clearPending: clearPending, pending: pending, reset: reset,
-    isAvailable: isAvailable, normalizeAnswer: normalizeAnswer, answersMatch: answersMatch,
+    markCompleted: markCompleted, clearPending: clearPending, pending: pending, pendingAll: pendingAll, reset: reset,
+    isAvailable: isAvailable, doneToday: doneToday, normalizeAnswer: normalizeAnswer, answersMatch: answersMatch,
     hasBlank: hasBlank, clueFor: clueFor, fillBlank: fillBlank, buildQuiz: buildQuiz,
     noteQuizResult: noteQuizResult, scoreOf: scoreOf
   };

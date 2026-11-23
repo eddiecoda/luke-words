@@ -64,37 +64,40 @@ const mem = { d: {}, getItem(k) { return this.d[k] ?? null; }, setItem(k, v) { t
 SRS.save(mem, p); assert.deepStrictEqual(SRS.load(mem), p); SRS.reset(mem); assert.deepStrictEqual(SRS.load(mem), {});
 console.log('All SRS tests passed');
 
-// Sentence quiz: Mon, Wed, Fri (ET)
+// Sentence quiz: any day, repeatable (TRTL-13). The day helpers still work with an explicit weekday list (MWF below).
 const SQ = require('./sentencequiz.js');
-assert.deepStrictEqual(SQ.QUIZ_DAYS, [1, 3, 5], 'Mon, Wed, Fri');
+const MWF = [1, 3, 5];
+assert.deepStrictEqual(SQ.QUIZ_DAYS, [0, 1, 2, 3, 4, 5, 6], 'every day');
+assert.strictEqual(SQ.quizIdFor(new Date('2026-10-29T18:00:00Z')), '2026-10-29', 'default quiz id is today (ET)');
+assert.strictEqual(SQ.quizIdFor(new Date('2026-11-02T04:30:00Z')), '2026-11-01', 'ET date, not UTC');
 const thu = new Date('2026-10-29T18:00:00Z');
-assert.strictEqual(SQ.quizIdFor(thu), '2026-10-28', 'Thursday belongs to Wednesday\'s quiz');
-assert.strictEqual(SQ.weekIdFor(thu), '2026-10-28', 'old name still works');
-assert.strictEqual(SQ.quizIdFor(new Date('2026-10-26T16:00:00Z')), '2026-10-26', 'Monday opens its own quiz');
-assert.strictEqual(SQ.quizIdFor(new Date('2026-10-27T16:00:00Z')), '2026-10-26', 'Tuesday is still Monday\'s quiz');
-assert.strictEqual(SQ.quizIdFor(new Date('2026-10-31T16:00:00Z')), '2026-10-30', 'Saturday is Friday\'s quiz');
-assert.strictEqual(SQ.quizIdFor(new Date('2026-11-01T16:00:00Z')), '2026-10-30', 'Sunday is Friday\'s quiz');
-assert.strictEqual(SQ.quizIdFor(new Date('2026-10-28T03:30:00Z')), '2026-10-26', 'still Tuesday evening in ET');
-assert.strictEqual(SQ.quizIdFor(new Date('2026-10-28T04:30:00Z')), '2026-10-28', 'Wednesday has started in ET');
-assert.strictEqual(SQ.quizIdFor(new Date('2026-11-02T05:30:00Z')), '2026-11-02', 'Monday after the DST change (EST)');
-assert.strictEqual(SQ.quizIdFor(new Date('2026-11-02T04:30:00Z')), '2026-10-30', 'still Sunday 11:30 PM EST');
+assert.strictEqual(SQ.quizIdFor(thu, MWF), '2026-10-28', 'Thursday belongs to Wednesday\'s quiz');
+assert.strictEqual(SQ.weekIdFor(thu, MWF), '2026-10-28', 'old name still works');
+assert.strictEqual(SQ.quizIdFor(new Date('2026-10-26T16:00:00Z'), MWF), '2026-10-26', 'Monday opens its own quiz');
+assert.strictEqual(SQ.quizIdFor(new Date('2026-10-27T16:00:00Z'), MWF), '2026-10-26', 'Tuesday is still Monday\'s quiz');
+assert.strictEqual(SQ.quizIdFor(new Date('2026-10-31T16:00:00Z'), MWF), '2026-10-30', 'Saturday is Friday\'s quiz');
+assert.strictEqual(SQ.quizIdFor(new Date('2026-11-01T16:00:00Z'), MWF), '2026-10-30', 'Sunday is Friday\'s quiz');
+assert.strictEqual(SQ.quizIdFor(new Date('2026-10-28T03:30:00Z'), MWF), '2026-10-26', 'still Tuesday evening in ET');
+assert.strictEqual(SQ.quizIdFor(new Date('2026-10-28T04:30:00Z'), MWF), '2026-10-28', 'Wednesday has started in ET');
+assert.strictEqual(SQ.quizIdFor(new Date('2026-11-02T05:30:00Z'), MWF), '2026-11-02', 'Monday after the DST change (EST)');
+assert.strictEqual(SQ.quizIdFor(new Date('2026-11-02T04:30:00Z'), MWF), '2026-10-30', 'still Sunday 11:30 PM EST');
 assert.strictEqual(SQ.quizIdFor(thu, 4), '2026-10-29', 'quiz days can be moved');
-assert.strictEqual(SQ.prevQuizId('2026-10-28'), '2026-10-26');
-assert.strictEqual(SQ.prevQuizId('2026-10-30'), '2026-10-28');
-assert.strictEqual(SQ.prevQuizId('2026-11-02'), '2026-10-30', 'Monday looks back to Friday');
-assert.deepStrictEqual(SQ.nextQuizDay(new Date('2026-10-26T16:00:00Z')), { ymd: '2026-10-28', name: 'Wednesday' });
-assert.deepStrictEqual(SQ.nextQuizDay(thu), { ymd: '2026-10-30', name: 'Friday' });
-assert.deepStrictEqual(SQ.nextQuizDay(new Date('2026-10-30T16:00:00Z')), { ymd: '2026-11-02', name: 'Monday' });
-assert.deepStrictEqual(SQ.nextQuizDay(new Date('2026-10-31T16:00:00Z')), { ymd: '2026-11-02', name: 'Monday' });
-// Opens on each quiz day, stays open until finished; a newer quiz day replaces an unfinished older one.
+assert.strictEqual(SQ.prevQuizId('2026-10-28', MWF), '2026-10-26');
+assert.strictEqual(SQ.prevQuizId('2026-10-30', MWF), '2026-10-28');
+assert.strictEqual(SQ.prevQuizId('2026-11-02', MWF), '2026-10-30', 'Monday looks back to Friday');
+assert.deepStrictEqual(SQ.nextQuizDay(new Date('2026-10-26T16:00:00Z'), MWF), { ymd: '2026-10-28', name: 'Wednesday' });
+assert.deepStrictEqual(SQ.nextQuizDay(thu, MWF), { ymd: '2026-10-30', name: 'Friday' });
+assert.deepStrictEqual(SQ.nextQuizDay(new Date('2026-10-30T16:00:00Z'), MWF), { ymd: '2026-11-02', name: 'Monday' });
+assert.deepStrictEqual(SQ.nextQuizDay(new Date('2026-10-31T16:00:00Z'), MWF), { ymd: '2026-11-02', name: 'Monday' });
+// TRTL-13: open every day, and still open right after finishing (repeatable). "Done today" is a badge only.
 const mon = new Date('2026-10-26T16:00:00Z'), tue = new Date('2026-10-27T16:00:00Z'), wed = new Date('2026-10-28T16:00:00Z');
-assert.strictEqual(SQ.isAvailable({ completedQuizId: '' }, mon), true);
-assert.strictEqual(SQ.isAvailable({ completedQuizId: '2026-10-23' }, tue), true, 'Monday\'s quiz still open on Tuesday');
-assert.strictEqual(SQ.isAvailable({ completedQuizId: '2026-10-26' }, tue), false, 'done for Monday');
-assert.strictEqual(SQ.isAvailable({ completedQuizId: '2026-10-26' }, wed), true, 'Wednesday opens a new one');
-assert.strictEqual(SQ.isAvailable({ completedQuizId: '2026-10-23' }, wed), true, 'unfinished Monday quiz is replaced by Wednesday\'s');
-assert.strictEqual(SQ.isAvailable({ completedQuizId: '2026-10-28' }, thu), false);
-assert.strictEqual(SQ.isAvailable({ completedWeekId: '2026-10-25' }, thu), true, 'old weekly state does not block');
+[mon, tue, wed, thu, new Date('2026-10-31T16:00:00Z'), new Date('2026-11-01T16:00:00Z')].forEach(d => {
+  assert.strictEqual(SQ.isAvailable({ completedQuizId: '' }, d), true, 'open any day');
+  assert.strictEqual(SQ.isAvailable({ completedQuizId: SQ.quizIdFor(d) }, d), true, 'open again after finishing today');
+});
+assert.strictEqual(SQ.doneToday({ completedQuizId: '2026-10-27' }, tue), true);
+assert.strictEqual(SQ.doneToday({ completedQuizId: '2026-10-26' }, tue), false);
+assert.strictEqual(SQ.doneToday({ completedQuizId: '' }, tue), false);
 assert.strictEqual(SQ.answersMatch('  TiMiD  ', 'TIMID'), true);
 assert.strictEqual(SQ.answersMatch('timid', 'TIMID'), true);
 assert.strictEqual(SQ.answersMatch('tim id', 'TIMID'), false);
@@ -137,9 +140,9 @@ assert.deepStrictEqual(built.items.slice(0, 8).map(w => w.word), ['TIMID', 'VAST
 assert(!built.items.some(w => w.word === 'HASTY'), 'outside the window');
 assert.strictEqual(built.items.length, SQ.MIN_ITEMS, 'eight practiced words topped up to 10 with recent words');
 assert.deepStrictEqual(built.items.slice(8).map(w => w.word), curSet.map(w => w.word).filter(w => !built.items.slice(0, 8).some(b => b.word === w)).slice(0, 2));
-assert.strictEqual(built.quizId, '2026-10-28');
-assert.strictEqual(built.weekId, '2026-10-28');
-assert.strictEqual(built.windowStart, '2026-10-26', 'window starts at the previous quiz day');
+assert.strictEqual(built.quizId, '2026-10-29', 'quiz id is today');
+assert.strictEqual(built.weekId, '2026-10-29');
+assert.strictEqual(built.windowStart, '2026-10-26', 'window: today and the 3 days before');
 assert.strictEqual(built.windowEnd, '2026-10-29');
 // Monday's quiz looks back to Friday.
 const monQuiz = SQ.buildQuiz(words, [{ word: 'HASTY', ok: false, ms: 1000, attempt: 1, ts: at('2026-10-31'), kind: 'card' }], new Date('2026-11-02T17:00:00Z'), {});
@@ -203,13 +206,22 @@ const store2 = { d: {}, getItem(k) { return this.d[k] ?? null; }, setItem(k, v) 
 SQ.logAttempt(store2, { word: 'TIMID', ok: false, ms: 1000, attempt: 1, ts: at('2026-10-21'), kind: 'card' });
 SQ.logAttempt(store2, { word: 'OLD', ok: false, ms: 1000, attempt: 1, ts: Date.now() - 40 * 86400000, kind: 'card' }, Date.now());
 assert.deepStrictEqual(SQ.loadAttempts(store2).map(a => a.word), ['TIMID'], 'attempts older than 3 weeks are dropped');
-SQ.markCompleted(store2, '2026-10-28', { score: '1/1', missed: 'TIMID' });
-assert.strictEqual(SQ.isAvailable(SQ.loadState(store2), thu), false);
-assert.strictEqual(SQ.isAvailable(SQ.loadState(store2), new Date('2026-10-30T16:00:00Z')), true, 'Friday opens the next quiz');
+SQ.markCompleted(store2, '2026-10-29', { score: '1/1', missed: 'TIMID' });
+assert.strictEqual(SQ.isAvailable(SQ.loadState(store2), thu), true, 'still open after finishing (repeatable)');
+assert.strictEqual(SQ.doneToday(SQ.loadState(store2), thu), true);
 assert.strictEqual(SQ.pending(store2).missed, 'TIMID');
+// A repeat quiz finished while the first score is still unsent queues behind it (nothing is overwritten).
+SQ.markCompleted(store2, '2026-10-29', { score: '2/2', missed: 'none' });
+assert.deepStrictEqual(SQ.pendingAll(store2).map(p => p.score), ['1/1', '2/2']);
+SQ.clearPending(store2, { score: '2/2', missed: 'none' });
+assert.deepStrictEqual(SQ.pendingAll(store2).map(p => p.score), ['1/1']);
 SQ.clearPending(store2);
 assert.strictEqual(SQ.pending(store2), null);
-assert.strictEqual(SQ.loadState(store2).completedQuizId, '2026-10-28');
+assert.strictEqual(SQ.loadState(store2).completedQuizId, '2026-10-29');
+// Old saved state (single pending, no queue) still loads.
+store2.setItem(SQ.STATE_KEY, JSON.stringify({ completedQuizId: '2026-10-28', pending: { score: '3/3' } }));
+assert.deepStrictEqual(SQ.pendingAll(store2).map(p => p.score), ['3/3']);
+SQ.clearPending(store2);
 SQ.reset(store2);
 assert.deepStrictEqual(SQ.loadAttempts(store2), []);
 assert.strictEqual(SQ.loadState(store2).completedQuizId, '');

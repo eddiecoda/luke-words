@@ -85,18 +85,17 @@
     return SQ.buildQuiz(visible(), SQ.loadAttempts(localStorage), new Date(), progress, null, recentWords());
   }
   function updateSentenceCard() {
-    var ready = SQ.isAvailable(SQ.loadState(localStorage), new Date());
-    var day = SQ.nextQuizDay(new Date()).name;
+    // TRTL-13: open any day and repeatable; "Done today" is only a badge, never a lockout.
+    var doneToday = SQ.doneToday(SQ.loadState(localStorage), new Date());
     var built = words.length ? buildSentenceQuiz() : null;
-    $('sentenceBadge').textContent = ready ? 'Ready' : 'Done';
-    $('sentenceBadge').className = ready ? 'badge-ready' : 'badge-done';
-    $('btnSentence').disabled = !ready;
-    $('btnSentence').textContent = ready
-      ? (built && built.items.length ? 'Start quiz · ' + built.items.length + ' words' : 'Start quiz')
-      : 'Finished';
-    $('sentencePrompt').textContent = ready
-      ? 'Fill in the blanks with the words that gave you trouble lately. The toughest ones come first, and it stays open until you finish it.'
-      : 'You finished this quiz. The next one opens ' + day + '.';
+    var n = built && built.items.length ? ' · ' + built.items.length + ' words' : '';
+    $('sentenceBadge').textContent = doneToday ? 'Done today ✓' : 'Ready';
+    $('sentenceBadge').className = doneToday ? 'badge-done' : 'badge-ready';
+    $('btnSentence').disabled = !words.length;
+    $('btnSentence').textContent = (doneToday ? 'Go again' : 'Start quiz') + n;
+    $('sentencePrompt').textContent = doneToday
+      ? 'Nice! You can take another quiz any time. It picks the words that gave you trouble lately, toughest first.'
+      : 'Fill in the blanks with the words that gave you trouble lately. The toughest ones come first. Open any day, as often as you like.';
   }
 
   function start(mode) {
@@ -223,10 +222,13 @@
   }
   function retryQuizEmail() {
     if (quizSending) return;
-    var pending = SQ.pending(localStorage);
-    if (!pending) return;
+    var queue = SQ.pendingAll(localStorage);
+    if (!queue.length) return;
     quizSending = true;
-    wlog.quiz(pending).then(function () { SQ.clearPending(localStorage); })
+    // Send every unsent quiz score, oldest first; stop at the first failure and retry later.
+    queue.reduce(function (p, item) {
+      return p.then(function () { return wlog.quiz(item).then(function () { SQ.clearPending(localStorage, item); }); });
+    }, Promise.resolve())
       .catch(function () {})
       .then(function () { quizSending = false; });
   }
@@ -268,7 +270,7 @@
     return esc(sentence.slice(0, idx)) + '<span class="fit ' + (ok ? 'ok' : 'bad') + '">' + esc(pretty) + '</span>' + esc(sentence.slice(idx + SQ.BLANK.length));
   }
   function startSentence() {
-    if (!SQ.isAvailable(SQ.loadState(localStorage), new Date())) return;
+    if (!words.length) return;
     var built = buildSentenceQuiz();
     sq = { items: built.items, index: 0, correct: 0, missed: [], quizId: built.quizId, bank: SRS.shuffle(built.items.map(function (w) { return w.word; })), answered: false, done: false };
     show('sentence');
@@ -370,7 +372,7 @@
     show('sentenceDone');
     quizSending = true;
     wlog.quiz(payload).then(function () {
-      SQ.clearPending(localStorage);
+      SQ.clearPending(localStorage, payload);
       $('sqLogMsg').textContent = 'Logged for ' + payload.date_et + '.';
     }).catch(function () {
       $('sqLogMsg').textContent = 'Score saved on this device. The email will send when you are back online.';
