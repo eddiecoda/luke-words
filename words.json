@@ -561,40 +561,6 @@
   "order": 2
  },
  {
-  "word": "AMBIGUOUS",
-  "level": "middle",
-  "choices": [
-   "unclear",
-   "ambitious",
-   "obvious",
-   "enormous"
-  ],
-  "answer": "unclear",
-  "definition": "having more than one possible meaning; not clear",
-  "example": "The directions were so ambiguous that half the class got lost.",
-  "sentence": "The directions were so _____ that half the class could not tell which road to take.",
-  "addedDate": "2026-10-19",
-  "set": "2026-10-19",
-  "order": 2
- },
- {
-  "word": "TENACIOUS",
-  "level": "middle",
-  "choices": [
-   "tense",
-   "gentle",
-   "careless",
-   "persistent"
-  ],
-  "answer": "persistent",
-  "definition": "refusing to give up; holding on firmly",
-  "example": "The tenacious goalie blocked shot after shot.",
-  "sentence": "The _____ goalie refused to quit and blocked shot after shot.",
-  "addedDate": "2026-10-19",
-  "set": "2026-10-19",
-  "order": 2
- },
- {
   "word": "FRIVOLOUS",
   "level": "middle",
   "choices": [
@@ -2822,23 +2788,6 @@
   "order": 9
  },
  {
-  "word": "GROGGY",
-  "level": "lower",
-  "choices": [
-   "alert",
-   "greedy",
-   "soggy",
-   "dazed"
-  ],
-  "answer": "dazed",
-  "definition": "weak and confused, especially after sleeping",
-  "example": "Luke felt groggy when his alarm went off at six.",
-  "sentence": "After his nap, Grandpa was _____ and could not remember what day it was.",
-  "addedDate": "2026-10-31",
-  "set": "L-003",
-  "order": 9
- },
- {
   "word": "JEER",
   "level": "lower",
   "choices": [
@@ -3825,23 +3774,6 @@
   "order": 12
  },
  {
-  "word": "ALOOF",
-  "level": "middle",
-  "choices": [
-   "distant",
-   "friendly",
-   "aloft",
-   "allow"
-  ],
-  "answer": "distant",
-  "definition": "cool and not friendly; keeping apart from others",
-  "example": "The new cat stayed aloof and would not come near us.",
-  "sentence": "The new student seemed _____ at first, sitting alone and saying little.",
-  "addedDate": "2026-10-31",
-  "set": "L-006",
-  "order": 12
- },
- {
   "word": "SHUN",
   "level": "lower",
   "choices": [
@@ -3939,23 +3871,6 @@
   "definition": "to frighten someone suddenly",
   "example": "The loud thunder startled the sleeping cat.",
   "sentence": "Loud thunder can _____ even the bravest dog.",
-  "addedDate": "2026-10-31",
-  "set": "L-006",
-  "order": 12
- },
- {
-  "word": "ENTHRALL",
-  "level": "middle",
-  "choices": [
-   "bore",
-   "captivate",
-   "enroll",
-   "enthrone"
-  ],
-  "answer": "captivate",
-  "definition": "to hold someone's complete attention",
-  "example": "The circus acrobats enthralled the audience.",
-  "sentence": "The storyteller's spooky tale will _____ the campers around the fire.",
   "addedDate": "2026-10-31",
   "set": "L-006",
   "order": 12
@@ -4148,23 +4063,6 @@
   "order": 13
  },
  {
-  "word": "UNRULY",
-  "level": "lower",
-  "choices": [
-   "unreal",
-   "well-behaved",
-   "disorderly",
-   "unripe"
-  ],
-  "answer": "disorderly",
-  "definition": "hard to control or discipline",
-  "example": "The substitute could not calm the unruly class.",
-  "sentence": "The substitute could not calm the _____ class after lunch.",
-  "addedDate": "2026-10-31",
-  "set": "L-007",
-  "order": 13
- },
- {
   "word": "CLARIFY",
   "level": "lower",
   "choices": [
@@ -4279,23 +4177,6 @@
   "definition": "to eat something quickly and hungrily",
   "example": "The hungry team devoured three pizzas in ten minutes.",
   "sentence": "The hungry wolves will _____ every scrap of food in just minutes.",
-  "addedDate": "2026-10-31",
-  "set": "L-007",
-  "order": 13
- },
- {
-  "word": "ASTUTE",
-  "level": "middle",
-  "choices": [
-   "foolish",
-   "astonished",
-   "clever",
-   "absolute"
-  ],
-  "answer": "clever",
-  "definition": "quick to notice and understand things",
-  "example": "The astute detective spotted the missing clue.",
-  "sentence": "The _____ shopper noticed that the sale price was higher than last week.",
   "addedDate": "2026-10-31",
   "set": "L-007",
   "order": 13
@@ -4675,23 +4556,6 @@
   "order": 14
  },
  {
-  "word": "CRUDE",
-  "level": "lower",
-  "choices": [
-   "polished",
-   "rough",
-   "cruel",
-   "crowd"
-  ],
-  "answer": "rough",
-  "definition": "made in a simple, rough way; not refined",
-  "example": "The campers built a crude shelter out of branches.",
-  "sentence": "The campers built a _____ raft from logs and rope, but it still floated.",
-  "addedDate": "2026-10-31",
-  "set": "L-008",
-  "order": 14
- },
- {
   "word": "GRATEFUL",
   "level": "lower",
   "choices": [
@@ -4726,23 +4590,6 @@
   "order": 15
  },
  {
-  "word": "BLEAK",
-  "level": "lower",
-  "choices": [
-   "bleach",
-   "sunny",
-   "brave",
-   "cheerless"
-  ],
-  "answer": "cheerless",
-  "definition": "cold, bare, and without hope or cheer",
-  "example": "The bleak winter field had no color at all.",
-  "sentence": "The empty beach looked _____ in winter, with gray skies and no one in sight.",
-  "addedDate": "2026-10-31",
-  "set": "L-009",
-  "order": 15
- },
- {
   "word": "MENACE",
   "level": "lower",
   "choices": [
@@ -4772,23 +4619,6 @@
   "definition": "to break suddenly into many pieces",
   "example": "The baseball shattered the garage window.",
   "sentence": "A baseball hit too hard can _____ a car windshield.",
-  "addedDate": "2026-10-31",
-  "set": "L-009",
-  "order": 15
- },
- {
-  "word": "PENSIVE",
-  "level": "middle",
-  "choices": [
-   "pension",
-   "thoughtful",
-   "expensive",
-   "thoughtless"
-  ],
-  "answer": "thoughtful",
-  "definition": "deep in serious thought",
-  "example": "Luke sat pensive by the window, thinking about the test.",
-  "sentence": "Luke sat _____ by the window, thinking about his grandpa.",
   "addedDate": "2026-10-31",
   "set": "L-009",
   "order": 15
@@ -4908,23 +4738,6 @@
   "definition": "quiet, gentle, and easily pushed around",
   "example": "The meek mouse let the other mice eat first.",
   "sentence": "The _____ puppy let the bigger dogs eat first and never barked.",
-  "addedDate": "2026-10-31",
-  "set": "L-009",
-  "order": 15
- },
- {
-  "word": "OBSTRUCT",
-  "level": "lower",
-  "choices": [
-   "construct",
-   "clear",
-   "block",
-   "instruct"
-  ],
-  "answer": "block",
-  "definition": "to get in the way of",
-  "example": "A fallen tree obstructed the road.",
-  "sentence": "Please do not park where you will _____ the driveway.",
   "addedDate": "2026-10-31",
   "set": "L-009",
   "order": 15
@@ -5168,23 +4981,6 @@
   "order": 16
  },
  {
-  "word": "FORMIDABLE",
-  "level": "middle",
-  "choices": [
-   "forgettable",
-   "intimidating",
-   "formal",
-   "weak"
-  ],
-  "answer": "intimidating",
-  "definition": "causing fear or respect because of size or strength",
-  "example": "The undefeated team was a formidable opponent.",
-  "sentence": "The undefeated champion was a _____ opponent that every team feared.",
-  "addedDate": "2026-10-31",
-  "set": "L-010",
-  "order": 16
- },
- {
   "word": "PERSUADE",
   "level": "lower",
   "choices": [
@@ -5197,23 +4993,6 @@
   "definition": "to talk someone into believing or doing something",
   "example": "Luke persuaded his parents to let him stay up late.",
   "sentence": "Luke tried to _____ his parents to let him get a pet snake.",
-  "addedDate": "2026-10-31",
-  "set": "L-010",
-  "order": 16
- },
- {
-  "word": "LEGIBLE",
-  "level": "lower",
-  "choices": [
-   "legend",
-   "eligible",
-   "scribbled",
-   "readable"
-  ],
-  "answer": "readable",
-  "definition": "clear enough to be read",
-  "example": "Please make your handwriting legible.",
-  "sentence": "Write your name clearly so it is _____ on the form.",
   "addedDate": "2026-10-31",
   "set": "L-010",
   "order": 16
@@ -5389,57 +5168,6 @@
   "order": 16
  },
  {
-  "word": "CAPTURE",
-  "level": "lower",
-  "choices": [
-   "release",
-   "seize",
-   "capsize",
-   "chase"
-  ],
-  "answer": "seize",
-  "definition": "to catch and take control of",
-  "example": "The cat tried to capture the mouse in the barn.",
-  "sentence": "The zookeepers used a large net to _____ the escaped parrot.",
-  "addedDate": "2026-11-02",
-  "set": "L-011",
-  "order": 17
- },
- {
-  "word": "HAZY",
-  "level": "lower",
-  "choices": [
-   "unclear",
-   "lazy",
-   "heavy",
-   "bright"
-  ],
-  "answer": "unclear",
-  "definition": "not clear; misty or blurry",
-  "example": "The mountains looked hazy through the morning fog.",
-  "sentence": "Smoke from the fire made the sky look _____ and dim all afternoon.",
-  "addedDate": "2026-11-02",
-  "set": "L-011",
-  "order": 17
- },
- {
-  "word": "VIGOROUS",
-  "level": "lower",
-  "choices": [
-   "vicious",
-   "weak",
-   "valuable",
-   "energetic"
-  ],
-  "answer": "energetic",
-  "definition": "full of strength and energy",
-  "example": "After a vigorous workout, Sam needed a long drink of water.",
-  "sentence": "The coach led a _____ practice that left everyone sweaty and out of breath.",
-  "addedDate": "2026-11-02",
-  "set": "L-011",
-  "order": 17
- },
- {
   "word": "CONSENT",
   "level": "lower",
   "choices": [
@@ -5542,23 +5270,6 @@
   "order": 17
  },
  {
-  "word": "COMPREHEND",
-  "level": "lower",
-  "choices": [
-   "compare",
-   "complete",
-   "understand",
-   "ignore"
-  ],
-  "answer": "understand",
-  "definition": "to grasp the meaning of something",
-  "example": "It took me two readings to comprehend the poem.",
-  "sentence": "The directions were so confusing that no one could _____ what to do.",
-  "addedDate": "2026-11-02",
-  "set": "L-011",
-  "order": 17
- },
- {
   "word": "VIBRANT",
   "level": "lower",
   "choices": [
@@ -5610,23 +5321,6 @@
   "order": 17
  },
  {
-  "word": "DEPRIVE",
-  "level": "lower",
-  "choices": [
-   "deny",
-   "give",
-   "derive",
-   "deserve"
-  ],
-  "answer": "deny",
-  "definition": "to keep something needed or wanted away from someone",
-  "example": "Staying up late will deprive you of sleep.",
-  "sentence": "Taking away recess would _____ the kids of their only chance to run around.",
-  "addedDate": "2026-11-02",
-  "set": "L-011",
-  "order": 17
- },
- {
   "word": "FORTUNATE",
   "level": "lower",
   "choices": [
@@ -5639,23 +5333,6 @@
   "definition": "having good luck",
   "example": "We were fortunate that the rain stopped before the game.",
   "sentence": "No one was hurt in the crash, so the driver was very _____.",
-  "addedDate": "2026-11-02",
-  "set": "L-011",
-  "order": 17
- },
- {
-  "word": "BENEFACTOR",
-  "level": "middle",
-  "choices": [
-   "factory",
-   "enemy",
-   "beneficiary",
-   "patron"
-  ],
-  "answer": "patron",
-  "definition": "a person who gives money or help to a person or cause",
-  "example": "A generous benefactor paid for the new library wing.",
-  "sentence": "Thanks to a wealthy _____, the town's hospital got a brand-new wing.",
   "addedDate": "2026-11-02",
   "set": "L-011",
   "order": 17
@@ -5729,6 +5406,346 @@
   "order": 17
  },
  {
+  "word": "WITTY",
+  "level": "lower",
+  "choices": [
+   "dull",
+   "clever",
+   "clumsy",
+   "rude"
+  ],
+  "answer": "clever",
+  "definition": "cleverly funny; quick with smart humor",
+  "example": "His witty reply made the whole class laugh.",
+  "sentence": "His _____ reply was so clever that the whole class laughed.",
+  "addedDate": "2026-11-23",
+  "set": "L-012",
+  "order": 18
+ },
+ {
+  "word": "FORMIDABLE",
+  "level": "middle",
+  "choices": [
+   "forgettable",
+   "intimidating",
+   "formal",
+   "weak"
+  ],
+  "answer": "intimidating",
+  "definition": "causing fear or respect because of size or strength",
+  "example": "The undefeated team was a formidable opponent.",
+  "sentence": "The undefeated champion was a _____ opponent that every team feared.",
+  "addedDate": "2026-10-31",
+  "set": "L-012",
+  "order": 18
+ },
+ {
+  "word": "LEGIBLE",
+  "level": "lower",
+  "choices": [
+   "legend",
+   "eligible",
+   "scribbled",
+   "readable"
+  ],
+  "answer": "readable",
+  "definition": "clear enough to be read",
+  "example": "Please make your handwriting legible.",
+  "sentence": "Write your name clearly so it is _____ on the form.",
+  "addedDate": "2026-10-31",
+  "set": "L-012",
+  "order": 18
+ },
+ {
+  "word": "ENTHRALL",
+  "level": "middle",
+  "choices": [
+   "bore",
+   "captivate",
+   "enroll",
+   "enthrone"
+  ],
+  "answer": "captivate",
+  "definition": "to hold someone's complete attention",
+  "example": "The circus acrobats enthralled the audience.",
+  "sentence": "The storyteller's spooky tale will _____ the campers around the fire.",
+  "addedDate": "2026-10-31",
+  "set": "L-012",
+  "order": 18
+ },
+ {
+  "word": "GROGGY",
+  "level": "lower",
+  "choices": [
+   "alert",
+   "greedy",
+   "soggy",
+   "dazed"
+  ],
+  "answer": "dazed",
+  "definition": "weak and confused, especially after sleeping",
+  "example": "Luke felt groggy when his alarm went off at six.",
+  "sentence": "After his nap, Grandpa was _____ and could not remember what day it was.",
+  "addedDate": "2026-10-31",
+  "set": "L-012",
+  "order": 18
+ },
+ {
+  "word": "UNRULY",
+  "level": "lower",
+  "choices": [
+   "unreal",
+   "well-behaved",
+   "disorderly",
+   "unripe"
+  ],
+  "answer": "disorderly",
+  "definition": "hard to control or discipline",
+  "example": "The substitute could not calm the unruly class.",
+  "sentence": "The substitute could not calm the _____ class after lunch.",
+  "addedDate": "2026-10-31",
+  "set": "L-012",
+  "order": 18
+ },
+ {
+  "word": "OBSTRUCT",
+  "level": "lower",
+  "choices": [
+   "construct",
+   "clear",
+   "block",
+   "instruct"
+  ],
+  "answer": "block",
+  "definition": "to get in the way of",
+  "example": "A fallen tree obstructed the road.",
+  "sentence": "Please do not park where you will _____ the driveway.",
+  "addedDate": "2026-10-31",
+  "set": "L-012",
+  "order": 18
+ },
+ {
+  "word": "CRUDE",
+  "level": "lower",
+  "choices": [
+   "polished",
+   "rough",
+   "cruel",
+   "crowd"
+  ],
+  "answer": "rough",
+  "definition": "made in a simple, rough way; not refined",
+  "example": "The campers built a crude shelter out of branches.",
+  "sentence": "The campers built a _____ raft from logs and rope, but it still floated.",
+  "addedDate": "2026-10-31",
+  "set": "L-012",
+  "order": 18
+ },
+ {
+  "word": "BLEAK",
+  "level": "lower",
+  "choices": [
+   "bleach",
+   "sunny",
+   "brave",
+   "cheerless"
+  ],
+  "answer": "cheerless",
+  "definition": "cold, bare, and without hope or cheer",
+  "example": "The bleak winter field had no color at all.",
+  "sentence": "The empty beach looked _____ in winter, with gray skies and no one in sight.",
+  "addedDate": "2026-10-31",
+  "set": "L-012",
+  "order": 18
+ },
+ {
+  "word": "PENSIVE",
+  "level": "middle",
+  "choices": [
+   "pension",
+   "thoughtful",
+   "expensive",
+   "thoughtless"
+  ],
+  "answer": "thoughtful",
+  "definition": "deep in serious thought",
+  "example": "Luke sat pensive by the window, thinking about the test.",
+  "sentence": "Luke sat _____ by the window, thinking about his grandpa.",
+  "addedDate": "2026-10-31",
+  "set": "L-012",
+  "order": 18
+ },
+ {
+  "word": "ALOOF",
+  "level": "middle",
+  "choices": [
+   "distant",
+   "friendly",
+   "aloft",
+   "allow"
+  ],
+  "answer": "distant",
+  "definition": "cool and not friendly; keeping apart from others",
+  "example": "The new cat stayed aloof and would not come near us.",
+  "sentence": "The new student seemed _____ at first, sitting alone and saying little.",
+  "addedDate": "2026-10-31",
+  "set": "L-012",
+  "order": 18
+ },
+ {
+  "word": "ASTUTE",
+  "level": "middle",
+  "choices": [
+   "foolish",
+   "astonished",
+   "clever",
+   "absolute"
+  ],
+  "answer": "clever",
+  "definition": "quick to notice and understand things",
+  "example": "The astute detective spotted the missing clue.",
+  "sentence": "The _____ shopper noticed that the sale price was higher than last week.",
+  "addedDate": "2026-10-31",
+  "set": "L-012",
+  "order": 18
+ },
+ {
+  "word": "CAPTURE",
+  "level": "lower",
+  "choices": [
+   "release",
+   "seize",
+   "capsize",
+   "chase"
+  ],
+  "answer": "seize",
+  "definition": "to catch and take control of",
+  "example": "The cat tried to capture the mouse in the barn.",
+  "sentence": "The zookeepers used a large net to _____ the escaped parrot.",
+  "addedDate": "2026-11-02",
+  "set": "L-012",
+  "order": 18
+ },
+ {
+  "word": "HAZY",
+  "level": "lower",
+  "choices": [
+   "unclear",
+   "lazy",
+   "heavy",
+   "bright"
+  ],
+  "answer": "unclear",
+  "definition": "not clear; misty or blurry",
+  "example": "The mountains looked hazy through the morning fog.",
+  "sentence": "Smoke from the fire made the sky look _____ and dim all afternoon.",
+  "addedDate": "2026-11-02",
+  "set": "L-012",
+  "order": 18
+ },
+ {
+  "word": "VIGOROUS",
+  "level": "lower",
+  "choices": [
+   "vicious",
+   "weak",
+   "valuable",
+   "energetic"
+  ],
+  "answer": "energetic",
+  "definition": "full of strength and energy",
+  "example": "After a vigorous workout, Sam needed a long drink of water.",
+  "sentence": "The coach led a _____ practice that left everyone sweaty and out of breath.",
+  "addedDate": "2026-11-02",
+  "set": "L-012",
+  "order": 18
+ },
+ {
+  "word": "COMPREHEND",
+  "level": "lower",
+  "choices": [
+   "compare",
+   "complete",
+   "understand",
+   "ignore"
+  ],
+  "answer": "understand",
+  "definition": "to grasp the meaning of something",
+  "example": "It took me two readings to comprehend the poem.",
+  "sentence": "The directions were so confusing that no one could _____ what to do.",
+  "addedDate": "2026-11-02",
+  "set": "L-012",
+  "order": 18
+ },
+ {
+  "word": "DEPRIVE",
+  "level": "lower",
+  "choices": [
+   "deny",
+   "give",
+   "derive",
+   "deserve"
+  ],
+  "answer": "deny",
+  "definition": "to keep something needed or wanted away from someone",
+  "example": "Staying up late will deprive you of sleep.",
+  "sentence": "Taking away recess would _____ the kids of their only chance to run around.",
+  "addedDate": "2026-11-02",
+  "set": "L-012",
+  "order": 18
+ },
+ {
+  "word": "BENEFACTOR",
+  "level": "middle",
+  "choices": [
+   "factory",
+   "enemy",
+   "beneficiary",
+   "patron"
+  ],
+  "answer": "patron",
+  "definition": "a person who gives money or help to a person or cause",
+  "example": "A generous benefactor paid for the new library wing.",
+  "sentence": "Thanks to a wealthy _____, the town's hospital got a brand-new wing.",
+  "addedDate": "2026-11-02",
+  "set": "L-012",
+  "order": 18
+ },
+ {
+  "word": "AMBIGUOUS",
+  "level": "middle",
+  "choices": [
+   "unclear",
+   "ambitious",
+   "obvious",
+   "enormous"
+  ],
+  "answer": "unclear",
+  "definition": "having more than one possible meaning; not clear",
+  "example": "The directions were so ambiguous that half the class got lost.",
+  "sentence": "The directions were so _____ that half the class could not tell which road to take.",
+  "addedDate": "2026-10-19",
+  "set": "L-012",
+  "order": 18
+ },
+ {
+  "word": "TENACIOUS",
+  "level": "middle",
+  "choices": [
+   "tense",
+   "gentle",
+   "careless",
+   "persistent"
+  ],
+  "answer": "persistent",
+  "definition": "refusing to give up; holding on firmly",
+  "example": "The tenacious goalie blocked shot after shot.",
+  "sentence": "The _____ goalie refused to quit and blocked shot after shot.",
+  "addedDate": "2026-10-19",
+  "set": "L-012",
+  "order": 18
+ },
+ {
   "word": "ABNORMAL",
   "level": "lower",
   "choices": [
@@ -5742,8 +5759,8 @@
   "example": "The abnormal heat in October surprised everyone.",
   "sentence": "It is _____ for snow to fall in May, so the storm surprised us.",
   "addedDate": "2026-11-11",
-  "set": "L-012",
-  "order": 18
+  "set": "L-013",
+  "order": 19
  },
  {
   "word": "ABDICATE",
@@ -5759,8 +5776,8 @@
   "example": "The king decided to abdicate and let his daughter rule.",
   "sentence": "Facing illness, the queen chose to _____ the throne.",
   "addedDate": "2026-11-11",
-  "set": "L-012",
-  "order": 18
+  "set": "L-013",
+  "order": 19
  },
  {
   "word": "ABHOR",
@@ -5776,8 +5793,8 @@
   "example": "I abhor the taste of spoiled milk.",
   "sentence": "Most cats _____ getting wet.",
   "addedDate": "2026-11-11",
-  "set": "L-012",
-  "order": 18
+  "set": "L-013",
+  "order": 19
  },
  {
   "word": "ABOMINABLE",
@@ -5793,8 +5810,8 @@
   "example": "The abominable smell came from the old fridge.",
   "sentence": "We stayed inside during the _____ blizzard.",
   "addedDate": "2026-11-11",
-  "set": "L-012",
-  "order": 18
+  "set": "L-013",
+  "order": 19
  },
  {
   "word": "ABROAD",
@@ -5810,8 +5827,8 @@
   "example": "Next summer we will travel abroad to visit France.",
   "sentence": "Next summer, our class will travel _____ to study in Spain.",
   "addedDate": "2026-11-11",
-  "set": "L-012",
-  "order": 18
+  "set": "L-013",
+  "order": 19
  },
  {
   "word": "ABRIDGE",
@@ -5827,8 +5844,8 @@
   "example": "This edition abridges the long novel for younger readers.",
   "sentence": "The editor will _____ the speech to fit the time limit.",
   "addedDate": "2026-11-11",
-  "set": "L-012",
-  "order": 18
+  "set": "L-013",
+  "order": 19
  },
  {
   "word": "ACCEPTABLE",
@@ -5844,8 +5861,8 @@
   "example": "Finishing half the project is not acceptable; please complete it.",
   "sentence": "Your drawing is neat and _____, so the teacher hung it up.",
   "addedDate": "2026-11-11",
-  "set": "L-012",
-  "order": 18
+  "set": "L-013",
+  "order": 19
  },
  {
   "word": "ABSTRACT",
@@ -5861,8 +5878,8 @@
   "example": "Justice is an abstract idea we learn through stories.",
   "sentence": "Love is an _____ idea, not something you can touch.",
   "addedDate": "2026-11-11",
-  "set": "L-012",
-  "order": 18
+  "set": "L-013",
+  "order": 19
  },
  {
   "word": "ACCESS",
@@ -5878,8 +5895,8 @@
   "example": "Only teachers have access to the supply room.",
   "sentence": "With the library card, you have _____ to thousands of ebooks.",
   "addedDate": "2026-11-11",
-  "set": "L-012",
-  "order": 18
+  "set": "L-013",
+  "order": 19
  },
  {
   "word": "ABYSS",
@@ -5895,8 +5912,8 @@
   "example": "The hikers peered into the dark abyss.",
   "sentence": "Staring into the _____, she could not see the bottom.",
   "addedDate": "2026-11-11",
-  "set": "L-012",
-  "order": 18
+  "set": "L-013",
+  "order": 19
  },
  {
   "word": "ACCOMMODATE",
@@ -5912,8 +5929,8 @@
   "example": "The hall can accommodate 200 guests.",
   "sentence": "This van can _____ eight passengers comfortably.",
   "addedDate": "2026-11-11",
-  "set": "L-012",
-  "order": 18
+  "set": "L-013",
+  "order": 19
  },
  {
   "word": "ACCLAIM",
@@ -5929,8 +5946,8 @@
   "example": "The young author received acclaim for her first novel.",
   "sentence": "The chef earned _____ for the delicious new dish.",
   "addedDate": "2026-11-11",
-  "set": "L-012",
-  "order": 18
+  "set": "L-013",
+  "order": 19
  },
  {
   "word": "ACCOMPANY",
@@ -5946,8 +5963,8 @@
   "example": "Will you accompany me to the library after school?",
   "sentence": "Please _____ me to the nurse's office so I do not have to walk alone.",
   "addedDate": "2026-11-11",
-  "set": "L-012",
-  "order": 18
+  "set": "L-013",
+  "order": 19
  },
  {
   "word": "ACCORD",
@@ -5963,8 +5980,8 @@
   "example": "The two clubs reached an accord about sharing the field.",
   "sentence": "After weeks of talks, the towns came to an _____.",
   "addedDate": "2026-11-11",
-  "set": "L-012",
-  "order": 18
+  "set": "L-013",
+  "order": 19
  },
  {
   "word": "ACCUMULATE",
@@ -5980,8 +5997,8 @@
   "example": "Dust began to accumulate on the old shelves.",
   "sentence": "Snow will _____ on the rooftops during the long storm.",
   "addedDate": "2026-11-11",
-  "set": "L-012",
-  "order": 18
+  "set": "L-013",
+  "order": 19
  },
  {
   "word": "ADAGE",
@@ -5997,8 +6014,8 @@
   "example": "\"A stitch in time saves nine\" is a famous adage.",
   "sentence": "The _____ \"practice makes perfect\" hung over the piano.",
   "addedDate": "2026-11-11",
-  "set": "L-012",
-  "order": 18
+  "set": "L-013",
+  "order": 19
  },
  {
   "word": "ACQUAINT",
@@ -6014,8 +6031,8 @@
   "example": "The tour will acquaint new students with the school.",
   "sentence": "Let me _____ you with the rules before the game begins.",
   "addedDate": "2026-11-11",
-  "set": "L-012",
-  "order": 18
+  "set": "L-013",
+  "order": 19
  },
  {
   "word": "ADAMANT",
@@ -6031,8 +6048,8 @@
   "example": "She was adamant that the gate stay locked.",
   "sentence": "He was _____ about finishing the race, no matter what.",
   "addedDate": "2026-11-11",
-  "set": "L-012",
-  "order": 18
+  "set": "L-013",
+  "order": 19
  },
  {
   "word": "ADAPT",
@@ -6048,8 +6065,8 @@
   "example": "Animals adapt to cold weather by growing thicker fur.",
   "sentence": "You will quickly _____ to your new school.",
   "addedDate": "2026-11-11",
-  "set": "L-012",
-  "order": 18
+  "set": "L-013",
+  "order": 19
  },
  {
   "word": "ADVERSE",
@@ -6065,8 +6082,8 @@
   "example": "The team played well despite adverse weather.",
   "sentence": "_____ conditions made the rescue difficult.",
   "addedDate": "2026-11-11",
-  "set": "L-013",
-  "order": 19
+  "set": "L-014",
+  "order": 20
  },
  {
   "word": "ADJOINING",
@@ -6082,8 +6099,8 @@
   "example": "Our adjoining classrooms share a thin wall.",
   "sentence": "The library is in the _____ building, right next door.",
   "addedDate": "2026-11-11",
-  "set": "L-013",
-  "order": 19
+  "set": "L-014",
+  "order": 20
  },
  {
   "word": "AGGRAVATE",
@@ -6099,8 +6116,8 @@
   "example": "Scratching will aggravate the rash.",
   "sentence": "His teasing only served to _____ the argument.",
   "addedDate": "2026-11-11",
-  "set": "L-013",
-  "order": 19
+  "set": "L-014",
+  "order": 20
  },
  {
   "word": "ADMIRE",
@@ -6116,8 +6133,8 @@
   "example": "I admire her courage and honesty.",
   "sentence": "We stopped to _____ the view from the hilltop.",
   "addedDate": "2026-11-11",
-  "set": "L-013",
-  "order": 19
+  "set": "L-014",
+  "order": 20
  },
  {
   "word": "AIL",
@@ -6133,8 +6150,8 @@
   "example": "What ails the old dog? It has not eaten all day.",
   "sentence": "The doctor asked what seemed to _____ the patient.",
   "addedDate": "2026-11-11",
-  "set": "L-013",
-  "order": 19
+  "set": "L-014",
+  "order": 20
  },
  {
   "word": "ADMISSION",
@@ -6150,8 +6167,8 @@
   "example": "Admission to the museum is free on Sundays.",
   "sentence": "_____ to the zoo costs five dollars for children.",
   "addedDate": "2026-11-11",
-  "set": "L-013",
-  "order": 19
+  "set": "L-014",
+  "order": 20
  },
  {
   "word": "AKIN",
@@ -6167,8 +6184,8 @@
   "example": "A wolf is akin to a dog in many ways.",
   "sentence": "His kindness is _____ to his father's.",
   "addedDate": "2026-11-11",
-  "set": "L-013",
-  "order": 19
+  "set": "L-014",
+  "order": 20
  },
  {
   "word": "ADVANCE",
@@ -6184,8 +6201,8 @@
   "example": "The army will advance at dawn.",
   "sentence": "Please _____ to the next window when your number is called.",
   "addedDate": "2026-11-11",
-  "set": "L-013",
-  "order": 19
+  "set": "L-014",
+  "order": 20
  },
  {
   "word": "ALLEGE",
@@ -6201,8 +6218,8 @@
   "example": "The report alleges that the bridge is unsafe.",
   "sentence": "Witnesses _____ that the driver ran the red light.",
   "addedDate": "2026-11-11",
-  "set": "L-013",
-  "order": 19
+  "set": "L-014",
+  "order": 20
  },
  {
   "word": "ADVANTAGE",
@@ -6218,8 +6235,8 @@
   "example": "Being tall is an advantage in basketball.",
   "sentence": "Knowing two languages is a big _____ when you travel.",
   "addedDate": "2026-11-11",
-  "set": "L-013",
-  "order": 19
+  "set": "L-014",
+  "order": 20
  },
  {
   "word": "ALTRUISTIC",
@@ -6235,8 +6252,8 @@
   "example": "Her altruistic work at the shelter inspired the school.",
   "sentence": "The _____ nurse stayed late to comfort every patient.",
   "addedDate": "2026-11-11",
-  "set": "L-013",
-  "order": 19
+  "set": "L-014",
+  "order": 20
  },
  {
   "word": "AFAR",
@@ -6252,8 +6269,8 @@
   "example": "We watched the ships from afar.",
   "sentence": "From _____, the mountains looked blue and soft.",
   "addedDate": "2026-11-11",
-  "set": "L-013",
-  "order": 19
+  "set": "L-014",
+  "order": 20
  },
  {
   "word": "AMBIVALENT",
@@ -6269,8 +6286,8 @@
   "example": "She was ambivalent about the move: excited yet sad.",
   "sentence": "He felt _____ about trying out — eager but nervous.",
   "addedDate": "2026-11-11",
-  "set": "L-013",
-  "order": 19
+  "set": "L-014",
+  "order": 20
  },
  {
   "word": "AFFECTION",
@@ -6286,8 +6303,8 @@
   "example": "The puppy showed affection by licking its owner's hand.",
   "sentence": "The kitten showed its _____ by rubbing against my leg and purring.",
   "addedDate": "2026-11-11",
-  "set": "L-013",
-  "order": 19
+  "set": "L-014",
+  "order": 20
  },
  {
   "word": "ANIMATED",
@@ -6303,8 +6320,8 @@
   "example": "She approached the challenge with an animated attitude.",
   "sentence": "The cartoon was so _____ that the characters seemed alive.",
   "addedDate": "2026-11-11",
-  "set": "L-013",
-  "order": 19
+  "set": "L-014",
+  "order": 20
  },
  {
   "word": "AGONY",
@@ -6320,8 +6337,8 @@
   "example": "He was in agony after twisting his ankle.",
   "sentence": "The lost dog's cries showed its _____ after the accident.",
   "addedDate": "2026-11-11",
-  "set": "L-013",
-  "order": 19
+  "set": "L-014",
+  "order": 20
  },
  {
   "word": "ANIMOSITY",
@@ -6337,8 +6354,8 @@
   "example": "There was animosity between the rival teams.",
   "sentence": "Years of _____ kept the neighbors from speaking.",
   "addedDate": "2026-11-11",
-  "set": "L-013",
-  "order": 19
+  "set": "L-014",
+  "order": 20
  },
  {
   "word": "AGRICULTURE",
@@ -6354,8 +6371,8 @@
   "example": "Agriculture is important in our state, where corn grows well.",
   "sentence": "_____ classes teach students how to grow healthy crops.",
   "addedDate": "2026-11-11",
-  "set": "L-013",
-  "order": 19
+  "set": "L-014",
+  "order": 20
  },
  {
   "word": "APT",
@@ -6371,8 +6388,8 @@
   "example": "She chose an apt word to describe the storm.",
   "sentence": "\"Quick as a fox\" is an _____ comparison for the speedy runner.",
   "addedDate": "2026-11-11",
-  "set": "L-013",
-  "order": 19
+  "set": "L-014",
+  "order": 20
  },
  {
   "word": "AID",
@@ -6388,8 +6405,8 @@
   "example": "Volunteers aid families after the storm.",
   "sentence": "The nurse will _____ the injured player off the field.",
   "addedDate": "2026-11-11",
-  "set": "L-013",
-  "order": 19
+  "set": "L-014",
+  "order": 20
  },
  {
   "word": "ARTICULATE",
@@ -6405,8 +6422,8 @@
   "example": "The articulate speaker explained the plan in minutes.",
   "sentence": "An _____ writer makes hard ideas easy to follow.",
   "addedDate": "2026-11-11",
-  "set": "L-014",
-  "order": 20
+  "set": "L-015",
+  "order": 21
  },
  {
   "word": "ALIBI",
@@ -6422,8 +6439,8 @@
   "example": "The suspect's alibi placed him at home during the robbery.",
   "sentence": "Her _____ proved she was at the library, not at the scene.",
   "addedDate": "2026-11-11",
-  "set": "L-014",
-  "order": 20
+  "set": "L-015",
+  "order": 21
  },
  {
   "word": "ASSERT",
@@ -6439,8 +6456,8 @@
   "example": "She will assert her right to speak at the meeting.",
   "sentence": "He began to _____ that the answer was correct.",
   "addedDate": "2026-11-11",
-  "set": "L-014",
-  "order": 20
+  "set": "L-015",
+  "order": 21
  },
  {
   "word": "ALLEGIANCE",
@@ -6456,8 +6473,8 @@
   "example": "The knights swore allegiance to the queen.",
   "sentence": "Citizens pledge _____ to their country's flag.",
   "addedDate": "2026-11-11",
-  "set": "L-014",
-  "order": 20
+  "set": "L-015",
+  "order": 21
  },
  {
   "word": "ASSESS",
@@ -6473,8 +6490,8 @@
   "example": "The teacher will assess your project on Friday.",
   "sentence": "Doctors _____ the patient's health before surgery.",
   "addedDate": "2026-11-11",
-  "set": "L-014",
-  "order": 20
+  "set": "L-015",
+  "order": 21
  },
  {
   "word": "ALLITERATION",
@@ -6490,8 +6507,8 @@
   "example": "\"Silly snakes slither\" is an example of alliteration.",
   "sentence": "\"Peter Piper\" uses _____, repeating the same starting sound.",
   "addedDate": "2026-11-11",
-  "set": "L-014",
-  "order": 20
+  "set": "L-015",
+  "order": 21
  },
  {
   "word": "AUDIBLE",
@@ -6507,8 +6524,8 @@
   "example": "Her voice was barely audible over the wind.",
   "sentence": "The whisper was not _____, so no one heard it.",
   "addedDate": "2026-11-11",
-  "set": "L-014",
-  "order": 20
+  "set": "L-015",
+  "order": 21
  },
  {
   "word": "ALOFT",
@@ -6524,8 +6541,8 @@
   "example": "The kite soared aloft on the strong wind.",
   "sentence": "The eagle circled _____, high above the cliffs.",
   "addedDate": "2026-11-11",
-  "set": "L-014",
-  "order": 20
+  "set": "L-015",
+  "order": 21
  },
  {
   "word": "AUTHENTIC",
@@ -6541,8 +6558,8 @@
   "example": "The museum confirmed the painting is authentic.",
   "sentence": "This is an _____ arrowhead, hundreds of years old.",
   "addedDate": "2026-11-11",
-  "set": "L-014",
-  "order": 20
+  "set": "L-015",
+  "order": 21
  },
  {
   "word": "ALTERNATIVE",
@@ -6558,8 +6575,8 @@
   "example": "If it rains, our alternative is to play inside.",
   "sentence": "We need an _____ plan in case the bus is late.",
   "addedDate": "2026-11-11",
-  "set": "L-014",
-  "order": 20
+  "set": "L-015",
+  "order": 21
  },
  {
   "word": "BANAL",
@@ -6575,8 +6592,8 @@
   "example": "The movie's banal plot put half the audience to sleep.",
   "sentence": "His speech was full of _____ phrases we had heard a hundred times.",
   "addedDate": "2026-11-11",
-  "set": "L-014",
-  "order": 20
+  "set": "L-015",
+  "order": 21
  },
  {
   "word": "ALTITUDE",
@@ -6592,8 +6609,8 @@
   "example": "The plane reached an altitude of 30,000 feet.",
   "sentence": "At that _____, the mountain air was thin and cold.",
   "addedDate": "2026-11-11",
-  "set": "L-014",
-  "order": 20
+  "set": "L-015",
+  "order": 21
  },
  {
   "word": "BELITTLE",
@@ -6609,8 +6626,8 @@
   "example": "People would not belittle others if they got to know them better.",
   "sentence": "Never _____ a classmate for a wrong answer.",
   "addedDate": "2026-11-11",
-  "set": "L-014",
-  "order": 20
+  "set": "L-015",
+  "order": 21
  },
  {
   "word": "AMBITION",
@@ -6626,8 +6643,8 @@
   "example": "Her ambition is to become a doctor.",
   "sentence": "His _____ is to fly a plane one day.",
   "addedDate": "2026-11-11",
-  "set": "L-014",
-  "order": 20
+  "set": "L-015",
+  "order": 21
  },
  {
   "word": "BELLIGERENT",
@@ -6643,8 +6660,8 @@
   "example": "The belligerent goose chased visitors from the pond.",
   "sentence": "The _____ debater shouted over everyone.",
   "addedDate": "2026-11-11",
-  "set": "L-014",
-  "order": 20
+  "set": "L-015",
+  "order": 21
  },
  {
   "word": "AMNESIA",
@@ -6660,8 +6677,8 @@
   "example": "After the fall, he had amnesia and forgot his own address.",
   "sentence": "The character in the movie had _____ and could not remember his name.",
   "addedDate": "2026-11-11",
-  "set": "L-014",
-  "order": 20
+  "set": "L-015",
+  "order": 21
  },
  {
   "word": "BENIGN",
@@ -6677,8 +6694,8 @@
   "example": "The doctor said the lump was benign.",
   "sentence": "A _____ breeze cooled the summer evening.",
   "addedDate": "2026-11-11",
-  "set": "L-014",
-  "order": 20
+  "set": "L-015",
+  "order": 21
  },
  {
   "word": "AMPLE",
@@ -6694,8 +6711,8 @@
   "example": "There is ample room in the van for everyone.",
   "sentence": "We have _____ time to finish before the bell.",
   "addedDate": "2026-11-11",
-  "set": "L-014",
-  "order": 20
+  "set": "L-015",
+  "order": 21
  },
  {
   "word": "BIASED",
@@ -6711,8 +6728,8 @@
   "example": "A biased referee is unfair to both teams.",
   "sentence": "The report was _____ and only told one side.",
   "addedDate": "2026-11-11",
-  "set": "L-014",
-  "order": 20
+  "set": "L-015",
+  "order": 21
  },
  {
   "word": "ANALYSIS",
@@ -6728,8 +6745,8 @@
   "example": "The analysis of the water showed it was safe to drink.",
   "sentence": "After careful _____, the scientist announced the results.",
   "addedDate": "2026-11-11",
-  "set": "L-014",
-  "order": 20
+  "set": "L-015",
+  "order": 21
  },
  {
   "word": "BLISS",
@@ -6745,8 +6762,8 @@
   "example": "Lying in the hammock was pure bliss.",
   "sentence": "The cat slept in _____, warm and safe by the fire.",
   "addedDate": "2026-11-11",
-  "set": "L-015",
-  "order": 21
+  "set": "L-016",
+  "order": 22
  },
  {
   "word": "ANECDOTE",
@@ -6762,8 +6779,8 @@
   "example": "Grandpa told an anecdote about his first day of school.",
   "sentence": "The speaker began with a funny _____ about getting lost.",
   "addedDate": "2026-11-11",
-  "set": "L-015",
-  "order": 21
+  "set": "L-016",
+  "order": 22
  },
  {
   "word": "BRASH",
@@ -6779,8 +6796,8 @@
   "example": "His brash reply surprised the teacher.",
   "sentence": "The _____ newcomer interrupted the mayor mid-sentence.",
   "addedDate": "2026-11-11",
-  "set": "L-015",
-  "order": 21
+  "set": "L-016",
+  "order": 22
  },
  {
   "word": "ANNOUNCE",
@@ -6796,8 +6813,8 @@
   "example": "They will announce the winner after lunch.",
   "sentence": "The principal will _____ the snow day over the loudspeaker.",
   "addedDate": "2026-11-11",
-  "set": "L-015",
-  "order": 21
+  "set": "L-016",
+  "order": 22
  },
  {
   "word": "BURLY",
@@ -6813,8 +6830,8 @@
   "example": "The burly lumberjack lifted the log alone.",
   "sentence": "A _____ guard stood at the gate.",
   "addedDate": "2026-11-11",
-  "set": "L-015",
-  "order": 21
+  "set": "L-016",
+  "order": 22
  },
  {
   "word": "ANONYMOUS",
@@ -6830,8 +6847,8 @@
   "example": "The poem was written by an anonymous author.",
   "sentence": "The gift came from an _____ donor who never gave a name.",
   "addedDate": "2026-11-11",
-  "set": "L-015",
-  "order": 21
+  "set": "L-016",
+  "order": 22
  },
  {
   "word": "CANDOR",
@@ -6847,8 +6864,8 @@
   "example": "I admire her candor in admitting the mistake.",
   "sentence": "He answered with _____, hiding nothing.",
   "addedDate": "2026-11-11",
-  "set": "L-015",
-  "order": 21
+  "set": "L-016",
+  "order": 22
  },
  {
   "word": "ANTAGONIST",
@@ -6864,8 +6881,8 @@
   "example": "In the story, the antagonist tries to stop the hero at every turn.",
   "sentence": "Every hero needs an _____ who stands in the way of the goal.",
   "addedDate": "2026-11-11",
-  "set": "L-015",
-  "order": 21
+  "set": "L-016",
+  "order": 22
  },
  {
   "word": "CHARISMATIC",
@@ -6881,8 +6898,8 @@
   "example": "With his magnetic personality, he was a charismatic leader.",
   "sentence": "The _____ speaker held the crowd's attention for an hour.",
   "addedDate": "2026-11-11",
-  "set": "L-015",
-  "order": 21
+  "set": "L-016",
+  "order": 22
  },
  {
   "word": "ANTIC",
@@ -6898,8 +6915,8 @@
   "example": "The clown's antics made the whole class laugh.",
   "sentence": "We laughed at the puppy's playful _____, chasing its own tail.",
   "addedDate": "2026-11-11",
-  "set": "L-015",
-  "order": 21
+  "set": "L-016",
+  "order": 22
  },
  {
   "word": "CITE",
@@ -6915,8 +6932,8 @@
   "example": "Cite the page where you found that fact.",
   "sentence": "Good writers _____ their sources in a bibliography.",
   "addedDate": "2026-11-11",
-  "set": "L-015",
-  "order": 21
+  "set": "L-016",
+  "order": 22
  },
  {
   "word": "ANTICIPATE",
@@ -6932,8 +6949,8 @@
   "example": "We anticipate heavy traffic on Friday.",
   "sentence": "I _____ that the test will cover chapters four and five.",
   "addedDate": "2026-11-11",
-  "set": "L-015",
-  "order": 21
+  "set": "L-016",
+  "order": 22
  },
  {
   "word": "CLICHE",
@@ -6949,8 +6966,8 @@
   "example": "\"Better safe than sorry\" is a cliche, but it is still good advice.",
   "sentence": "\"At the end of the day\" has become a tired _____.",
   "addedDate": "2026-11-11",
-  "set": "L-015",
-  "order": 21
+  "set": "L-016",
+  "order": 22
  },
  {
   "word": "ANXIETY",
@@ -6966,8 +6983,8 @@
   "example": "Tests sometimes cause anxiety in students.",
   "sentence": "She felt _____ before her first piano recital.",
   "addedDate": "2026-11-11",
-  "set": "L-015",
-  "order": 21
+  "set": "L-016",
+  "order": 22
  },
  {
   "word": "COALESCE",
@@ -6983,8 +7000,8 @@
   "example": "The small streams coalesce into one river.",
   "sentence": "Over time, the groups will _____ into a single team.",
   "addedDate": "2026-11-11",
-  "set": "L-015",
-  "order": 21
+  "set": "L-016",
+  "order": 22
  },
  {
   "word": "APATHY",
@@ -7000,8 +7017,8 @@
   "example": "His apathy about the project showed when he stopped trying.",
   "sentence": "Her _____ was clear: she shrugged and said she did not care at all.",
   "addedDate": "2026-11-11",
-  "set": "L-015",
-  "order": 21
+  "set": "L-016",
+  "order": 22
  },
  {
   "word": "COHERENT",
@@ -7017,8 +7034,8 @@
   "example": "After resting, she gave a coherent explanation of the problem.",
   "sentence": "His essay is _____: every paragraph connects to the next.",
   "addedDate": "2026-11-11",
-  "set": "L-015",
-  "order": 21
+  "set": "L-016",
+  "order": 22
  },
  {
   "word": "APPAREL",
@@ -7034,8 +7051,8 @@
   "example": "The store sells winter apparel like coats and gloves.",
   "sentence": "The shop sells sports _____, such as jerseys and shorts.",
   "addedDate": "2026-11-11",
-  "set": "L-015",
-  "order": 21
+  "set": "L-016",
+  "order": 22
  },
  {
   "word": "COLLEAGUE",
@@ -7051,8 +7068,8 @@
   "example": "The young doctor impressed his colleagues with a quick diagnosis.",
   "sentence": "She asked a _____ for help with the tricky patient chart.",
   "addedDate": "2026-11-11",
-  "set": "L-015",
-  "order": 21
+  "set": "L-016",
+  "order": 22
  },
  {
   "word": "APPEAL",
@@ -7068,8 +7085,8 @@
   "example": "The charity made an appeal for warm coats.",
   "sentence": "The colorful cover will _____ to young readers.",
   "addedDate": "2026-11-11",
-  "set": "L-015",
-  "order": 21
+  "set": "L-016",
+  "order": 22
  },
  {
   "word": "COMPATIBLE",
@@ -7085,8 +7102,8 @@
   "example": "The two programs are compatible and run on the same computer.",
   "sentence": "George and Larry seem to have _____ personalities, as they get along quite well.",
   "addedDate": "2026-11-11",
-  "set": "L-016",
-  "order": 22
+  "set": "L-017",
+  "order": 23
  },
  {
   "word": "APPOINT",
@@ -7102,8 +7119,8 @@
   "example": "The coach will appoint a new team captain.",
   "sentence": "The teacher will _____ one student to lead the line.",
   "addedDate": "2026-11-11",
-  "set": "L-016",
-  "order": 22
+  "set": "L-017",
+  "order": 23
  },
  {
   "word": "CONCEDE",
@@ -7119,8 +7136,8 @@
   "example": "He conceded that his opponent had the better argument.",
   "sentence": "Down by ten points, the team refused to _____ the game.",
   "addedDate": "2026-11-11",
-  "set": "L-016",
-  "order": 22
+  "set": "L-017",
+  "order": 23
  },
  {
   "word": "APPROVAL",
@@ -7136,8 +7153,8 @@
   "example": "You need your parents' approval to go on the trip.",
   "sentence": "The plan won the teacher's _____ and could begin at once.",
   "addedDate": "2026-11-11",
-  "set": "L-016",
-  "order": 22
+  "set": "L-017",
+  "order": 23
  },
  {
   "word": "CONDONE",
@@ -7153,8 +7170,8 @@
   "example": "The school does not condone cheating.",
   "sentence": "We cannot _____ bullying in any form.",
   "addedDate": "2026-11-11",
-  "set": "L-016",
-  "order": 22
+  "set": "L-017",
+  "order": 23
  },
  {
   "word": "ARCHITECTURE",
@@ -7170,8 +7187,8 @@
   "example": "The architecture of the old library mixes stone and glass.",
   "sentence": "She studies _____ because she loves designing houses.",
   "addedDate": "2026-11-11",
-  "set": "L-016",
-  "order": 22
+  "set": "L-017",
+  "order": 23
  },
  {
   "word": "CONFOUND",
@@ -7187,8 +7204,8 @@
   "example": "The magician's trick will confound even the adults.",
   "sentence": "Complex puzzles _____ most beginners.",
   "addedDate": "2026-11-11",
-  "set": "L-016",
-  "order": 22
+  "set": "L-017",
+  "order": 23
  },
  {
   "word": "ARID",
@@ -7204,8 +7221,8 @@
   "example": "Cacti grow well in the arid desert.",
   "sentence": "Nothing grew in the _____ land, where rain almost never fell.",
   "addedDate": "2026-11-11",
-  "set": "L-016",
-  "order": 22
+  "set": "L-017",
+  "order": 23
  },
  {
   "word": "CONGEAL",
@@ -7221,8 +7238,8 @@
   "example": "The gravy will congeal if it sits too long.",
   "sentence": "Cold made the soup _____ into a wobbly jelly.",
   "addedDate": "2026-11-11",
-  "set": "L-016",
-  "order": 22
+  "set": "L-017",
+  "order": 23
  },
  {
   "word": "AROMA",
@@ -7238,8 +7255,8 @@
   "example": "A delicious aroma drifted from the bakery.",
   "sentence": "A sweet _____ of fresh bread filled the kitchen.",
   "addedDate": "2026-11-11",
-  "set": "L-016",
-  "order": 22
+  "set": "L-017",
+  "order": 23
  },
  {
   "word": "CONGENIAL",
@@ -7255,8 +7272,8 @@
   "example": "The congenial host made every guest feel welcome.",
   "sentence": "The library has a _____ atmosphere for studying.",
   "addedDate": "2026-11-11",
-  "set": "L-016",
-  "order": 22
+  "set": "L-017",
+  "order": 23
  },
  {
   "word": "ARROGANCE",
@@ -7272,8 +7289,8 @@
   "example": "His arrogance made it hard for him to admit mistakes.",
   "sentence": "Her _____ showed when she bragged that no one could beat her.",
   "addedDate": "2026-11-11",
-  "set": "L-016",
-  "order": 22
+  "set": "L-017",
+  "order": 23
  },
  {
   "word": "CONSENSUS",
@@ -7289,8 +7306,8 @@
   "example": "The class reached a consensus to visit the science museum.",
   "sentence": "After a long talk, the team reached a _____ to practice on Saturdays.",
   "addedDate": "2026-11-11",
-  "set": "L-016",
-  "order": 22
+  "set": "L-017",
+  "order": 23
  },
  {
   "word": "ARTIFICIAL",
@@ -7306,8 +7323,8 @@
   "example": "The artificial flowers never need water.",
   "sentence": "These _____ sweeteners taste sweet but are not sugar.",
   "addedDate": "2026-11-11",
-  "set": "L-016",
-  "order": 22
+  "set": "L-017",
+  "order": 23
  },
  {
   "word": "CONTEMPTUOUS",
@@ -7323,8 +7340,8 @@
   "example": "He gave a contemptuous snort at the excuse.",
   "sentence": "Her _____ glare showed exactly what she thought of the lie.",
   "addedDate": "2026-11-11",
-  "set": "L-016",
-  "order": 22
+  "set": "L-017",
+  "order": 23
  },
  {
   "word": "ASSOCIATE",
@@ -7340,8 +7357,8 @@
   "example": "People associate the smell of pine with winter holidays.",
   "sentence": "I always _____ that song with summer camp.",
   "addedDate": "2026-11-11",
-  "set": "L-016",
-  "order": 22
+  "set": "L-017",
+  "order": 23
  },
  {
   "word": "CONTRADICT",
@@ -7357,8 +7374,8 @@
   "example": "His actions contradict his promises.",
   "sentence": "Do not _____ your teacher without evidence.",
   "addedDate": "2026-11-11",
-  "set": "L-016",
-  "order": 22
+  "set": "L-017",
+  "order": 23
  },
  {
   "word": "ASSORTED",
@@ -7374,8 +7391,8 @@
   "example": "The box held assorted crayons of every color.",
   "sentence": "She bought a bag of _____ candies in many flavors.",
   "addedDate": "2026-11-11",
-  "set": "L-016",
-  "order": 22
+  "set": "L-017",
+  "order": 23
  },
  {
   "word": "CONVENTIONAL",
@@ -7391,8 +7408,8 @@
   "example": "A conventional oven works differently from a microwave.",
   "sentence": "Wearing a tie is _____ for a formal dinner.",
   "addedDate": "2026-11-11",
-  "set": "L-016",
-  "order": 22
+  "set": "L-017",
+  "order": 23
  },
  {
   "word": "ASSUME",
@@ -7408,8 +7425,8 @@
   "example": "I assume the store is still open at six.",
   "sentence": "Don't _____ the answer; check the problem again.",
   "addedDate": "2026-11-11",
-  "set": "L-016",
-  "order": 22
+  "set": "L-017",
+  "order": 23
  },
  {
   "word": "COUNSEL",
@@ -7425,8 +7442,8 @@
   "example": "The king asked his advisors for counsel before the battle.",
   "sentence": "Teachers _____ students who are choosing classes.",
   "addedDate": "2026-11-11",
-  "set": "L-017",
-  "order": 23
+  "set": "L-018",
+  "order": 24
  },
  {
   "word": "ASTOUND",
@@ -7442,8 +7459,8 @@
   "example": "The magician's final trick will astound the crowd.",
   "sentence": "The huge whale did _____ us; no one expected it to leap so high.",
   "addedDate": "2026-11-11",
-  "set": "L-017",
-  "order": 23
+  "set": "L-018",
+  "order": 24
  },
  {
   "word": "CREVICE",
@@ -7459,8 +7476,8 @@
   "example": "A tiny plant grew in a crevice of the cliff.",
   "sentence": "Water froze in the _____ and split the rock.",
   "addedDate": "2026-11-11",
-  "set": "L-017",
-  "order": 23
+  "set": "L-018",
+  "order": 24
  },
  {
   "word": "ATTAIN",
@@ -7476,8 +7493,8 @@
   "example": "With practice, you can attain a black belt.",
   "sentence": "Few climbers _____ the top of the mountain each year.",
   "addedDate": "2026-11-11",
-  "set": "L-017",
-  "order": 23
+  "set": "L-018",
+  "order": 24
  },
  {
   "word": "CYNICAL",
@@ -7493,8 +7510,8 @@
   "example": "Many young voters are cynical about politicians and their campaign promises.",
   "sentence": "He grew _____ and stopped believing any promises.",
   "addedDate": "2026-11-11",
-  "set": "L-017",
-  "order": 23
+  "set": "L-018",
+  "order": 24
  },
  {
   "word": "AUDITION",
@@ -7510,8 +7527,8 @@
   "example": "She sang two songs at the audition for the musical.",
   "sentence": "He practiced all week for his _____ for the school play.",
   "addedDate": "2026-11-11",
-  "set": "L-017",
-  "order": 23
+  "set": "L-018",
+  "order": 24
  },
  {
   "word": "DAUNTING",
@@ -7527,8 +7544,8 @@
   "example": "The steep trail looked daunting to the new hikers.",
   "sentence": "The huge project seemed _____ at first, but we finished it.",
   "addedDate": "2026-11-11",
-  "set": "L-017",
-  "order": 23
+  "set": "L-018",
+  "order": 24
  },
  {
   "word": "AUTHORITY",
@@ -7544,8 +7561,8 @@
   "example": "The principal has the authority to close school early.",
   "sentence": "The police officer has the _____ to direct traffic.",
   "addedDate": "2026-11-11",
-  "set": "L-017",
-  "order": 23
+  "set": "L-018",
+  "order": 24
  },
  {
   "word": "DEBUNK",
@@ -7561,8 +7578,8 @@
   "example": "Scientists debunk the myth that lightning never strikes twice.",
   "sentence": "The show will _____ the rumor with real experiments.",
   "addedDate": "2026-11-11",
-  "set": "L-017",
-  "order": 23
+  "set": "L-018",
+  "order": 24
  },
  {
   "word": "AVERT",
@@ -7578,8 +7595,8 @@
   "example": "A good goalie can avert a goal.",
   "sentence": "Wearing a seatbelt can _____ serious injury in a crash.",
   "addedDate": "2026-11-11",
-  "set": "L-017",
-  "order": 23
+  "set": "L-018",
+  "order": 24
  },
  {
   "word": "DECOMPOSE",
@@ -7595,8 +7612,8 @@
   "example": "Fallen leaves decompose and enrich the soil.",
   "sentence": "Over years, the log will _____ into soft soil.",
   "addedDate": "2026-11-11",
-  "set": "L-017",
-  "order": 23
+  "set": "L-018",
+  "order": 24
  },
  {
   "word": "AVOIDANCE",
@@ -7612,8 +7629,8 @@
   "example": "His avoidance of the topic made everyone curious.",
   "sentence": "Her _____ of junk food kept her feeling strong.",
   "addedDate": "2026-11-11",
-  "set": "L-017",
-  "order": 23
+  "set": "L-018",
+  "order": 24
  },
  {
   "word": "DECREE",
@@ -7629,8 +7646,8 @@
   "example": "The king issued a decree that all the gates be opened.",
   "sentence": "By royal _____, the holiday was declared for everyone.",
   "addedDate": "2026-11-11",
-  "set": "L-017",
-  "order": 23
+  "set": "L-018",
+  "order": 24
  },
  {
   "word": "AWE",
@@ -7646,8 +7663,8 @@
   "example": "We stared in awe at the giant waterfall.",
   "sentence": "The astronauts felt _____ as they looked back at Earth.",
   "addedDate": "2026-11-11",
-  "set": "L-017",
-  "order": 23
+  "set": "L-018",
+  "order": 24
  },
  {
   "word": "DEFICIENT",
@@ -7663,8 +7680,8 @@
   "example": "His diet was deficient in vegetables.",
   "sentence": "The plant looks weak because the soil is _____ in nutrients.",
   "addedDate": "2026-11-11",
-  "set": "L-017",
-  "order": 23
+  "set": "L-018",
+  "order": 24
  },
  {
   "word": "AWKWARD",
@@ -7680,8 +7697,8 @@
   "example": "He felt awkward when he dropped his tray.",
   "sentence": "The _____ silence lasted until someone finally spoke.",
   "addedDate": "2026-11-11",
-  "set": "L-017",
-  "order": 23
+  "set": "L-018",
+  "order": 24
  },
  {
   "word": "DEJECTED",
@@ -7697,8 +7714,8 @@
   "example": "Eric was dejected after hearing the bad news.",
   "sentence": "She felt _____ after losing the game in the final minute.",
   "addedDate": "2026-11-11",
-  "set": "L-017",
-  "order": 23
+  "set": "L-018",
+  "order": 24
  },
  {
   "word": "BANQUET",
@@ -7714,8 +7731,8 @@
   "example": "The king held a banquet to celebrate the victory.",
   "sentence": "After the game, the team enjoyed a _____ with platters of food for everyone.",
   "addedDate": "2026-11-11",
-  "set": "L-017",
-  "order": 23
+  "set": "L-018",
+  "order": 24
  },
  {
   "word": "DELUSION",
@@ -7731,8 +7748,8 @@
   "example": "His delusion that he could fly ended with a sprained ankle.",
   "sentence": "Believing the cat could talk was just a childhood _____.",
   "addedDate": "2026-11-11",
-  "set": "L-017",
-  "order": 23
+  "set": "L-018",
+  "order": 24
  },
  {
   "word": "BARTER",
@@ -7748,8 +7765,8 @@
   "example": "Long ago, people would barter grain for tools.",
   "sentence": "At the fair, she will _____ her marbles for a kite.",
   "addedDate": "2026-11-11",
-  "set": "L-017",
-  "order": 23
+  "set": "L-018",
+  "order": 24
  },
  {
   "word": "DESPAIR",
@@ -7765,8 +7782,8 @@
   "example": "Do not despair: the lost dog may still come home.",
   "sentence": "In _____, he sat down and covered his face.",
   "addedDate": "2026-11-11",
-  "set": "L-018",
-  "order": 24
+  "set": "L-019",
+  "order": 25
  },
  {
   "word": "DETERIORATE",
@@ -7782,8 +7799,8 @@
   "example": "Without care, the old bridge will deteriorate.",
   "sentence": "His eyesight began to _____ as he grew older.",
   "addedDate": "2026-11-11",
-  "set": "L-018",
-  "order": 24
+  "set": "L-019",
+  "order": 25
  },
  {
   "word": "BEACON",
@@ -7799,8 +7816,8 @@
   "example": "The lighthouse beacon guided ships safely home.",
   "sentence": "The _____ on the hill warned ships away from the rocks.",
   "addedDate": "2026-11-11",
-  "set": "L-018",
-  "order": 24
+  "set": "L-019",
+  "order": 25
  },
  {
   "word": "DEXTERITY",
@@ -7816,8 +7833,8 @@
   "example": "The juggler's dexterity amazed the crowd.",
   "sentence": "Sewing tiny beads takes real _____.",
   "addedDate": "2026-11-11",
-  "set": "L-018",
-  "order": 24
+  "set": "L-019",
+  "order": 25
  },
  {
   "word": "BELIEF",
@@ -7833,8 +7850,8 @@
   "example": "It is my belief that practice makes us better.",
   "sentence": "Her strong _____ in fairness guides how she treats others.",
   "addedDate": "2026-11-11",
-  "set": "L-018",
-  "order": 24
+  "set": "L-019",
+  "order": 25
  },
  {
   "word": "DILUTE",
@@ -7850,8 +7867,8 @@
   "example": "Dilute the juice with a little water.",
   "sentence": "She had to _____ the strong soup with extra broth.",
   "addedDate": "2026-11-11",
-  "set": "L-018",
-  "order": 24
+  "set": "L-019",
+  "order": 25
  },
  {
   "word": "BENEFICIAL",
@@ -7867,8 +7884,8 @@
   "example": "Exercise is beneficial to your health.",
   "sentence": "Rain is _____ for the garden after a dry week.",
   "addedDate": "2026-11-11",
-  "set": "L-018",
-  "order": 24
+  "set": "L-019",
+  "order": 25
  },
  {
   "word": "DINGY",
@@ -7884,8 +7901,8 @@
   "example": "The dingy basement needed a good cleaning.",
   "sentence": "His white shirt looked _____ after years of wear.",
   "addedDate": "2026-11-11",
-  "set": "L-018",
-  "order": 24
+  "set": "L-019",
+  "order": 25
  },
  {
   "word": "BLUNDER",
@@ -7901,8 +7918,8 @@
   "example": "Forgetting the tickets was a blunder.",
   "sentence": "Spilling the paint was a _____ we all laughed about later.",
   "addedDate": "2026-11-11",
-  "set": "L-018",
-  "order": 24
+  "set": "L-019",
+  "order": 25
  },
  {
   "word": "DISDAIN",
@@ -7918,8 +7935,8 @@
   "example": "The criminal showed disdain for the law.",
   "sentence": "She looked at the messy room with _____ and sighed.",
   "addedDate": "2026-11-11",
-  "set": "L-018",
-  "order": 24
+  "set": "L-019",
+  "order": 25
  },
  {
   "word": "BONUS",
@@ -7935,8 +7952,8 @@
   "example": "She got a bonus point for the hardest question.",
   "sentence": "Finish early and you may earn a _____ recess.",
   "addedDate": "2026-11-11",
-  "set": "L-018",
-  "order": 24
+  "set": "L-019",
+  "order": 25
  },
  {
   "word": "DISTORT",
@@ -7952,8 +7969,8 @@
   "example": "A funhouse mirror will distort your reflection.",
   "sentence": "Do not _____ my words; repeat them exactly.",
   "addedDate": "2026-11-11",
-  "set": "L-018",
-  "order": 24
+  "set": "L-019",
+  "order": 25
  },
  {
   "word": "BOUNDARY",
@@ -7969,8 +7986,8 @@
   "example": "The fence marks the boundary of our yard.",
   "sentence": "The river forms the _____ between the two states.",
   "addedDate": "2026-11-11",
-  "set": "L-018",
-  "order": 24
+  "set": "L-019",
+  "order": 25
  },
  {
   "word": "DOCILE",
@@ -7986,8 +8003,8 @@
   "example": "Sarah was a docile student who never questioned what the teacher said.",
   "sentence": "The _____ lamb followed the shepherd without fuss.",
   "addedDate": "2026-11-11",
-  "set": "L-018",
-  "order": 24
+  "set": "L-019",
+  "order": 25
  },
  {
   "word": "BOYCOTT",
@@ -8003,8 +8020,8 @@
   "example": "Many shoppers joined the boycott of the unfair store.",
   "sentence": "The town decided to _____ the company until it lowered prices.",
   "addedDate": "2026-11-11",
-  "set": "L-018",
-  "order": 24
+  "set": "L-019",
+  "order": 25
  },
  {
   "word": "DORMANT",
@@ -8020,8 +8037,8 @@
   "example": "The volcano has been dormant for 200 years.",
   "sentence": "The seeds stay _____ all winter, then sprout in spring.",
   "addedDate": "2026-11-11",
-  "set": "L-018",
-  "order": 24
+  "set": "L-019",
+  "order": 25
  },
  {
   "word": "BRAVERY",
@@ -8037,8 +8054,8 @@
   "example": "The firefighter's bravery saved the cat from the tree.",
   "sentence": "His _____ amazed everyone when he faced the barking dog calmly.",
   "addedDate": "2026-11-11",
-  "set": "L-018",
-  "order": 24
+  "set": "L-019",
+  "order": 25
  },
  {
   "word": "ECSTASY",
@@ -8054,8 +8071,8 @@
   "example": "She was in ecstasy when she won the art contest.",
   "sentence": "The fans were in _____ after the last-second goal.",
   "addedDate": "2026-11-11",
-  "set": "L-018",
-  "order": 24
+  "set": "L-019",
+  "order": 25
  },
  {
   "word": "BRAWL",
@@ -8071,8 +8088,8 @@
   "example": "The brawl in the cartoon made everyone laugh.",
   "sentence": "Two squirrels got into a _____ over a fallen acorn.",
   "addedDate": "2026-11-11",
-  "set": "L-018",
-  "order": 24
+  "set": "L-019",
+  "order": 25
  },
  {
   "word": "EGOTIST",
@@ -8088,8 +8105,8 @@
   "example": "An egotist talks only about himself.",
   "sentence": "The _____ bragged through the whole dinner.",
   "addedDate": "2026-11-11",
-  "set": "L-018",
-  "order": 24
+  "set": "L-019",
+  "order": 25
  },
  {
   "word": "BRIEF",
@@ -8105,8 +8122,8 @@
   "example": "We had a brief meeting before the trip.",
   "sentence": "The visit was _____, lasting only ten minutes.",
   "addedDate": "2026-11-11",
-  "set": "L-019",
-  "order": 25
+  "set": "L-020",
+  "order": 26
  },
  {
   "word": "EGRESS",
@@ -8122,8 +8139,8 @@
   "example": "The emergency egress is at the back of the theater.",
   "sentence": "Fire rules require a clear _____ from every room.",
   "addedDate": "2026-11-11",
-  "set": "L-019",
-  "order": 25
+  "set": "L-020",
+  "order": 26
  },
  {
   "word": "BULGE",
@@ -8139,8 +8156,8 @@
   "example": "A frog's throat will bulge when it croaks.",
   "sentence": "His backpack began to _____ with too many books.",
   "addedDate": "2026-11-11",
-  "set": "L-019",
-  "order": 25
+  "set": "L-020",
+  "order": 26
  },
  {
   "word": "ELABORATE",
@@ -8156,8 +8173,8 @@
   "example": "The elaborate cake had five layers and tiny sugar flowers.",
   "sentence": "Please _____ on your idea so we understand it fully.",
   "addedDate": "2026-11-11",
-  "set": "L-019",
-  "order": 25
+  "set": "L-020",
+  "order": 26
  },
  {
   "word": "BUNGLE",
@@ -8173,8 +8190,8 @@
   "example": "Do not bungle the recipe by skipping the resting step.",
   "sentence": "He will _____ the surprise if he keeps giggling.",
   "addedDate": "2026-11-11",
-  "set": "L-019",
-  "order": 25
+  "set": "L-020",
+  "order": 26
  },
  {
   "word": "ELATION",
@@ -8190,8 +8207,8 @@
   "example": "His elation showed when he saw his name on the team list.",
   "sentence": "_____ filled her when the letter said she had won.",
   "addedDate": "2026-11-11",
-  "set": "L-019",
-  "order": 25
+  "set": "L-020",
+  "order": 26
  },
  {
   "word": "CAMARADERIE",
@@ -8207,8 +8224,8 @@
   "example": "Years of playing together built strong camaraderie on the team.",
   "sentence": "The _____ among the campers grew stronger every day.",
   "addedDate": "2026-11-11",
-  "set": "L-019",
-  "order": 25
+  "set": "L-020",
+  "order": 26
  },
  {
   "word": "ELONGATE",
@@ -8224,8 +8241,8 @@
   "example": "Stretching will elongate the rubber band.",
   "sentence": "The artist chose to _____ the shadow in the drawing.",
   "addedDate": "2026-11-11",
-  "set": "L-019",
-  "order": 25
+  "set": "L-020",
+  "order": 26
  },
  {
   "word": "CAMPAIGN",
@@ -8241,8 +8258,8 @@
   "example": "The class ran a campaign to collect cans for recycling.",
   "sentence": "The mayor's _____ included posters and speeches all month.",
   "addedDate": "2026-11-11",
-  "set": "L-019",
-  "order": 25
+  "set": "L-020",
+  "order": 26
  },
  {
   "word": "ELOQUENT",
@@ -8258,8 +8275,8 @@
   "example": "Her eloquent speech moved the whole audience.",
   "sentence": "The _____ letter convinced the mayor to save the park.",
   "addedDate": "2026-11-11",
-  "set": "L-019",
-  "order": 25
+  "set": "L-020",
+  "order": 26
  },
  {
   "word": "CAPACITY",
@@ -8275,8 +8292,8 @@
   "example": "The stadium is filled to capacity on game day.",
   "sentence": "The bottle's _____ is one liter of water.",
   "addedDate": "2026-11-11",
-  "set": "L-019",
-  "order": 25
+  "set": "L-020",
+  "order": 26
  },
  {
   "word": "EMBELLISH",
@@ -8292,8 +8309,8 @@
   "example": "She likes to embellish her drawings with tiny stars.",
   "sentence": "He will _____ the story with funny details.",
   "addedDate": "2026-11-11",
-  "set": "L-019",
-  "order": 25
+  "set": "L-020",
+  "order": 26
  },
  {
   "word": "CHARTER",
@@ -8309,8 +8326,8 @@
   "example": "The king gave the town a charter in 1700.",
   "sentence": "The club received its _____ from the city council.",
   "addedDate": "2026-11-11",
-  "set": "L-019",
-  "order": 25
+  "set": "L-020",
+  "order": 26
  },
  {
   "word": "EMBROIDER",
@@ -8326,8 +8343,8 @@
   "example": "She will embroider flowers on the pillowcase.",
   "sentence": "Grandma taught me to _____ my initials on a towel.",
   "addedDate": "2026-11-11",
-  "set": "L-019",
-  "order": 25
+  "set": "L-020",
+  "order": 26
  },
  {
   "word": "CHRONOLOGICAL",
@@ -8343,8 +8360,8 @@
   "example": "List the events in chronological order, from first to last.",
   "sentence": "Tell the story in _____ order, starting with the earliest event.",
   "addedDate": "2026-11-11",
-  "set": "L-019",
-  "order": 25
+  "set": "L-020",
+  "order": 26
  },
  {
   "word": "EMPATHY",
@@ -8360,8 +8377,8 @@
   "example": "Liam always expressed deep empathy toward others.",
   "sentence": "Good friends show _____ by imagining how you feel.",
   "addedDate": "2026-11-11",
-  "set": "L-019",
-  "order": 25
+  "set": "L-020",
+  "order": 26
  },
  {
   "word": "CIRCULATE",
@@ -8377,8 +8394,8 @@
   "example": "Fans circulate air through the room.",
   "sentence": "Rumors _____ quickly in a small school.",
   "addedDate": "2026-11-11",
-  "set": "L-019",
-  "order": 25
+  "set": "L-020",
+  "order": 26
  },
  {
   "word": "EMPHATIC",
@@ -8394,8 +8411,8 @@
   "example": "Peter made an emphatic refusal when asked to change his mind.",
   "sentence": "Her _____ \"no\" left no doubt about her answer.",
   "addedDate": "2026-11-11",
-  "set": "L-019",
-  "order": 25
+  "set": "L-020",
+  "order": 26
  },
  {
   "word": "CIRCUMSTANCE",
@@ -8411,8 +8428,8 @@
   "example": "Under no circumstance should you open that door.",
   "sentence": "In this _____, wearing a helmet is required.",
   "addedDate": "2026-11-11",
-  "set": "L-019",
-  "order": 25
+  "set": "L-020",
+  "order": 26
  },
  {
   "word": "EMULATE",
@@ -8428,8 +8445,8 @@
   "example": "Christine is a role model whom everyone should emulate.",
   "sentence": "Young players _____ the star athlete's work ethic.",
   "addedDate": "2026-11-11",
-  "set": "L-019",
-  "order": 25
+  "set": "L-020",
+  "order": 26
  },
  {
   "word": "CITIZENSHIP",
@@ -8445,8 +8462,8 @@
   "example": "She studied hard to earn her citizenship.",
   "sentence": "The class learned that _____ comes with rights and duties.",
   "addedDate": "2026-11-11",
-  "set": "L-020",
-  "order": 26
+  "set": "L-021",
+  "order": 27
  },
  {
   "word": "ENDEAVOR",
@@ -8462,8 +8479,8 @@
   "example": "Scientists are endeavoring to find a cure for the disease.",
   "sentence": "He will _____ to finish the puzzle before dinner.",
   "addedDate": "2026-11-11",
-  "set": "L-020",
-  "order": 26
+  "set": "L-021",
+  "order": 27
  },
  {
   "word": "CIVIC",
@@ -8479,8 +8496,8 @@
   "example": "Planting trees is a civic duty we can all share.",
   "sentence": "It is our _____ duty to keep the park clean.",
   "addedDate": "2026-11-11",
-  "set": "L-020",
-  "order": 26
+  "set": "L-021",
+  "order": 27
  },
  {
   "word": "ENGAGING",
@@ -8496,8 +8513,8 @@
   "example": "The students found the hands-on activity more engaging than the textbook.",
   "sentence": "The _____ story kept us reading past bedtime.",
   "addedDate": "2026-11-11",
-  "set": "L-020",
-  "order": 26
+  "set": "L-021",
+  "order": 27
  },
  {
   "word": "CLARITY",
@@ -8513,8 +8530,8 @@
   "example": "The clarity of the mountain stream amazed us.",
   "sentence": "She explained the rules with such _____ that everyone understood.",
   "addedDate": "2026-11-11",
-  "set": "L-020",
-  "order": 26
+  "set": "L-021",
+  "order": 27
  },
  {
   "word": "EPIC",
@@ -8530,8 +8547,8 @@
   "example": "The epic describes the hero's ten-year voyage home.",
   "sentence": "The _____ journey took the hero across three oceans.",
   "addedDate": "2026-11-11",
-  "set": "L-020",
-  "order": 26
+  "set": "L-021",
+  "order": 27
  },
  {
   "word": "CLASP",
@@ -8547,8 +8564,8 @@
   "example": "She clasped the railing as she climbed the steep stairs.",
   "sentence": "He held a tight _____ on the rope so he would not slip.",
   "addedDate": "2026-11-11",
-  "set": "L-020",
-  "order": 26
+  "set": "L-021",
+  "order": 27
  },
  {
   "word": "EPILOGUE",
@@ -8564,8 +8581,8 @@
   "example": "The epilogue tells what happened to the hero ten years later.",
   "sentence": "The _____ at the end shows the hero as a grandfather.",
   "addedDate": "2026-11-11",
-  "set": "L-020",
-  "order": 26
+  "set": "L-021",
+  "order": 27
  },
  {
   "word": "CLIMAX",
@@ -8581,8 +8598,8 @@
   "example": "The climax of the movie comes when the hero returns.",
   "sentence": "At the _____ of the play, the lost ring is finally found.",
   "addedDate": "2026-11-11",
-  "set": "L-020",
-  "order": 26
+  "set": "L-021",
+  "order": 27
  },
  {
   "word": "EPOCH",
@@ -8598,8 +8615,8 @@
   "example": "The invention of the airplane began a new epoch of travel.",
   "sentence": "Historians call it the _____ of exploration.",
   "addedDate": "2026-11-11",
-  "set": "L-020",
-  "order": 26
+  "set": "L-021",
+  "order": 27
  },
  {
   "word": "COINCIDE",
@@ -8615,8 +8632,8 @@
   "example": "The school fair will coincide with the holiday weekend.",
   "sentence": "Her birthday will _____ with the first day of spring this year.",
   "addedDate": "2026-11-11",
-  "set": "L-020",
-  "order": 26
+  "set": "L-021",
+  "order": 27
  },
  {
   "word": "EQUIVALENT",
@@ -8632,8 +8649,8 @@
   "example": "One dollar is equivalent to four quarters.",
   "sentence": "A liter is _____ to about a thousand milliliters.",
   "addedDate": "2026-11-11",
-  "set": "L-020",
-  "order": 26
+  "set": "L-021",
+  "order": 27
  },
  {
   "word": "COINCIDENCE",
@@ -8649,8 +8666,8 @@
   "example": "It was a coincidence that we wore the same costume.",
   "sentence": "Meeting my teacher at the beach was a happy _____.",
   "addedDate": "2026-11-11",
-  "set": "L-020",
-  "order": 26
+  "set": "L-021",
+  "order": 27
  },
  {
   "word": "ERADICATE",
@@ -8666,8 +8683,8 @@
   "example": "Doctors hope to eradicate the disease worldwide.",
   "sentence": "Gardeners worked to _____ the invasive weeds.",
   "addedDate": "2026-11-11",
-  "set": "L-020",
-  "order": 26
+  "set": "L-021",
+  "order": 27
  },
  {
   "word": "COLLABORATE",
@@ -8683,8 +8700,8 @@
   "example": "The two classes will collaborate on the garden project.",
   "sentence": "Artists _____ to create the huge mural downtown.",
   "addedDate": "2026-11-11",
-  "set": "L-020",
-  "order": 26
+  "set": "L-021",
+  "order": 27
  },
  {
   "word": "EXALT",
@@ -8700,8 +8717,8 @@
   "example": "The poem exalts the courage of ordinary soldiers.",
   "sentence": "The crowd began to _____ the hero with songs and cheers.",
   "addedDate": "2026-11-11",
-  "set": "L-020",
-  "order": 26
+  "set": "L-021",
+  "order": 27
  },
  {
   "word": "COLLISION",
@@ -8717,8 +8734,8 @@
   "example": "The collision between the bikes bent both wheels.",
   "sentence": "A _____ between the two sleds left both riders laughing in the snow.",
   "addedDate": "2026-11-11",
-  "set": "L-020",
-  "order": 26
+  "set": "L-021",
+  "order": 27
  },
  {
   "word": "EXCAVATE",
@@ -8734,8 +8751,8 @@
   "example": "Workers excavate the site to find ancient tools.",
   "sentence": "Archaeologists _____ the ruins layer by layer.",
   "addedDate": "2026-11-11",
-  "set": "L-020",
-  "order": 26
+  "set": "L-021",
+  "order": 27
  },
  {
   "word": "COLONIAL",
@@ -8751,8 +8768,8 @@
   "example": "The old colonial house was built in 1750.",
   "sentence": "The museum shows _____ furniture from the 1700s.",
   "addedDate": "2026-11-11",
-  "set": "L-020",
-  "order": 26
+  "set": "L-021",
+  "order": 27
  },
  {
   "word": "EXCERPT",
@@ -8768,8 +8785,8 @@
   "example": "We read an excerpt from the novel in class today.",
   "sentence": "The teacher read an _____ from the adventure novel.",
   "addedDate": "2026-11-11",
-  "set": "L-020",
-  "order": 26
+  "set": "L-021",
+  "order": 27
  },
  {
   "word": "COMBINATION",
@@ -8785,8 +8802,8 @@
   "example": "The combination of red and blue makes purple.",
   "sentence": "The _____ of peanut butter and jelly tastes great.",
   "addedDate": "2026-11-11",
-  "set": "L-021",
-  "order": 27
+  "set": "L-022",
+  "order": 28
  },
  {
   "word": "EXILE",
@@ -8802,8 +8819,8 @@
   "example": "The prince lived in exile for ten years.",
   "sentence": "The king sent the traitor into _____ far from home.",
   "addedDate": "2026-11-11",
-  "set": "L-021",
-  "order": 27
+  "set": "L-022",
+  "order": 28
  },
  {
   "word": "COMMEND",
@@ -8819,8 +8836,8 @@
   "example": "The mayor commended the firefighters for their bravery.",
   "sentence": "The principal will _____ the students who helped clean the park.",
   "addedDate": "2026-11-11",
-  "set": "L-021",
-  "order": 27
+  "set": "L-022",
+  "order": 28
  },
  {
   "word": "EXPLOIT",
@@ -8836,8 +8853,8 @@
   "example": "The company exploited the system by abusing the patients' trust.",
   "sentence": "Do not _____ your friend's kindness by asking for favors daily.",
   "addedDate": "2026-11-11",
-  "set": "L-021",
-  "order": 27
+  "set": "L-022",
+  "order": 28
  },
  {
   "word": "COMMENTARY",
@@ -8853,8 +8870,8 @@
   "example": "The sports commentary kept fans excited during the game.",
   "sentence": "The news _____ explained why the bridge was closed.",
   "addedDate": "2026-11-11",
-  "set": "L-021",
-  "order": 27
+  "set": "L-022",
+  "order": 28
  },
  {
   "word": "EXTOL",
@@ -8870,8 +8887,8 @@
   "example": "The review extols the young singer's voice.",
   "sentence": "Fans _____ the goalie for his amazing saves.",
   "addedDate": "2026-11-11",
-  "set": "L-021",
-  "order": 27
+  "set": "L-022",
+  "order": 28
  },
  {
   "word": "COMPACT",
@@ -8887,8 +8904,8 @@
   "example": "A compact car fits easily into tight parking spots.",
   "sentence": "The _____ tent folded into a tiny bag.",
   "addedDate": "2026-11-11",
-  "set": "L-021",
-  "order": 27
+  "set": "L-022",
+  "order": 28
  },
  {
   "word": "EXTRANEOUS",
@@ -8904,8 +8921,8 @@
   "example": "Remove extraneous details from your essay.",
   "sentence": "The soup had an _____ flavor that did not belong.",
   "addedDate": "2026-11-11",
-  "set": "L-021",
-  "order": 27
+  "set": "L-022",
+  "order": 28
  },
  {
   "word": "COMPARABLE",
@@ -8921,8 +8938,8 @@
   "example": "The two puppies are comparable in size.",
   "sentence": "Her score is _____ to the best in the class.",
   "addedDate": "2026-11-11",
-  "set": "L-021",
-  "order": 27
+  "set": "L-022",
+  "order": 28
  },
  {
   "word": "EXTROVERT",
@@ -8938,8 +8955,8 @@
   "example": "Outgoing and sociable, Elaine is a true extrovert.",
   "sentence": "An _____ makes friends easily at a new school.",
   "addedDate": "2026-11-11",
-  "set": "L-021",
-  "order": 27
+  "set": "L-022",
+  "order": 28
  },
  {
   "word": "COMPASSIONATE",
@@ -8955,8 +8972,8 @@
   "example": "The compassionate nurse comforted the frightened child.",
   "sentence": "Mrs. White was a firm instructor but also _____ toward her students.",
   "addedDate": "2026-11-11",
-  "set": "L-021",
-  "order": 27
+  "set": "L-022",
+  "order": 28
  },
  {
   "word": "EXUBERANCE",
@@ -8972,8 +8989,8 @@
   "example": "The puppies' exuberance filled the yard with chaos and joy.",
   "sentence": "His _____ on stage made the whole audience smile.",
   "addedDate": "2026-11-11",
-  "set": "L-021",
-  "order": 27
+  "set": "L-022",
+  "order": 28
  },
  {
   "word": "COMPEL",
@@ -8989,8 +9006,8 @@
   "example": "The rain will compel us to move the picnic indoors.",
   "sentence": "The coach's speech did _____ the team to practice harder than ever.",
   "addedDate": "2026-11-11",
-  "set": "L-021",
-  "order": 27
+  "set": "L-022",
+  "order": 28
  },
  {
   "word": "EXUBERANT",
@@ -9006,8 +9023,8 @@
   "example": "The exuberant fans cheered for ten minutes.",
   "sentence": "The _____ puppies tumbled over each other.",
   "addedDate": "2026-11-11",
-  "set": "L-021",
-  "order": 27
+  "set": "L-022",
+  "order": 28
  },
  {
   "word": "COMPENSATE",
@@ -9023,8 +9040,8 @@
   "example": "The store offered a gift card to compensate for the broken toy.",
   "sentence": "He worked weekends to _____ for the days he had missed.",
   "addedDate": "2026-11-11",
-  "set": "L-021",
-  "order": 27
+  "set": "L-022",
+  "order": 28
  },
  {
   "word": "FACET",
@@ -9040,8 +9057,8 @@
   "example": "Each facet of the diamond sparkled a different color.",
   "sentence": "Patience is one _____ of being a good teacher.",
   "addedDate": "2026-11-11",
-  "set": "L-021",
-  "order": 27
+  "set": "L-022",
+  "order": 28
  },
  {
   "word": "COMPOSE",
@@ -9057,8 +9074,8 @@
   "example": "Seven players compose each side of the team.",
   "sentence": "Beethoven learned to _____ music when he was young.",
   "addedDate": "2026-11-11",
-  "set": "L-021",
-  "order": 27
+  "set": "L-022",
+  "order": 28
  },
  {
   "word": "FALTER",
@@ -9074,8 +9091,8 @@
   "example": "The tired runner began to falter near the finish line.",
   "sentence": "Her voice started to _____ as she gave the speech.",
   "addedDate": "2026-11-11",
-  "set": "L-021",
-  "order": 27
+  "set": "L-022",
+  "order": 28
  },
  {
   "word": "COMPOSURE",
@@ -9091,8 +9108,8 @@
   "example": "She kept her composure even when the stage lights failed.",
   "sentence": "He answered the hard question with _____ and did not panic.",
   "addedDate": "2026-11-11",
-  "set": "L-021",
-  "order": 27
+  "set": "L-022",
+  "order": 28
  },
  {
   "word": "FICKLE",
@@ -9108,8 +9125,8 @@
   "example": "The fans were fickle, abandoning the team whenever it began to lose.",
   "sentence": "April weather is _____, sunny one hour and rainy the next.",
   "addedDate": "2026-11-11",
-  "set": "L-021",
-  "order": 27
+  "set": "L-022",
+  "order": 28
  },
  {
   "word": "CONCISE",
@@ -9125,8 +9142,8 @@
   "example": "Write a concise summary of the chapter.",
   "sentence": "His _____ answer said everything in one sentence.",
   "addedDate": "2026-11-11",
-  "set": "L-022",
-  "order": 28
+  "set": "L-023",
+  "order": 29
  },
  {
   "word": "FIDELITY",
@@ -9142,8 +9159,8 @@
   "example": "The knight served his king with utmost fidelity.",
   "sentence": "A good friend shows _____ by standing by you for years.",
   "addedDate": "2026-11-11",
-  "set": "L-022",
-  "order": 28
+  "set": "L-023",
+  "order": 29
  },
  {
   "word": "CONCLUDE",
@@ -9159,8 +9176,8 @@
   "example": "We will conclude the meeting with a song.",
   "sentence": "After checking the clues, I _____ that the butler did it.",
   "addedDate": "2026-11-11",
-  "set": "L-022",
-  "order": 28
+  "set": "L-023",
+  "order": 29
  },
  {
   "word": "FLUCTUATE",
@@ -9176,8 +9193,8 @@
   "example": "Temperatures fluctuate a lot in the desert, hot by day and cold by night.",
   "sentence": "Prices _____ during the busy season.",
   "addedDate": "2026-11-11",
-  "set": "L-022",
-  "order": 28
+  "set": "L-023",
+  "order": 29
  },
  {
   "word": "CONDEMN",
@@ -9193,8 +9210,8 @@
   "example": "The town voted to condemn the unsafe building.",
   "sentence": "Leaders _____ the cheating and demanded a rematch.",
   "addedDate": "2026-11-11",
-  "set": "L-022",
-  "order": 28
+  "set": "L-023",
+  "order": 29
  },
  {
   "word": "FRINGE",
@@ -9210,8 +9227,8 @@
   "example": "A fringe of trees surrounded the meadow.",
   "sentence": "The scarf had a _____ of tiny tassels.",
   "addedDate": "2026-11-11",
-  "set": "L-022",
-  "order": 28
+  "set": "L-023",
+  "order": 29
  },
  {
   "word": "CONFESSION",
@@ -9227,8 +9244,8 @@
   "example": "His confession surprised everyone in the courtroom.",
   "sentence": "She made a _____ and admitted she broke the vase.",
   "addedDate": "2026-11-11",
-  "set": "L-022",
-  "order": 28
+  "set": "L-023",
+  "order": 29
  },
  {
   "word": "FRUGAL",
@@ -9244,8 +9261,8 @@
   "example": "A frugal shopper compares prices first.",
   "sentence": "She is _____ and saves part of every allowance.",
   "addedDate": "2026-11-11",
-  "set": "L-022",
-  "order": 28
+  "set": "L-023",
+  "order": 29
  },
  {
   "word": "CONFIDENT",
@@ -9261,8 +9278,8 @@
   "example": "She felt confident before the spelling bee.",
   "sentence": "He gave a _____ smile and stepped onto the stage.",
   "addedDate": "2026-11-11",
-  "set": "L-022",
-  "order": 28
+  "set": "L-023",
+  "order": 29
  },
  {
   "word": "FUNDAMENTAL",
@@ -9278,8 +9295,8 @@
   "example": "Reading is a fundamental skill for every subject.",
   "sentence": "Trust is _____ to any friendship.",
   "addedDate": "2026-11-11",
-  "set": "L-022",
-  "order": 28
+  "set": "L-023",
+  "order": 29
  },
  {
   "word": "CONFLICT",
@@ -9295,8 +9312,8 @@
   "example": "The conflict over the last slice of pizza ended with sharing.",
   "sentence": "The two brothers had a _____ about whose turn it was.",
   "addedDate": "2026-11-11",
-  "set": "L-022",
-  "order": 28
+  "set": "L-023",
+  "order": 29
  },
  {
   "word": "FUSION",
@@ -9312,8 +9329,8 @@
   "example": "Fusion of the two rivers forms one wide channel.",
   "sentence": "The _____ of ice and heat created a puddle in minutes.",
   "addedDate": "2026-11-11",
-  "set": "L-022",
-  "order": 28
+  "set": "L-023",
+  "order": 29
  },
  {
   "word": "CONSEQUENCE",
@@ -9329,8 +9346,8 @@
   "example": "Missing the bus was a consequence of sleeping late.",
   "sentence": "Every choice has a _____, good or bad.",
   "addedDate": "2026-11-11",
-  "set": "L-022",
-  "order": 28
+  "set": "L-023",
+  "order": 29
  },
  {
   "word": "GAUNT",
@@ -9346,8 +9363,8 @@
   "example": "The gaunt stray cat needed food and care.",
   "sentence": "After the long winter, the deer looked _____ and weak.",
   "addedDate": "2026-11-11",
-  "set": "L-022",
-  "order": 28
+  "set": "L-023",
+  "order": 29
  },
  {
   "word": "CONSERVE",
@@ -9363,8 +9380,8 @@
   "example": "We conserve water by turning off the tap.",
   "sentence": "Please _____ energy by switching off unused lights.",
   "addedDate": "2026-11-11",
-  "set": "L-022",
-  "order": 28
+  "set": "L-023",
+  "order": 29
  },
  {
   "word": "GLUTTON",
@@ -9380,8 +9397,8 @@
   "example": "A glutton at the buffet, he went back five times.",
   "sentence": "The _____ finished his pie and half of mine.",
   "addedDate": "2026-11-11",
-  "set": "L-022",
-  "order": 28
+  "set": "L-023",
+  "order": 29
  },
  {
   "word": "CONSIDERATION",
@@ -9397,8 +9414,8 @@
   "example": "After careful consideration, she chose the blue bike.",
   "sentence": "Your idea deserves _____, so we will discuss it tomorrow.",
   "addedDate": "2026-11-11",
-  "set": "L-022",
-  "order": 28
+  "set": "L-023",
+  "order": 29
  },
  {
   "word": "GRIM",
@@ -9414,8 +9431,8 @@
   "example": "The grim news silenced the whole room.",
   "sentence": "His _____ expression told us the news was bad.",
   "addedDate": "2026-11-11",
-  "set": "L-022",
-  "order": 28
+  "set": "L-023",
+  "order": 29
  },
  {
   "word": "CONSTANT",
@@ -9431,8 +9448,8 @@
   "example": "The constant rain made the field muddy.",
   "sentence": "The _____ ticking of the clock kept me awake.",
   "addedDate": "2026-11-11",
-  "set": "L-022",
-  "order": 28
+  "set": "L-023",
+  "order": 29
  },
  {
   "word": "GRIMACE",
@@ -9448,8 +9465,8 @@
   "example": "He made a grimace when he bit into the sour lemon.",
   "sentence": "She began to _____ as the dentist touched her sore tooth.",
   "addedDate": "2026-11-11",
-  "set": "L-022",
-  "order": 28
+  "set": "L-023",
+  "order": 29
  },
  {
   "word": "CONSTITUTION",
@@ -9465,8 +9482,8 @@
   "example": "The constitution explains how our government works.",
   "sentence": "Our club wrote a _____ listing its rules and leaders.",
   "addedDate": "2026-11-11",
-  "set": "L-023",
-  "order": 29
+  "set": "L-024",
+  "order": 30
  },
  {
   "word": "HACKNEYED",
@@ -9482,8 +9499,8 @@
   "example": "A hackneyed phrase like \"think outside the box\" needs replacing.",
   "sentence": "The essay was full of _____ phrases like \"last but not least.\"",
   "addedDate": "2026-11-11",
-  "set": "L-023",
-  "order": 29
+  "set": "L-024",
+  "order": 30
  },
  {
   "word": "CONSTRUCTIVE",
@@ -9499,8 +9516,8 @@
   "example": "Her constructive comments helped me improve my essay.",
   "sentence": "He gave _____ advice that made the design stronger.",
   "addedDate": "2026-11-11",
-  "set": "L-023",
-  "order": 29
+  "set": "L-024",
+  "order": 30
  },
  {
   "word": "HEADSTRONG",
@@ -9516,8 +9533,8 @@
   "example": "Elizabeth showed a headstrong determination to do things her own way.",
   "sentence": "The _____ colt refused to follow the others to the barn.",
   "addedDate": "2026-11-11",
-  "set": "L-023",
-  "order": 29
+  "set": "L-024",
+  "order": 30
  },
  {
   "word": "CONTAGIOUS",
@@ -9533,8 +9550,8 @@
   "example": "The flu is contagious, so stay home if you are sick.",
   "sentence": "Her laughter was _____ and soon everyone was giggling.",
   "addedDate": "2026-11-11",
-  "set": "L-023",
-  "order": 29
+  "set": "L-024",
+  "order": 30
  },
  {
   "word": "HOVEL",
@@ -9550,8 +9567,8 @@
   "example": "The poor fisherman lived in a hovel by the shore.",
   "sentence": "The tiny _____ had a leaking roof and one small window.",
   "addedDate": "2026-11-11",
-  "set": "L-023",
-  "order": 29
+  "set": "L-024",
+  "order": 30
  },
  {
   "word": "CONTAMINATE",
@@ -9567,8 +9584,8 @@
   "example": "Oil spills contaminate the ocean.",
   "sentence": "Do not let dirt _____ the clean drinking water.",
   "addedDate": "2026-11-11",
-  "set": "L-023",
-  "order": 29
+  "set": "L-024",
+  "order": 30
  },
  {
   "word": "HYPOCRITE",
@@ -9584,8 +9601,8 @@
   "example": "Sam's father was a hypocrite about vegetables: he never ate his own.",
   "sentence": "A _____ tells others to share but never shares himself.",
   "addedDate": "2026-11-11",
-  "set": "L-023",
-  "order": 29
+  "set": "L-024",
+  "order": 30
  },
  {
   "word": "CONTEXT",
@@ -9601,8 +9618,8 @@
   "example": "Read the sentence in context to understand the hard word.",
   "sentence": "Knowing the _____ of the story helps you guess the word's meaning.",
   "addedDate": "2026-11-11",
-  "set": "L-023",
-  "order": 29
+  "set": "L-024",
+  "order": 30
  },
  {
   "word": "HYSTERICAL",
@@ -9618,8 +9635,8 @@
   "example": "The crowd grew hysterical when the comedian told his best joke.",
   "sentence": "When she heard the news, Susan reacted with _____ sobbing.",
   "addedDate": "2026-11-11",
-  "set": "L-023",
-  "order": 29
+  "set": "L-024",
+  "order": 30
  },
  {
   "word": "CONTINENTAL",
@@ -9635,8 +9652,8 @@
   "example": "The continental divide splits the country east and west.",
   "sentence": "The _____ breakfast included bread, cheese, and fruit.",
   "addedDate": "2026-11-11",
-  "set": "L-023",
-  "order": 29
+  "set": "L-024",
+  "order": 30
  },
  {
   "word": "ILLUMINATE",
@@ -9652,8 +9669,8 @@
   "example": "Candles illuminate the old hall softly.",
   "sentence": "The teacher's example will _____ the tricky idea.",
   "addedDate": "2026-11-11",
-  "set": "L-023",
-  "order": 29
+  "set": "L-024",
+  "order": 30
  },
  {
   "word": "CONTINUOUS",
@@ -9669,8 +9686,8 @@
   "example": "The continuous hum of the fan helped him sleep.",
   "sentence": "The _____ rain lasted three days without stopping.",
   "addedDate": "2026-11-11",
-  "set": "L-023",
-  "order": 29
+  "set": "L-024",
+  "order": 30
  },
  {
   "word": "IMPASSE",
@@ -9686,8 +9703,8 @@
   "example": "Talks reached an impasse when neither side would give in.",
   "sentence": "The two sides hit an _____ and stopped negotiating.",
   "addedDate": "2026-11-11",
-  "set": "L-023",
-  "order": 29
+  "set": "L-024",
+  "order": 30
  },
  {
   "word": "CONTROVERSY",
@@ -9703,8 +9720,8 @@
   "example": "The new rule caused controversy among the students.",
   "sentence": "The decision to cancel recess caused a _____ at school.",
   "addedDate": "2026-11-11",
-  "set": "L-023",
-  "order": 29
+  "set": "L-024",
+  "order": 30
  },
  {
   "word": "IMPEDIMENT",
@@ -9720,8 +9737,8 @@
   "example": "A fallen log was an impediment on the trail.",
   "sentence": "His stutter is an _____ he works hard to overcome.",
   "addedDate": "2026-11-11",
-  "set": "L-023",
-  "order": 29
+  "set": "L-024",
+  "order": 30
  },
  {
   "word": "CONVENIENT",
@@ -9737,8 +9754,8 @@
   "example": "A bike is a convenient way to get to school.",
   "sentence": "The store's late hours are _____ for busy families.",
   "addedDate": "2026-11-11",
-  "set": "L-023",
-  "order": 29
+  "set": "L-024",
+  "order": 30
  },
  {
   "word": "IMPLORE",
@@ -9754,8 +9771,8 @@
   "example": "I implore you to reconsider before quitting the team.",
   "sentence": "The knight began to _____ the queen for mercy.",
   "addedDate": "2026-11-11",
-  "set": "L-023",
-  "order": 29
+  "set": "L-024",
+  "order": 30
  },
  {
   "word": "CONVINCE",
@@ -9771,8 +9788,8 @@
   "example": "I tried to convince my parents to get a puppy.",
   "sentence": "She will _____ the class that recycling matters.",
   "addedDate": "2026-11-11",
-  "set": "L-023",
-  "order": 29
+  "set": "L-024",
+  "order": 30
  },
  {
   "word": "IMPLY",
@@ -9788,8 +9805,8 @@
   "example": "His frown seemed to imply he disagreed.",
   "sentence": "Her silence seemed to _____ agreement.",
   "addedDate": "2026-11-11",
-  "set": "L-023",
-  "order": 29
+  "set": "L-024",
+  "order": 30
  },
  {
   "word": "COOPERATE",
@@ -9805,8 +9822,8 @@
   "example": "If we cooperate, we can finish cleaning in ten minutes.",
   "sentence": "The teams must _____ to build the tallest tower.",
   "addedDate": "2026-11-11",
-  "set": "L-024",
-  "order": 30
+  "set": "L-025",
+  "order": 31
  },
  {
   "word": "INCOMPETENT",
@@ -9822,8 +9839,8 @@
   "example": "An incompetent repair made the leak worse.",
   "sentence": "The _____ goalie let in five easy goals.",
   "addedDate": "2026-11-11",
-  "set": "L-024",
-  "order": 30
+  "set": "L-025",
+  "order": 31
  },
  {
   "word": "INDIGNANT",
@@ -9839,8 +9856,8 @@
   "example": "The ruling inspired an onslaught of indignant letters of protest.",
   "sentence": "She felt _____ when she was blamed for something she did not do.",
   "addedDate": "2026-11-11",
-  "set": "L-024",
-  "order": 30
+  "set": "L-025",
+  "order": 31
  },
  {
   "word": "COPE",
@@ -9856,8 +9873,8 @@
   "example": "He learned to cope with his fear of heights.",
   "sentence": "She had to _____ with a broken arm for six weeks.",
   "addedDate": "2026-11-11",
-  "set": "L-024",
-  "order": 30
+  "set": "L-025",
+  "order": 31
  },
  {
   "word": "INDUSTRIAL",
@@ -9873,8 +9890,8 @@
   "example": "Factories and new inventions boomed during the Industrial Revolution.",
   "sentence": "The _____ park is full of warehouses and factories.",
   "addedDate": "2026-11-11",
-  "set": "L-024",
-  "order": 30
+  "set": "L-025",
+  "order": 31
  },
  {
   "word": "CORDIAL",
@@ -9890,8 +9907,8 @@
   "example": "She gave us a cordial welcome when we arrived.",
   "sentence": "The host gave a _____ greeting, smiling and shaking every hand.",
   "addedDate": "2026-11-11",
-  "set": "L-024",
-  "order": 30
+  "set": "L-025",
+  "order": 31
  },
  {
   "word": "INFURIATE",
@@ -9907,8 +9924,8 @@
   "example": "The judge's unfair decision infuriated the defendant.",
   "sentence": "It can _____ drivers when someone cuts in line.",
   "addedDate": "2026-11-11",
-  "set": "L-024",
-  "order": 30
+  "set": "L-025",
+  "order": 31
  },
  {
   "word": "CORPORATE",
@@ -9924,8 +9941,8 @@
   "example": "She works at the corporate office downtown.",
   "sentence": "The _____ logo appears on every box the company ships.",
   "addedDate": "2026-11-11",
-  "set": "L-024",
-  "order": 30
+  "set": "L-025",
+  "order": 31
  },
  {
   "word": "INGENUITY",
@@ -9941,8 +9958,8 @@
   "example": "Her ingenuity turned a box into a dollhouse.",
   "sentence": "With _____, he fixed the bike using a paper clip.",
   "addedDate": "2026-11-11",
-  "set": "L-024",
-  "order": 30
+  "set": "L-025",
+  "order": 31
  },
  {
   "word": "CORRODE",
@@ -9958,8 +9975,8 @@
   "example": "Salt water can corrode the metal parts of a boat.",
   "sentence": "Acid rain can _____ stone statues over many years.",
   "addedDate": "2026-11-11",
-  "set": "L-024",
-  "order": 30
+  "set": "L-025",
+  "order": 31
  },
  {
   "word": "INITIATE",
@@ -9975,8 +9992,8 @@
   "example": "Customers can initiate the discussion in the online forum.",
   "sentence": "We will _____ the cleanup by picking up litter first.",
   "addedDate": "2026-11-11",
-  "set": "L-024",
-  "order": 30
+  "set": "L-025",
+  "order": 31
  },
  {
   "word": "COUNCIL",
@@ -9992,8 +10009,8 @@
   "example": "The town council voted to fix the park.",
   "sentence": "The student _____ plans the school dance.",
   "addedDate": "2026-11-11",
-  "set": "L-024",
-  "order": 30
+  "set": "L-025",
+  "order": 31
  },
  {
   "word": "INQUIRY",
@@ -10009,8 +10026,8 @@
   "example": "The school launched an inquiry into the missing funds.",
   "sentence": "Her _____ about the old house led to a surprising story.",
   "addedDate": "2026-11-11",
-  "set": "L-024",
-  "order": 30
+  "set": "L-025",
+  "order": 31
  },
  {
   "word": "COWARD",
@@ -10026,8 +10043,8 @@
   "example": "The coward in the story ran from every shadow.",
   "sentence": "Only a _____ would leave a friend behind in danger.",
   "addedDate": "2026-11-11",
-  "set": "L-024",
-  "order": 30
+  "set": "L-025",
+  "order": 31
  },
  {
   "word": "INSCRIBE",
@@ -10043,8 +10060,8 @@
   "example": "They will inscribe his name on the trophy.",
   "sentence": "The artist chose to _____ her initials in the clay.",
   "addedDate": "2026-11-11",
-  "set": "L-024",
-  "order": 30
+  "set": "L-025",
+  "order": 31
  },
  {
   "word": "CRISIS",
@@ -10060,8 +10077,8 @@
   "example": "The town faced a water crisis during the drought.",
   "sentence": "During the _____, everyone worked together to help.",
   "addedDate": "2026-11-11",
-  "set": "L-024",
-  "order": 30
+  "set": "L-025",
+  "order": 31
  },
  {
   "word": "INSIPID",
@@ -10077,8 +10094,8 @@
   "example": "The soup was insipid and needed salt.",
   "sentence": "The book's _____ ending disappointed everyone.",
   "addedDate": "2026-11-11",
-  "set": "L-024",
-  "order": 30
+  "set": "L-025",
+  "order": 31
  },
  {
   "word": "CULTIVATE",
@@ -10094,8 +10111,8 @@
   "example": "Farmers cultivate the fields each spring.",
   "sentence": "Reading helps _____ a strong imagination.",
   "addedDate": "2026-11-11",
-  "set": "L-024",
-  "order": 30
+  "set": "L-025",
+  "order": 31
  },
  {
   "word": "INTANGIBLE",
@@ -10111,8 +10128,8 @@
   "example": "Kindness is an intangible gift you feel but cannot hold.",
   "sentence": "Trust is _____: you cannot touch it, but you can lose it.",
   "addedDate": "2026-11-11",
-  "set": "L-024",
-  "order": 30
+  "set": "L-025",
+  "order": 31
  },
  {
   "word": "CULTURE",
@@ -10128,8 +10145,8 @@
   "example": "Every culture celebrates holidays in its own way.",
   "sentence": "The museum teaches visitors about the _____ of ancient Egypt.",
   "addedDate": "2026-11-11",
-  "set": "L-024",
-  "order": 30
+  "set": "L-025",
+  "order": 31
  },
  {
   "word": "INTEGRITY",
@@ -10145,8 +10162,8 @@
   "example": "Her integrity made everyone trust her word.",
   "sentence": "A referee needs _____ so both teams trust the calls.",
   "addedDate": "2026-11-11",
-  "set": "L-025",
-  "order": 31
+  "set": "L-026",
+  "order": 32
  },
  {
   "word": "CUMULATIVE",
@@ -10162,8 +10179,8 @@
   "example": "The cumulative snowfall reached two feet.",
   "sentence": "His _____ score grew with every quiz he passed.",
   "addedDate": "2026-11-11",
-  "set": "L-025",
-  "order": 31
+  "set": "L-026",
+  "order": 32
  },
  {
   "word": "INTROVERT",
@@ -10179,8 +10196,8 @@
   "example": "James is friendly but introverted, keeping his thoughts to himself.",
   "sentence": "An _____ may prefer reading alone to a big party.",
   "addedDate": "2026-11-11",
-  "set": "L-025",
-  "order": 31
+  "set": "L-026",
+  "order": 32
  },
  {
   "word": "CUSTODY",
@@ -10196,8 +10213,8 @@
   "example": "The kitten was placed in the custody of the animal shelter.",
   "sentence": "After the flood, the puppy was put in the _____ of a kind rescue worker.",
   "addedDate": "2026-11-11",
-  "set": "L-025",
-  "order": 31
+  "set": "L-026",
+  "order": 32
  },
  {
   "word": "IRONIC",
@@ -10213,8 +10230,8 @@
   "example": "It is ironic that the fire station burned down.",
   "sentence": "How _____ that the umbrella seller got caught in the rain without one!",
   "addedDate": "2026-11-11",
-  "set": "L-025",
-  "order": 31
+  "set": "L-026",
+  "order": 32
  },
  {
   "word": "DEBT",
@@ -10230,8 +10247,8 @@
   "example": "He paid off his debt at the bank.",
   "sentence": "She worked all summer to pay off her _____.",
   "addedDate": "2026-11-11",
-  "set": "L-025",
-  "order": 31
+  "set": "L-026",
+  "order": 32
  },
  {
   "word": "ITINERANT",
@@ -10247,8 +10264,8 @@
   "example": "An itinerant musician played in a new town each week.",
   "sentence": "The _____ preacher rode from village to village.",
   "addedDate": "2026-11-11",
-  "set": "L-025",
-  "order": 31
+  "set": "L-026",
+  "order": 32
  },
  {
   "word": "DECAY",
@@ -10264,8 +10281,8 @@
   "example": "Old apples decay if left on the ground.",
   "sentence": "Without brushing, teeth can _____ over time.",
   "addedDate": "2026-11-11",
-  "set": "L-025",
-  "order": 31
+  "set": "L-026",
+  "order": 32
  },
  {
   "word": "JUBILATION",
@@ -10281,8 +10298,8 @@
   "example": "There was jubilation in the streets after the championship.",
   "sentence": "The _____ after the final whistle lasted all night.",
   "addedDate": "2026-11-11",
-  "set": "L-025",
-  "order": 31
+  "set": "L-026",
+  "order": 32
  },
  {
   "word": "DECEIT",
@@ -10298,8 +10315,8 @@
   "example": "His deceit was discovered when the truth came out.",
   "sentence": "The magician's _____ is harmless fun, but cheating is not.",
   "addedDate": "2026-11-11",
-  "set": "L-025",
-  "order": 31
+  "set": "L-026",
+  "order": 32
  },
  {
   "word": "KINETIC",
@@ -10315,8 +10332,8 @@
   "example": "A rolling ball has kinetic energy.",
   "sentence": "The _____ sculpture spun and clicked as it moved.",
   "addedDate": "2026-11-11",
-  "set": "L-025",
-  "order": 31
+  "set": "L-026",
+  "order": 32
  },
  {
   "word": "DECENT",
@@ -10332,8 +10349,8 @@
   "example": "A decent meal awaited us after the long hike.",
   "sentence": "He is a _____ player who always follows the rules.",
   "addedDate": "2026-11-11",
-  "set": "L-025",
-  "order": 31
+  "set": "L-026",
+  "order": 32
  },
  {
   "word": "LAMENT",
@@ -10349,8 +10366,8 @@
   "example": "Fans lament the closing of the old theater.",
   "sentence": "She began to _____ the loss of her favorite bookstore.",
   "addedDate": "2026-11-11",
-  "set": "L-025",
-  "order": 31
+  "set": "L-026",
+  "order": 32
  },
  {
   "word": "DECLARE",
@@ -10366,8 +10383,8 @@
   "example": "The judge will declare the winner at noon.",
   "sentence": "The mayor will _____ the park open at the ceremony tomorrow.",
   "addedDate": "2026-11-11",
-  "set": "L-025",
-  "order": 31
+  "set": "L-026",
+  "order": 32
  },
  {
   "word": "LIVID",
@@ -10383,8 +10400,8 @@
   "example": "He was livid when he found his bike stolen.",
   "sentence": "Mom was _____ when she saw the broken window.",
   "addedDate": "2026-11-11",
-  "set": "L-025",
-  "order": 31
+  "set": "L-026",
+  "order": 32
  },
  {
   "word": "DEFEAT",
@@ -10400,8 +10417,8 @@
   "example": "Our team hopes to defeat the champions.",
   "sentence": "The hero will _____ the villain at the end of the tale.",
   "addedDate": "2026-11-11",
-  "set": "L-025",
-  "order": 31
+  "set": "L-026",
+  "order": 32
  },
  {
   "word": "LUSH",
@@ -10417,8 +10434,8 @@
   "example": "The lush valley glowed green after the rains.",
   "sentence": "_____ gardens surrounded the old castle.",
   "addedDate": "2026-11-11",
-  "set": "L-025",
-  "order": 31
+  "set": "L-026",
+  "order": 32
  },
  {
   "word": "DEFEND",
@@ -10434,8 +10451,8 @@
   "example": "The dog will defend its puppies.",
   "sentence": "Soldiers _____ the fort through the night.",
   "addedDate": "2026-11-11",
-  "set": "L-025",
-  "order": 31
+  "set": "L-026",
+  "order": 32
  },
  {
   "word": "MALICIOUS",
@@ -10451,8 +10468,8 @@
   "example": "Jenny was deeply hurt by the malicious rumors spread about her.",
   "sentence": "The _____ trick hurt his feelings on purpose.",
   "addedDate": "2026-11-11",
-  "set": "L-025",
-  "order": 31
+  "set": "L-026",
+  "order": 32
  },
  {
   "word": "DELAY",
@@ -10468,8 +10485,8 @@
   "example": "Snow will delay the buses tomorrow.",
   "sentence": "Please do not _____ the project any longer.",
   "addedDate": "2026-11-11",
-  "set": "L-025",
-  "order": 31
+  "set": "L-026",
+  "order": 32
  },
  {
   "word": "MAR",
@@ -10485,8 +10502,8 @@
   "example": "A scratch can mar the polished table.",
   "sentence": "One loud cough did not _____ the beautiful concert.",
   "addedDate": "2026-11-11",
-  "set": "L-026",
-  "order": 32
+  "set": "L-027",
+  "order": 33
  },
  {
   "word": "DELIBERATE",
@@ -10502,8 +10519,8 @@
   "example": "His deliberate choice of words avoided hurting anyone.",
   "sentence": "Dropping the vase was not an accident; it was _____.",
   "addedDate": "2026-11-11",
-  "set": "L-026",
-  "order": 32
+  "set": "L-027",
+  "order": 33
  },
  {
   "word": "MEMOIR",
@@ -10519,8 +10536,8 @@
   "example": "Grandma is writing a memoir about growing up on a farm.",
   "sentence": "His _____ about sailing around the world won an award.",
   "addedDate": "2026-11-11",
-  "set": "L-026",
-  "order": 32
+  "set": "L-027",
+  "order": 33
  },
  {
   "word": "DELICATE",
@@ -10536,8 +10553,8 @@
   "example": "The delicate glass ornament must be handled gently.",
   "sentence": "Be careful — that shell is _____ and cracks easily.",
   "addedDate": "2026-11-11",
-  "set": "L-026",
-  "order": 32
+  "set": "L-027",
+  "order": 33
  },
  {
   "word": "METAPHOR",
@@ -10553,8 +10570,8 @@
   "example": "\"The classroom was a zoo\" is a metaphor.",
   "sentence": "\"Time is a thief\" is a _____ that compares time to a robber.",
   "addedDate": "2026-11-11",
-  "set": "L-026",
-  "order": 32
+  "set": "L-027",
+  "order": 33
  },
  {
   "word": "DELUDE",
@@ -10570,8 +10587,8 @@
   "example": "He deluded himself into thinking he did not need to study.",
   "sentence": "Do not let the easy first question _____ you into skipping your studying.",
   "addedDate": "2026-11-11",
-  "set": "L-026",
-  "order": 32
+  "set": "L-027",
+  "order": 33
  },
  {
   "word": "METHODICAL",
@@ -10587,8 +10604,8 @@
   "example": "Her methodical approach solved the puzzle piece by piece.",
   "sentence": "He packed in a _____ way, checking each item off the list.",
   "addedDate": "2026-11-11",
-  "set": "L-026",
-  "order": 32
+  "set": "L-027",
+  "order": 33
  },
  {
   "word": "DEPLETE",
@@ -10604,8 +10621,8 @@
   "example": "Long hikes can deplete your water quickly in summer.",
   "sentence": "The long winter began to _____ the village's food stores.",
   "addedDate": "2026-11-11",
-  "set": "L-026",
-  "order": 32
+  "set": "L-027",
+  "order": 33
  },
  {
   "word": "MIRTH",
@@ -10621,8 +10638,8 @@
   "example": "The room was full of mirth at the party.",
   "sentence": "Their _____ could be heard down the hall.",
   "addedDate": "2026-11-11",
-  "set": "L-026",
-  "order": 32
+  "set": "L-027",
+  "order": 33
  },
  {
   "word": "DETAIN",
@@ -10638,8 +10655,8 @@
   "example": "Please do not detain the class after the bell.",
   "sentence": "A flat tire will _____ us, so we may arrive late.",
   "addedDate": "2026-11-11",
-  "set": "L-026",
-  "order": 32
+  "set": "L-027",
+  "order": 33
  },
  {
   "word": "MONOLOGUE",
@@ -10655,8 +10672,8 @@
   "example": "The actor delivered a moving monologue about his childhood.",
   "sentence": "The play opens with a _____ by the queen.",
   "addedDate": "2026-11-11",
-  "set": "L-026",
-  "order": 32
+  "set": "L-027",
+  "order": 33
  },
  {
   "word": "DETRIMENT",
@@ -10672,8 +10689,8 @@
   "example": "Skipping breakfast can be a detriment to your focus at school.",
   "sentence": "Too little sleep can be a _____ to your health and grades.",
   "addedDate": "2026-11-11",
-  "set": "L-026",
-  "order": 32
+  "set": "L-027",
+  "order": 33
  },
  {
   "word": "MONOTONOUS",
@@ -10689,8 +10706,8 @@
   "example": "The monotonous sound of the dripping tap kept him awake.",
   "sentence": "The drive was long and _____, with the same fields for hours.",
   "addedDate": "2026-11-11",
-  "set": "L-026",
-  "order": 32
+  "set": "L-027",
+  "order": 33
  },
  {
   "word": "DISCREET",
@@ -10706,8 +10723,8 @@
   "example": "Be discreet when you talk about the surprise party.",
   "sentence": "She was _____ about the plan and told no one the secret.",
   "addedDate": "2026-11-11",
-  "set": "L-026",
-  "order": 32
+  "set": "L-027",
+  "order": 33
  },
  {
   "word": "MOSAIC",
@@ -10723,8 +10740,8 @@
   "example": "The mosaic on the wall shows a giant sunflower.",
   "sentence": "Artists glued tiny tiles into a bright _____.",
   "addedDate": "2026-11-11",
-  "set": "L-026",
-  "order": 32
+  "set": "L-027",
+  "order": 33
  },
  {
   "word": "DOCUMENT",
@@ -10740,8 +10757,8 @@
   "example": "Scientists document every experiment so others can repeat the work.",
   "sentence": "Please _____ the trip with photos and notes.",
   "addedDate": "2026-11-11",
-  "set": "L-026",
-  "order": 32
+  "set": "L-027",
+  "order": 33
  },
  {
   "word": "NARRATIVE",
@@ -10757,8 +10774,8 @@
   "example": "The narrative follows a young pilot learning to fly.",
   "sentence": "The game's _____ kept players hooked for hours.",
   "addedDate": "2026-11-11",
-  "set": "L-026",
-  "order": 32
+  "set": "L-027",
+  "order": 33
  },
  {
   "word": "ENGROSS",
@@ -10774,8 +10791,8 @@
   "example": "The mystery novel will engross readers until the last page.",
   "sentence": "The puzzle began to _____ him so much that he forgot lunch.",
   "addedDate": "2026-11-11",
-  "set": "L-026",
-  "order": 32
+  "set": "L-027",
+  "order": 33
  },
  {
   "word": "NOTORIOUS",
@@ -10791,8 +10808,8 @@
   "example": "The notorious pirate hid his treasure on the island.",
   "sentence": "The road is _____ for its sharp, dangerous turns.",
   "addedDate": "2026-11-11",
-  "set": "L-026",
-  "order": 32
+  "set": "L-027",
+  "order": 33
  },
  {
   "word": "ENVELOP",
@@ -10808,8 +10825,8 @@
   "example": "Fog began to envelop the harbor at dusk.",
   "sentence": "Thick fog started to _____ the whole town by morning.",
   "addedDate": "2026-11-11",
-  "set": "L-026",
-  "order": 32
+  "set": "L-027",
+  "order": 33
  },
  {
   "word": "NOVICE",
@@ -10825,8 +10842,8 @@
   "example": "As a novice chess player, she lost her first matches.",
   "sentence": "The _____ skier stayed on the smallest hill.",
   "addedDate": "2026-11-11",
-  "set": "L-027",
-  "order": 33
+  "set": "L-028",
+  "order": 34
  },
  {
   "word": "ERA",
@@ -10842,8 +10859,8 @@
   "example": "The era of steam trains changed how people traveled.",
   "sentence": "Grandpa grew up in the _____ of black-and-white television.",
   "addedDate": "2026-11-11",
-  "set": "L-027",
-  "order": 33
+  "set": "L-028",
+  "order": 34
  },
  {
   "word": "OBJECTIVE",
@@ -10859,8 +10876,8 @@
   "example": "The judge must stay objective during the contest.",
   "sentence": "A good referee stays _____ and calls both sides fairly.",
   "addedDate": "2026-11-11",
-  "set": "L-027",
-  "order": 33
+  "set": "L-028",
+  "order": 34
  },
  {
   "word": "EVACUATE",
@@ -10876,8 +10893,8 @@
   "example": "We had to evacuate the building during the fire drill.",
   "sentence": "Firefighters will _____ the hotel if the fire spreads.",
   "addedDate": "2026-11-11",
-  "set": "L-027",
-  "order": 33
+  "set": "L-028",
+  "order": 34
  },
  {
   "word": "OBSCURE",
@@ -10893,8 +10910,8 @@
   "example": "He cited an obscure poem that few people know.",
   "sentence": "The instructions were _____ and confused everyone.",
   "addedDate": "2026-11-11",
-  "set": "L-027",
-  "order": 33
+  "set": "L-028",
+  "order": 34
  },
  {
   "word": "EXAGGERATE",
@@ -10910,8 +10927,8 @@
   "example": "Don't exaggerate — the fish was not that big!",
   "sentence": "He tends to _____ and says the hill was a mountain.",
   "addedDate": "2026-11-11",
-  "set": "L-027",
-  "order": 33
+  "set": "L-028",
+  "order": 34
  },
  {
   "word": "OMNISCIENT",
@@ -10927,8 +10944,8 @@
   "example": "The narrator of the story is omniscient and knows every character's thoughts.",
   "sentence": "No human is _____, though computers can store a lot.",
   "addedDate": "2026-11-11",
-  "set": "L-027",
-  "order": 33
+  "set": "L-028",
+  "order": 34
  },
  {
   "word": "EXCEL",
@@ -10944,8 +10961,8 @@
   "example": "She works hard to excel in math class.",
   "sentence": "With daily practice, he began to _____ at playing the violin.",
   "addedDate": "2026-11-11",
-  "set": "L-027",
-  "order": 33
+  "set": "L-028",
+  "order": 34
  },
  {
   "word": "OPTIMIST",
@@ -10961,8 +10978,8 @@
   "example": "An optimist believes the sun will come out tomorrow.",
   "sentence": "The _____ was sure the picnic weather would improve.",
   "addedDate": "2026-11-11",
-  "set": "L-027",
-  "order": 33
+  "set": "L-028",
+  "order": 34
  },
  {
   "word": "EXHILARATION",
@@ -10978,8 +10995,8 @@
   "example": "Riding the roller coaster filled her with exhilaration.",
   "sentence": "The _____ of sledding down the steep hill made everyone shout.",
   "addedDate": "2026-11-11",
-  "set": "L-027",
-  "order": 33
+  "set": "L-028",
+  "order": 34
  },
  {
   "word": "ORATION",
@@ -10995,8 +11012,8 @@
   "example": "The mayor's oration lasted an hour.",
   "sentence": "The graduate gave an _____ about hope and hard work.",
   "addedDate": "2026-11-11",
-  "set": "L-027",
-  "order": 33
+  "set": "L-028",
+  "order": 34
  },
  {
   "word": "EXPEDITION",
@@ -11012,8 +11029,8 @@
   "example": "The expedition crossed the icy mountains in search of the lost city.",
   "sentence": "The scientists went on an _____ to study penguins in Antarctica.",
   "addedDate": "2026-11-11",
-  "set": "L-027",
-  "order": 33
+  "set": "L-028",
+  "order": 34
  },
  {
   "word": "ORNATE",
@@ -11029,8 +11046,8 @@
   "example": "The ornate palace gates were covered in gold swirls.",
   "sentence": "The _____ frame made the simple photo look royal.",
   "addedDate": "2026-11-11",
-  "set": "L-027",
-  "order": 33
+  "set": "L-028",
+  "order": 34
  },
  {
   "word": "EXTERMINATE",
@@ -11046,8 +11063,8 @@
   "example": "The gardeners worked to exterminate the weeds choking the flowers.",
   "sentence": "Pest control had to _____ the ants invading the kitchen.",
   "addedDate": "2026-11-11",
-  "set": "L-027",
-  "order": 33
+  "set": "L-028",
+  "order": 34
  },
  {
   "word": "PACT",
@@ -11063,8 +11080,8 @@
   "example": "The two friends made a pact to keep the secret.",
   "sentence": "The countries signed a _____ to end the fighting.",
   "addedDate": "2026-11-11",
-  "set": "L-027",
-  "order": 33
+  "set": "L-028",
+  "order": 34
  },
  {
   "word": "EXTINCT",
@@ -11080,8 +11097,8 @@
   "example": "Dinosaurs have been extinct for millions of years.",
   "sentence": "The dodo bird is _____, gone forever.",
   "addedDate": "2026-11-11",
-  "set": "L-027",
-  "order": 33
+  "set": "L-028",
+  "order": 34
  },
  {
   "word": "PARALLEL",
@@ -11097,8 +11114,8 @@
   "example": "The two stories have parallel plots.",
   "sentence": "Draw two _____ lines that never cross.",
   "addedDate": "2026-11-11",
-  "set": "L-027",
-  "order": 33
+  "set": "L-028",
+  "order": 34
  },
  {
   "word": "EXTRAORDINARY",
@@ -11114,8 +11131,8 @@
   "example": "It took an extraordinary effort to lift the heavy stone.",
   "sentence": "The tiny seed grew into an _____ sunflower, taller than the fence.",
   "addedDate": "2026-11-11",
-  "set": "L-027",
-  "order": 33
+  "set": "L-028",
+  "order": 34
  },
  {
   "word": "PARAMOUNT",
@@ -11131,8 +11148,8 @@
   "example": "Safety is paramount on the climbing wall.",
   "sentence": "Finishing our water supply check was _____ before the hike.",
   "addedDate": "2026-11-11",
-  "set": "L-027",
-  "order": 33
+  "set": "L-028",
+  "order": 34
  },
  {
   "word": "EXULT",
@@ -11148,8 +11165,8 @@
   "example": "The fans exult when their team wins the championship.",
   "sentence": "The team will _____ when the final whistle blows and they win.",
   "addedDate": "2026-11-11",
-  "set": "L-027",
-  "order": 33
+  "set": "L-028",
+  "order": 34
  },
  {
   "word": "PARCH",
@@ -11165,8 +11182,8 @@
   "example": "The summer sun will parch the fields.",
   "sentence": "The hot wind began to _____ the grass.",
   "addedDate": "2026-11-11",
-  "set": "L-028",
-  "order": 34
+  "set": "L-029",
+  "order": 35
  },
  {
   "word": "FATALITY",
@@ -11182,8 +11199,8 @@
   "example": "Thankfully, the storm caused damage but no fatality in our town.",
   "sentence": "The earthquake was strong, but there was not a single _____ in the village.",
   "addedDate": "2026-11-11",
-  "set": "L-028",
-  "order": 34
+  "set": "L-029",
+  "order": 35
  },
  {
   "word": "PARODY",
@@ -11199,8 +11216,8 @@
   "example": "The students made a parody of the famous song for the talent show.",
   "sentence": "Our class skit was a _____ of the fairy tale.",
   "addedDate": "2026-11-11",
-  "set": "L-028",
-  "order": 34
+  "set": "L-029",
+  "order": 35
  },
  {
   "word": "FERRY",
@@ -11216,8 +11233,8 @@
   "example": "We rode the ferry across the bay to the island.",
   "sentence": "The _____ carried cars and people across the river all day.",
   "addedDate": "2026-11-11",
-  "set": "L-028",
-  "order": 34
+  "set": "L-029",
+  "order": 35
  },
  {
   "word": "PASSIVE",
@@ -11233,8 +11250,8 @@
   "example": "Gordon is a passive group member, preferring to let others take charge.",
   "sentence": "Don't be _____ — join in and share your ideas!",
   "addedDate": "2026-11-11",
-  "set": "L-028",
-  "order": 34
+  "set": "L-029",
+  "order": 35
  },
  {
   "word": "FEUD",
@@ -11250,8 +11267,8 @@
   "example": "The two families carried on a feud for many years.",
   "sentence": "The _____ between the two towns' teams lasted for decades.",
   "addedDate": "2026-11-11",
-  "set": "L-028",
-  "order": 34
+  "set": "L-029",
+  "order": 35
  },
  {
   "word": "PEDESTRIAN",
@@ -11267,8 +11284,8 @@
   "example": "Pedestrians should use the crosswalk.",
   "sentence": "A _____ waited for the light before crossing.",
   "addedDate": "2026-11-11",
-  "set": "L-028",
-  "order": 34
+  "set": "L-029",
+  "order": 35
  },
  {
   "word": "FLAMMABLE",
@@ -11284,8 +11301,8 @@
   "example": "Keep the flammable towels away from the stove.",
   "sentence": "Gasoline is _____, so it must be stored far from flames.",
   "addedDate": "2026-11-11",
-  "set": "L-028",
-  "order": 34
+  "set": "L-029",
+  "order": 35
  },
  {
   "word": "PENITENT",
@@ -11301,8 +11318,8 @@
   "example": "The penitent student apologized for the broken window.",
   "sentence": "_____ after the argument, he wrote a note of apology.",
   "addedDate": "2026-11-11",
-  "set": "L-028",
-  "order": 34
+  "set": "L-029",
+  "order": 35
  },
  {
   "word": "FLATTER",
@@ -11318,8 +11335,8 @@
   "example": "At first flattered by the compliments, the boss realized she was only angling for a raise.",
   "sentence": "Do not _____ the judge just to win the contest.",
   "addedDate": "2026-11-11",
-  "set": "L-028",
-  "order": 34
+  "set": "L-029",
+  "order": 35
  },
  {
   "word": "PESSIMIST",
@@ -11335,8 +11352,8 @@
   "example": "A pessimist always expects the plane to be delayed.",
   "sentence": "A _____ sees the glass as half empty.",
   "addedDate": "2026-11-11",
-  "set": "L-028",
-  "order": 34
+  "set": "L-029",
+  "order": 35
  },
  {
   "word": "FRANK",
@@ -11352,8 +11369,8 @@
   "example": "To be frank, the soup needs more salt.",
   "sentence": "She was _____ about the problem and told us everything.",
   "addedDate": "2026-11-11",
-  "set": "L-028",
-  "order": 34
+  "set": "L-029",
+  "order": 35
  },
  {
   "word": "PIOUS",
@@ -11369,8 +11386,8 @@
   "example": "The pious monk prayed at dawn each day.",
   "sentence": "She led a _____ life, helping at the temple weekly.",
   "addedDate": "2026-11-11",
-  "set": "L-028",
-  "order": 34
+  "set": "L-029",
+  "order": 35
  },
  {
   "word": "FUSE",
@@ -11386,8 +11403,8 @@
   "example": "The two rivers fuse into one wide stream.",
   "sentence": "Heat can _____ the pieces of metal into a single bar.",
   "addedDate": "2026-11-11",
-  "set": "L-028",
-  "order": 34
+  "set": "L-029",
+  "order": 35
  },
  {
   "word": "PLAUSIBLE",
@@ -11403,8 +11420,8 @@
   "example": "His excuse about the traffic sounds plausible.",
   "sentence": "Finding the key under the mat is a _____ explanation.",
   "addedDate": "2026-11-11",
-  "set": "L-028",
-  "order": 34
+  "set": "L-029",
+  "order": 35
  },
  {
   "word": "GENRE",
@@ -11420,8 +11437,8 @@
   "example": "Mystery is my favorite genre of book.",
   "sentence": "Science fiction is a popular _____ of film.",
   "addedDate": "2026-11-11",
-  "set": "L-028",
-  "order": 34
+  "set": "L-029",
+  "order": 35
  },
  {
   "word": "PLUMAGE",
@@ -11437,8 +11454,8 @@
   "example": "A peacock's plumage shines blue and green.",
   "sentence": "The cardinal's red _____ stood out against the snow.",
   "addedDate": "2026-11-11",
-  "set": "L-028",
-  "order": 34
+  "set": "L-029",
+  "order": 35
  },
  {
   "word": "GRACIOUS",
@@ -11454,8 +11471,8 @@
   "example": "Always a good sport, the losing player was still gracious in defeat.",
   "sentence": "The staff was _____ and helpful when we asked for advice.",
   "addedDate": "2026-11-11",
-  "set": "L-028",
-  "order": 34
+  "set": "L-029",
+  "order": 35
  },
  {
   "word": "PLUNDER",
@@ -11471,8 +11488,8 @@
   "example": "Pirates planned to plunder the treasure ship.",
   "sentence": "Bandits used to _____ villages along the road.",
   "addedDate": "2026-11-11",
-  "set": "L-028",
-  "order": 34
+  "set": "L-029",
+  "order": 35
  },
  {
   "word": "ILLEGIBLE",
@@ -11488,8 +11505,8 @@
   "example": "His handwriting was so illegible that even he could not decode it.",
   "sentence": "The note was _____, smudged beyond recognition.",
   "addedDate": "2026-11-11",
-  "set": "L-028",
-  "order": 34
+  "set": "L-029",
+  "order": 35
  },
  {
   "word": "PRAGMATIC",
@@ -11505,8 +11522,8 @@
   "example": "The software's pragmatic design was intended to make it easier to use.",
   "sentence": "A _____ leader picks the plan that actually works.",
   "addedDate": "2026-11-11",
-  "set": "L-029",
-  "order": 35
+  "set": "L-030",
+  "order": 36
  },
  {
   "word": "IMPROVISE",
@@ -11522,8 +11539,8 @@
   "example": "When the microphone broke, the singer had to improvise.",
   "sentence": "Forgot your lines? Just _____ and keep the play going!",
   "addedDate": "2026-11-11",
-  "set": "L-029",
-  "order": 35
+  "set": "L-030",
+  "order": 36
  },
  {
   "word": "PREMISE",
@@ -11539,8 +11556,8 @@
   "example": "The story's premise is that animals can talk.",
   "sentence": "The movie's _____ is a school where kids train dragons.",
   "addedDate": "2026-11-11",
-  "set": "L-029",
-  "order": 35
+  "set": "L-030",
+  "order": 36
  },
  {
   "word": "INANIMATE",
@@ -11556,8 +11573,8 @@
   "example": "A rock is an inanimate object.",
   "sentence": "A chair is an _____ object because it is not alive.",
   "addedDate": "2026-11-11",
-  "set": "L-029",
-  "order": 35
+  "set": "L-030",
+  "order": 36
  },
  {
   "word": "PRESUME",
@@ -11573,8 +11590,8 @@
   "example": "I presume the meeting is still on Thursday.",
   "sentence": "Do not _____ that everyone agrees with you.",
   "addedDate": "2026-11-11",
-  "set": "L-029",
-  "order": 35
+  "set": "L-030",
+  "order": 36
  },
  {
   "word": "INCENTIVE",
@@ -11590,8 +11607,8 @@
   "example": "The prize was an incentive to read more books.",
   "sentence": "The promise of extra recess was an _____ to finish our work early.",
   "addedDate": "2026-11-11",
-  "set": "L-029",
-  "order": 35
+  "set": "L-030",
+  "order": 36
  },
  {
   "word": "PROCURE",
@@ -11607,8 +11624,8 @@
   "example": "He managed to procure tickets for the sold-out show.",
   "sentence": "She will _____ the rare shells from a dealer overseas.",
   "addedDate": "2026-11-11",
-  "set": "L-029",
-  "order": 35
+  "set": "L-030",
+  "order": 36
  },
  {
   "word": "INEPT",
@@ -11624,8 +11641,8 @@
   "example": "He was inept at juggling and dropped every ball.",
   "sentence": "The _____ goalie missed even the slowest shots.",
   "addedDate": "2026-11-11",
-  "set": "L-029",
-  "order": 35
+  "set": "L-030",
+  "order": 36
  },
  {
   "word": "PROFANE",
@@ -11641,8 +11658,8 @@
   "example": "Profane language is not allowed in the classroom.",
   "sentence": "The vandals left _____ marks on the temple walls.",
   "addedDate": "2026-11-11",
-  "set": "L-029",
-  "order": 35
+  "set": "L-030",
+  "order": 36
  },
  {
   "word": "INFEST",
@@ -11658,8 +11675,8 @@
   "example": "Ants can infest a picnic if food is left out.",
   "sentence": "Termites began to _____ the old wooden barn.",
   "addedDate": "2026-11-11",
-  "set": "L-029",
-  "order": 35
+  "set": "L-030",
+  "order": 36
  },
  {
   "word": "PROFOUND",
@@ -11675,8 +11692,8 @@
   "example": "The speech had a profound effect on the audience.",
   "sentence": "Her _____ words stayed with us long after the talk.",
   "addedDate": "2026-11-11",
-  "set": "L-029",
-  "order": 35
+  "set": "L-030",
+  "order": 36
  },
  {
   "word": "INFLATE",
@@ -11692,8 +11709,8 @@
   "example": "We inflate balloons before every birthday party.",
   "sentence": "Please _____ the tires before our bike ride.",
   "addedDate": "2026-11-11",
-  "set": "L-029",
-  "order": 35
+  "set": "L-030",
+  "order": 36
  },
  {
   "word": "PROLIFIC",
@@ -11709,8 +11726,8 @@
   "example": "The prolific author wrote forty books in her lifetime.",
   "sentence": "Rabbits are _____ breeders, with many babies each year.",
   "addedDate": "2026-11-11",
-  "set": "L-029",
-  "order": 35
+  "set": "L-030",
+  "order": 36
  },
  {
   "word": "INHABIT",
@@ -11726,8 +11743,8 @@
   "example": "Polar bears inhabit the cold Arctic.",
   "sentence": "Many birds _____ the tall trees along the river.",
   "addedDate": "2026-11-11",
-  "set": "L-029",
-  "order": 35
+  "set": "L-030",
+  "order": 36
  },
  {
   "word": "PROLOGUE",
@@ -11743,8 +11760,8 @@
   "example": "The prologue of the book explains what happened before the story.",
   "sentence": "Read the _____ to learn how the tale begins.",
   "addedDate": "2026-11-11",
-  "set": "L-029",
-  "order": 35
+  "set": "L-030",
+  "order": 36
  },
  {
   "word": "INNATE",
@@ -11760,8 +11777,8 @@
   "example": "Her innate kindness made her many friends.",
   "sentence": "His _____ sense of rhythm helped him learn drums quickly.",
   "addedDate": "2026-11-11",
-  "set": "L-029",
-  "order": 35
+  "set": "L-030",
+  "order": 36
  },
  {
   "word": "PROSPEROUS",
@@ -11777,8 +11794,8 @@
   "example": "The prosperous farm sold vegetables all summer.",
   "sentence": "The _____ town built a new library and park.",
   "addedDate": "2026-11-11",
-  "set": "L-029",
-  "order": 35
+  "set": "L-030",
+  "order": 36
  },
  {
   "word": "INSIST",
@@ -11794,8 +11811,8 @@
   "example": "I insist that you wear a helmet when you ride.",
   "sentence": "She will _____ on finishing her homework before dinner.",
   "addedDate": "2026-11-11",
-  "set": "L-029",
-  "order": 35
+  "set": "L-030",
+  "order": 36
  },
  {
   "word": "PROTAGONIST",
@@ -11811,8 +11828,8 @@
   "example": "The protagonist of the novel is a young cartographer.",
   "sentence": "Every _____ needs a problem to solve.",
   "addedDate": "2026-11-11",
-  "set": "L-029",
-  "order": 35
+  "set": "L-030",
+  "order": 36
  },
  {
   "word": "INTEGRATE",
@@ -11828,8 +11845,8 @@
   "example": "The teacher will integrate music into the history lesson.",
   "sentence": "The new plan will _____ recycling into every classroom.",
   "addedDate": "2026-11-11",
-  "set": "L-029",
-  "order": 35
+  "set": "L-030",
+  "order": 36
  },
  {
   "word": "PUNGENT",
@@ -11845,8 +11862,8 @@
   "example": "The pungent smell of onions filled the kitchen.",
   "sentence": "Crushed garlic has a _____ smell that fills the room.",
   "addedDate": "2026-11-11",
-  "set": "L-030",
-  "order": 36
+  "set": "L-031",
+  "order": 37
  },
  {
   "word": "RAMBLE",
@@ -11862,8 +11879,8 @@
   "example": "We ramble through the woods on Sunday mornings.",
   "sentence": "He began to _____ about his trip and forgot the question.",
   "addedDate": "2026-11-11",
-  "set": "L-030",
-  "order": 36
+  "set": "L-031",
+  "order": 37
  },
  {
   "word": "INTERCEPT",
@@ -11879,8 +11896,8 @@
   "example": "The goalie ran out to intercept the pass.",
   "sentence": "The mail carrier's truck was stopped when police had to _____ the runaway cart.",
   "addedDate": "2026-11-11",
-  "set": "L-030",
-  "order": 36
+  "set": "L-031",
+  "order": 37
  },
  {
   "word": "RANCID",
@@ -11896,8 +11913,8 @@
   "example": "The rancid butter smelled awful.",
   "sentence": "We threw out the _____ oil before cooking.",
   "addedDate": "2026-11-11",
-  "set": "L-030",
-  "order": 36
+  "set": "L-031",
+  "order": 37
  },
  {
   "word": "INTERPRET",
@@ -11913,8 +11930,8 @@
   "example": "The guide will interpret the old map for us.",
   "sentence": "It is hard to _____ the ancient symbols carved on the stone.",
   "addedDate": "2026-11-11",
-  "set": "L-030",
-  "order": 36
+  "set": "L-031",
+  "order": 37
  },
  {
   "word": "RATIFY",
@@ -11930,8 +11947,8 @@
   "example": "The members will ratify the new club rules.",
   "sentence": "Both towns must _____ the agreement before it counts.",
   "addedDate": "2026-11-11",
-  "set": "L-030",
-  "order": 36
+  "set": "L-031",
+  "order": 37
  },
  {
   "word": "INTRIGUE",
@@ -11947,8 +11964,8 @@
   "example": "Mysteries intrigue readers who love surprises.",
   "sentence": "The locked door began to _____ the children, who wondered what was behind it.",
   "addedDate": "2026-11-11",
-  "set": "L-030",
-  "order": 36
+  "set": "L-031",
+  "order": 37
  },
  {
   "word": "RECEDE",
@@ -11964,8 +11981,8 @@
   "example": "The floodwaters will recede by tomorrow.",
   "sentence": "Watch the tide _____ and leave shells on the sand.",
   "addedDate": "2026-11-11",
-  "set": "L-030",
-  "order": 36
+  "set": "L-031",
+  "order": 37
  },
  {
   "word": "INVALUABLE",
@@ -11981,8 +11998,8 @@
   "example": "Grandma's advice was invaluable when I started my garden.",
   "sentence": "The map proved _____ during our hike through the forest.",
   "addedDate": "2026-11-11",
-  "set": "L-030",
-  "order": 36
+  "set": "L-031",
+  "order": 37
  },
  {
   "word": "RECUPERATE",
@@ -11998,8 +12015,8 @@
   "example": "He stayed home to recuperate after the flu.",
   "sentence": "Birds need time to _____ after a long migration.",
   "addedDate": "2026-11-11",
-  "set": "L-030",
-  "order": 36
+  "set": "L-031",
+  "order": 37
  },
  {
   "word": "JEOPARDY",
@@ -12015,8 +12032,8 @@
   "example": "The bridge was in jeopardy after the flood damaged its supports.",
   "sentence": "The lost hikers were in _____ until the rescue team found them.",
   "addedDate": "2026-11-11",
-  "set": "L-030",
-  "order": 36
+  "set": "L-031",
+  "order": 37
  },
  {
   "word": "REDUNDANT",
@@ -12032,8 +12049,8 @@
   "example": "Saying \"free gift\" is redundant, because gifts are free.",
   "sentence": "The backup copy made the second list _____.",
   "addedDate": "2026-11-11",
-  "set": "L-030",
-  "order": 36
+  "set": "L-031",
+  "order": 37
  },
  {
   "word": "JEST",
@@ -12049,8 +12066,8 @@
   "example": "He said it only in jest, not to be mean.",
   "sentence": "The king's fool told a _____ that made the court laugh.",
   "addedDate": "2026-11-11",
-  "set": "L-030",
-  "order": 36
+  "set": "L-031",
+  "order": 37
  },
  {
   "word": "REFRAIN",
@@ -12066,8 +12083,8 @@
   "example": "Please refrain from talking during the test.",
   "sentence": "She could not _____ from laughing at the silly hat.",
   "addedDate": "2026-11-11",
-  "set": "L-030",
-  "order": 36
+  "set": "L-031",
+  "order": 37
  },
  {
   "word": "KIN",
@@ -12083,8 +12100,8 @@
   "example": "All of his kin gathered for the holiday dinner.",
   "sentence": "She invited all her _____, from cousins to grandparents, for the reunion.",
   "addedDate": "2026-11-11",
-  "set": "L-030",
-  "order": 36
+  "set": "L-031",
+  "order": 37
  },
  {
   "word": "RELINQUISH",
@@ -12100,8 +12117,8 @@
   "example": "The king refused to relinquish his crown.",
   "sentence": "She had to _____ her seat to the elderly passenger.",
   "addedDate": "2026-11-11",
-  "set": "L-030",
-  "order": 36
+  "set": "L-031",
+  "order": 37
  },
  {
   "word": "LOOM",
@@ -12117,8 +12134,8 @@
   "example": "Dark clouds loom over the mountains before a storm.",
   "sentence": "A tall cliff began to _____ above the tiny boat.",
   "addedDate": "2026-11-11",
-  "set": "L-030",
-  "order": 36
+  "set": "L-031",
+  "order": 37
  },
  {
   "word": "REMINISCENCE",
@@ -12134,8 +12151,8 @@
   "example": "A visit to his old school brought back a flood of reminiscence.",
   "sentence": "Grandpa shared a favorite _____ from his childhood.",
   "addedDate": "2026-11-11",
-  "set": "L-030",
-  "order": 36
+  "set": "L-031",
+  "order": 37
  },
  {
   "word": "MANIPULATE",
@@ -12151,8 +12168,8 @@
   "example": "He learned to manipulate the puppet with strings.",
   "sentence": "The ad tries to _____ shoppers into buying things they do not need.",
   "addedDate": "2026-11-11",
-  "set": "L-030",
-  "order": 36
+  "set": "L-031",
+  "order": 37
  },
  {
   "word": "RENDEZVOUS",
@@ -12168,8 +12185,8 @@
   "example": "Our rendezvous point is the park gate at noon.",
   "sentence": "The spies planned a secret _____ at the old bridge.",
   "addedDate": "2026-11-11",
-  "set": "L-030",
-  "order": 36
+  "set": "L-031",
+  "order": 37
  },
  {
   "word": "MERGE",
@@ -12185,8 +12202,8 @@
   "example": "The two streams merge into a single river.",
   "sentence": "The two classes will _____ for the field trip.",
   "addedDate": "2026-11-11",
-  "set": "L-031",
-  "order": 37
+  "set": "L-032",
+  "order": 38
  },
  {
   "word": "REPRIMAND",
@@ -12202,8 +12219,8 @@
   "example": "The student received a strong reprimand from the teacher for forgetting his homework.",
   "sentence": "The driver got a _____ from the officer but no ticket.",
   "addedDate": "2026-11-11",
-  "set": "L-031",
-  "order": 37
+  "set": "L-032",
+  "order": 38
  },
  {
   "word": "MOCK",
@@ -12219,8 +12236,8 @@
   "example": "The newcomer was mocked for his accent, which was unkind.",
   "sentence": "Do not _____ your little brother for his stutter.",
   "addedDate": "2026-11-11",
-  "set": "L-031",
-  "order": 37
+  "set": "L-032",
+  "order": 38
  },
  {
   "word": "REPUGNANT",
@@ -12236,8 +12253,8 @@
   "example": "The smell from the swamp was repugnant to the hikers.",
   "sentence": "Cheating is _____ to honest players.",
   "addedDate": "2026-11-11",
-  "set": "L-031",
-  "order": 37
+  "set": "L-032",
+  "order": 38
  },
  {
   "word": "OBLIVIOUS",
@@ -12253,8 +12270,8 @@
   "example": "She was oblivious to the rain as she read her book.",
   "sentence": "He was _____ to the noise and kept sleeping soundly.",
   "addedDate": "2026-11-11",
-  "set": "L-031",
-  "order": 37
+  "set": "L-032",
+  "order": 38
  },
  {
   "word": "RESERVED",
@@ -12270,8 +12287,8 @@
   "example": "Mark is a reserved person, not likely to share his feelings openly.",
   "sentence": "The _____ student listened more than she talked.",
   "addedDate": "2026-11-11",
-  "set": "L-031",
-  "order": 37
+  "set": "L-032",
+  "order": 38
  },
  {
   "word": "OBSOLETE",
@@ -12287,8 +12304,8 @@
   "example": "Typewriters became obsolete when computers arrived.",
   "sentence": "That old phone is _____ now that everyone uses smartphones.",
   "addedDate": "2026-11-11",
-  "set": "L-031",
-  "order": 37
+  "set": "L-032",
+  "order": 38
  },
  {
   "word": "RESILIENT",
@@ -12304,8 +12321,8 @@
   "example": "Policemen have to be resilient to bounce back from stress.",
   "sentence": "Kids are often _____: they fall, cry, and play again in minutes.",
   "addedDate": "2026-11-11",
-  "set": "L-031",
-  "order": 37
+  "set": "L-032",
+  "order": 38
  },
  {
   "word": "OMEN",
@@ -12321,8 +12338,8 @@
   "example": "Some people think a black cat is a bad omen.",
   "sentence": "The dark clouds were an _____ of the coming storm.",
   "addedDate": "2026-11-11",
-  "set": "L-031",
-  "order": 37
+  "set": "L-032",
+  "order": 38
  },
  {
   "word": "REVERE",
@@ -12338,8 +12355,8 @@
   "example": "Students revere the founder of their school.",
   "sentence": "The town will always _____ the firefighters who saved it.",
   "addedDate": "2026-11-11",
-  "set": "L-031",
-  "order": 37
+  "set": "L-032",
+  "order": 38
  },
  {
   "word": "ORNAMENT",
@@ -12355,8 +12372,8 @@
   "example": "A glass ornament hung from the highest branch of the tree.",
   "sentence": "The shiny _____ hung at the top of the holiday tree.",
   "addedDate": "2026-11-11",
-  "set": "L-031",
-  "order": 37
+  "set": "L-032",
+  "order": 38
  },
  {
   "word": "RIFT",
@@ -12372,8 +12389,8 @@
   "example": "A rift in the ice spread across the pond.",
   "sentence": "The argument caused a _____ between the old friends.",
   "addedDate": "2026-11-11",
-  "set": "L-031",
-  "order": 37
+  "set": "L-032",
+  "order": 38
  },
  {
   "word": "OUTMODED",
@@ -12389,8 +12406,8 @@
   "example": "The outmoded computer could not run the new games.",
   "sentence": "His _____ jacket looked like it belonged to another century.",
   "addedDate": "2026-11-11",
-  "set": "L-031",
-  "order": 37
+  "set": "L-032",
+  "order": 38
  },
  {
   "word": "RIGOR",
@@ -12406,8 +12423,8 @@
   "example": "The rigorous curriculum challenged the students with a heavy workload.",
   "sentence": "Mountain climbing demands strength to handle its _____.",
   "addedDate": "2026-11-11",
-  "set": "L-031",
-  "order": 37
+  "set": "L-032",
+  "order": 38
  },
  {
   "word": "PARDON",
@@ -12423,8 +12440,8 @@
   "example": "\"I beg your pardon,\" she said after bumping into him.",
   "sentence": "The governor granted a _____ to the wrongly jailed man.",
   "addedDate": "2026-11-11",
-  "set": "L-031",
-  "order": 37
+  "set": "L-032",
+  "order": 38
  },
  {
   "word": "RUSE",
@@ -12440,8 +12457,8 @@
   "example": "The fox used a ruse to escape the hounds.",
   "sentence": "The empty box was a _____, hiding the real gift elsewhere.",
   "addedDate": "2026-11-11",
-  "set": "L-031",
-  "order": 37
+  "set": "L-032",
+  "order": 38
  },
  {
   "word": "PASTURE",
@@ -12457,8 +12474,8 @@
   "example": "The horses spent the afternoon grazing in the pasture.",
   "sentence": "Cows munched quietly in the green _____.",
   "addedDate": "2026-11-11",
-  "set": "L-031",
-  "order": 37
+  "set": "L-032",
+  "order": 38
  },
  {
   "word": "SAGA",
@@ -12474,8 +12491,8 @@
   "example": "The saga of the pioneers was passed down for generations.",
   "sentence": "The family _____ spans four generations of farmers.",
   "addedDate": "2026-11-11",
-  "set": "L-031",
-  "order": 37
+  "set": "L-032",
+  "order": 38
  },
  {
   "word": "PECULIAR",
@@ -12491,8 +12508,8 @@
   "example": "A peculiar smell came from the old trunk.",
   "sentence": "A _____ sound echoed from the empty house.",
   "addedDate": "2026-11-11",
-  "set": "L-031",
-  "order": 37
+  "set": "L-032",
+  "order": 38
  },
  {
   "word": "SAGE",
@@ -12508,8 +12525,8 @@
   "example": "A sage once said that patience brings peace.",
   "sentence": "The village _____ answered questions with stories and riddles.",
   "addedDate": "2026-11-11",
-  "set": "L-031",
-  "order": 37
+  "set": "L-032",
+  "order": 38
  },
  {
   "word": "PENINSULA",
@@ -12525,8 +12542,8 @@
   "example": "Florida is a peninsula, with ocean on three sides.",
   "sentence": "The _____ juts into the sea, with water on three sides.",
   "addedDate": "2026-11-11",
-  "set": "L-032",
-  "order": 38
+  "set": "L-033",
+  "order": 39
  },
  {
   "word": "SARCASTIC",
@@ -12542,8 +12559,8 @@
   "example": "\"Great weather,\" he said in a sarcastic voice as the rain poured down.",
   "sentence": "Her _____ comment about the \"wonderful\" traffic made us laugh.",
   "addedDate": "2026-11-11",
-  "set": "L-032",
-  "order": 38
+  "set": "L-033",
+  "order": 39
  },
  {
   "word": "PERISH",
@@ -12559,8 +12576,8 @@
   "example": "Without water, the plants will perish in the heat.",
   "sentence": "The flowers will _____ if no one waters them this week.",
   "addedDate": "2026-11-11",
-  "set": "L-032",
-  "order": 38
+  "set": "L-033",
+  "order": 39
  },
  {
   "word": "SCORN",
@@ -12576,8 +12593,8 @@
   "example": "She looked at the cheating with scorn.",
   "sentence": "He felt only _____ for the bully's excuses.",
   "addedDate": "2026-11-11",
-  "set": "L-032",
-  "order": 38
+  "set": "L-033",
+  "order": 39
  },
  {
   "word": "PERSECUTE",
@@ -12593,8 +12610,8 @@
   "example": "In the story, the cruel king chose to persecute the villagers.",
   "sentence": "No one should _____ others for what they believe.",
   "addedDate": "2026-11-11",
-  "set": "L-032",
-  "order": 38
+  "set": "L-033",
+  "order": 39
  },
  {
   "word": "SEDATE",
@@ -12610,8 +12627,8 @@
   "example": "The sedate village streets were empty by nine.",
   "sentence": "The vet gave the nervous dog medicine to _____ it.",
   "addedDate": "2026-11-11",
-  "set": "L-032",
-  "order": 38
+  "set": "L-033",
+  "order": 39
  },
  {
   "word": "PETRIFY",
@@ -12627,8 +12644,8 @@
   "example": "The loud roar seemed to petrify the deer.",
   "sentence": "The giant spider's stare seemed to _____ the fly.",
   "addedDate": "2026-11-11",
-  "set": "L-032",
-  "order": 38
+  "set": "L-033",
+  "order": 39
  },
  {
   "word": "SENTIMENTAL",
@@ -12644,8 +12661,8 @@
   "example": "He kept the ticket stub for sentimental reasons.",
   "sentence": "Neil felt a _____ attachment to his baby blanket.",
   "addedDate": "2026-11-11",
-  "set": "L-032",
-  "order": 38
+  "set": "L-033",
+  "order": 39
  },
  {
   "word": "SKEPTICAL",
@@ -12661,8 +12678,8 @@
   "example": "She was skeptical of the ad's promises.",
   "sentence": "He gave a _____ look when told the fish was ten feet long.",
   "addedDate": "2026-11-11",
-  "set": "L-032",
-  "order": 38
+  "set": "L-033",
+  "order": 39
  },
  {
   "word": "PLUMMET",
@@ -12678,8 +12695,8 @@
   "example": "The temperature will plummet tonight after the storm.",
   "sentence": "Prices began to _____ after the harvest brought in extra food.",
   "addedDate": "2026-11-11",
-  "set": "L-032",
-  "order": 38
+  "set": "L-033",
+  "order": 39
  },
  {
   "word": "SLANDER",
@@ -12695,8 +12712,8 @@
   "example": "Spreading slander about a classmate is a serious offense.",
   "sentence": "It is wrong to _____ someone with lies.",
   "addedDate": "2026-11-11",
-  "set": "L-032",
-  "order": 38
+  "set": "L-033",
+  "order": 39
  },
  {
   "word": "POSTURE",
@@ -12712,8 +12729,8 @@
   "example": "Good posture helps your back stay strong.",
   "sentence": "Sitting with straight _____ keeps your back healthy.",
   "addedDate": "2026-11-11",
-  "set": "L-032",
-  "order": 38
+  "set": "L-033",
+  "order": 39
  },
  {
   "word": "SNUB",
@@ -12729,8 +12746,8 @@
   "example": "Mary could not understand why her friends now snubbed her in the hall.",
   "sentence": "He felt hurt when the team began to _____ him at lunch.",
   "addedDate": "2026-11-11",
-  "set": "L-032",
-  "order": 38
+  "set": "L-033",
+  "order": 39
  },
  {
   "word": "POVERTY",
@@ -12746,8 +12763,8 @@
   "example": "The charity helps families living in poverty.",
   "sentence": "The town built a food bank to help families living in _____.",
   "addedDate": "2026-11-11",
-  "set": "L-032",
-  "order": 38
+  "set": "L-033",
+  "order": 39
  },
  {
   "word": "SOLILOQUY",
@@ -12763,8 +12780,8 @@
   "example": "A soliloquy lets the audience hear the hero's secret thoughts.",
   "sentence": "In her _____, the villain revealed the whole plan.",
   "addedDate": "2026-11-11",
-  "set": "L-032",
-  "order": 38
+  "set": "L-033",
+  "order": 39
  },
  {
   "word": "PREDICAMENT",
@@ -12780,8 +12797,8 @@
   "example": "Being locked out of the house was quite a predicament.",
   "sentence": "Losing the only key put us in a real _____.",
   "addedDate": "2026-11-11",
-  "set": "L-032",
-  "order": 38
+  "set": "L-033",
+  "order": 39
  },
  {
   "word": "SOMBER",
@@ -12797,8 +12814,8 @@
   "example": "The somber music matched the sad scene.",
   "sentence": "The _____ sky promised rain all day.",
   "addedDate": "2026-11-11",
-  "set": "L-032",
-  "order": 38
+  "set": "L-033",
+  "order": 39
  },
  {
   "word": "PRELIMINARY",
@@ -12814,8 +12831,8 @@
   "example": "We took a preliminary walk around the track before the race.",
   "sentence": "The _____ sketch showed the artist's first idea for the painting.",
   "addedDate": "2026-11-11",
-  "set": "L-032",
-  "order": 38
+  "set": "L-033",
+  "order": 39
  },
  {
   "word": "SPORADIC",
@@ -12831,8 +12848,8 @@
   "example": "There were sporadic showers throughout the afternoon.",
   "sentence": "The old radio gave only _____ bursts of sound.",
   "addedDate": "2026-11-11",
-  "set": "L-032",
-  "order": 38
+  "set": "L-033",
+  "order": 39
  },
  {
   "word": "PROMINENT",
@@ -12848,8 +12865,8 @@
   "example": "A prominent author visited our school to talk about her books.",
   "sentence": "The _____ mountain peak can be seen from miles away.",
   "addedDate": "2026-11-11",
-  "set": "L-033",
-  "order": 39
+  "set": "L-034",
+  "order": 40
  },
  {
   "word": "SQUALID",
@@ -12865,8 +12882,8 @@
   "example": "The squalid alley was full of trash and puddles.",
   "sentence": "They worked to clean the _____ shelter and make it safe.",
   "addedDate": "2026-11-11",
-  "set": "L-033",
-  "order": 39
+  "set": "L-034",
+  "order": 40
  },
  {
   "word": "PUNCTUATE",
@@ -12882,8 +12899,8 @@
   "example": "Thunder began to punctuate the quiet night.",
   "sentence": "Please _____ your essay so the sentences are clear.",
   "addedDate": "2026-11-11",
-  "set": "L-033",
-  "order": 39
+  "set": "L-034",
+  "order": 40
  },
  {
   "word": "STEADFAST",
@@ -12899,8 +12916,8 @@
   "example": "Maria's steadfast commitment won her great recognition.",
   "sentence": "The _____ guard never left his post all night.",
   "addedDate": "2026-11-11",
-  "set": "L-033",
-  "order": 39
+  "set": "L-034",
+  "order": 40
  },
  {
   "word": "QUENCH",
@@ -12916,8 +12933,8 @@
   "example": "Lemonade will quench your thirst after the run.",
   "sentence": "A cold drink will _____ your thirst after practice.",
   "addedDate": "2026-11-11",
-  "set": "L-033",
-  "order": 39
+  "set": "L-034",
+  "order": 40
  },
  {
   "word": "STRENUOUS",
@@ -12933,8 +12950,8 @@
   "example": "Mountain climbing is a strenuous activity requiring strength and endurance.",
   "sentence": "Shoveling the deep snow was _____ work.",
   "addedDate": "2026-11-11",
-  "set": "L-033",
-  "order": 39
+  "set": "L-034",
+  "order": 40
  },
  {
   "word": "QUIVER",
@@ -12950,8 +12967,8 @@
   "example": "Her lip began to quiver as she held back tears.",
   "sentence": "The leaves _____ in the cool breeze.",
   "addedDate": "2026-11-11",
-  "set": "L-033",
-  "order": 39
+  "set": "L-034",
+  "order": 40
  },
  {
   "word": "SUBDUED",
@@ -12967,8 +12984,8 @@
   "example": "The painting should be displayed in a room with soft, subdued lighting.",
   "sentence": "After the long hike, the class was _____ and calm.",
   "addedDate": "2026-11-11",
-  "set": "L-033",
-  "order": 39
+  "set": "L-034",
+  "order": 40
  },
  {
   "word": "RECREATION",
@@ -12984,8 +13001,8 @@
   "example": "Swimming is her favorite form of recreation.",
   "sentence": "Reading is a peaceful form of _____ on a rainy day.",
   "addedDate": "2026-11-11",
-  "set": "L-033",
-  "order": 39
+  "set": "L-034",
+  "order": 40
  },
  {
   "word": "SUBJECTIVE",
@@ -13001,8 +13018,8 @@
   "example": "Taste in music is subjective.",
   "sentence": "Whether the painting is beautiful is _____ — it depends on the viewer.",
   "addedDate": "2026-11-11",
-  "set": "L-033",
-  "order": 39
+  "set": "L-034",
+  "order": 40
  },
  {
   "word": "REMOTE",
@@ -13018,8 +13035,8 @@
   "example": "A remote village sits high in the mountains.",
   "sentence": "They hiked to a _____ cabin with no roads nearby.",
   "addedDate": "2026-11-11",
-  "set": "L-033",
-  "order": 39
+  "set": "L-034",
+  "order": 40
  },
  {
   "word": "SUBMISSIVE",
@@ -13035,8 +13052,8 @@
   "example": "Nova was an overly submissive dog, easily dominated by other animals.",
   "sentence": "The _____ puppy rolled over whenever bigger dogs came near.",
   "addedDate": "2026-11-11",
-  "set": "L-033",
-  "order": 39
+  "set": "L-034",
+  "order": 40
  },
  {
   "word": "SUCCINCT",
@@ -13052,8 +13069,8 @@
   "example": "Write a succinct summary in two sentences.",
   "sentence": "His _____ reply answered everything in five words.",
   "addedDate": "2026-11-11",
-  "set": "L-033",
-  "order": 39
+  "set": "L-034",
+  "order": 40
  },
  {
   "word": "SCOUR",
@@ -13069,8 +13086,8 @@
   "example": "Scrub and scour the pan until it shines.",
   "sentence": "We had to _____ the burnt pot until it was clean again.",
   "addedDate": "2026-11-11",
-  "set": "L-033",
-  "order": 39
+  "set": "L-034",
+  "order": 40
  },
  {
   "word": "SUPERFICIAL",
@@ -13086,8 +13103,8 @@
   "example": "A superficial glance missed the tiny crack.",
   "sentence": "His knowledge of the topic was _____: he knew the names but not the facts.",
   "addedDate": "2026-11-11",
-  "set": "L-033",
-  "order": 39
+  "set": "L-034",
+  "order": 40
  },
  {
   "word": "SEAR",
@@ -13103,8 +13120,8 @@
   "example": "The chef will sear the vegetables in a hot pan.",
   "sentence": "Hot sun can _____ the grass during a drought.",
   "addedDate": "2026-11-11",
-  "set": "L-033",
-  "order": 39
+  "set": "L-034",
+  "order": 40
  },
  {
   "word": "SUPERFLUOUS",
@@ -13120,8 +13137,8 @@
   "example": "Cut any superfluous words from your paragraph.",
   "sentence": "The extra buttons on the remote are _____.",
   "addedDate": "2026-11-11",
-  "set": "L-033",
-  "order": 39
+  "set": "L-034",
+  "order": 40
  },
  {
   "word": "SEGREGATE",
@@ -13137,8 +13154,8 @@
   "example": "Please segregate the recyclables from the trash.",
   "sentence": "The farmer had to _____ the sick sheep from the flock.",
   "addedDate": "2026-11-11",
-  "set": "L-033",
-  "order": 39
+  "set": "L-034",
+  "order": 40
  },
  {
   "word": "SURPASS",
@@ -13154,8 +13171,8 @@
   "example": "This year's harvest will surpass last year's.",
   "sentence": "Her score will _____ everyone's expectations.",
   "addedDate": "2026-11-11",
-  "set": "L-033",
-  "order": 39
+  "set": "L-034",
+  "order": 40
  },
  {
   "word": "SEVER",
@@ -13171,8 +13188,8 @@
   "example": "A sharp rock can sever the rope.",
   "sentence": "One hard chop can _____ the branch from the tree.",
   "addedDate": "2026-11-11",
-  "set": "L-034",
-  "order": 40
+  "set": "L-035",
+  "order": 41
  },
  {
   "word": "SUSTAIN",
@@ -13188,8 +13205,8 @@
   "example": "Snacks will sustain us until dinner.",
   "sentence": "The bridge beams _____ the weight of the trains.",
   "addedDate": "2026-11-11",
-  "set": "L-034",
-  "order": 40
+  "set": "L-035",
+  "order": 41
  },
  {
   "word": "SHEATHE",
@@ -13205,8 +13222,8 @@
   "example": "Sheathe your sword before you enter the hall.",
   "sentence": "The knight began to _____ his sword after the battle.",
   "addedDate": "2026-11-11",
-  "set": "L-034",
-  "order": 40
+  "set": "L-035",
+  "order": 41
  },
  {
   "word": "SYNOPSIS",
@@ -13222,8 +13239,8 @@
   "example": "Write a synopsis of the movie in three sentences.",
   "sentence": "The back cover gives a _____ of the plot.",
   "addedDate": "2026-11-11",
-  "set": "L-034",
-  "order": 40
+  "set": "L-035",
+  "order": 41
  },
  {
   "word": "SHED",
@@ -13239,8 +13256,8 @@
   "example": "Snakes shed their skin as they grow.",
   "sentence": "The dog will _____ its thick winter coat in spring.",
   "addedDate": "2026-11-11",
-  "set": "L-034",
-  "order": 40
+  "set": "L-035",
+  "order": 41
  },
  {
   "word": "TACT",
@@ -13256,8 +13273,8 @@
   "example": "Diplomats must display tact when dealing with sensitive issues.",
   "sentence": "Tell him the truth, but use _____ so you do not hurt his feelings.",
   "addedDate": "2026-11-11",
-  "set": "L-034",
-  "order": 40
+  "set": "L-035",
+  "order": 41
  },
  {
   "word": "SKEPTIC",
@@ -13273,8 +13290,8 @@
   "example": "The skeptic asked for proof before believing the claim.",
   "sentence": "As a _____, she always asks for evidence before she believes.",
   "addedDate": "2026-11-11",
-  "set": "L-034",
-  "order": 40
+  "set": "L-035",
+  "order": 41
  },
  {
   "word": "TEDIOUS",
@@ -13290,8 +13307,8 @@
   "example": "Copying the list by hand was tedious work.",
   "sentence": "The _____ task of counting every coin took all afternoon.",
   "addedDate": "2026-11-11",
-  "set": "L-034",
-  "order": 40
+  "set": "L-035",
+  "order": 41
  },
  {
   "word": "SKIRMISH",
@@ -13307,8 +13324,8 @@
   "example": "The skirmish at the border lasted only an hour.",
   "sentence": "The two cats had a brief _____ over the sunny spot.",
   "addedDate": "2026-11-11",
-  "set": "L-034",
-  "order": 40
+  "set": "L-035",
+  "order": 41
  },
  {
   "word": "TEMPERAMENT",
@@ -13324,8 +13341,8 @@
   "example": "Her calm temperament suits her work with animals.",
   "sentence": "The dog's friendly _____ made it a great therapy pet.",
   "addedDate": "2026-11-11",
-  "set": "L-034",
-  "order": 40
+  "set": "L-035",
+  "order": 41
  },
  {
   "word": "SLITHER",
@@ -13341,8 +13358,8 @@
   "example": "We watched the snake slither through the grass.",
   "sentence": "The eel began to _____ through the shallow water.",
   "addedDate": "2026-11-11",
-  "set": "L-034",
-  "order": 40
+  "set": "L-035",
+  "order": 41
  },
  {
   "word": "TEPID",
@@ -13358,8 +13375,8 @@
   "example": "The bath water had gone tepid.",
   "sentence": "He drank the _____ cocoa without complaint.",
   "addedDate": "2026-11-11",
-  "set": "L-034",
-  "order": 40
+  "set": "L-035",
+  "order": 41
  },
  {
   "word": "SOLAR",
@@ -13375,8 +13392,8 @@
   "example": "Solar panels on the roof turn sunlight into power.",
   "sentence": "The _____ calculator works whenever light hits it.",
   "addedDate": "2026-11-11",
-  "set": "L-034",
-  "order": 40
+  "set": "L-035",
+  "order": 41
  },
  {
   "word": "TRANSLUCENT",
@@ -13392,8 +13409,8 @@
   "example": "The translucent curtain softened the sunlight.",
   "sentence": "Frosted glass is _____: light passes, but shapes blur.",
   "addedDate": "2026-11-11",
-  "set": "L-034",
-  "order": 40
+  "set": "L-035",
+  "order": 41
  },
  {
   "word": "SPECIES",
@@ -13409,8 +13426,8 @@
   "example": "The panda is a species that needs protection.",
   "sentence": "Over 100 bird _____ live in this forest.",
   "addedDate": "2026-11-11",
-  "set": "L-034",
-  "order": 40
+  "set": "L-035",
+  "order": 41
  },
  {
   "word": "TREK",
@@ -13426,8 +13443,8 @@
   "example": "Their trek across the desert took ten days.",
   "sentence": "We began our _____ up the mountain before sunrise.",
   "addedDate": "2026-11-11",
-  "set": "L-034",
-  "order": 40
+  "set": "L-035",
+  "order": 41
  },
  {
   "word": "SPLENDOR",
@@ -13443,8 +13460,8 @@
   "example": "The splendor of the palace amazed every visitor.",
   "sentence": "The _____ of the fireworks lit up the whole sky.",
   "addedDate": "2026-11-11",
-  "set": "L-034",
-  "order": 40
+  "set": "L-035",
+  "order": 41
  },
  {
   "word": "VENERATE",
@@ -13460,8 +13477,8 @@
   "example": "The villagers venerate their elders.",
   "sentence": "We _____ the memory of the town's founder.",
   "addedDate": "2026-11-11",
-  "set": "L-034",
-  "order": 40
+  "set": "L-035",
+  "order": 41
  },
  {
   "word": "SQUALOR",
@@ -13477,8 +13494,8 @@
   "example": "The abandoned house had fallen into squalor.",
   "sentence": "No family should have to live in _____ with leaking roofs and no heat.",
   "addedDate": "2026-11-11",
-  "set": "L-034",
-  "order": 40
+  "set": "L-035",
+  "order": 41
  },
  {
   "word": "VERSATILE",
@@ -13494,8 +13511,8 @@
   "example": "The versatile player can pitch, catch, and bat.",
   "sentence": "A Swiss army knife is a _____ tool with many uses.",
   "addedDate": "2026-11-11",
-  "set": "L-034",
-  "order": 40
+  "set": "L-035",
+  "order": 41
  },
  {
   "word": "STAMPEDE",
@@ -13511,8 +13528,8 @@
   "example": "The loud thunder caused a stampede among the horses.",
   "sentence": "When the gates opened, there was a _____ of shoppers.",
   "addedDate": "2026-11-11",
-  "set": "L-035",
-  "order": 41
+  "set": "L-036",
+  "order": 42
  },
  {
   "word": "VIGOR",
@@ -13528,8 +13545,8 @@
   "example": "The puppies played with vigor all morning.",
   "sentence": "He attacked the chores with _____, finishing in an hour.",
   "addedDate": "2026-11-11",
-  "set": "L-035",
-  "order": 41
+  "set": "L-036",
+  "order": 42
  },
  {
   "word": "STIFLE",
@@ -13545,8 +13562,8 @@
   "example": "Thick smoke can stifle your breathing.",
   "sentence": "She tried to _____ her laughter during the quiet ceremony.",
   "addedDate": "2026-11-11",
-  "set": "L-035",
-  "order": 41
+  "set": "L-036",
+  "order": 42
  },
  {
   "word": "VIVACIOUS",
@@ -13562,8 +13579,8 @@
   "example": "Catherine's vivacious personality made her a great team member.",
   "sentence": "The _____ puppy bounced around every visitor.",
   "addedDate": "2026-11-11",
-  "set": "L-035",
-  "order": 41
+  "set": "L-036",
+  "order": 42
  },
  {
   "word": "SUPPLEMENT",
@@ -13579,8 +13596,8 @@
   "example": "Vitamins can be a supplement to a healthy diet.",
   "sentence": "The workbook is a _____ to our math textbook.",
   "addedDate": "2026-11-11",
-  "set": "L-035",
-  "order": 41
+  "set": "L-036",
+  "order": 42
  },
  {
   "word": "VOLATILE",
@@ -13596,8 +13613,8 @@
   "example": "Gasoline is a volatile liquid that catches fire easily.",
   "sentence": "His temper was _____, calm one minute and storming the next.",
   "addedDate": "2026-11-11",
-  "set": "L-035",
-  "order": 41
+  "set": "L-036",
+  "order": 42
  },
  {
   "word": "UNIFORM",
@@ -13613,8 +13630,8 @@
   "example": "The lawn was a uniform green after the rain.",
   "sentence": "The band wore a matching _____ of blue and gold.",
   "addedDate": "2026-11-11",
-  "set": "L-035",
-  "order": 41
+  "set": "L-036",
+  "order": 42
  },
  {
   "word": "VULGAR",
@@ -13630,8 +13647,8 @@
   "example": "The vulgar joke offended the guests.",
   "sentence": "He apologized for the _____ word he used in anger.",
   "addedDate": "2026-11-11",
-  "set": "L-035",
-  "order": 41
+  "set": "L-036",
+  "order": 42
  },
  {
   "word": "VACATE",
@@ -13647,8 +13664,8 @@
   "example": "Please vacate your seats when the show ends.",
   "sentence": "Guests must _____ their rooms by eleven in the morning.",
   "addedDate": "2026-11-11",
-  "set": "L-035",
-  "order": 41
+  "set": "L-036",
+  "order": 42
  },
  {
   "word": "WANE",
@@ -13664,8 +13681,8 @@
   "example": "The moon will wane after the full moon.",
   "sentence": "His interest in the game began to _____ by the final inning.",
   "addedDate": "2026-11-11",
-  "set": "L-035",
-  "order": 41
+  "set": "L-036",
+  "order": 42
  },
  {
   "word": "VANQUISH",
@@ -13681,8 +13698,8 @@
   "example": "The hero will vanquish the dragon in the final chapter.",
   "sentence": "Our team hopes to _____ the champions on Saturday.",
   "addedDate": "2026-11-11",
-  "set": "L-035",
-  "order": 41
+  "set": "L-036",
+  "order": 42
  },
  {
   "word": "WHIMSICAL",
@@ -13698,8 +13715,8 @@
   "example": "The garden had whimsical statues of reading frogs.",
   "sentence": "Her _____ drawings showed cats driving tiny cars.",
   "addedDate": "2026-11-11",
-  "set": "L-035",
-  "order": 41
+  "set": "L-036",
+  "order": 42
  },
  {
   "word": "VELOCITY",
@@ -13715,8 +13732,8 @@
   "example": "The velocity of the river increased after the rain.",
   "sentence": "The rocket reached a _____ of thousands of miles per hour.",
   "addedDate": "2026-11-11",
-  "set": "L-035",
-  "order": 41
+  "set": "L-036",
+  "order": 42
  },
  {
   "word": "WILY",
@@ -13732,8 +13749,8 @@
   "example": "The wily fox escaped every trap.",
   "sentence": "A _____ coyote slipped past the fence again.",
   "addedDate": "2026-11-11",
-  "set": "L-035",
-  "order": 41
+  "set": "L-036",
+  "order": 42
  },
  {
   "word": "VERDICT",
@@ -13749,8 +13766,8 @@
   "example": "The jury announced its verdict before noon.",
   "sentence": "After hearing both sides, the jury reached a _____.",
   "addedDate": "2026-11-11",
-  "set": "L-035",
-  "order": 41
+  "set": "L-036",
+  "order": 42
  },
  {
   "word": "WINCE",
@@ -13766,8 +13783,8 @@
   "example": "Watching the needle, he began to wince.",
   "sentence": "She will _____ when the cold water hits her feet.",
   "addedDate": "2026-11-11",
-  "set": "L-035",
-  "order": 41
+  "set": "L-036",
+  "order": 42
  },
  {
   "word": "VIOLATE",
@@ -13783,8 +13800,8 @@
   "example": "Parking there will violate the school rules.",
   "sentence": "Do not _____ the rules of the game, or you will sit out.",
   "addedDate": "2026-11-11",
-  "set": "L-035",
-  "order": 41
+  "set": "L-036",
+  "order": 42
  },
  {
   "word": "WITHSTAND",
@@ -13800,8 +13817,8 @@
   "example": "The walls of the fortress could not withstand the attack.",
   "sentence": "This bridge can _____ winds of 100 miles per hour.",
   "addedDate": "2026-11-11",
-  "set": "L-035",
-  "order": 41
+  "set": "L-036",
+  "order": 42
  },
  {
   "word": "WITHDRAW",
@@ -13817,8 +13834,8 @@
   "example": "He decided to withdraw from the race after his injury.",
   "sentence": "She went to the bank to _____ money for the trip.",
   "addedDate": "2026-11-11",
-  "set": "L-035",
-  "order": 41
+  "set": "L-036",
+  "order": 42
  },
  {
   "word": "WRITHE",
@@ -13834,8 +13851,8 @@
   "example": "The worm will writhe when the bird grabs it.",
   "sentence": "The dancer seemed to _____ like a ribbon in the wind.",
   "addedDate": "2026-11-11",
-  "set": "L-035",
-  "order": 41
+  "set": "L-036",
+  "order": 42
  },
  {
   "word": "PREFIX: A- / AN- / ANTI-",
@@ -13851,8 +13868,8 @@
   "example": "An antibiotic works against germs, because anti- means against.",
   "sentence": "The prefix _____ means against, so an antisocial person avoids company.",
   "addedDate": "2026-11-11",
-  "set": "L-036",
-  "order": 42
+  "set": "L-037",
+  "order": 43
  },
  {
   "word": "PREFIX: CIRCUM",
@@ -13868,8 +13885,8 @@
   "example": "To circumnavigate is to sail around something, because circum means around.",
   "sentence": "The prefix _____ means around, so a circle's circumference is the distance around it.",
   "addedDate": "2026-11-11",
-  "set": "L-036",
-  "order": 42
+  "set": "L-037",
+  "order": 43
  },
  {
   "word": "PREFIX: CO- / COM- / CON-",
@@ -13885,8 +13902,8 @@
   "example": "Coauthors write together, because co- means together.",
   "sentence": "The prefix _____ means together, so to combine is to put things together.",
   "addedDate": "2026-11-11",
-  "set": "L-036",
-  "order": 42
+  "set": "L-037",
+  "order": 43
  },
  {
   "word": "PREFIX: CONTRA",
@@ -13902,8 +13919,8 @@
   "example": "To contradict is to speak against someone, because contra means against.",
   "sentence": "The prefix _____ means against, so a contrast sets two things against each other.",
   "addedDate": "2026-11-11",
-  "set": "L-036",
-  "order": 42
+  "set": "L-037",
+  "order": 43
  },
  {
   "word": "PREFIX: DIA",
@@ -13919,8 +13936,8 @@
   "example": "A diagonal line cuts across a square, because dia means across.",
   "sentence": "The prefix _____ means across, so a diameter cuts across a circle.",
   "addedDate": "2026-11-11",
-  "set": "L-036",
-  "order": 42
+  "set": "L-037",
+  "order": 43
  },
  {
   "word": "PREFIX: DYS",
@@ -13936,8 +13953,8 @@
   "example": "Dyslexia makes reading difficult, because dys- means difficult.",
   "sentence": "The prefix _____ means bad or difficult, so a dysfunction is a part working badly.",
   "addedDate": "2026-11-11",
-  "set": "L-036",
-  "order": 42
+  "set": "L-037",
+  "order": 43
  },
  {
   "word": "PREFIX: E- / EX-",
@@ -13953,8 +13970,8 @@
   "example": "To expel is to drive out, because ex- means out.",
   "sentence": "The prefix _____ means out, so an exit is the way out.",
   "addedDate": "2026-11-11",
-  "set": "L-036",
-  "order": 42
+  "set": "L-037",
+  "order": 43
  },
  {
   "word": "PREFIX: IL- / IM- / IN-",
@@ -13970,8 +13987,8 @@
   "example": "Illegal means not legal, because il- means not.",
   "sentence": "The prefix _____ means not, so an invisible thing cannot be seen.",
   "addedDate": "2026-11-11",
-  "set": "L-036",
-  "order": 42
+  "set": "L-037",
+  "order": 43
  },
  {
   "word": "PREFIX: INTER",
@@ -13987,8 +14004,8 @@
   "example": "An international game is played between nations, because inter means between.",
   "sentence": "The prefix _____ means between, so an intersection is where roads cross between blocks.",
   "addedDate": "2026-11-11",
-  "set": "L-036",
-  "order": 42
+  "set": "L-037",
+  "order": 43
  },
  {
   "word": "PREFIX: INTRA",
@@ -14004,8 +14021,8 @@
   "example": "Intramural sports are played within one school, because intra means within.",
   "sentence": "The prefix _____ means within, so intramural games stay within our own school.",
   "addedDate": "2026-11-11",
-  "set": "L-036",
-  "order": 42
+  "set": "L-037",
+  "order": 43
  },
  {
   "word": "PREFIX: MONO",
@@ -14021,8 +14038,8 @@
   "example": "A monologue is a speech by one person, because mono means one.",
   "sentence": "The prefix _____ means one, so a monorail runs on a single rail.",
   "addedDate": "2026-11-11",
-  "set": "L-036",
-  "order": 42
+  "set": "L-037",
+  "order": 43
  },
  {
   "word": "PREFIX: NON",
@@ -14038,8 +14055,8 @@
   "example": "Nonsense means not making sense, because non- means not.",
   "sentence": "The prefix _____ means not, so a nonfiction book is not made up.",
   "addedDate": "2026-11-11",
-  "set": "L-036",
-  "order": 42
+  "set": "L-037",
+  "order": 43
  },
  {
   "word": "PREFIX: PAN",
@@ -14055,8 +14072,8 @@
   "example": "A pandemic spreads to all countries, because pan means all.",
   "sentence": "The prefix _____ means all, so a panorama shows the whole, wide view.",
   "addedDate": "2026-11-11",
-  "set": "L-036",
-  "order": 42
+  "set": "L-037",
+  "order": 43
  },
  {
   "word": "PREFIX: PERI",
@@ -14072,8 +14089,8 @@
   "example": "The perimeter is the distance around a shape, because peri means around.",
   "sentence": "The prefix _____ means around, so a periscope lets you see around corners.",
   "addedDate": "2026-11-11",
-  "set": "L-036",
-  "order": 42
+  "set": "L-037",
+  "order": 43
  },
  {
   "word": "PREFIX: POLY",
@@ -14089,8 +14106,8 @@
   "example": "A polygon has many sides, because poly means many.",
   "sentence": "The prefix _____ means many, so a polygon is a shape with many angles.",
   "addedDate": "2026-11-11",
-  "set": "L-036",
-  "order": 42
+  "set": "L-037",
+  "order": 43
  },
  {
   "word": "PREFIX: POST",
@@ -14106,8 +14123,8 @@
   "example": "To postpone is to move something to after its planned time, because post- means after.",
   "sentence": "The prefix _____ means after, so a postscript is written after the letter ends.",
   "addedDate": "2026-11-11",
-  "set": "L-036",
-  "order": 42
+  "set": "L-037",
+  "order": 43
  },
  {
   "word": "PREFIX: PRE",
@@ -14123,8 +14140,8 @@
   "example": "To preview is to see something before everyone else, because pre- means before.",
   "sentence": "The prefix _____ means before, so to preheat the oven is to heat it before cooking.",
   "addedDate": "2026-11-11",
-  "set": "L-036",
-  "order": 42
+  "set": "L-037",
+  "order": 43
  },
  {
   "word": "PREFIX: PRO",
@@ -14140,8 +14157,8 @@
   "example": "A prologue comes before the story and moves it forward, because pro- means forward.",
   "sentence": "The prefix _____ means forward, so to proceed is to move forward.",
   "addedDate": "2026-11-11",
-  "set": "L-036",
-  "order": 42
+  "set": "L-037",
+  "order": 43
  },
  {
   "word": "PREFIX: RE-",
@@ -14157,8 +14174,8 @@
   "example": "To revise is to look at your work again, because re- means again.",
   "sentence": "The prefix _____ means again, so to reread is to read again.",
   "addedDate": "2026-11-11",
-  "set": "L-036",
-  "order": 42
+  "set": "L-037",
+  "order": 43
  },
  {
   "word": "PREFIX: SUB",
@@ -14174,8 +14191,8 @@
   "example": "A subway travels under the city, because sub- means under.",
   "sentence": "The prefix _____ means under, so a submarine travels under the sea.",
   "addedDate": "2026-11-11",
-  "set": "L-036",
-  "order": 42
+  "set": "L-037",
+  "order": 43
  },
  {
   "word": "PREFIX: SUPER- / SUR-",
@@ -14191,8 +14208,8 @@
   "example": "To supervise is to watch over workers, because super- means over.",
   "sentence": "The prefix _____ means above, so a superior officer ranks above others.",
   "addedDate": "2026-11-11",
-  "set": "L-037",
-  "order": 43
+  "set": "L-038",
+  "order": 44
  },
  {
   "word": "PREFIX: SYN- / SYM-",
@@ -14208,8 +14225,8 @@
   "example": "Things in symmetry match together evenly, because sym- means together.",
   "sentence": "The prefix _____ means together, so to synchronize is to make things happen together.",
   "addedDate": "2026-11-11",
-  "set": "L-037",
-  "order": 43
+  "set": "L-038",
+  "order": 44
  },
  {
   "word": "PREFIX: TRANS",
@@ -14225,8 +14242,8 @@
   "example": "To transfer is to carry something across to a new place, because trans- means across.",
   "sentence": "The prefix _____ means across, so a transatlantic flight crosses the Atlantic.",
   "addedDate": "2026-11-11",
-  "set": "L-037",
-  "order": 43
+  "set": "L-038",
+  "order": 44
  },
  {
   "word": "PREFIX: UN",
@@ -14242,8 +14259,8 @@
   "example": "Unfair means not fair, because un- means not.",
   "sentence": "The prefix _____ means not, so an unknown author is not known.",
   "addedDate": "2026-11-11",
-  "set": "L-037",
-  "order": 43
+  "set": "L-038",
+  "order": 44
  },
  {
   "word": "ROOT: AG / ACT",
@@ -14259,8 +14276,8 @@
   "example": "An agent is someone who acts for you, because act means do.",
   "sentence": "The root _____ means do, so an activity is something you do.",
   "addedDate": "2026-11-11",
-  "set": "L-037",
-  "order": 43
+  "set": "L-038",
+  "order": 44
  },
  {
   "word": "ROOT: AMBI",
@@ -14276,8 +14293,8 @@
   "example": "Ambidextrous means able to use both hands, because ambi means both.",
   "sentence": "The root _____ means both, so an ambidextrous player can throw with either hand.",
   "addedDate": "2026-11-11",
-  "set": "L-037",
-  "order": 43
+  "set": "L-038",
+  "order": 44
  },
  {
   "word": "ROOT: AMBUL",
@@ -14293,8 +14310,8 @@
   "example": "An ambulance moves patients to the hospital, and ambul means move.",
   "sentence": "The root _____ means walk, so to amble is to walk slowly.",
   "addedDate": "2026-11-11",
-  "set": "L-037",
-  "order": 43
+  "set": "L-038",
+  "order": 44
  },
  {
   "word": "ROOT: AMI / AMO",
@@ -14310,8 +14327,8 @@
   "example": "An amiable person is friendly and loving, because ami means love.",
   "sentence": "The root _____ means love, so an amiable classmate is friendly to everyone.",
   "addedDate": "2026-11-11",
-  "set": "L-037",
-  "order": 43
+  "set": "L-038",
+  "order": 44
  },
  {
   "word": "ROOT: ANIM",
@@ -14327,8 +14344,8 @@
   "example": "An animal is a living thing, because anim means life.",
   "sentence": "The root _____ means life, so to animate a drawing is to make it seem alive.",
   "addedDate": "2026-11-11",
-  "set": "L-037",
-  "order": 43
+  "set": "L-038",
+  "order": 44
  },
  {
   "word": "ROOT: ANTHRO",
@@ -14344,8 +14361,8 @@
   "example": "Anthropology is the study of humans, because anthro means human.",
   "sentence": "The root _____ means human, so philanthropy is love of humans.",
   "addedDate": "2026-11-11",
-  "set": "L-037",
-  "order": 43
+  "set": "L-038",
+  "order": 44
  },
  {
   "word": "ROOT: AUD",
@@ -14361,8 +14378,8 @@
   "example": "If a sound is audible, you can hear it, because aud means hear.",
   "sentence": "The root _____ means hear, so an audience is a group that listens.",
   "addedDate": "2026-11-11",
-  "set": "L-037",
-  "order": 43
+  "set": "L-038",
+  "order": 44
  },
  {
   "word": "ROOT: AUTO",
@@ -14378,8 +14395,8 @@
   "example": "An autobiography is the story of your own life, written by yourself.",
   "sentence": "The root _____ means self, so an autograph is your own name, signed by yourself.",
   "addedDate": "2026-11-11",
-  "set": "L-037",
-  "order": 43
+  "set": "L-038",
+  "order": 44
  },
  {
   "word": "ROOT: BELLI",
@@ -14395,8 +14412,8 @@
   "example": "A rebellion is a kind of war against rulers, because belli means war.",
   "sentence": "The root _____ means war, so a rebellious soldier fights against his leaders.",
   "addedDate": "2026-11-11",
-  "set": "L-037",
-  "order": 43
+  "set": "L-038",
+  "order": 44
  },
  {
   "word": "ROOT: BEN",
@@ -14412,8 +14429,8 @@
   "example": "A benefit is something good for you, because ben means good.",
   "sentence": "The root _____ means good, so a benevolent ruler is kind and good to her people.",
   "addedDate": "2026-11-11",
-  "set": "L-037",
-  "order": 43
+  "set": "L-038",
+  "order": 44
  },
  {
   "word": "ROOT: BIBLIO",
@@ -14429,8 +14446,8 @@
   "example": "A bibliography is a list of books, because biblio means book.",
   "sentence": "The root _____ means book, so a bibliophile loves books.",
   "addedDate": "2026-11-11",
-  "set": "L-037",
-  "order": 43
+  "set": "L-038",
+  "order": 44
  },
  {
   "word": "ROOT: BIO",
@@ -14446,8 +14463,8 @@
   "example": "Biology is the study of life, because bio means life.",
   "sentence": "The root _____ means life, so a biography is the story of a person's life.",
   "addedDate": "2026-11-11",
-  "set": "L-037",
-  "order": 43
+  "set": "L-038",
+  "order": 44
  },
  {
   "word": "ROOT: CARN",
@@ -14463,8 +14480,8 @@
   "example": "A carnivore eats meat, because carn means flesh.",
   "sentence": "The root _____ means meat, so a carnivore's diet is mostly meat.",
   "addedDate": "2026-11-11",
-  "set": "L-037",
-  "order": 43
+  "set": "L-038",
+  "order": 44
  },
  {
   "word": "ROOT: CHRON",
@@ -14480,8 +14497,8 @@
   "example": "A chronology lists events in time order, because chron means time.",
   "sentence": "The root _____ means time, so a chronicle records events over time.",
   "addedDate": "2026-11-11",
-  "set": "L-037",
-  "order": 43
+  "set": "L-038",
+  "order": 44
  },
  {
   "word": "ROOT: CIS / CISE",
@@ -14497,8 +14514,8 @@
   "example": "Scissors are tools for cutting, because cis means cut.",
   "sentence": "The root _____ means cut, so an incision is a cut made by a surgeon.",
   "addedDate": "2026-11-11",
-  "set": "L-037",
-  "order": 43
+  "set": "L-038",
+  "order": 44
  },
  {
   "word": "ROOT: CIVI",
@@ -14514,8 +14531,8 @@
   "example": "A civilian is a citizen who is not a soldier, because civi means citizen.",
   "sentence": "The root _____ means citizen, so civil rights are the rights of citizens.",
   "addedDate": "2026-11-11",
-  "set": "L-037",
-  "order": 43
+  "set": "L-038",
+  "order": 44
  },
  {
   "word": "ROOT: CORP",
@@ -14531,8 +14548,8 @@
   "example": "A corporation is treated as one body in law, because corp means body.",
   "sentence": "The root _____ means body, so a corpse is a dead body.",
   "addedDate": "2026-11-11",
-  "set": "L-038",
-  "order": 44
+  "set": "L-039",
+  "order": 45
  },
  {
   "word": "ROOT: CRED",
@@ -14548,8 +14565,8 @@
   "example": "If a witness is credible, you can believe her, because cred means belief.",
   "sentence": "The root _____ means belief, so an incredible tale is hard to believe.",
   "addedDate": "2026-11-11",
-  "set": "L-038",
-  "order": 44
+  "set": "L-039",
+  "order": 45
  },
  {
   "word": "ROOT: DE- / DIS-",
@@ -14565,8 +14582,8 @@
   "example": "To disagree is to not agree, because dis- means not.",
   "sentence": "The prefix _____ means not, so something dishonest is not honest.",
   "addedDate": "2026-11-11",
-  "set": "L-038",
-  "order": 44
+  "set": "L-039",
+  "order": 45
  },
  {
   "word": "ROOT: DEM",
@@ -14582,8 +14599,8 @@
   "example": "In a democracy, the people rule, because dem means people.",
   "sentence": "The root _____ means people, so a democracy is ruled by the people.",
   "addedDate": "2026-11-11",
-  "set": "L-038",
-  "order": 44
+  "set": "L-039",
+  "order": 45
  },
  {
   "word": "ROOT: DIC / DICT",
@@ -14599,8 +14616,8 @@
   "example": "To dictate is to say words for someone to write, because dict means say.",
   "sentence": "The root _____ means say, so to predict is to say what will happen before it does.",
   "addedDate": "2026-11-11",
-  "set": "L-038",
-  "order": 44
+  "set": "L-039",
+  "order": 45
  },
  {
   "word": "ROOT: DOMIN",
@@ -14616,8 +14633,8 @@
   "example": "The dominant team rules the league, because domin means master.",
   "sentence": "The root _____ means master, so a dominant player controls the game.",
   "addedDate": "2026-11-11",
-  "set": "L-038",
-  "order": 44
+  "set": "L-039",
+  "order": 45
  },
  {
   "word": "ROOT: EM- / EN-",
@@ -14633,8 +14650,8 @@
   "example": "To empower someone is to put power into them, because em- means into.",
   "sentence": "The prefix _____ means into, so to embrace is to fold someone into your arms.",
   "addedDate": "2026-11-11",
-  "set": "L-038",
-  "order": 44
+  "set": "L-039",
+  "order": 45
  },
  {
   "word": "ROOT: EQU",
@@ -14650,8 +14667,8 @@
   "example": "Equality means everyone is treated the same, because equ means equal.",
   "sentence": "The root _____ means equal, so the equator splits Earth into two equal halves.",
   "addedDate": "2026-11-11",
-  "set": "L-038",
-  "order": 44
+  "set": "L-039",
+  "order": 45
  },
  {
   "word": "ROOT: ERR",
@@ -14667,8 +14684,8 @@
   "example": "An error is wandering off the right path, because err means wander.",
   "sentence": "The root _____ means wander, so an erratic driver wanders all over the road.",
   "addedDate": "2026-11-11",
-  "set": "L-038",
-  "order": 44
+  "set": "L-039",
+  "order": 45
  },
  {
   "word": "ROOT: FORT",
@@ -14684,8 +14701,8 @@
   "example": "A fortress is a strong place, because fort means strength.",
   "sentence": "The root _____ means strength, so to fortify a wall is to make it stronger.",
   "addedDate": "2026-11-11",
-  "set": "L-038",
-  "order": 44
+  "set": "L-039",
+  "order": 45
  },
  {
   "word": "ROOT: GRAPH / GRAM",
@@ -14701,8 +14718,8 @@
   "example": "A telegram is writing sent from far away, because gram means writing.",
   "sentence": "The root _____ means writing, so a biography is writing about a life.",
   "addedDate": "2026-11-11",
-  "set": "L-038",
-  "order": 44
+  "set": "L-039",
+  "order": 45
  },
  {
   "word": "ROOT: LAUD",
@@ -14718,8 +14735,8 @@
   "example": "We applaud to show praise, because laud means praise.",
   "sentence": "The root _____ means praise, so a laudable act deserves to be praised.",
   "addedDate": "2026-11-11",
-  "set": "L-038",
-  "order": 44
+  "set": "L-039",
+  "order": 45
  },
  {
   "word": "ROOT: LOC / LOQ",
@@ -14735,8 +14752,8 @@
   "example": "An eloquent speaker talks beautifully, because loq means speech.",
   "sentence": "The root _____ means speech, so a loquacious person talks a lot.",
   "addedDate": "2026-11-11",
-  "set": "L-038",
-  "order": 44
+  "set": "L-039",
+  "order": 45
  },
  {
   "word": "ROOT: LUC",
@@ -14752,8 +14769,8 @@
   "example": "Something translucent lets light through, because luc means light.",
   "sentence": "The root _____ means light, so a lucid explanation is clear as light.",
   "addedDate": "2026-11-11",
-  "set": "L-038",
-  "order": 44
+  "set": "L-039",
+  "order": 45
  },
  {
   "word": "ROOT: MAG / MAGNA",
@@ -14769,8 +14786,8 @@
   "example": "To magnify is to make something look great and big, because mag means great.",
   "sentence": "The root _____ means great, so a magnificent castle is great and grand.",
   "addedDate": "2026-11-11",
-  "set": "L-038",
-  "order": 44
+  "set": "L-039",
+  "order": 45
  },
  {
   "word": "ROOT: MAL",
@@ -14786,8 +14803,8 @@
   "example": "Malicious means wishing bad things for others, because mal means bad.",
   "sentence": "The root _____ means bad, so a malfunction is when something works badly.",
   "addedDate": "2026-11-11",
-  "set": "L-038",
-  "order": 44
+  "set": "L-039",
+  "order": 45
  },
  {
   "word": "ROOT: MIS",
@@ -14803,8 +14820,8 @@
   "example": "A mistake is something done wrong, because mis- means wrong.",
   "sentence": "The prefix _____ means wrongly, so to misunderstand is to understand wrongly.",
   "addedDate": "2026-11-11",
-  "set": "L-038",
-  "order": 44
+  "set": "L-039",
+  "order": 45
  },
  {
   "word": "ROOT: MORI / MORT",
@@ -14820,8 +14837,8 @@
   "example": "An immortal character can never die, because mort means death.",
   "sentence": "The root _____ means death, so a mortal being will someday die.",
   "addedDate": "2026-11-11",
-  "set": "L-038",
-  "order": 44
+  "set": "L-039",
+  "order": 45
  },
  {
   "word": "ROOT: MORPH",
@@ -14837,8 +14854,8 @@
   "example": "When a caterpillar changes form in metamorphosis, morph means shape.",
   "sentence": "The root _____ means shape, so an amorphous blob has no clear shape.",
   "addedDate": "2026-11-11",
-  "set": "L-038",
-  "order": 44
+  "set": "L-039",
+  "order": 45
  },
  {
   "word": "ROOT: NAT",
@@ -14854,8 +14871,8 @@
   "example": "Innate skills are ones you are born with, because nat means born.",
   "sentence": "The root _____ means born, so a native plant was born in that place.",
   "addedDate": "2026-11-11",
-  "set": "L-038",
-  "order": 44
+  "set": "L-039",
+  "order": 45
  },
  {
   "word": "ROOT: NOM",
@@ -14871,8 +14888,8 @@
   "example": "To nominate is to name someone for a job, because nom means name.",
   "sentence": "The root _____ means name, so a misnomer is a wrong name for something.",
   "addedDate": "2026-11-11",
-  "set": "L-039",
-  "order": 45
+  "set": "L-040",
+  "order": 46
  },
  {
   "word": "ROOT: NOV",
@@ -14888,8 +14905,8 @@
   "example": "A novice is new at something, because nov means new.",
   "sentence": "The root _____ means new, so a novel idea is a fresh, new idea.",
   "addedDate": "2026-11-11",
-  "set": "L-039",
-  "order": 45
+  "set": "L-040",
+  "order": 46
  },
  {
   "word": "ROOT: OMNI",
@@ -14905,8 +14922,8 @@
   "example": "An omnivore eats all kinds of food, because omni means all.",
   "sentence": "The root _____ means all, so an omniscient narrator knows everything.",
   "addedDate": "2026-11-11",
-  "set": "L-039",
-  "order": 45
+  "set": "L-040",
+  "order": 46
  },
  {
   "word": "ROOT: PAC",
@@ -14922,8 +14939,8 @@
   "example": "To pacify a crying baby is to bring peace, because pac means peace.",
   "sentence": "The root _____ means peace, so a pacifist is a person who loves peace.",
   "addedDate": "2026-11-11",
-  "set": "L-039",
-  "order": 45
+  "set": "L-040",
+  "order": 46
  },
  {
   "word": "ROOT: PATH",
@@ -14939,8 +14956,8 @@
   "example": "Sympathy means feeling with someone, because path means feeling.",
   "sentence": "The root _____ means feeling, so apathy is having no feeling or interest.",
   "addedDate": "2026-11-11",
-  "set": "L-039",
-  "order": 45
+  "set": "L-040",
+  "order": 46
  },
  {
   "word": "ROOT: PHIL",
@@ -14956,8 +14973,8 @@
   "example": "Philosophy means the love of wisdom, because phil means love.",
   "sentence": "The root _____ means love, so a philanthropist loves people and gives to help them.",
   "addedDate": "2026-11-11",
-  "set": "L-039",
-  "order": 45
+  "set": "L-040",
+  "order": 46
  },
  {
   "word": "ROOT: PORT",
@@ -14973,8 +14990,8 @@
   "example": "Something portable can be carried easily, because port means carry.",
   "sentence": "The root _____ means carry, so to transport goods is to carry them across.",
   "addedDate": "2026-11-11",
-  "set": "L-039",
-  "order": 45
+  "set": "L-040",
+  "order": 46
  },
  {
   "word": "ROOT: POTEN",
@@ -14990,8 +15007,8 @@
   "example": "Potential means power that could be used, because poten means able.",
   "sentence": "The root _____ means able, so a potential champion is able to win someday.",
   "addedDate": "2026-11-11",
-  "set": "L-039",
-  "order": 45
+  "set": "L-040",
+  "order": 46
  },
  {
   "word": "ROOT: PSYCH",
@@ -15007,8 +15024,8 @@
   "example": "Psychology is the study of the mind, because psych means mind.",
   "sentence": "The root _____ means mind, so a psychologist studies how the mind works.",
   "addedDate": "2026-11-11",
-  "set": "L-039",
-  "order": 45
+  "set": "L-040",
+  "order": 46
  },
  {
   "word": "ROOT: REG / RECT",
@@ -15024,8 +15041,8 @@
   "example": "Something regular follows the rules, because reg means rule.",
   "sentence": "The root _____ means rule, so a regiment is a unit ruled in strict order.",
   "addedDate": "2026-11-11",
-  "set": "L-039",
-  "order": 45
+  "set": "L-040",
+  "order": 46
  },
  {
   "word": "ROOT: SACR / SECR",
@@ -15041,8 +15058,8 @@
   "example": "Something sacred is holy, because sacr means holy.",
   "sentence": "The root _____ means holy, so a sacred place is treated with reverence.",
   "addedDate": "2026-11-11",
-  "set": "L-039",
-  "order": 45
+  "set": "L-040",
+  "order": 46
  },
  {
   "word": "ROOT: SCRIBE / SCRIPT",
@@ -15058,8 +15075,8 @@
   "example": "To describe is to write or say what something is like, and script means write.",
   "sentence": "The root _____ means write, so a manuscript is written by hand.",
   "addedDate": "2026-11-11",
-  "set": "L-039",
-  "order": 45
+  "set": "L-040",
+  "order": 46
  },
  {
   "word": "ROOT: SOMN",
@@ -15075,8 +15092,8 @@
   "example": "Insomnia means you cannot sleep, because somn means sleep.",
   "sentence": "The root _____ means sleep, so a somnambulist walks while sleeping.",
   "addedDate": "2026-11-11",
-  "set": "L-039",
-  "order": 45
+  "set": "L-040",
+  "order": 46
  },
  {
   "word": "ROOT: TANG / TACT",
@@ -15092,8 +15109,8 @@
   "example": "Contact means touching or meeting, because tact means touch.",
   "sentence": "The root _____ means touch, so something tangible can be touched.",
   "addedDate": "2026-11-11",
-  "set": "L-039",
-  "order": 45
+  "set": "L-040",
+  "order": 46
  },
  {
   "word": "ROOT: TERR",
@@ -15109,8 +15126,8 @@
   "example": "Terrain describes the land, because terr means earth.",
   "sentence": "The root _____ means land, so a terrace is a flat shelf of land.",
   "addedDate": "2026-11-11",
-  "set": "L-039",
-  "order": 45
+  "set": "L-040",
+  "order": 46
  },
  {
   "word": "ROOT: URB",
@@ -15126,8 +15143,8 @@
   "example": "Urban areas are in the city, because urb means city.",
   "sentence": "The root _____ means city, so suburban neighborhoods sit just outside a city.",
   "addedDate": "2026-11-11",
-  "set": "L-039",
-  "order": 45
+  "set": "L-040",
+  "order": 46
  },
  {
   "word": "ROOT: VAC",
@@ -15143,8 +15160,8 @@
   "example": "A vacant seat is an empty seat, because vac means empty.",
   "sentence": "The root _____ means empty, so a vacuum is empty space.",
   "addedDate": "2026-11-11",
-  "set": "L-039",
-  "order": 45
+  "set": "L-040",
+  "order": 46
  },
  {
   "word": "ROOT: VER",
@@ -15160,8 +15177,8 @@
   "example": "To verify is to check that something is true, because ver means truth.",
   "sentence": "The root _____ means truth, so a verdict is the truth a jury declares.",
   "addedDate": "2026-11-11",
-  "set": "L-039",
-  "order": 45
+  "set": "L-040",
+  "order": 46
  },
  {
   "word": "ROOT: VERB",
@@ -15177,8 +15194,8 @@
   "example": "A proverb is a saying made of wise words, because verb means word.",
   "sentence": "The root _____ means word, so a verbal answer is spoken in words.",
   "addedDate": "2026-11-11",
-  "set": "L-039",
-  "order": 45
+  "set": "L-040",
+  "order": 46
  },
  {
   "word": "ROOT: VIT / VIV",
@@ -15194,24 +15211,7 @@
   "example": "If something is vital, you need it for life, because vit means life.",
   "sentence": "The root _____ means life, so to revive a plant is to bring it back to life.",
   "addedDate": "2026-11-11",
-  "set": "L-039",
-  "order": 45
- },
- {
-  "word": "WITTY",
-  "level": "lower",
-  "choices": [
-   "dull",
-   "clever",
-   "clumsy",
-   "rude"
-  ],
-  "answer": "clever",
-  "definition": "cleverly funny; quick with smart humor",
-  "example": "His witty reply made the whole class laugh.",
-  "sentence": "His _____ reply was so clever that the whole class laughed.",
-  "addedDate": "2026-11-23",
-  "set": "L-011",
-  "order": 21
+  "set": "L-040",
+  "order": 46
  }
 ]

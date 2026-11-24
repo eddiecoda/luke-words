@@ -316,7 +316,8 @@ console.log('Sentence quiz tests passed');
   assert.deepStrictEqual(list.map(s => s.order), list.map((s, i) => i + 1), 'orders run 1..N');
   const bank = list.filter(s => /^[LV]-\d{3}$/.test(s.id));
   assert(bank.length >= 10, 'bank of upcoming sets');
-  bank.forEach((s, i) => { assert.strictEqual(s.id, PFX + '-' + String(i + 1).padStart(3, '0')); assert(s.cards.length >= 19 && s.cards.length <= 20, '19-20 cards in ' + s.id + ' (Muse bank has three 19-card sets)'); });
+  // TRTL-17: the 20 words of Muse's L-012 were moved out of earlier (completed) sets, so L-003, L-006..L-011 are smaller; none is empty.
+  bank.forEach((s, i) => { assert.strictEqual(s.id, PFX + '-' + String(i + 1).padStart(3, '0')); assert(s.cards.length >= 1 && s.cards.length <= 20, '1-20 cards in ' + s.id); if (i >= 11) assert(s.cards.length >= 19, '19-20 cards in ' + s.id + ' (Muse bank has three 19-card sets)'); });
   assert(list.indexOf(bank[0]) > list.findIndex(s => /^\d{4}/.test(s.id)), 'bank sets come after the dated sets');
   console.log('Sets OK:', list.length, 'sets,', bank.length, 'in the bank (' + bank[0].id + '..' + bank[bank.length - 1].id + ')');
 
@@ -400,6 +401,9 @@ console.log('Sentence quiz tests passed');
   const list = SRS.setList(words), dated = list.filter(s => /^\d{4}/.test(s.id)), newest = dated[dated.length - 1];
   const st = SRS.loadSets(mem()), pr = {};
   newest.cards.forEach(w => SRS.record(pr, KF(w), true));            // all right, like the app's first-try record
+  // TRTL-17: SRS stats alone never complete a set.
+  assert.strictEqual(SRS.completeIfDone(words, st, pr, KF), null, 'progress alone does not complete a set');
+  st.setRight[newest.id] = {}; newest.cards.forEach(w => { st.setRight[newest.id][KF(w)] = true; }); // right IN the set, finish not yet reported
   SRS.daySet(words, st, pr, KF, '2026-10-31'); SRS.resolveCurrent(words, st, pr, KF);
   assert.strictEqual(st.current, newest.id, 'no silent advance');
   const res = SRS.completeIfDone(words, st, pr, KF);
@@ -441,6 +445,7 @@ console.log('Sentence quiz tests passed');
   // A set that was finished in earlier sessions (all right once) but never reported completes and is skipped.
   const st3 = SRS.loadSets(mem()), pr3 = {}; st3.current = bank[2].id;
   bank[2].cards.forEach(w => SRS.record(pr3, KF(w), true));
+  st3.setRight[bank[2].id] = {}; bank[2].cards.forEach(w => { st3.setRight[bank[2].id][KF(w)] = true; });
   sv = SRS.servableCards(words, st3, pr3, KF);
   assert(sv.completed && sv.completed.from === bank[2].id, 'reported once'); assert.strictEqual(sv.set.id, bank[3].id);
   // App wiring: Mix and Reset are gone; the current-set quiz is the only flashcard quiz and uses servableCards.
@@ -549,6 +554,132 @@ console.log('Sentence quiz tests passed');
   const sw = fs.readFileSync(__dirname + '/sw.js', 'utf8');
   assert(/path\.indexOf\('sentence_sets\/'\) === 0\) \{\s*e\.respondWith\(networkFirst\(req, path\)\)/.test(sw), 'sentence_sets network-first');
   assert(sw.includes("'sentence_sets/index.json'"), 'index precached');
-  assert(sw.includes("var VERSION = '2026-11-23-trtl14-16'"));
+  assert(/var VERSION = '2026-11-2\d-trtl[0-9a-z-]+'/.test(sw) && !sw.includes("trtl13'"), 'sw VERSION bumped past TRTL-13');
   console.log('TRTL-15 fixed sentence-set tests passed');
+})().catch(e => { console.error(e); process.exit(1); });
+
+// ---- TRTL-17: Muse L-012 inserted (old L-012..L-039 -> L-013..L-040); per-set completion; every card of a set is served. ----
+(async () => {
+  const KF = w => w.word;
+  const mem = () => ({ d: {}, getItem(k) { return this.d[k] ?? null; }, setItem(k, v) { this.d[k] = v; } });
+  const L012 = ['WITTY', 'FORMIDABLE', 'LEGIBLE', 'ENTHRALL', 'GROGGY', 'UNRULY', 'OBSTRUCT', 'CRUDE', 'BLEAK', 'PENSIVE', 'ALOOF', 'ASTUTE',
+    'CAPTURE', 'HAZY', 'VIGOROUS', 'COMPREHEND', 'DEPRIVE', 'BENEFACTOR', 'AMBIGUOUS', 'TENACIOUS'];
+  // Bank integrity (full words.json, nothing excluded).
+  assert.strictEqual(words.length, 895); assert.strictEqual(new Set(words.map(w => w.word)).size, 895, '895 unique words');
+  const orderOf = {};
+  for (const w of words) { if (w.set in orderOf) assert.strictEqual(orderOf[w.set], w.order, 'one order per set ' + w.set); else orderOf[w.set] = w.order; }
+  const orders = Object.values(orderOf); assert.strictEqual(new Set(orders).size, orders.length, 'no two sets share an order');
+  const list = SRS.setList(words);
+  assert.deepStrictEqual(list.map(s => s.order), list.map((s, i) => i + 1), 'orders run 1..46');
+  assert.strictEqual(list.length, 46);
+  const byId = Object.fromEntries(list.map(s => [s.id, s]));
+  assert.strictEqual(byId['L-012'].order, 18);
+  assert.deepStrictEqual(byId['L-012'].cards.map(KF), L012, 'L-012 = Muse set in exact order');
+  assert.deepStrictEqual(words.filter(w => w.set === 'L-012').map(KF), L012, 'words.json file order');
+  const i11 = words.map(w => w.set).lastIndexOf('L-011'), i12 = words.findIndex(w => w.set === 'L-012'), i13 = words.findIndex(w => w.set === 'L-013');
+  assert(i11 + 1 === i12 && i12 + 20 === i13, 'L-012 sits between L-011 and L-013 in words.json');
+  for (let n = 13; n <= 40; n++) assert.strictEqual(byId['L-' + String(n).padStart(3, '0')].order, n + 6, 'L-0' + n + ' order');
+  assert(!byId['L-041'], 'no L-041');
+  assert.strictEqual(byId['L-011'].cards.length, 14); assert(!byId['L-011'].cards.some(w => w.word === 'WITTY'), 'WITTY left L-011');
+  for (const id of ['2026-10-19', 'L-003', 'L-006', 'L-007', 'L-008', 'L-009', 'L-010', 'L-011']) assert(byId[id].cards.length > 0, id + ' not empty');
+  // Content fields unchanged for moved cards (spot check vs. sentence set bank words).
+  assert.strictEqual(words.find(w => w.word === 'WITTY').addedDate, '2026-11-23');
+
+  // Luke's real device: L-011 and before completed, current L-012 (new Muse set), every L-012 word mastered in progress
+  // and true in the legacy flat st.right map, no setRight yet.
+  const deviceState = () => {
+    const store = mem(), pr = {};
+    const completed = list.slice(0, list.findIndex(s => s.id === 'L-011') + 1).map(s => s.id);
+    const legacyRight = {};
+    list.slice(0, 18).forEach(s => s.cards.forEach(w => { SRS.record(pr, KF(w), true); SRS.record(pr, KF(w), true); legacyRight[KF(w)] = true; }));
+    store.setItem(SRS.SET_KEY, JSON.stringify({ current: 'L-012', completed, right: legacyRight, opened: { 'L-011': '2026-11-23' }, day: { date: '2026-11-23', id: 'L-011' }, notice: '' }));
+    return { store, pr, completed };
+  };
+  let { store, pr, completed } = deviceState();
+  let st = SRS.loadSets(store);
+  assert.deepStrictEqual(st.setRight, {}, 'setRight starts empty');
+  L012.forEach(k => assert(SRS.isMastered(pr[k]) && st.right[k] === true, k + ' mastered + legacy right'));
+  assert.strictEqual(SRS.completeIfDone(words, st, pr, KF), null, 'retest set of mastered words does not auto-complete');
+  let r = SRS.resolveCurrent(words, st, pr, KF);
+  assert.strictEqual(r.set.id, 'L-012'); assert(!r.exhausted);
+  let sp = SRS.setProgress(r.set, st, pr, KF);
+  assert.deepStrictEqual([sp.right, sp.answered, sp.total, sp.done], [0, 0, 20, false], 'L-012 starts at 0/20');
+  let sv = SRS.servableCards(words, st, pr, KF);
+  assert.strictEqual(sv.set.id, 'L-012'); assert.deepStrictEqual(sv.cards.map(KF), L012, 'all 20 served, mastered or not'); assert(!sv.completed);
+  assert(!sv.cards.some(w => completed.includes(w.set)), 'no card from a completed set');
+  // Completed sets stay locked even if current is pointed back.
+  const stBack = SRS.loadSets(store); stBack.current = 'L-011';
+  assert.strictEqual(SRS.servableCards(words, stBack, pr, KF).set.id, 'L-012', 'L-011 never re-served');
+  // Unlocked words: through L-012, not L-013.
+  const vis = SRS.unlockedWords(words, st, pr, KF);
+  assert(vis.some(w => w.set === 'L-012') && !vis.some(w => w.set === 'L-013'));
+  // daySet / WORDS LOG on a retest set of mastered words: full set, never empty.
+  const st4 = SRS.loadSets(store);
+  const ds = SRS.daySet(words, st4, pr, KF, '2026-11-24');
+  assert.deepStrictEqual(ds.map(KF), L012, 'daySet = whole L-012 incl. mastered words');
+  const WL = require('./wordlog.js');
+  const sum0 = WL.summary({ opened: true, firstTry: {} }, ds.map(KF));
+  assert.deepStrictEqual(sum0, { set_size: 20, opened_set: 'yes', answered: 0, right: 0, completed_all: 'no' });
+  // Same day as the L-011 finish: the log keeps reporting L-011 (its 14 remaining cards), as before.
+  assert.strictEqual(SRS.daySet(words, SRS.loadSets(store), pr, KF, '2026-11-23')[0].set, 'L-011');
+
+  // Session 1: miss ASTUTE once (re-queued, right on retry), answer 8 right in total, then leave.
+  const answer = (w, ok) => { SRS.record(pr, KF(w), ok); return SRS.markSetAnswer(words, st, pr, KF, w, ok); };
+  const astute = byId['L-012'].cards.find(w => w.word === 'ASTUTE');
+  assert.strictEqual(answer(astute, false), null);
+  assert.strictEqual(st.setRight['L-012'].ASTUTE, false, 'miss recorded in the set');
+  sp = SRS.setProgress(byId['L-012'], st, pr, KF); assert.deepStrictEqual([sp.right, sp.answered], [0, 1], 'a miss is answered, not right');
+  assert(SRS.servableCards(words, st, pr, KF).cards.some(w => w.word === 'ASTUTE'), 'missed card still servable');
+  assert.strictEqual(answer(astute, true), null);
+  assert.strictEqual(st.setRight['L-012'].ASTUTE, true, 'right on retry counts');
+  answer(astute, false); assert.strictEqual(st.setRight['L-012'].ASTUTE, true, 'a later miss never erases a right in this set');
+  const first7 = L012.filter(k => k !== 'ASTUTE').slice(0, 7);
+  first7.forEach(k => assert.strictEqual(answer(byId['L-012'].cards.find(w => w.word === k), true), null));
+  SRS.saveSets(store, st); st = SRS.loadSets(store);
+  sp = SRS.setProgress(byId['L-012'], st, pr, KF); assert.deepStrictEqual([sp.right, sp.answered, sp.done], [8, 8, false], '8/20 after leaving');
+  // Resume: the remaining 12 are served, the 8 are not repeated.
+  sv = SRS.servableCards(words, st, pr, KF);
+  assert.strictEqual(sv.cards.length, 12); assert(!sv.cards.some(w => w.word === 'ASTUTE' || first7.includes(w.word)), 'resume does not repeat the 8');
+  // Right answers recorded in ANOTHER set never count toward L-012.
+  st.setRight['L-013'] = { WITTY: true };
+  assert.strictEqual(SRS.setProgress(byId['L-012'], st, pr, KF).right, 8); delete st.setRight['L-013'];
+  // Finish: completes exactly on the 20th, advances to L-013, locks L-012.
+  let done = null;
+  sv.cards.forEach((w, i) => { const x = answer(w, true); if (x) { assert(!done, 'completes once'); done = x; assert.strictEqual(i, 11, 'completes on the last card'); } });
+  assert(done && done.completed); assert.deepStrictEqual([done.from, done.to, done.answered, done.right, done.exhausted], ['L-012', 'L-013', 20, 20, false]);
+  SRS.saveSets(store, st); st = SRS.loadSets(store);
+  assert.strictEqual(st.current, 'L-013'); assert(st.completed.includes('L-012'));
+  sv = SRS.servableCards(words, st, pr, KF);
+  assert.strictEqual(sv.set.id, 'L-013'); assert.strictEqual(sv.cards.length, byId['L-013'].cards.length, 'every L-013 card served');
+  assert(!sv.cards.some(w => w.set === 'L-012'), 'L-012 locked');
+  st.current = 'L-012'; assert.strictEqual(SRS.servableCards(words, st, pr, KF).set.id, 'L-013', 'L-012 never re-served');
+  assert.strictEqual(SRS.markSetAnswer(words, st, pr, KF, byId['L-012'].cards[0], true), null, 'no answer counts toward a completed set');
+
+  // Old device where opened['L-012'] was set today for the old L-012: nothing breaks; the new L-012 still starts at 0/20.
+  ({ store, pr } = deviceState());
+  const raw = JSON.parse(store.getItem(SRS.SET_KEY)); raw.opened['L-012'] = '2026-11-23'; raw.day = { date: '2026-11-23', id: 'L-012' }; store.setItem(SRS.SET_KEY, JSON.stringify(raw));
+  st = SRS.loadSets(store);
+  assert.strictEqual(SRS.servableCards(words, st, pr, KF).cards.length, 20);
+  assert.deepStrictEqual(SRS.daySet(words, st, pr, KF, '2026-11-23').map(KF), L012, 'day set id L-012 now resolves to the new set');
+  // A stale dated set before current that is not in completed is never revisited (nextSet scans forward only).
+  ({ store, pr } = deviceState());
+  st = SRS.loadSets(store); st.completed = st.completed.filter(id => id !== '2026-10-24');
+  assert.strictEqual(SRS.servableCards(words, st, pr, KF).set.id, 'L-012');
+  assert(SRS.unlockedWords(words, st, pr, KF).some(w => w.set === '2026-10-24'), 'earlier sets stay unlocked (order <= current)');
+
+  // WORDS LOG on the retest set: payload fields unchanged, counts over all 20.
+  const sent = [], s5 = mem();
+  const lg = WL.create({ kid: 'Luke', storage: s5, keyFn: KF, setFn: () => byId['L-012'].cards, now: () => new Date('2026-11-24T22:00:00Z'),
+    fetch: (u, o) => { sent.push(JSON.parse(o.body)); return Promise.resolve({ json: () => ({ success: 'true' }) }); } });
+  lg.openedSet(); await new Promise(r => setTimeout(r, 0));
+  L012.forEach((k, i) => lg.answered(k, i !== 10)); await new Promise(r => setTimeout(r, 0));
+  const lastRec = sent[sent.length - 1];
+  assert.deepStrictEqual(Object.keys(lastRec), ['_subject', '_template', '_captcha', 'kid', 'date_et', 'time_et', 'source', 'set', 'set_size', 'opened_set', 'answered', 'right', 'completed_all', 'button_tapped_today'], 'WORDS LOG fields unchanged');
+  assert.deepStrictEqual([lastRec.set, lastRec.set_size, lastRec.answered, lastRec.right, lastRec.completed_all, lastRec._subject], ['L-012', 20, 20, 19, 'yes', 'WORDS LOG Luke 2026-11-24 auto']);
+
+  // App wiring: no mastery filter on what is served.
+  const app = fs.readFileSync(__dirname + '/app.js', 'utf8'), srsSrc = fs.readFileSync(__dirname + '/srs.js', 'utf8');
+  assert(!/filter\([^)]*isMastered/.test(app) && !/cards\.filter\(function \(w\) \{ return !isMastered/.test(srsSrc), 'no mastered filter on served / logged cards');
+  assert(!/st\.right\[/.test(srsSrc), 'legacy flat right map is not consulted');
+  console.log('TRTL-17 L-012 insert + per-set completion tests passed');
 })().catch(e => { console.error(e); process.exit(1); });

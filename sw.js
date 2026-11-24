@@ -3,7 +3,7 @@
    request, POSTs) is never intercepted or cached, so the daily words log goes straight to the network as before.
    index.html / words.json / sentence_sets/* (and JS/CSS) are network-first so new words and new Muse sentence sets always come through;
    the cached copy is only the offline fallback. Icons are cache-first. */
-var VERSION = '2026-11-23-trtl11fix';
+var VERSION = '2026-11-23-trtl17';
 var CACHE = 'luke-words-' + VERSION;
 var SHELL = ['./', 'index.html', 'style.css', 'app.js', 'srs.js', 'wordlog.js', 'sentencequiz.js', 'words.json', 'sentence_sets/index.json', 'manifest.json',
   'icon.svg', 'icon-192.png', 'icon-512.png', 'icon-maskable-512.png', 'apple-touch-icon.png'];

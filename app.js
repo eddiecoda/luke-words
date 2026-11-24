@@ -11,7 +11,8 @@
   var wlog = WordLog.create({ kid: 'Luke', storage: localStorage, keyFn: K,
     setFn: function () { var c = SRS.daySet(words, sets, progress, K, WordLog.etDate()); SRS.saveSets(localStorage, sets); return c; } });
 
-  // Current set (stored in localStorage): moves to the next set once every card in it has been answered right once.
+  // Current set (stored in localStorage): moves to the next set once every card in it has been answered right once IN THAT SET
+  // (TRTL-17: mastered words and right answers from other sets do not count; every card of the set is served).
   function cur() {
     var res = SRS.completeIfDone(words, sets, progress, K);
     if (res) starsEvent('completed', res.from, res.to, res);

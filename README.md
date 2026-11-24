@@ -10,10 +10,12 @@ Progress is stored in the browser's localStorage under `luke-isee-progress-v1`, 
 
 Word sets: every card has `set` (string id) and `order` (number). The original daily batches use their addedDate as the set id; the bank of
 upcoming sets is L-001, L-002, ... "Current set" (stored in localStorage `luke-isee-sets-v1`) starts at the newest dated batch and moves to the
-next unfinished set in order as soon as every card in it has been answered right at least once (any mode, retries count). The app then shows
+next unfinished set in order as soon as every card in it has been answered right at least once IN THAT SET (retries count). The app then shows
 "Set done! New words unlocked". Later bank sets stay hidden from the missed list/Stats until reached. When the bank runs out, nothing is served ("New words coming soon"); add more sets and it moves on automatically.
 
 NO REPEATS (TRTL-14, Nov 23 2026): a completed word set is never served again. `SRS.servableCards` returns no cards when the current set is completed, a session ends as soon as it completes its set (the rest of that set's cards are not re-served), and there is no path back into a completed set. There is no Mix mode and no Reset button (`SRS.reset` was removed). On every set completion the existing WORDS LOG auto record (completed_all) and the Coda Stars `completed` event go out as before; Muse supplies the next sets.
+
+PER-SET COMPLETION (TRTL-17, Nov 23 2026): answers are tracked per set in `luke-isee-sets-v1` as `setRight: {setId: {word: true|false}}`. A card counts toward a set only if answered right in that set; SRS stats (`progress`), mastery and the legacy flat `right` map never count. `SRS.servableCards` serves every card of the current set not yet right in that set, mastered or not (leaving midway resumes with only the remaining cards), and `SRS.daySet` (WORDS LOG) reports the whole set. So a Muse retest set made of known words (e.g. L-012, Nov 23: WITTY + retest-pool words + fresh words, moved from earlier sets; old L-012..L-039 became L-013..L-040) starts at 0/20 and is fully served.
 
 Missed words (TRTL-16): "My missed words" is a READ-ONLY study list: each word that `SRS.reviewWords` returns (unlocked sets) with its definition. No questions, no answering, no scoring. Missed words are retested only in TRTL forms and inside new Muse-supplied sets.
 
@@ -22,7 +24,7 @@ preflight) to https://coda-kids-app.vercel.app/api/vocab/event: {kid: 'luke', ev
 errors are swallowed and never block the UI.
 
 A miss sends a word to box 0, so it's due again right away and also comes back 3 cards later in the same session.
-Each right answer moves it up a box: due again in 1, 2, 4, 8, then 16 days. Right 2 times in a row counts as mastered, and mastered words drop out of practice.
+Each right answer moves it up a box: due again in 1, 2, 4, 8, then 16 days. Right 2 times in a row counts as mastered (shown in Stats; mastered words leave the missed list).
 
 Daily words log (wordlog.js): each device sends one cumulative record per day (ET) to FormSubmit, which emails codafamily@mail.grokbot.com
 with subject `WORDS LOG <Kid> <YYYY-MM-DD> auto|button`. Auto records go out when the current set is opened, when every card in it has a first

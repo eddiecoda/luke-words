@@ -101,7 +101,7 @@
   }
   function save(storage, progress) { storage.setItem(STORE_KEY, JSON.stringify(progress)); }
 
-  // ---- Word sets: the "current set" advances to the next set as soon as every card in it has been answered right once. ----
+  // ---- Word sets: the "current set" advances to the next set as soon as every card in it has been answered right once IN THAT SET (TRTL-17). ----
   // Each card has set (string id) and order (number). Older cards use their addedDate as the set id.
   // Bank sets have ids like L-001 / V-001; dated ids are the original daily batches.
   var SET_KEY = STORE_KEY.replace('progress', 'sets');
@@ -119,18 +119,23 @@
   function loadSets(storage) {
     var s; try { s = JSON.parse(storage.getItem(SET_KEY)); } catch (e) { s = null; }
     s = s || {};
-    return { current: s.current || '', completed: s.completed || [], right: s.right || {}, opened: s.opened || {},
+    // right: legacy flat {word: bool} map (pre TRTL-17), kept only so old data is not lost; it no longer counts toward any set.
+    // setRight (TRTL-17): {setId: {word: true|false}}: answers recorded IN that set.
+    return { current: s.current || '', completed: s.completed || [], right: s.right || {}, setRight: s.setRight || {}, opened: s.opened || {},
       day: s.day || null, notice: s.notice || '' };
   }
   function saveSets(storage, st) { try { storage.setItem(SET_KEY, JSON.stringify(st)); } catch (e) {} }
-  // A card counts once it has been answered right at least once (now, or in an earlier session).
-  function cardDone(st, progress, keyFn, w) { var k = keyFn(w), p = progress[k]; return !!st.right[k] || !!(p && p.correct > 0); }
+  // TRTL-17: a card counts toward a set ONLY once it has been answered right IN THAT SET (any session of that set, retries count).
+  // Right answers from other sets, SRS stats (progress) and the legacy flat st.right map never count, so a Muse retest set made of
+  // words he already knows starts at 0 and every card in it is served.
+  function setAnswers(st, id) { return (st.setRight && st.setRight[id]) || {}; }
+  function cardDone(setIdv, st, keyFn, w) { return !!(st.setRight && st.setRight[setIdv] && st.setRight[setIdv][keyFn(w)]); }
   function setProgress(set, st, progress, keyFn) {
-    var right = 0, answered = 0;
+    var right = 0, answered = 0, a = setAnswers(st, set.id);
     set.cards.forEach(function (w) {
-      var k = keyFn(w), p = progress[k];
-      if (cardDone(st, progress, keyFn, w)) right++;
-      if ((p && p.seen > 0) || k in st.right) answered++;
+      var k = keyFn(w);
+      if (cardDone(set.id, st, keyFn, w)) right++;
+      if (k in a) answered++;
     });
     return { total: set.cards.length, answered: answered, right: right, done: set.cards.length > 0 && right >= set.cards.length };
   }
@@ -169,7 +174,9 @@
     var sets = setList(words), cur = storedCurrent(sets, st), r = { sets: sets };
     if (!cur || setId(w) !== cur.id) return null;
     var k = keyFn(w);
-    if (isCorrect) st.right[k] = true; else if (!(k in st.right)) st.right[k] = false;
+    if (!st.setRight) st.setRight = {};
+    var a = st.setRight[cur.id] || (st.setRight[cur.id] = {});
+    if (isCorrect) a[k] = true; else if (a[k] !== true) a[k] = false; // a miss never erases an earlier right in this set
     return completeIfDone(words, st, progress, keyFn);
   }
   // If the stored current set is finished but not yet reported, mark it completed and advance. Returns the result once.
@@ -192,7 +199,8 @@
     var res = completeIfDone(words, st, progress, keyFn);
     var r = resolveCurrent(words, st, progress, keyFn);
     if (!r.set || isSetCompleted(st, r.set.id)) return { set: r.set, cards: [], completed: res, exhausted: true };
-    return { set: r.set, cards: r.set.cards.filter(function (w) { return !isMastered(progress[keyFn(w)]); }), completed: res, exhausted: false };
+    // TRTL-17: every card of the set not yet answered right IN THIS SET, mastered or not (resume serves only what is left).
+    return { set: r.set, cards: r.set.cards.filter(function (w) { return !cardDone(r.set.id, st, keyFn, w); }), completed: res, exhausted: false };
   }
   // Cards the kid can see in the read-only missed list / Stats: sets up to and including the current one (later bank sets stay locked).
   function unlockedWords(words, st, progress, keyFn) {
@@ -206,7 +214,8 @@
   function daySet(words, st, progress, keyFn, today) {
     var r = resolveCurrent(words, st, progress, keyFn);
     if (!st.day || st.day.date !== today) st.day = { date: today, id: r.set ? r.set.id : '' };
-    return (r.sets.find(function (s) { return s.id === st.day.id; }) || r.set || { cards: [] }).cards.filter(function (w) { return !isMastered(progress[keyFn(w)]); });
+    // TRTL-17: the whole set, mastered words included (a retest set of known words must not log as empty).
+    return (r.sets.find(function (s) { return s.id === st.day.id; }) || r.set || { cards: [] }).cards.slice();
   }
 
   // Coda Stars hook: fire-and-forget POST. Every error is swallowed; never blocks the UI.
@@ -226,7 +235,7 @@
     stats: stats, shuffle: shuffle, Session: Session, load: load, save: save, accuracy: accuracy,
     SET_KEY: SET_KEY, setId: setId, setList: setList, loadSets: loadSets, saveSets: saveSets, setProgress: setProgress, isSetDone: isSetDone,
     nextSet: nextSet, resolveCurrent: resolveCurrent, markSetAnswer: markSetAnswer, completeIfDone: completeIfDone, unlockedWords: unlockedWords, daySet: daySet,
-    isSetCompleted: isSetCompleted, servableCards: servableCards,
+    isSetCompleted: isSetCompleted, servableCards: servableCards, cardDone: cardDone,
     STARS_URL: STARS_URL, postStarsEvent: postStarsEvent };
   if (typeof module !== 'undefined' && module.exports) module.exports = api; else root.SRS = api;
 })(this);
