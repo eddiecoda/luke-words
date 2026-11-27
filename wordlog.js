@@ -1,7 +1,10 @@
 /* Daily words log: sends one cumulative record per kid per ET day to FormSubmit (emails codafamily@mail.grokbot.com).
    No secrets here: the endpoint is FormSubmit's public alias for that inbox.
-   source=auto  -> sent when the current set is opened, when it's finished / all cards answered, and when the page is hidden (only if something changed).
-   source=button -> the "I did my words today" button.
+   source=auto  -> sent only when the current set is finished (completed_all=yes): when every card has a first answer
+   today / a session finishes, or when the page is hidden after the set is complete. Opening the set or hiding the
+   page with an unfinished set does not send, and sentSig is not marked, so a later completed send can still go out.
+   Duplicate identical finished records are not resent. (Nov 27, 2026, Muse msg 16150884)
+   source=button -> the "I did my words today" button (sends on tap even if the set is unfinished).
    source=quiz -> the sentence quiz (Mon, Wed, Fri) (subject "WORDS LOG <Kid> <YYYY-MM-DD> quiz"). Separate from the daily record.
    Works in the browser (window.WordLog) and in Node (module.exports). */
 (function (root) {
@@ -45,6 +48,7 @@
     function send(source, force) {
       var s = load(), info = setInfo(), sum = summary(s, info.keys);
       var sig = JSON.stringify([info.id, sum]);
+      if (source === 'auto' && sum.completed_all !== 'yes') return Promise.resolve('not complete');
       if (source === 'auto' && !force && (sig === s.sentSig || sig === inflight)) return Promise.resolve('unchanged');
       if (source === 'auto' && !s.opened && sum.answered === 0) return Promise.resolve('nothing yet');
       var rec = { _subject: 'WORDS LOG ' + opts.kid + ' ' + s.date + ' ' + source, _template: 'table', _captcha: 'false',
